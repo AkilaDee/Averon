@@ -4,7 +4,7 @@
     background:  url('../../assets/1.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #E8AF03;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,6 +24,7 @@
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
+    color: #fafafa;
 }
 
 /* -------media query--------*/

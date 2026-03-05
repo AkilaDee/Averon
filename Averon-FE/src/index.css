@@ -22,10 +22,11 @@ a{
 }
 
 .btn{
-    background: #483ab1;
+    background: #E8AF03;
     color: #111111;
     padding: 14px 25px;
     font-size: 16px;
+    font-weight: 500;
     border-radius: 30px;
     cursor: pointer;
     border: 0;
@@ -41,7 +42,7 @@ a{
 }
 
 .btn.dark-btn{
-    background: #212EA0;
+    background: #111111;
     color: #fff;
 }
 

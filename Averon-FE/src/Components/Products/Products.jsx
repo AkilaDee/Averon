@@ -58,7 +58,7 @@ const Products = () => {
                             <span>Alba ceylon</span>
                         </div>
                         <p>
-                            Best quality Alba grade true ceylon cinnamon.
+                            Best quality C5 grade true ceylon cinnamon.
                         </p>
                     </div>
 
@@ -73,7 +73,7 @@ const Products = () => {
                             <span>Alba ceylon</span>
                         </div>
                         <p>
-                            Best quality Alba grade true ceylon cinnamon.
+                            Best quality C4 grade true ceylon cinnamon.
                         </p>
                     </div>
 

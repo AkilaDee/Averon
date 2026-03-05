@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
+import Quality from './Components/Quality/Quality'
 import Offers from './Components/Offers/Offers'
 import Title from './Components/Title/Title'
 import About from './Components/About/About'
@@ -17,10 +18,12 @@ const App = () => {
       <Navbar />
         <Hero />
         <div className="container">
-          <Title subTitle='Our' title='What We Offer'/>
+          <Title subTitle='DIRECT FROM SRI LANKA' title='Premium Ceylon Spices for UK Wholesale'/>
           <Offers />
-          <Title subTitle='Our Products' title='Products'/>
+          <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
           <Products />
+          <Title subTitle='SAFETY & TRACEABILITY' title='Rigorous Standards, Fully Compliant'/>
+          <Quality />
           <About setPlayState={setPlayState}/>
           <Title subTitle='Contact Us' title='Get in Touch'/>
           <Contact />
