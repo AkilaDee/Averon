@@ -12,18 +12,20 @@ const Products = () => {
     const slider = useRef();
     let tx = 0;
 
-    const slideForward = ()=>{
-        if(tx > -50){
-            tx -= 33.333;
+    const slideForward = () => {
+        // We have 3 slides. 100 / 3 = 33.33
+        // To reach the last slide, tx should go to -66.66
+        if (tx > -66) { 
+            tx -= 33.33;
         }
-        slider.current.style.transform=`translateX(${tx}%)`
+        slider.current.style.transform = `translateX(${tx}%)`;
     }
 
-    const slideBackward = ()=>{
-        if(tx < 0){
-            tx += 33.333;
+    const slideBackward = () => {
+        if (tx < 0) {
+            tx += 33.33;
         }
-        slider.current.style.transform=`translateX(${tx}%)`
+        slider.current.style.transform = `translateX(${tx}%)`;
     }
 
 

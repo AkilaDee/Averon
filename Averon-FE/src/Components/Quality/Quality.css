@@ -32,9 +32,10 @@
 }
 
 /* Optional: Spacing for content inside cards */
-.quality h3 {
+.quality h2 {
     margin-bottom: 15px;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .quality p {

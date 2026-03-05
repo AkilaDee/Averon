@@ -7,7 +7,9 @@
 }
 
 .offer img{
-    width: 100%;
+    /* width: 100%; */
+    width: 350px; 
+    height: 250px;
     border-radius: 10px;
     display: block;
 
