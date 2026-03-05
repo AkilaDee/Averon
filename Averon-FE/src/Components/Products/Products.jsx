@@ -14,14 +14,14 @@ const Products = () => {
 
     const slideForward = ()=>{
         if(tx > -50){
-            tx -= 25;
+            tx -= 33.333;
         }
         slider.current.style.transform=`translateX(${tx}%)`
     }
 
     const slideBackward = ()=>{
         if(tx < 0){
-            tx += 25;
+            tx += 33.333;
         }
         slider.current.style.transform=`translateX(${tx}%)`
     }

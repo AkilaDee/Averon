@@ -7,7 +7,7 @@ const Hero = () => {
     <div className='hero container'>
         <div className="hero-text">
             <h1>Premium Ceylon Spices</h1>
-            <p>Our spices are sourced from manufacturers from sri lanka who produce premium spices</p>
+            <h3>Our spices are sourced from manufacturers from sri lanka who produce premium spices</h3>
             <button className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
         </div>
     </div>

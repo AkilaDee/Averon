@@ -12,8 +12,8 @@ const About = ({setPlayState}) => {
 
         </div>
         <div className='about-right'>
-            <h3>THE AVERON JOURNEY</h3>
-            <h2>Bridging the Gap Between Estate and Industry</h2>
+            <h3>Our Story</h3>
+            <h2>THE AVERON JOURNEY</h2>
             <p>At Averon Supplies Ltd, we bridge the gap between the lush spice gardens of Sri Lanka and the exacting standards of the UK food industry. As a specialist importer and wholesaler, our mission is simple: to provide UK trade and wholesale customers with the world’s finest authentic Ceylon spices without compromise.
 
             Our Heritage, Your Advantage

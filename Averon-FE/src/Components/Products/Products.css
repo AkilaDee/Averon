@@ -23,40 +23,63 @@
 .slider{
     overflow: hidden;
 }
-.slider ul{
+.slider ul {
     display: flex;
-    width: 200%;
-    overflow-x: hidden;
+    width: 150%; /* I recommend 200% for 2 slides to keep math simple */
     transition: 0.5s;
-    
+    padding: 0;
+    margin: 0;
+    /* This forces all LI children to have the same height */
+    align-items: stretch; 
 }
 
-.slider ul li{
+.slider ul li {
     list-style: none;
-    width: 50%;
+    width: 100%; 
     padding: 20px;
+    box-sizing: border-box;
+    /* This makes the .slide div inside also stretch to fill the LI */
+    display: flex; 
 }
-.slide{
+.slide {
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
     padding: 40px;
     border-radius: 10px;
-    color: #E8AF03;
+    background: #D4D8D1;
     line-height: 1.4;
-}
-.slide img{
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 10px;
-    border: 4px solid #E8AF03;
-}
-.user-info{
+    max-width: 800px;
+    margin: 0 auto;
+    flex-grow: 1;
+
+    /* Center all text and content inside the card */
+    text-align: center; 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally in flex column */
+    justify-content: center; /* Centers items vertically */
+}
+.slide img {
+    /* Set a fixed square size for all images */
+    width: 200px; 
+    height: 200px;
+    
+    /* This ensures the image isn't squished; it crops to fit the circle */
+    object-fit: cover; 
+    
+    /* border-radius: 50%; Makes them perfectly round */
+    margin-bottom: 15px; /* Space between image and the name */
+    border: 2px solid #111111;
+}
+.user-info {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;    /* Center them horizontally */
     margin-bottom: 20px;
     font-size: 15px;
 }
-.user-info h3{
+.user-info h3 {
     color: #212EA0;
+    margin: 0;
 }
 
 /* -------media query--------*/
