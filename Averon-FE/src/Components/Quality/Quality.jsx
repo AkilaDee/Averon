@@ -1,5 +1,5 @@
 import React from 'react'
-import './quality.css'
+import './Quality.css'
 
 
 const quality = () => {
@@ -17,7 +17,7 @@ const quality = () => {
             <h2>HACCP-Based Safety Systems</h2>
             <br />
             <p>Your safety is our priority. Our facility and supply chain are governed by a robust HACCP (Hazard Analysis and Critical Control Point) system. 
-              We meticulously monitor every stage—from intake and ambient storage to final dispatch—to eliminate risks and maintain product integrity.
+              We meticulously monitor every stage from intake and ambient storage to final dispatch to eliminate risks and maintain product integrity.
             </p>
         </div>
         <div className='quality'>
@@ -31,7 +31,8 @@ const quality = () => {
         <div className='quality'>
             <h2>Purity & Specification Guarantee</h2>
             <br />
-            <p>All products are 100% pure, non-irradiated, and free from fillers or artificial additives. Detailed Technical Specification Sheets (including microbiological analysis and moisture levels) are available for all products upon request.
+            <p>All products are 100% pure, non-irradiated, and free from fillers or artificial additives. Detailed Technical Specification Sheets 
+              (including microbiological analysis and moisture levels) are available for all products upon request.
             </p>
         </div>
     </div>
