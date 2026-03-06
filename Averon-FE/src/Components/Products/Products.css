@@ -110,60 +110,57 @@
         margin: 0 10px;      /* Small gap so you can see the edges */
     }
 }
+@media (max-width: 600px) {
+    /* Main Container Adjustments */
+    .products {
+        padding: 0 25px; /* Brings arrows and slides closer to screen edges */
+    }
 
-@media (max-width: 600px){
-    .user-info{
-        display: block;
-        margin-bottom: 10px;
-        font-size: 12px;
-    }
-    .user-info h3{
-        font-size: 16px;
-    }
-     .slider ul {
-        width: 300%; /* Keep this consistent with JS math */
+    /* Slider Track & Logic Math */
+    .slider ul {
+        width: 300%; /* Keep this consistent with your JS 33.33% math */
     }
 
     .slider ul li {
-        /* On mobile, 1 slide fills the screen. 
-           1/3 of the 300% ul = 100% of viewport */
-        width: 33.333%; 
+        width: 33.333%; /* Each slide now takes 100% of the visible area */
         padding: 10px;
     }
-    
+
+    /* Slide Content & Look */
     .slide {
         background: #D4D8D1; /* Your 'Premium Stone' color */
-        margin: 0 5px;      /* Small gap so you can see the edges */
+        margin: 0;           /* Removed gaps for a cleaner full-width feel */
+        padding: 10px;
+        text-align: center;
     }
-    .slider p{
+
+    .slider p {
         font-size: 12px;
     }
 
-}
-
-@media (max-width: 600px){
-    .slide {
-        margin: 0 0px;      /* Small gap so you can see the edges */
-        padding: 10px;
-    }
-    .products {
-        /* Reduce the outer container padding so slides can go wider */
-        padding: 0 25px; 
+    /* User Info Positioning */
+    .user-info {
+        display: block; /* Stacks text/image if needed */
+        margin-bottom: 10px;
+        font-size: 12px;
     }
 
+    .user-info h3 {
+        font-size: 16px;
+    }
+
+    /* Arrow Buttons Positioning */
     .next-btn, .back-btn {
-        /* Move buttons closer to the edges of the screen */
         width: 30px;
         padding: 8px;
+        z-index: 10; /* Ensures they stay on top of the slide */
     }
 
-    .back-btn {
-        /* Instead of 0, move it slightly 'out' or keep it tight */
+    /* .back-btn {
         left: 5px; 
     }
 
     .next-btn {
         right: 5px;
-    }
-
+    } */
 }
