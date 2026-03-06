@@ -1,6 +1,6 @@
 /* Container for the cards */
 .qualities {
-    margin: 80px auto;
+    margin: 50px auto ;
     width: 90%;
     display: flex;
     /* Forces all cards to match the height of the tallest one */
@@ -42,7 +42,83 @@
     line-height: 1.6;
     margin-bottom: 0; /* Keeps the bottom clean */
 }
+.quality-footer {
+    margin: 80px auto 0px; /* 'auto' on left/right centers the block */
+    max-width: 1100px;         /* Limits width so text doesn't stretch too far */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid rgba(232, 175, 3, 0.2);
+    background: #111111;
+    border-radius: 20px;
+    /* Centering logic for the content inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
 
+.premium-pillars {
+    display: flex;
+    /* background: #fafafa; */
+    justify-content: center; /* Centers the two pillars horizontally */
+    gap: 60px;
+    width: 100%;             /* Allows justify-content to work */
+    margin-bottom: 20px;
+}
+
+.pillar {
+    flex: 1;                 /* Gives both pillars equal weight */
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pillar-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 10px;
+    /* filter: sepia(1) saturate(5) hue-rotate(10deg);  */
+    /* Gives emojis a 'gold' tint */
+}
+
+.pillar h3 {
+    color: #E8AF03; /* Gold for the 'Heart' and 'Quality' */
+    font-size: 28px;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-style: italic; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.pillar p {
+    color: #fafafa;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.divider-gold {
+    width: 50%;
+    height: 2px;
+    background-color: #fafafa;
+    margin: 25px 0 20px;          /* Space above and below the gold line */
+}
+.summary-text {
+    color: #E8AF03;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 32px;
+    margin: 10px 0 10px;
+}
+
+.sub-text{
+    color: #fafafa;
+    margin-bottom: 5px;
+    font-size: 20px;
+
+}
 /* ------- Responsive Media Query -------- */
 @media (max-width: 1100px) {
     .qualities {
@@ -55,5 +131,17 @@
         flex-basis: auto;
         width: 100%; /* Cards take full width of the 90% container */
         padding: 25px;
+    }
+  
+}
+@media (max-width: 700px) {
+    .premium-pillars {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .summary-text {
+        font-size: 18px;
     }
 }

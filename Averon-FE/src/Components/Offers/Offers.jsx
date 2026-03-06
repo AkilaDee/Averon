@@ -14,22 +14,24 @@ const offers = () => {
             <img src={offer1} alt=" " />
             <div className="caption">
                 {/* <img src={pr} /> */}
-                <p>Alba Grade</p>
+                <p>Sourcing (The Origin)</p>
             </div>
         </div>
         <div className='offer'>
             <img src={offer2} alt=" " />
             <div className="caption">
                 {/* <img src={pr} /> */}
-                <p>C5 Grade</p>
+                <p>Processing (The Craft)</p>
             </div>
+
         </div>
         <div className='offer'>
             <img src={offer3} alt=" " />
             <div className="caption">
                 {/* <img src={pr} /> */}
-                <p>C4 Grade</p>
+                <p>Delivery (The Freshness)</p>
             </div>
+
         </div>
     </div>
   )

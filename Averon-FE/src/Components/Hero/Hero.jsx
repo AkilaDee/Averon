@@ -7,8 +7,10 @@ const Hero = () => {
     <div className='hero container'>
         <div className="hero-text">
             <h1>Premium Ceylon Spices</h1>
-            <h3>Our spices are sourced from manufacturers from sri lanka who produce premium spices</h3>
-            <button className='btn'>Explore More <img src={dark_arrow} alt="" /></button>
+            <p className="summary-text">Expertly Graded. Sustainably Harvested. Delivered at Peak Freshness.</p>
+            <br />
+            {/* <h3>Our spices are sourced from manufacturers from sri lanka who produce premium spices</h3> */}
+            <button className='btn-hero'>Request Sample<img src={dark_arrow} alt="" /></button>
         </div>
     </div>
   )
