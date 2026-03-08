@@ -1,40 +1,85 @@
-import React from 'react'
-import './Offers.css'
-import offer1 from '../../assets/product1.jpg'
-import offer2 from '../../assets/product2.png'
-import offer3 from '../../assets/product3.jpg'
-// import product3 from '../../assets/product3.jpg'
-// import product3 from '../../assets/product3.jpg'
-
-
-const offers = () => {
+import React from 'react';
+/* Ensure you import your CSS file at the top */
+import './Offers.css'; 
+import map from '../../assets/map.jpg'
+const Offers = () => {
   return (
-    <div className='offers'>
-        <div className='offer'>
-            <img src={offer1} alt=" " />
-            <div className="caption">
-                {/* <img src={pr} /> */}
-                <p>Sourcing (The Origin)</p>
-            </div>
+    <div className="averon-container">
+      {/* 1. Sourcing Section */}
+      <section className="averon-section section-split">
+        <div className="averon-content">
+          <span className="badge">Direct from Estate</span>
+          <h2 className="title-large">Sourcing That Bypasses Global Middlemen</h2>
+          <p className="description">
+            We don't buy from trading hubs. We source directly from Sri Lankan estates to ensure your spices arrive within weeks of harvest, not months.
+          </p>
+          <button className="link-button">Explore our supply chain →</button>
         </div>
-        <div className='offer'>
-            <img src={offer2} alt=" " />
-            <div className="caption">
-                {/* <img src={pr} /> */}
-                <p>Processing (The Craft)</p>
-            </div>
+        <div className="averon-visual map-placeholder">
+          {/* <p>Interactive Sri Lanka Sourcing Map</p> */}
+          <img src={map} alt="" />
+        </div>
+      </section>
 
-        </div>
-        <div className='offer'>
-            <img src={offer3} alt=" " />
-            <div className="caption">
-                {/* <img src={pr} /> */}
-                <p>Delivery (The Freshness)</p>
-            </div>
+      {/* 2 & 3. Quality & Compliance Grid */}
+      <section className="averon-section section-bg">
+        <div className="grid-dual">
+          {/* Comparison Table */}
+          <div className="card table-card">
+            <h3 className="title-medium">The "True" Difference</h3>
+            <table className="comparison-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Ceylon (Averon)</th>
+                  <th>Cassia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coumarin</td>
+                  <td className="text-safe">Ultra-Low</td>
+                  <td>High (Risk)</td>
+                </tr>
+                <tr>
+                  <td>Flavor</td>
+                  <td>Sweet, Delicate</td>
+                  <td>Pungent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          {/* Compliance Card */}
+          <div className="card dark-card">
+            <h3 className="title-medium">Compliance & Safety</h3>
+            <p className="description-alt">
+              Fully FSA Registered and HACCP compliant. We provide complete traceability for every batch.
+            </p>
+            <button className="primary-button">Download Tech Spec (PDF)</button>
+          </div>
         </div>
+      </section>
+
+      {/* 4 & 5. Logistics Info */}
+      <section className="averon-section grid-dual small-gap">
+        <div className="info-block">
+          <div className="icon-box">UK</div>
+          <div>
+            <h4 className="title-small">UK-Based Inventory</h4>
+            <p>Stock held in London for 48-hour dispatch. <strong>No hidden duties.</strong></p>
+          </div>
+        </div>
+        <div className="info-block">
+          <div className="icon-box">KG</div>
+          <div>
+            <h4 className="title-small">Flexible Trade Quantities</h4>
+            <p>From 5kg trade-packs to 50kg+ industrial bulk orders.</p>
+          </div>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default offers
+export default Offers;

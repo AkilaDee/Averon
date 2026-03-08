@@ -1,72 +1,186 @@
 nav{
+
     width: 100%;
+
     /* background: #111111; */
+
     color: #fafafa;
-    padding: 4px 0;
+
+    padding: 4px 0 2px;
+
     position: fixed;
+
     top: 0;
+
     left: 0;
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     z-index: 10;
+
 }
+
+
+
+.nav-contact-info{
+
+    color: #E8AF03;
+
+    display: flex;
+    padding: 5px;
+
+    justify-content: flex-end;
+
+    gap: 15px; /* Space between spans when horizontal */
+
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+
 
 .logo{
+
     width: 180px;
+
 }
+
+
 
 nav ul li{
+
     display: inline-block;
+
     list-style: none;
+
     margin: 5px 20px;
+
     font-size: 16px;
+    padding: 2px 0 2px;
+
 }
+
+
 
 .dark-nav{
+
     background: #111111;
+
     transition: 0.5s;
+
 }
+
+
 
 .menu-icon{
+
     display: none;
+
 }
+
+
 
 /* -------media query--------*/
+
 @media (max-width: 1040px){
+
     logo{
+
         width: 140px;
-    }
-    nav ul li{
-        margin: 10px 15px;
-    }
-}
-@media (max-width: 870px){
-    nav{
-        padding: 15px 0;
-    }
-    nav ul{
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background: #212EA0;
-        z-index: -1;
-        width: 200px;
-        padding-top: 70px;
-        transition: 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px 40px;
 
     }
-    .menu-icon{
+
+    nav ul li{
+
+        margin: 10px 15px;
+
+    }
+
+}
+
+@media (max-width: 870px){
+
+    nav{
+
+        padding: 15px 0;
+
+    }
+
+    nav ul{
+
+        position: fixed;
+
+        top: 0;
+
+        right: 0;
+
+        bottom: 0;
+
+        background: #212EA0;
+
+        z-index: -1;
+
+        width: 200px;
+
+        padding-top: 70px;
+
+        transition: 0.5s;
+
+    }
+
+    nav ul li{
+
         display: block;
+
+        margin: 25px 40px;
+
+
+
+    }
+
+    .menu-icon{
+
+        display: block;
+
         width: 30px;
+
         cursor: pointer;
+
     }
+
     .hide-mobile-menu{
+
         right: -200px;
+
     }
+
+    .nav-contact-info {
+
+        flex-direction: column; /* This forces the stack */
+
+        align-items: flex-end;  /* Keeps the text aligned to the right */
+
+        gap: 5px;               /* Reduces the gap for a tighter stack */
+
+    }
+
+    /* .nav-contact-info span:last-child {
+
+        padding-bottom: 5px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    } */
+
+}
+
+@media (max-width: 870px){
+
+
+
 }

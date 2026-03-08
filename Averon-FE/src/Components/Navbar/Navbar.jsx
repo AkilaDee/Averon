@@ -34,20 +34,31 @@ const Navbar = () => {
   }, []);
 
   return (
-    // The backticks and ${} allow us to swap classes dynamically
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+      
+      {/* Left Column: Full Height Logo */}
       <img src={logo} alt="Averon Logo" className='logo' />
-      <ul className={mobileMenu?'': 'hide-mobile-menu'}>
-        <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
-        <li><Link to='offers' smooth={true} offset={-260} duration={500}>Services</Link></li>
-        <li><Link to='products' smooth={true} offset={-260} duration={500}>Catalogue</Link></li>
-        <li><Link to='quality' smooth={true} offset={-260} duration={500}>Quality</Link></li>
-        <li><Link to='about' smooth={true} offset={-125} duration={500}>Our Story</Link></li>
-        <li><Link to='contact' smooth={true} offset={-260} duration={500}><button className='btn'>Contact Us</button></Link></li>
-      </ul>
+
+      {/* Right Column: Stacked Contact and Tabs */}
+      <div className="nav-right-side">
+        <div className="nav-contact-info">
+          <span>📞 +44 7344469729</span>
+          <span>📧 info@averonsupplies.co.uk</span>
+        </div>
+
+        <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
+          <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
+          <li><Link to='offers' smooth={true} offset={-260} duration={500}>Services</Link></li>
+          <li><Link to='products' smooth={true} offset={-260} duration={500}>Catalogue</Link></li>
+          <li><Link to='quality' smooth={true} offset={-260} duration={500}>Quality</Link></li>
+          <li><Link to='about' smooth={true} offset={-125} duration={500}>Our Story</Link></li>
+          <li><Link to='contact' smooth={true} offset={-260} duration={500}>Contact Us</Link></li>
+        </ul>
+      </div>
+
       <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
     </nav>
-  )
+)
 }
 
 export default Navbar
