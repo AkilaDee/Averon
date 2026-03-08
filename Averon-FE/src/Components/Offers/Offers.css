@@ -6,7 +6,7 @@
 }
 
 .averon-container img{
-    width: 50%;
+    width: 40%;
 }
 
 .averon-container {
@@ -68,6 +68,74 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* --- Info Cards & Logistics Section --- */
+
+/* Centers the two blocks on large screens */
+.small-gap {
+  margin-top: 40px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 80px !important;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+/* Sub-branding: The small square icons */
+.icon-box {
+  background-color: #fef3c7; /* Light Amber */
+  color: var(--cinnamon);
+  font-weight: 800;
+  width: 50px;
+  height: 50px;
+  min-width: 50px; /* Prevents shrinking in flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+/* Typography for the info cards */
+.title-small {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--slate);
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.info-block p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Highlight the "No Hidden Fees" part */
+.info-block strong {
+  color: var(--forest);
+  font-weight: 700;
+}
+
+/* Hover effect to make it feel interactive */
+.info-block:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustment: stack icons on very small screens */
+@media (max-width: 480px) {
+  .info-block {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .comparison-table {
