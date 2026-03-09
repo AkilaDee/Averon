@@ -1,7 +1,7 @@
 :root {
   --cinnamon: #78350f;
   --forest: #14532d;
-  --slate: #1e293b;
+  --slate: #1e293b; 
   --bg-light: #f8fafc;
 }
 
@@ -61,7 +61,8 @@
   padding: 30px;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  background: #E8AF03;
+  background: #111111;
+  color:#fafafa;
 }
 
 .dark-card {
@@ -148,7 +149,9 @@
 .title-medium {
   font-size: 1.4rem;
   color: #FAFAFA;
+  font-size: 24px;
   margin-bottom: 12px;
+  /* text-decoration: underline; */
 }
 
 .description-small {
@@ -196,6 +199,7 @@
   padding: 15px;
   transition: all 0.3s ease;
   border-radius: 16px;
+  background: #E8AF03;
 }
 
 .info-block:hover {
@@ -244,9 +248,11 @@
   border-collapse: collapse;
 }
 
-.comparison-table th { border-bottom: 2px solid var(--bg-light); padding: 10px 0; color: #1E293B; }
-.comparison-table td { padding: 15px 0; border-bottom: 1px solid #f1f5f9; text-align: center;}
+.comparison-table th { border-bottom: 2px solid var(--bg-light); padding: 10px 0; color: #E8AF03; font-size: 24px;}
+.comparison-table td { padding: 15px 0; border-bottom: 1px solid #f1f5f9; text-align: center; font-size: 16px;}
 .text-safe { color: #16a34a; font-weight: bold; }
+.text-unsafe {color: #DC2626; font-weight: bold;}
+.text-feature {color: #fafafa; font-weight: bold; font-size: 18px; text-align: left !important}
 
 /* Buttons */
 .primary-button {

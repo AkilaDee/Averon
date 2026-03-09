@@ -44,7 +44,7 @@ const quality = () => {
               </p>
           </div>
           <div className='quality'>
-              <h2>Full Traceability</h2>
+              <h2>Full Traceability & Transparency</h2>
               <br />
               <p>We maintain a strict one step back, one step forward traceability protocol. Every batch of our Ceylon spices is fully documented, 
                 allowing us to trace products back to the specific estate and harvest in Sri Lanka. 

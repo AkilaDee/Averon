@@ -18,14 +18,14 @@ const App = () => {
       <Navbar />
         <Hero />
         <div className="container">
-          <Title subTitle='DIRECT FROM SRI LANKA' title='Premium Ceylon Spices for UK Wholesale'/>
+          <Title subTitle='SERVICES' title='Premium Ceylon Spices for Wholesale'/>
           <Offers />
           <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
           <Products />
-          <Title subTitle='SAFETY & TRACEABILITY' title='Rigorous Standards, Fully Compliant'/>
+          <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
           <Quality />
           <About setPlayState={setPlayState}/>
-          <Title subTitle='Contact Us' title='Get in Touch'/>
+          <Title subTitle='CONTACT US' title='Get in Touch'/>
           <Contact />
           <Footer />
         </div>

@@ -15,7 +15,8 @@
     /* flex-basis: 30% allows room for the 20px gap */
     flex-basis: 30%; 
     position: relative;
-    background: #E8AF03;
+    background: #1E293B;
+    color: #fafafa;
     
     /* Internal spacing so text doesn't touch the edges */
     padding: 30px; 
@@ -36,6 +37,8 @@
     margin-bottom: 15px;
     font-size: 1.5rem;
     text-align: center;
+    color: #E8AF03;
+    /* text-decoration: underline; */
 }
 
 .quality p {
