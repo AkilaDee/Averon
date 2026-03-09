@@ -2,6 +2,9 @@ import React from 'react';
 /* Ensure you import your CSS file at the top */
 import './Offers.css'; 
 import map from '../../assets/map.jpg'
+import stock from '../../assets/stock.jpg'
+import uk from '../../assets/uk.jpg'
+
 const Offers = () => {
   return (
     <div className="averon-container">
@@ -16,7 +19,7 @@ const Offers = () => {
           <button className="link-button">Explore our supply chain →</button>
         </div>
         <div className="averon-visual map-placeholder">
-          {/* <p>Interactive Sri Lanka Sourcing Map</p> */}
+          <p>Sri Lanka Sourcing Map</p>
           <img src={map} alt="" />
         </div>
       </section>
@@ -62,22 +65,27 @@ const Offers = () => {
       </section>
 
       {/* 4 & 5. Logistics Info */}
-      <section className="averon-section grid-dual small-gap">
+        <section className="averon-section grid-dual small-gap">
         <div className="info-block">
-          <div className="icon-box">UK</div>
-          <div>
+            <div className="image-wrapper">
+            <img src={uk} alt="UK Inventory" className="logistics-image" />
+            </div>
+            <div>
             <h4 className="title-small">UK-Based Inventory</h4>
             <p>Stock held in London for 48-hour dispatch. <strong>No hidden duties.</strong></p>
-          </div>
+            </div>
         </div>
+        
         <div className="info-block">
-          <div className="icon-box">KG</div>
-          <div>
+            <div className="image-wrapper">
+            <img src={stock} alt="Flexible Quantities" className="logistics-image" />
+            </div>
+            <div>
             <h4 className="title-small">Flexible Trade Quantities</h4>
-            <p>From 5kg trade-packs to 50kg+ industrial bulk orders.</p>
-          </div>
+            <p>Scalable solutions from 5kg artisanal packs to 50kg+ industrial bulk orders.</p>
+            </div>
         </div>
-      </section>
+        </section>
     </div>
   );
 };
