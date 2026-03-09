@@ -29,12 +29,9 @@ nav{
 .nav-contact-info{
 
     color: #E8AF03;
-
     display: flex;
     padding: 5px;
-
     justify-content: flex-end;
-
     gap: 15px; /* Space between spans when horizontal */
 
     transition: 0.3s;
@@ -114,21 +111,13 @@ nav ul li{
     nav ul{
 
         position: fixed;
-
         top: 0;
-
         right: 0;
-
         bottom: 0;
-
         background: #212EA0;
-
         z-index: -1;
-
         width: 200px;
-
         padding-top: 70px;
-
         transition: 0.5s;
 
     }
@@ -136,10 +125,7 @@ nav ul li{
     nav ul li{
 
         display: block;
-
         margin: 25px 40px;
-
-
 
     }
 
@@ -179,8 +165,42 @@ nav ul li{
 
 }
 
-@media (max-width: 870px){
+@media (max-width: 800px){
+nav {
+        /* Change nav from a row to a column to stack Logo and Contact Info */
+        flex-direction: column; 
+        align-items: flex-start; /* Aligns everything to the left */
+        padding: 10px 20px;     /* Gives the logo some breathing room from the edge */
+    }
+
+    .nav-contact-info {
+        flex-direction: column;  /* Stack phone and email vertically */
+        align-items: flex-start; /* Align text to the left */
+        justify-content: flex-start;
+        width: 100%;             /* Ensure it takes up the width to stay left */
+        padding: 5px 0;
+        gap: 5px;
+        border-bottom: none;     /* Optional: clean up the border for mobile */
+    }
+
+    .logo {
+        /* width: 120px;           
+        margin-bottom: 5px;       */
+    }
+
+    /* Ensure the hamburger menu icon stays in the top right corner */
+    .menu-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
 
+}
+
+@media (max-width: 475px){
+    .nav-contact-info {
+        font-size: 12px;
+    }
 
 }
