@@ -114,13 +114,11 @@ nav ul li{
         top: 0;
         right: 0;
         bottom: 0;
-        background: #E8AF03;
+        background: #111111;
         z-index: -1;
         width: 200px;
         padding-top: 70px;
         transition: 0.5s;
-         border: 1px solid #f1f5f9;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 
     }
 
@@ -128,6 +126,7 @@ nav ul li{
 
         display: block;
         margin: 25px 40px;
+        text-decoration: underline;
 
     }
 
@@ -173,6 +172,7 @@ nav {
         flex-direction: column; 
         align-items: flex-start; /* Aligns everything to the left */
         padding: 1px 2px;     /* Gives the logo some breathing room from the edge */
+        /* width: 150px; */
     }
 
     .nav-contact-info {
@@ -183,7 +183,7 @@ nav {
         padding: 0 0;
         line-height: 0.8;       /* Reduces the height of each line */
         margin-bottom: 10px;
-        margin-top: 1px;
+        margin-top: 8px;
         border-bottom: none;     /* Optional: clean up the border for mobile */
     }
 
@@ -208,7 +208,7 @@ nav {
     }
     .nav-contact-info {
         font-size: 14px;
-        line-height: 1;       /* Reduces the height of each line */
+        line-height: 0.8;       /* Reduces the height of each line */
         margin-bottom: 5px;
     }
 
@@ -222,23 +222,12 @@ nav {
     }
 
 }
+
 @media (max-width: 360px){
     nav ul{
         width: 130px;
         margin-left: 0;
     }
-.nav-contact-info {
-        font-size: 11px;
-        
-    }
-    .logo{
-
-        width: 160px;
-
-    }
-}
-@media (max-width: 360px){
-    
     .nav-contact-info {
         font-size: 10px;
         
@@ -263,5 +252,6 @@ nav {
     nav ul{
         width: 115px;
         padding-right: 10px;
+        font-size: 10px;
     }
 }
