@@ -178,6 +178,8 @@
 .image-wrapper {
   width: 80px;
   height: 80px;
+  display: flex;
+  background: #f1f5f9;
   min-width: 80px; /* Ensures the image doesn't get squashed */
   border-radius: 12px;
   overflow: hidden; /* Crops the image to the border-radius */
@@ -186,7 +188,7 @@
 }
 
 .logistics-image {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   object-fit: cover; /* This is the "magic" property: it crops the photo perfectly */
   display: block;
@@ -196,10 +198,13 @@
   display: flex;
   align-items: center; /* Aligns text vertically with the middle of the image */
   gap: 24px;
+  color:#111111;
   padding: 15px;
   transition: all 0.3s ease;
   border-radius: 16px;
   background: #E8AF03;
+  border: 10px solid rgba(0, 0, 0, 0.1); /* Subtle dark border */
+  box-sizing: border-box; /* Ensures the border doesn't make the box wider */
 }
 
 .info-block:hover {
@@ -209,16 +214,18 @@
 
 /* Typography for the info cards */
 .title-small {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--slate);
+  font-size: 22px;
+  font-weight: 900;
+  color: #000F38;
+  font-weight: bold;
   margin-bottom: 8px;
   margin-top: 0;
 }
 
 .info-block p {
-  color: #64748b;
-  font-size: 0.95rem;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0;
 }
@@ -275,4 +282,6 @@
   justify-content: center;
   border-radius: 20px;
   color: #111111;
+  border: 10px solid rgba(0, 0, 0, 0.1); /* Subtle dark border */
+  box-sizing: border-box; /* Ensures the border doesn't make the box wider */
 }

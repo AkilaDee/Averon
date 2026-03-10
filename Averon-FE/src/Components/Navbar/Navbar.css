@@ -170,7 +170,7 @@ nav {
         /* Change nav from a row to a column to stack Logo and Contact Info */
         flex-direction: column; 
         align-items: flex-start; /* Aligns everything to the left */
-        padding: 10px 20px;     /* Gives the logo some breathing room from the edge */
+        padding: 1px 2px;     /* Gives the logo some breathing room from the edge */
     }
 
     .nav-contact-info {
@@ -178,8 +178,10 @@ nav {
         align-items: flex-start; /* Align text to the left */
         justify-content: flex-start;
         width: 100%;             /* Ensure it takes up the width to stay left */
-        padding: 5px 0;
-        gap: 5px;
+        padding: 0 0;
+        line-height: 0.8;       /* Reduces the height of each line */
+        margin-bottom: 1px;
+        margin-top: 10px;
         border-bottom: none;     /* Optional: clean up the border for mobile */
     }
 
@@ -201,6 +203,8 @@ nav {
 @media (max-width: 475px){
     .nav-contact-info {
         font-size: 14px;
+        line-height: 1;       /* Reduces the height of each line */
+        margin-bottom: 1px;
     }
 
 }

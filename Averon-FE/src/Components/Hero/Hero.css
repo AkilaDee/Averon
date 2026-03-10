@@ -20,7 +20,7 @@
 }
 .summary-text {
     color: #E8AF03;
-    margin-top: 70px !important;
+    margin-top: 60px !important;
     /* display: block; */
     font-family: 'Cinzel', serif;
     font-weight: 500;
@@ -91,5 +91,10 @@
     }
     .summary-text{
         font-size: 28px !important;
+    }
+}
+@media (max-width: 265px){
+    .hero-text h1{
+        font-size: 26px;
     }
 }
