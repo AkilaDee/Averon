@@ -42,7 +42,7 @@ const Products = () => {
                         <img src={product1} alt="" />
                         <div>
                             <h3> Cinnamon Alba</h3>
-                            <span>Alba ceylon</span>
+                            {/* <span>Alba ceylon</span> */}
                         </div>
                         <p>
                            Alba grade true ceylon cinnamon.
@@ -57,7 +57,7 @@ const Products = () => {
                         <img src={product2} alt="" />
                         <div>
                             <h3> Cinnamon C5 Special</h3>
-                            <span>C5 Special ceylon</span>
+                            {/* <span>C5 Special ceylon</span> */}
                         </div>
                         <p>
                             C5 Special grade true ceylon cinnamon.
@@ -72,7 +72,7 @@ const Products = () => {
                         <img src={product3} alt="" />
                         <div>
                             <h3> Cinnamon C5</h3>
-                            <span>C5 ceylon</span>
+                            {/* <span>C5 ceylon</span> */}
                         </div>
                         <p>
                             C5 grade true ceylon cinnamon.
