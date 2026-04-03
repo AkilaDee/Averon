@@ -2,9 +2,9 @@ import React, {useRef} from 'react'
 import './Products.css'
 import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
-import product1 from '../../assets/product1.jpg'
-import product2 from '../../assets/product2.png'
-import product3 from '../../assets/product3.jpg'
+import product1 from '../../assets/alb.jpg'
+import product2 from '../../assets/c5s.jpg'
+import product3 from '../../assets/c5.jpg'
 
 
 const Products = () => {
@@ -45,7 +45,7 @@ const Products = () => {
                             <span>Alba ceylon</span>
                         </div>
                         <p>
-                            Best quality Alba grade true ceylon cinnamon.
+                           Alba grade true ceylon cinnamon.
                         </p>
                     </div>
 
@@ -56,11 +56,11 @@ const Products = () => {
                     <div className="product-info">
                         <img src={product2} alt="" />
                         <div>
-                            <h3> Cinnamon C5</h3>
-                            <span>C5 ceylon</span>
+                            <h3> Cinnamon C5 Special</h3>
+                            <span>C5 Special ceylon</span>
                         </div>
                         <p>
-                            Best quality C5 grade true ceylon cinnamon.
+                            C5 Special grade true ceylon cinnamon.
                         </p>
                     </div>
 
@@ -71,11 +71,11 @@ const Products = () => {
                     <div className="product-info">
                         <img src={product3} alt="" />
                         <div>
-                            <h3> Cinnamon C4</h3>
-                            <span>C4 ceylon</span>
+                            <h3> Cinnamon C5</h3>
+                            <span>C5 ceylon</span>
                         </div>
                         <p>
-                            Best quality C4 grade true ceylon cinnamon.
+                            C5 grade true ceylon cinnamon.
                         </p>
                     </div>
 

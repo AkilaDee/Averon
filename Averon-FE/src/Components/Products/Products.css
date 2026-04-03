@@ -60,11 +60,11 @@
 }
 .slide img {
     /* Set a fixed square size for all images */
-    width: 200px; 
-    height: 200px;
+    width: 275px; 
+    height: 275px;
     
     /* This ensures the image isn't squished; it crops to fit the circle */
-    object-fit: cover; 
+    object-fit: contain; 
     
     /* border-radius: 50%; Makes them perfectly round */
     margin-bottom: 15px; /* Space between image and the name */

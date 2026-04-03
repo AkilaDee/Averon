@@ -2,10 +2,10 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../../assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url('../../assets/bcg.jpg');
     /* background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-                url('../../assets/bg.jpg'); */
+                url('../../assets/bcg.jpg'); */
     /* background: #111111; */
     background-size: cover;
     background-position: center;
