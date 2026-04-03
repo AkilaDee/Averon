@@ -2,9 +2,9 @@ import React, {useRef} from 'react'
 import './Products.css'
 import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
-import product1 from '../../assets/ALB.jpg'
-import product2 from '../../assets/C5S.jpg'
-import product3 from '../../assets/C5.jpg'
+import product1 from '../../assets/ALB.JPG'
+import product2 from '../../assets/C5S.JPG'
+import product3 from '../../assets/C5.JPG'
 
 
 const Products = () => {
