@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Added Routes to import
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll'; // Import the scroller tool
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Quality from './Components/Quality/Quality';
@@ -12,14 +13,36 @@ import SupplyChain from './Components/SupplyChain/SupplyChain';
 import Footer from './Components/Footer/Footer';
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 
-// 1. Create a placeholder for your new page (or import it if you made a file)
-// const SupplyChainPage = () => <div style={{padding: '100px'}}><h1>Supply Chain Details Coming Soon</h1></div>;
+// This component ensures that every time the URL changes, we handle scrolling
+const ScrollHandler = () => {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      // If there is a #hash in the URL (like #offers), scroll to it
+      const target = hash.replace('#', '');
+      scroller.scrollTo(target, {
+        duration: 500,
+        smooth: true,
+        offset: -150, // Matches your Navbar height/offset
+      });
+    } else {
+      // If there is no hash, just scroll to the top of the new page
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
+
+  return null;
+};
 
 const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
     <BrowserRouter>
+      {/* This invisible component handles all the "jump to section" logic */}
+      <ScrollHandler /> 
+      
       <Navbar />
       <Routes>
         {/* LANDING PAGE ROUTE */}

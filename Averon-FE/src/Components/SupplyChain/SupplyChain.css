@@ -3,7 +3,7 @@
   background-color: #fff;
   color: #333;
   line-height: 1.6;
-  font-family: 'Outfit', sans-serif; /* Replace with your project font */
+  font-family: 'Outfit', sans-serif;
 }
 
 .averon-container {
@@ -12,29 +12,79 @@
   padding: 0 20px;
 }
 
-/* Hero Section */
+/* --- THE HERO FIX: Navbar Visibility --- */
 .sc-hero {
-  padding: 120px 0 80px;
-  background-color: #f9f9f9;
+  /* Increased top padding (160px) to give the Navbar breathing room */
+  padding: 160px 0 100px; 
   text-align: center;
+  color: #fff; /* Force text to white for the dark background */
+  
+  /* These properties ensure the background image behaves */
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; 
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
 }
 
-.badge {
-  display: inline-block;
-  background: #e2e8f0;
-  color: #475569;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
+/* This adds the dark tint so your white links stay visible */
+.sc-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust 0.6 for more/less darkness */
+  z-index: 1;
+}
+
+.sc-hero .averon-container {
+  position: relative;
+  z-index: 2; /* Put text above the dark tint */
+}
+
+.title-large {
+  font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 20px;
-  text-transform: uppercase;
+  color: #fff;
 }
 
-/* Process Grid (The Art of the Cigar) */
+.description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f0f0f0;
+}
+
+/* --- THE ORIGIN SECTION FIX --- */
+.section-split .averon-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+.averon-content {
+  flex: 1;
+}
+
+.averon-visual {
+  flex: 1;
+}
+
+.averon-visual img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* --- PROCESS GRID --- */
 .process-section {
   padding: 80px 0;
-  background-color: #fff;
+  background-color: #fbfbfb;
 }
 
 .process-grid {
@@ -45,102 +95,75 @@
 }
 
 .process-card {
-  padding: 40px;
+  padding: 30px;
   background: #ffffff;
   border: 1px solid #eee;
-  transition: transform 0.3s ease;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.process-card:hover {
-  transform: translateY(-5px);
-  border-color: #d4af37; /* Gold accent */
-}
-
-.process-card h3 {
-  color: #2d3436;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-}
-
-/* Dark Section (Why Direct Matters) */
-.dark-bg {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 100px 0;
-}
-
-.dark-bg .title-medium {
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.benefit-row {
-  display: flex;
-  gap: 60px;
-  margin-bottom: 60px;
-}
-
-.benefit h4 {
-  color: #d4af37; /* Gold accent */
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-.tagline {
-  border-top: 1px solid #333;
-  padding-top: 40px;
-  text-align: center;
-}
-
-.tagline h3 {
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #d4af37;
-}
 .process-image {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
+  height: 220px;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 20px;
 }
 
 .process-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This prevents the image from looking squashed */
-  transition: transform 0.5s ease;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
-.process-card:hover .process-image img {
-  transform: scale(1.05); /* Subtle zoom effect on hover */
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  border-color: #d4af37;
+}
+
+.process-card:hover img {
+  transform: scale(1.1);
+}
+
+/* --- DARK SECTION --- */
+.dark-bg {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.benefit-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.benefit {
+  flex: 1;
+  max-width: 400px;
+  background: #252525;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .section-split {
+@media (max-width: 900px) {
+  .section-split .averon-container {
     flex-direction: column;
+    text-align: center;
   }
   
   .benefit-row {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
   }
   
-  .title-large {
-    font-size: 2.2rem;
+  .sc-hero {
+    padding-top: 120px;
   }
-}
-
-/* Visuals */
-.image-placeholder {
-  width: 100%;
-  height: 400px;
-  background: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  border-radius: 4px;
 }

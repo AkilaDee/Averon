@@ -1,12 +1,19 @@
 import React from 'react';
-import './SupplyChain.css'; // You'll want a specific CSS file for this page
+import './SupplyChain.css'; 
 import plants from '../../assets/cinnamon plants.jpg';
+// IMPORT your hero background image here
+import heroBg from '../../assets/hero-supply.jpg'; 
 
 const SupplyChain = () => {
   return (
     <div className="supply-chain-page">
-      {/* Hero Section */}
-      <section className="sc-hero">
+      {/* Updated Hero Section with Inline Style for the Background */}
+      <section 
+        className="sc-hero" 
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(${heroBg})` 
+        }}
+      >
         <div className="averon-container">
           <span className="badge">Our Heritage</span>
           <h1 className="title-large">The Averon Story: From Our Roots to Your Table</h1>
@@ -33,8 +40,7 @@ const SupplyChain = () => {
             </p>
           </div>
           <div className="averon-visual">
-            <img src={plants} alt="" />
-            <div className="image-placeholder"></div>
+            <img src={plants} alt="Averon cinnamon plants" />
           </div>
         </div>
       </section>
@@ -51,7 +57,7 @@ const SupplyChain = () => {
             {/* Step 1 */}
             <div className="process-card">
                 <div className="process-image">
-                <img src="/assets/harvest.jpg" alt="Traditional pre-dawn cinnamon harvest in Sri Lanka" />
+                <img src="/assets/harvest.jpg" alt="Traditional pre-dawn cinnamon harvest" />
                 </div>
                 <h3>1. The Pre-Dawn Harvest</h3>
                 <p>Farmers select mature shoots, cut at a 45-degree angle to ensure the tree regrows stronger.</p>
@@ -60,7 +66,7 @@ const SupplyChain = () => {
             {/* Step 2 */}
             <div className="process-card">
                 <div className="process-image">
-                <img src="/assets/brass-rod.jpg" alt="Artisan using a brass rod to loosen cinnamon bark" />
+                <img src="/assets/brass-rod.jpg" alt="Artisan using a brass rod" />
                 </div>
                 <h3>2. The Brass Rod Technique</h3>
                 <p>Shoots are rubbed with traditional brass rods to loosen the inner bark and release the aroma.</p>
@@ -69,7 +75,7 @@ const SupplyChain = () => {
             {/* Step 3 */}
             <div className="process-card">
                 <div className="process-image">
-                <img src="/assets/hand-rolling.jpg" alt="Master peeler hand-rolling True Ceylon cinnamon quills" />
+                <img src="/assets/hand-rolling.jpg" alt="Master peeler hand-rolling" />
                 </div>
                 <h3>3. Hand-Rolling</h3>
                 <p>Master peelers hand-layer delicate inner bark into the iconic multi-layered "cigar" look.</p>
@@ -77,6 +83,7 @@ const SupplyChain = () => {
             </div>
         </div>
     </section>
+
       {/* Why Direct Matters */}
       <section className="averon-section dark-bg">
         <div className="averon-container">
