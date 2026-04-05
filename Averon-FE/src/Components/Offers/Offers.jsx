@@ -60,7 +60,21 @@ const Offers = () => {
               <p className="description-alt">
                 Fully FSA Registered and HACCP compliant. We provide complete traceability for every batch.
               </p>
-              <button className="primary-button">Download Tech Spec (PDF)</button>
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1Rx9zO61Ru7jaCNSRRiJd6Gxh_Zs_8xqh" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="primary-button"
+                style={{ 
+                  display: 'inline-flex',   // Changed to inline-flex for easier centering
+                  alignItems: 'center',     // Vertical center
+                  justifyContent: 'center', // Horizontal center
+                  textAlign: 'center',      // Backup for text wrapping
+                  textDecoration: 'none'    // Removes the default link underline
+                }}
+              >
+                Download Product Specification (PDF)
+              </a>
             </div>
           </div>
         </section>
@@ -73,7 +87,7 @@ const Offers = () => {
               </div>
               <div>
               <h4 className="title-small">UK-Based Inventory</h4>
-              <p>Stock held in London for 48-hour dispatch. <strong>No hidden duties.</strong></p>
+              <p>Stock held in UK for 48-hour dispatch. <strong>No hidden duties.</strong></p>
               </div>
           </div>
           
