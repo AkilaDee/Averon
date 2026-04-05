@@ -14,7 +14,7 @@ const SupplyChain = () => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(${heroBg})` 
         }}
       >
-        <div className="averon-container">
+        <div className="avrn-container">
           <span className="badge">Our Heritage</span>
           <h1 className="title-large">The Averon Story: From Our Roots to Your Table</h1>
           <p className="description">
@@ -24,9 +24,9 @@ const SupplyChain = () => {
       </section>
 
       {/* Origin Section */}
-      <section className="averon-section section-split">
-        <div className="averon-container">
-          <div className="averon-content">
+      <section className="avrn-section section-split">
+        <div className="avrn-container">
+          <div className="avrn-content">
             <h2 className="title-medium">The Heart of the Southern Province</h2>
             <p>
               Averon Supplies is not just an importer; we are the UK branch of a family legacy. 
@@ -39,15 +39,15 @@ const SupplyChain = () => {
               <strong> Single-Estate Traceability</strong>.
             </p>
           </div>
-          <div className="averon-visual">
-            <img src={plants} alt="Averon cinnamon plants" />
+          <div className="avrn-visual">
+            <img src={plants} alt="Avrn cinnamon plants" />
           </div>
         </div>
       </section>
 
       {/* The Process Section */}
       <section className="process-section">
-        <div className="averon-container">
+        <div className="avrn-container">
             <h2 className="title-medium text-center">The Art of the "Cinnamon Cigar"</h2>
             <p className="text-center">
             Harvested during the monsoon months when the bark is most supple and essential oils are at their peak.
@@ -85,23 +85,40 @@ const SupplyChain = () => {
     </section>
 
       {/* Why Direct Matters */}
-      <section className="averon-section dark-bg">
-        <div className="averon-container">
-          <h2 className="title-medium">Why "Direct" Matters for You</h2>
+     <section className="avrn-section dark-bg">
+
+        <div className="avrn-container">
+
+          <h2 className="title-medium-white">Why "Direct" Matters for You</h2>
+
           <div className="benefit-row">
+
             <div className="benefit">
+
               <h4>Unrivalled Freshness</h4>
+
               <p>Arriving in the UK with a volatile oil content that machine-processed spices cannot match.</p>
+
             </div>
+
             <div className="benefit">
+
               <h4>Total Transparency</h4>
+
               <p>We manage the entire chain, from the first cut in Matara to the delivery at your door.</p>
+
             </div>
+
           </div>
+
           <div className="tagline">
+
             <h3>Pure. Direct. Traceable.</h3>
+
           </div>
+
         </div>
+
       </section>
     </div>
   );

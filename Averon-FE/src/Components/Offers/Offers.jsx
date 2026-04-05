@@ -14,8 +14,8 @@ const Offers = () => {
         <section className="averon-section section-split">
           <div className="averon-content">
             <span className="badge">Direct from Estate</span>
-            <h2 className="title-large">Sourcing That Bypasses Global Middlemen</h2>
-            <p className="description">
+            <h2 className="title-large-offer">Sourcing That Bypasses Global Middlemen</h2>
+            <p className="description-offer">
               We don't buy from trading hubs. We source directly from Sri Lankan estates to ensure your spices arrive within weeks of harvest, not months.
             </p>
             <Link to="/supply-chain" className="link-button">
@@ -33,7 +33,7 @@ const Offers = () => {
           <div className="grid-dual">
             {/* Comparison Table */}
             <div className="card table-card">
-              <h3 className="title-medium">The "True" Difference</h3>
+              <h3 className="title-medium-offer">The "True" Difference</h3>
               <table className="comparison-table">
                 <thead>
                   <tr>
@@ -59,8 +59,8 @@ const Offers = () => {
 
             {/* Compliance Card */}
             <div className="card dark-card">
-              <h3 className="title-medium">Compliance & Safety</h3>
-              <p className="description-alt">
+              <h3 className="title-medium-offer">Compliance & Safety</h3>
+              <p className="description-offer-alt">
                 Fully FSA Registered and HACCP compliant. We provide complete traceability for every batch.
               </p>
               <a 

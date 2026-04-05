@@ -6,7 +6,7 @@
   font-family: 'Outfit', sans-serif;
 }
 
-.averon-container {
+.avrn-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -41,7 +41,7 @@
   z-index: 1;
 }
 
-.sc-hero .averon-container {
+.sc-hero .avrn-container {
   position: relative;
   z-index: 2; /* Put text above the dark tint */
 }
@@ -51,6 +51,20 @@
   margin-bottom: 20px;
   color: #fff;
 }
+.title-medium{
+    font-size: 1.4rem;
+    color: #111111;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.title-medium-white{
+    font-size: 1.4rem;
+    color: #fafafa;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
 
 .description {
   font-size: 1.2rem;
@@ -60,22 +74,22 @@
 }
 
 /* --- THE ORIGIN SECTION FIX --- */
-.section-split .averon-container {
+.section-split .avrn-container {
   display: flex;
   align-items: center;
   gap: 50px;
   padding: 80px 20px;
 }
 
-.averon-content {
+.avrn-content {
   flex: 1;
 }
 
-.averon-visual {
+.avrn-visual {
   flex: 1;
 }
 
-.averon-visual img {
+.avrn-visual img {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -120,7 +134,7 @@
 .process-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-  border-color: #d4af37;
+  border-color: #e8af03;
 }
 
 .process-card:hover img {
@@ -136,24 +150,56 @@
 }
 
 .benefit-row {
+
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 50px;
-  text-align: left;
+
+  gap: 60px;
+
+  margin-bottom: 60px;
+
 }
 
-.benefit {
-  flex: 1;
-  max-width: 400px;
-  background: #252525;
-  padding: 30px;
-  border-radius: 8px;
+
+
+.benefit h4 {
+
+  color: #e8af03; /* Gold accent */
+
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.tagline {
+
+  border-top: 1px solid #333;
+
+  padding-top: 40px;
+
+  text-align: center;
+
+}
+
+
+
+.tagline h3 {
+
+  font-size: 2rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #e8af03;
+
 }
 
 /* Responsive Design */
 @media (max-width: 900px) {
-  .section-split .averon-container {
+  .section-split .avrn-container {
     flex-direction: column;
     text-align: center;
   }
