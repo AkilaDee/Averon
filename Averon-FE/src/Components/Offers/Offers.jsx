@@ -4,6 +4,7 @@ import './Offers.css';
 import map from '../../assets/map.jpg'
 import stock from '../../assets/stock.jpg'
 import uk from '../../assets/uk.jpg'
+import { Link } from 'react-router-dom';
 
 const Offers = () => {
   return (
@@ -17,7 +18,9 @@ const Offers = () => {
             <p className="description">
               We don't buy from trading hubs. We source directly from Sri Lankan estates to ensure your spices arrive within weeks of harvest, not months.
             </p>
-            <button className="link-button">Explore our supply chain →</button>
+            <Link to="/supply-chain" className="link-button">
+              Explore our supply chain →
+            </Link>
           </div>
           <div className="averon-visual map-placeholder">
             <p>Sri Lanka Sourcing Map</p>
