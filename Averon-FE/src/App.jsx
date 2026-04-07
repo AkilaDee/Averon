@@ -59,8 +59,8 @@ const App = () => {
               <About setPlayState={setPlayState}/>
               <Title subTitle='CONTACT US' title='Get in Touch'/>
               <Contact />
-              <Footer />
             </div>
+              <Footer />
             <VideoPlayer playState={playState} setPlayState={setPlayState}/>
           </>
         } />

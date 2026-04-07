@@ -153,7 +153,36 @@
   margin-bottom: 12px;
   /* text-decoration: underline; */
 }
+.sc-button {
+  display: inline-block;
+  background-color: #111111; /* Dark background to match your brand */
+  color: #E8AF03;           /* Your gold accent color */
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid #E8AF03;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+.sc-button:hover {
+  background-color: #E8AF03;
+  color: #111111;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(232, 175, 3, 0.2);
+}
+
+/* Ensure the description doesn't push the button too far */
+.description-offer {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 10px; /* Reduced margin to keep button close to text */
+}
 .description-offer-small {
   color: #64748b;
   font-size: 1rem;

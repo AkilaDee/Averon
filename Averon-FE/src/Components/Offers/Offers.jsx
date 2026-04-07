@@ -18,7 +18,7 @@ const Offers = () => {
             <p className="description-offer">
               We don't buy from trading hubs. We source directly from Sri Lankan estates to ensure your spices arrive within weeks of harvest, not months.
             </p>
-            <Link to="/supply-chain" className="link-button">
+            <Link to="/supply-chain" className="sc-button">
               Explore our supply chain →
             </Link>
           </div>

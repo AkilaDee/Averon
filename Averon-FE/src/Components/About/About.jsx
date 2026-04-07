@@ -14,24 +14,21 @@ const About = ({setPlayState}) => {
         <div className='about-right'>
             <h3>Our Story</h3>
             <h2>THE AVERON JOURNEY</h2>
-            <p>At Averon Supplies Ltd, we bridge the gap between the lush spice gardens of Sri Lanka and the exacting standards of the UK food industry. As a specialist importer and wholesaler, our mission is simple: to provide UK trade and wholesale customers with the world’s finest authentic Ceylon spices without compromise.
+            <p>Averon Supplies Ltd is a vertically integrated primary importer and wholesale distributor specializing in premium Ceylon spices for the UK’s industrial, 
+              manufacturing, and trade sectors. 
+              Headquartered in the United Kingdom, the company was established to redefine the spice supply chain by providing direct, 
+              estate-to-enterprise access. 
+              By operating an end-to-end model that encompasses cultivation, processing, and international logistics, 
+              Averon Supplies Ltd eliminates the inefficiencies and lack of transparency inherent in traditional multi-tiered brokerage.<br />
 
-            Our Heritage, Your Advantage
-            We specialize exclusively in premium-grade Ceylon spices, renowned globally for their superior aroma, complex flavor profiles, and health-giving properties. By sourcing directly and maintaining a lean, transparent supply chain, we ensure that every batch of cinnamon, cardamom, and black pepper arriving at your facility is as fresh as the day it was harvested.
+              Our operations are centered on providing a secure and consistent pipeline for businesses that require high-specification raw ingredients. 
+              We leverage a localized infrastructure in Sri Lanka’s Southern Province to manage production at the source, 
+              ensuring that every consignment meets rigorous UK trade standards before leaving the origin. 
+              As a primary distributor, we provide the UK food industry with the logistical reliability and technical documentation necessary for modern supply chain management.<br />
 
-            Quality You Can Trust
-            In an industry where purity is paramount, Averon Supplies Ltd stands for integrity. We don’t just supply spices; we provide peace of mind. Our operations are anchored by a robust, UK-compliant HACCP food safety system, ensuring full traceability from the point of origin to your warehouse door.
-
-            The Wholesale Partner for Your Business
-            Whether you are a food manufacturer requiring consistent raw ingredients, a high-end restaurant group, or a boutique retailer, we understand that your reputation depends on the quality of your ingredients. We offer:
-
-            100% Pure Ceylon Origin: No fillers, no additives.
-
-            Trade-Ready Compliance: Fully documented product specifications and batch-coded traceability.
-
-            Reliable UK Distribution: Ambient-stable, bulk supply tailored to your inventory needs.
-
-            Averon Supplies Ltd: Elevating the UK’s culinary landscape, one harvest at a time.</p>
+              Today, Averon Supplies Ltd stands as a strategic partner to manufacturers and wholesalers who prioritize provenance and direct-from-origin integrity. 
+              We remain committed to streamlining the journey of the world’s finest spices, 
+              delivering them with the professional efficiency and regulatory compliance that the UK market demands.</p>
 
         </div>
       
