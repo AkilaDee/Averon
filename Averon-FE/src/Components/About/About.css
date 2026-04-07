@@ -1,11 +1,15 @@
 .about{
-    margin: 100px auto;
+    margin: 100px auto 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
 }
-
+.about-wrapper {
+    margin: 80px auto;
+    width: 90%;
+    max-width: 1100px;
+}
 .about-left{
     flex-basis: 40%;
     position: relative;
@@ -13,12 +17,18 @@
 
 .about-right{
     flex-basis: 56%;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+
 }
 
 .about-img{
     width: 100%;
     border-radius: 10px;
 }
+/* The Bottom Row (Full Width) */
+
 
 .play-icon{
     width: 60px;
@@ -48,6 +58,50 @@
     margin-bottom: 15px;
 }
 
+.about-bottom {
+    margin-top: 20px;
+    padding: 60px;
+    background-color: #f8fafc; /* Professional "Paper" tint */
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Adding a "Technical Seal" look using CSS pseudo-elements */
+.about-bottom::before {
+    /* content: "SUPPLY CHAIN INTEGRITY"; */
+    position: absolute;
+    /* top: 20px; */
+    right: 40px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+/* Differentiating the two paragraphs without new classes */
+.about-bottom p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #334155;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* Target the first "Vertical Integration" paragraph to make it the 'Lead' */
+.about-bottom p:first-of-type {
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+
+
 /* -------media query--------*/
 @media (max-width: 800px){
     .about{
@@ -60,5 +114,13 @@
     }
     .about-right{
         flex-basis: 100%;
+    }
+    .about-bottom {
+        padding: 40px 20px;
+        margin-top: 40px;
+        text-align: left;
+    }
+    .about-bottom p {
+        text-align: left;
     }
 }
