@@ -1,27 +1,35 @@
 .products{
+    position: relative;
     margin: 30px auto;
     padding: 0 80px;
-    position: relative;
 }
 
 .next-btn, .back-btn {
     position: absolute;
-    top: 50%;
-    right: 0;
+    /* Move the buttons down to account for the grid at the top */
+    /* Adjust this percentage based on how tall your 4-column grid is */
+    top: 65%; 
     transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background: #1E293B;
+    border-radius: 50%;
     padding: 15px;
     width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: #1E293B;;
 }
 
-.back-btn{
-    right: auto;
-    left: 0;
+.back-btn {
+    left: 10px; /* Force to the left edge */
+}
+
+/* Force Right */
+.next-btn {
+    right: 10px; /* Force to the right edge */
+    left: auto;  /* IMPORTANT: This clears the 'left' property from the back-btn */
 }
 .slider{
     overflow: hidden;
+    margin-top: 40px;
 }
 .slider ul {
     display: flex;
@@ -82,85 +90,293 @@
     margin: 0;
 }
 
+
+.product-categories {
+
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.cat-card {
+
+    text-align: center;
+
+    padding: 20px;
+
+   
+
+    /* FIX: Add these to create contrast */
+
+    background: #ffffff;
+
+    border: 1px solid #f1f5f9; /* Subtle grey border */
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft drop shadow */
+
+   
+
+    border-radius: 12px;
+
+    transition: all 0.3s ease; /* Smooth animation for hover */
+
+}
+
+
+
+/* Hover effect to make it "pop" */
+
+.cat-card:hover {
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    transform: translateY(-5px); /* Lifts the card slightly */
+
+    border-color: #E8AF03; /* Your gold brand accent */
+
+}
+
+
+
+.cat-card img {
+
+    width: 100%;
+
+    aspect-ratio: 1/1; /* Keeps images square and uniform */
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.cat-card h3 {
+
+    margin-bottom: 10px;
+
+    color: #111;
+
+}
+
+
+
+.cat-card p {
+
+    font-size: 0.9rem;
+
+    color: #666;
+
+    line-height: 1.5;
+
+}
+
+
+
 /* -------media query--------*/
+
 @media (max-width: 800px){
+
     .products{
+
         padding: 0 40px;
-    }
-    .next-btn, .back-btn{
-        padding: 10px;
-        width: 35px;
-    }
-    .products ul li{
-        padding: 10px;
-    }
-    .slider ul {
-        width: 300%; /* Keep this consistent with JS math */
+
     }
 
-    .slider ul li {
-        /* On mobile, 1 slide fills the screen. 
-           1/3 of the 300% ul = 100% of viewport */
-        width: 33.333%; 
+    .next-btn, .back-btn{
+
         padding: 10px;
+        top: 70%;
+        width: 35px;
+
     }
-    
+
+    .products ul li{
+
+        padding: 10px;
+
+    }
+
+    .slider ul {
+
+        width: 300%; /* Keep this consistent with JS math */
+
+    }
+
+
+
+    .slider ul li {
+
+        /* On mobile, 1 slide fills the screen.
+
+           1/3 of the 300% ul = 100% of viewport */
+
+        width: 33.333%;
+
+        padding: 10px;
+
+    }
+
+   
+
     .slide {
+
         background: #D4D8D1; /* Your 'Premium Stone' color */
+
         margin: 0 10px;      /* Small gap so you can see the edges */
+
     }
+
 }
+
 @media (max-width: 600px) {
+
     /* Main Container Adjustments */
+
     .products {
-        padding: 0 25px; /* Brings arrows and slides closer to screen edges */
+        padding: 0 50px; /* Increase padding so buttons have their own "lane" */
     }
+
+    .next-btn, .back-btn {
+        top: 75%; /* Keep them vertically consistent */
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
+    /* Force buttons to sit outside the slide area on very small screens */
+    .back-btn { left: 0px; }
+    .next-btn { right: 0px; }
 
     /* Slider Track & Logic Math */
+
     .slider ul {
+
         width: 300%; /* Keep this consistent with your JS 33.33% math */
+
     }
+
+
 
     .slider ul li {
+
         width: 33.333%; /* Each slide now takes 100% of the visible area */
+
         padding: 10px;
+
     }
+
+
 
     /* Slide Content & Look */
+
     .slide {
+
         background: #D4D8D1; /* Your 'Premium Stone' color */
+
         margin: 0;           /* Removed gaps for a cleaner full-width feel */
+
         padding: 10px;
+
         text-align: center;
+
     }
+
+
 
     .slider p {
+
         font-size: 12px;
+
     }
+
+
 
     /* User Info Positioning */
+
     .user-info {
+
         display: block; /* Stacks text/image if needed */
+
         margin-bottom: 10px;
+
         font-size: 12px;
+
     }
+
+
 
     .user-info h3 {
+
         font-size: 16px;
+
     }
+
+
 
     /* Arrow Buttons Positioning */
+
     .next-btn, .back-btn {
+
         width: 30px;
+
         padding: 8px;
+
         z-index: 10; /* Ensures they stay on top of the slide */
+
     }
+
+
 
     /* .back-btn {
-        left: 5px; 
+
+        left: 5px;
+
     }
 
+
+
     .next-btn {
+
         right: 5px;
+
     } */
+
+    @media (max-width: 900px) {
+
+    .product-categories {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    }
+
+
+
+    @media (max-width: 500px) {
+
+        .product-categories {
+
+            grid-template-columns: 1fr;
+
+        }
+        .next-btn, .back-btn{
+
+        padding: 10px;
+        top: 82%;
+        width: 35px;
+
+        }
+
+    }
+
 }
+

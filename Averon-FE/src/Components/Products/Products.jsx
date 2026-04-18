@@ -5,6 +5,10 @@ import back_icon from '../../assets/back-icon.png'
 import product1 from '../../assets/alba.JPG'
 import product2 from '../../assets/c5spec.JPG'
 import product3 from '../../assets/c5stick.JPG'
+import pepper from '../../assets/pepper.jpg'
+import cinnamon from '../../assets/cinnamon.jpg'
+import cardamom from '../../assets/cardamom.jpg'
+import cloves from '../../assets/cloves.jpg'
 
 
 const Products = () => {
@@ -32,6 +36,28 @@ const Products = () => {
 
   return (
     <div className='products'>
+        <div className="product-categories">
+          <div className="cat-card">
+              <img src={cinnamon} alt="Cinnamon" />
+              <h3>Cinnamon</h3>
+              <p>True Ceylon Cinnamon, harvested from our family estate.</p>
+          </div>
+          <div className="cat-card">
+              <img src={pepper} alt="black pepper" />
+              <h3>Black Pepper</h3>
+              <p>Bold, sun-dried peppercorns with a deep, earthy heat.</p>
+          </div>
+          <div className="cat-card">
+              <img src={cardamom} alt="Cardamom" />
+              <h3>Cardamom</h3>
+              <p>Green "Queen of Spices," aromatic and hand-selected.</p>
+          </div>
+          <div className="cat-card">
+              <img src={cloves} alt="Cloves" />
+              <h3>Cloves</h3>
+              <p>Intensely fragrant, high-oil content whole cloves.</p>
+          </div>
+      </div>
       <img src={next_icon} alt="" className='next-btn' onClick={slideForward}/>
       <img src={back_icon} alt="" className='back-btn' onClick={slideBackward}/>
       <div className="slider">
