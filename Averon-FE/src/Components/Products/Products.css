@@ -245,7 +245,7 @@
     }
 
     .next-btn, .back-btn {
-        top: 75%; /* Keep them vertically consistent */
+        top: 80%; /* Keep them vertically consistent */
         width: 35px;
         height: 35px;
         padding: 8px;
@@ -371,7 +371,7 @@
         .next-btn, .back-btn{
 
         padding: 10px;
-        top: 82%;
+        top: 90%;
         width: 35px;
 
         }
