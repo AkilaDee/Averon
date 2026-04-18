@@ -267,7 +267,7 @@
 
     .slider ul li {
 
-        width: 33.333%; /* Each slide now takes 100% of the visible area */
+        width: 33.3333%; /* Each slide now takes 100% of the visible area */
 
         padding: 10px;
 
@@ -349,19 +349,27 @@
 
     } */
 
-    @media (max-width: 900px) {
+    
+}
+@media (max-width: 900px) {
 
     .product-categories {
 
         grid-template-columns: repeat(2, 1fr);
 
     }
-
+    .next-btn, .back-btn {
+        top: 80%; /* Keep them vertically consistent */
+        width: 35px;
+        height: 35px;
+        padding: 8px;
     }
 
+}
 
 
-    @media (max-width: 500px) {
+
+@media (max-width: 500px) {
 
         .product-categories {
 
@@ -370,13 +378,27 @@
         }
         .next-btn, .back-btn{
 
-        padding: 10px;
-        top: 90%;
-        width: 35px;
+            padding: 8px;
+            top: 90%;
+            width: 35px;
 
         }
 
+}
+
+@media (max-width: 465px) {
+    
+    .slide {
+
+        width: 90%;   /* Small gap so you can see the edges */
+
     }
+.slide img {
+    /* Set a fixed square size for all images */
+    width: 95%;
+}
+
+        
 
 }
 
