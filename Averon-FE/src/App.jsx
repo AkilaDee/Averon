@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll'; // Import the scroller tool
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Quality from './Components/Quality/Quality';
@@ -39,6 +40,7 @@ const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
+    
     <BrowserRouter>
       {/* This invisible component handles all the "jump to section" logic */}
       <ScrollHandler /> 
@@ -48,6 +50,10 @@ const App = () => {
         {/* LANDING PAGE ROUTE */}
         <Route path="/" element={
           <>
+          <Helmet>
+            <title>Averon Supplies | Premium Ceylon Cinnamon & Sri Lankan Spices UK</title>
+            <meta name="description" content="UK-based direct importer of premium Ceylon Cinnamon and Sri Lankan spices. We grow and manufacture on our own estates to ensure full traceability and consistent quality for B2B and wholesale." />
+          </Helmet>
             <Hero />
             <div className="container">
               <Title subTitle='SERVICES' title='Premium Ceylon Spices for Wholesale'/>
