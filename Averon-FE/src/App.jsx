@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { scroller } from 'react-scroll'; // Import the scroller tool
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { scroller } from 'react-scroll';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Quality from './Components/Quality/Quality';
@@ -14,21 +14,18 @@ import SupplyChain from './Components/SupplyChain/SupplyChain';
 import Footer from './Components/Footer/Footer';
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 
-// This component ensures that every time the URL changes, we handle scrolling
 const ScrollHandler = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
     if (hash) {
-      // If there is a #hash in the URL (like #offers), scroll to it
       const target = hash.replace('#', '');
       scroller.scrollTo(target, {
         duration: 500,
         smooth: true,
-        offset: -150, // Matches your Navbar height/offset
+        offset: -150,
       });
     } else {
-      // If there is no hash, just scroll to the top of the new page
       window.scrollTo(0, 0);
     }
   }, [pathname, hash]);
@@ -40,20 +37,17 @@ const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
-    
     <BrowserRouter>
-      {/* This invisible component handles all the "jump to section" logic */}
       <ScrollHandler /> 
-      
       <Navbar />
       <Routes>
         {/* LANDING PAGE ROUTE */}
         <Route path="/" element={
           <>
-          <Helmet>
-            <title>Averon Supplies | Premium Ceylon Cinnamon & Sri Lankan Spices UK</title>
-            <meta name="description" content="UK-based direct importer of premium Ceylon Cinnamon and Sri Lankan spices. We grow and manufacture on our own estates to ensure full traceability and consistent quality for B2B and wholesale." />
-          </Helmet>
+            <Helmet>
+              <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Sri Lankan Spices UK</title>
+              <meta name="description" content="UK-based direct importer of premium Ceylon Cinnamon and Sri Lankan spices. We grow and manufacture on our own estates to ensure full traceability and consistent quality for B2B and wholesale." />
+            </Helmet>
             <Hero />
             <div className="container">
               <Title subTitle='SERVICES' title='Premium Ceylon Spices for Wholesale'/>
@@ -66,13 +60,21 @@ const App = () => {
               <Title subTitle='CONTACT US' title='Get in Touch'/>
               <Contact />
             </div>
-              <Footer />
+            <Footer />
             <VideoPlayer playState={playState} setPlayState={setPlayState}/>
           </>
         } />
 
-        {/* SUPPLY CHAIN ROUTE */}
-        <Route path="/supply-chain" element={<SupplyChain />} />
+        {/* SUPPLY CHAIN ROUTE - ADDED SEO HERE TOO */}
+        <Route path="/supply-chain" element={
+          <>
+            <Helmet>
+              <title>Our Supply Chain | Averon Supplies Traceability</title>
+              <meta name="description" content="Explore our direct estate-to-importer supply chain. We manage the growth, harvest, and manufacturing of our Sri Lankan spices to ensure premium B2B standards." />
+            </Helmet>
+            <SupplyChain />
+          </>
+        } />
       </Routes>
     </BrowserRouter>
   );
