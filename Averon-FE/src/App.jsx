@@ -68,10 +68,6 @@ const App = () => {
         {/* SUPPLY CHAIN ROUTE - ADDED SEO HERE TOO */}
         <Route path="/supply-chain" element={
           <>
-            <Helmet>
-              <title>Our Supply Chain | Averon Supplies Traceability</title>
-              <meta name="description" content="Explore our direct estate-to-importer supply chain. We manage the growth, harvest, and manufacturing of our Sri Lankan spices to ensure premium B2B standards." />
-            </Helmet>
             <SupplyChain />
           </>
         } />
