@@ -11,7 +11,7 @@ const quality = () => {
         <div className="pillar">
             {/* <span className="pillar-icon">🌍</span> */}
             <h3>Ethically & Sustainably Sourced</h3>
-            <p>Direct partnerships with Ceylon’s finest estates.</p>
+            <p>Direct partnerships with finest Sri Lankan estates.</p>
         </div>
         <div className="pillar">
             {/* <span className="pillar-icon">🧪</span> */}
