@@ -42,35 +42,39 @@ const Products = () => {
         <div className="product-categories">
           <div className="cat-card">
               <img src={cinnamon} alt="Cinnamon" />
-              <h3>Cinnamon</h3>
-              <p>True Ceylon Cinnamon.</p>
+              <h3>Ceylon Cinnamon</h3>
+              <p>Premium Ceylon Cinnamon is valued for its delicate aroma and natural sweetness, offering a refined and distinctive flavor profile.
+</p>
           </div>
           <div className="cat-card">
               <img src={pepper} alt="black pepper" />
               <h3>Black Pepper</h3>
-              <p>Bold, sun-dried peppercorns with a deep, earthy heat.</p>
+              <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile. 
+</p>
           </div>
           <div className="cat-card">
               <img src={cardamom} alt="Cardamom" />
-              <h3>Cardamom</h3>
-              <p>Green "Queen of Spices," aromatic and hand-selected.</p>
+              <h3>Green Cardamom</h3>
+              <p>Premium Ceylon Green Cardamom is prized for its cooling, floral aroma and high cineole content, offering a sweet yet complex flavour profile.
+</p>
           </div>
           <div className="cat-card">
               <img src={cloves} alt="Cloves" />
               <h3>Cloves</h3>
-              <p>Intensely fragrant, high-oil content whole cloves.</p>
+              <p>Premium Ceylon Cloves are prized for their intense, warm aroma and high eugenol oil content, offering a bold and pungent flavour profile.
+</p>
           </div>
       </div>
       <div className="product-categories">
           <div className="cat-card">
               <img src={vanilla} alt="Vanilla" />
               <h3>Vanilla</h3>
-              <p>True Ceylon Vanilla.</p>
+              <p>Premium Ceylon Vanilla is valued for its rich, cream-like aroma and deep, complex sweetness, offering a velvety and distinctive flavor profile.</p>
           </div>
           <div className="cat-card">
               <img src={nutmeg} alt="Nutmeg" />
               <h3>Nutmeg</h3>
-              <p>True Ceylon Nutmeg.</p>
+              <p>Premium Sri Lankan Nutmeg is valued for its warm, woody aroma and high essential oil content, offering a highly aromatic and distinctive flavor profile.</p>
           </div>
           {/* <div className="cat-card">
               <img src={cardamom} alt="Cardamom" />
