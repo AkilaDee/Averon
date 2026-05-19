@@ -43,7 +43,7 @@ const Products = () => {
           <div className="cat-card">
               <img src={cinnamon} alt="Cinnamon" />
               <h3>Cinnamon</h3>
-              <p>True Ceylon Cinnamon, harvested from our family estate.</p>
+              <p>True Ceylon Cinnamon.</p>
           </div>
           <div className="cat-card">
               <img src={pepper} alt="black pepper" />
@@ -65,7 +65,7 @@ const Products = () => {
           <div className="cat-card">
               <img src={vanilla} alt="Vanilla" />
               <h3>Vanilla</h3>
-              <p>True Ceylon Vanilla, harvested from our family estate.</p>
+              <p>True Ceylon Vanilla.</p>
           </div>
           <div className="cat-card">
               <img src={nutmeg} alt="Nutmeg" />
