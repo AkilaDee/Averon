@@ -17,7 +17,7 @@ const Products = () => {
 
   const productDetails = {
     cinnamon: {
-      title: "Available Ceylon Cinnamon Grades",
+      title: "Our Ceylon Cinnamon Range",
       items: [
         { name: "Alba Grade", desc: "The highest premium quality grade. Thin, smooth, and highly prized quills (≤ 6 mm diameter).", img: product1 },
         { name: "C5 Extra Special", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
@@ -26,32 +26,32 @@ const Products = () => {
       ]
     },
     pepper: {
-      title: "Available Black Pepper Types",
+      title: "Our Black Pepper Range",
       items: [
         { name: "Whole Black Pepper (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
         { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper }
       ]
     },
     cardamom: {
-      title: "Available Green Cardamom Grades",
+      title: "Our Green Cardamom Range",
       items: [
         { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamom }
       ]
     },
     cloves: {
-      title: "Available Clove Varieties",
+      title: "Our Clove Range",
       items: [
         { name: "Hand-Picked Premium Cloves", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves }
       ]
     },
     vanilla: {
-      title: "Available Vanilla Varieties",
+      title: "Our Vanilla Range",
       items: [
         { name: "Gourmet Grade A Bourbon Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich vanillin profile.", img: vanilla }
       ]
     },
     nutmeg: {
-      title: "Available Nutmeg Varieties",
+      title: "Our Nutmeg Range",
       items: [
         { name: "Whole Nutmeg (ABCD Grade)", desc: "High-density, oil-rich whole nuts entirely free from blemishes.", img: nutmeg }
       ]
@@ -116,7 +116,7 @@ const Products = () => {
           SECTION 2: VARIETY EXPLORER (SIDEBAR AT EXACTLY 100PX)
           ========================================================= */}
       <div className="variety-explorer-section" style={{ textAlign: 'left', marginBottom: '40px' }}>
-        <h2 style={{ fontSize: '26px', marginBottom: '30px', color: '#1E293B', textAlign: 'center', fontWeight: '700' }}>Explore Our Specific Varieties & Grades</h2>
+        <h2 style={{ fontSize: '26px', marginBottom: '30px', color: '#1E293B', textAlign: 'center', fontWeight: '700' }}>Explore Our Product Range</h2>
         
         <div className="explorer-split-container" style={{ display: 'flex', gap: '30px', alignItems: 'flex-start', width: '100%' }}>
           
