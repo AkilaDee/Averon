@@ -13,6 +13,15 @@ import cinnamon_ground from '../../assets/cinnamon ground.jpg'
 import cloves_ground from '../../assets/cloves ground.jpg'
 import cardamom_ground from '../../assets/cardamom ground.jpg'
 import pepper_ground from '../../assets/pepper ground.jpg'
+import pepper_500 from '../../assets/pepper500.jpg'
+import pepper_cracked from '../../assets/pepper cracked.jpg'
+import quillings from '../../assets/quillings.jpg'
+import C4 from '../../assets/C4.jpg'
+import H1 from '../../assets/H1.jpg'
+import H2 from '../../assets/H2.png'
+
+
+
 
 
 
@@ -27,6 +36,10 @@ const Products = () => {
         { name: "C5 Extra Special", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
         { name: "C5 Special", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product3 },
         { name: "C5 Sticks", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 },
+        { name: "C4 Sticks", desc: "Standard high-quality commercial C4 quills featuring classic aroma and rich golden appearance.", img: C4 },
+        { name: "H1 Sticks", desc: "Standard H1 commercial quills featuring classic aroma and rich golden appearance.", img: H1 },
+        { name: "H2 Sticks", desc: "Standard H2 commercial quills featuring classic aroma and rich golden appearance.", img: H2 },
+        { name: "Cinnamon Quillings", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: quillings },
         { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh (60-80).", img: cinnamon_ground }
       ]
     },
@@ -34,7 +47,8 @@ const Products = () => {
       title: "Our Black Pepper Range",
       items: [
         { name: "Whole Black Pepper (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
-        { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper },
+        { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper_500 },
+        { name: "Black Pepper Cracked", desc: "Standard grade Cracked Black pepper.", img: pepper_cracked },
         { name: "Black Pepper Ground", desc: "Standard grade Black pepper powder.", img: pepper_ground }
       ]
     },
@@ -81,7 +95,7 @@ const Products = () => {
         </div>
 
         <div className="cat-card">
-          <img src={pepper} alt="black pepper" />
+          <img src={pepper_500} alt="black pepper" />
           <h3>Black Pepper</h3>
           <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile.</p>
           <a href="/products/pepper" className="read-more-btn">Read More</a>
