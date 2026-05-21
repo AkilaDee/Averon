@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './Products.css'
-import next_icon from '../../assets/next-icon.png'
-import back_icon from '../../assets/back-icon.png'
 import product1 from '../../assets/alba.JPG'
 import product2 from '../../assets/c5spec.JPG'
 import product3 from '../../assets/c5stick.JPG'
@@ -11,6 +9,12 @@ import cardamom from '../../assets/cardamom.jpg'
 import cloves from '../../assets/cloves.jpg'
 import vanilla from '../../assets/vanilla.jpg'
 import nutmeg from '../../assets/nutmeg.jpg'
+import cinnamon_ground from '../../assets/cinnamon ground.jpg'
+import cloves_ground from '../../assets/cloves ground.jpg'
+import cardamom_ground from '../../assets/cardamom ground.jpg'
+import pepper_ground from '../../assets/pepper ground.jpg'
+
+
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('cinnamon');
@@ -23,7 +27,7 @@ const Products = () => {
         { name: "C5 Extra Special", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
         { name: "C5 Special", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product3 },
         { name: "C5 Sticks", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 },
-        { name: "Cinnamon Powder", desc: "100% Pure, ultra-fine mesh (60-80).", img: product3 }
+        { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh (60-80).", img: cinnamon_ground }
       ]
     },
     pepper: {
@@ -31,33 +35,33 @@ const Products = () => {
       items: [
         { name: "Whole Black Pepper (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
         { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper },
-        { name: "Black Pepper Powder", desc: "Standard grade Black pepper powder.", img: pepper }
+        { name: "Black Pepper Ground", desc: "Standard grade Black pepper powder.", img: pepper_ground }
       ]
     },
     cardamom: {
       title: "Our Green Cardamom Range",
       items: [
         { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamom },
-        { name: "Green Cardamom Powder", desc: "Large, bright green powder packed with essential oils and intense fragrance.", img: cardamom }
+        { name: "Green Cardamom Ground", desc: "Large, bright green powder packed with essential oils and intense fragrance.", img: cardamom_ground }
       ]
     },
     cloves: {
       title: "Our Clove Range",
       items: [
         { name: "Hand-Picked Premium Cloves", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves },
-        { name: "Premium Cloves Powder", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves }
+        { name: "Premium Cloves Ground", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves_ground }
       ]
     },
     vanilla: {
       title: "Our Vanilla Range",
       items: [
-        { name: "Gourmet Grade A Bourbon Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich vanillin profile.", img: vanilla }
+        { name: "Gourmet Grade A Bourbon Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich flavour profile.", img: vanilla }
       ]
     },
     nutmeg: {
       title: "Our Nutmeg Range",
       items: [
-        { name: "Whole Nutmeg (ABCD Grade)", desc: "High-density, oil-rich whole nuts entirely free from blemishes.", img: nutmeg }
+        { name: "Whole Nutmeg", desc: "High-density, oil-rich whole nuts entirely free from blemishes.", img: nutmeg }
       ]
     }
   };
