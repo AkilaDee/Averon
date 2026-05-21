@@ -81,7 +81,7 @@ const Products = () => {
   };
 
   return (
-    <div className='products' style={{ maxWidth: '1400px', margin: '0 auto', padding: '20px', color: '#111111' }}>
+    <div className='products'>
 
       {/* =========================================================
           SECTION 1: MAIN PRODUCTS DISPLAY (CLEANED OF INLINE STYLES)
@@ -137,32 +137,18 @@ const Products = () => {
       {/* =========================================================
           SECTION 2: VARIETY EXPLORER (SIDEBAR AT EXACTLY 100PX)
           ========================================================= */}
-      <div className="variety-explorer-section" style={{ textAlign: 'left', marginBottom: '40px' }}>
-        <h2 style={{ fontSize: '26px', marginBottom: '30px', color: '#1E293B', textAlign: 'center', fontWeight: '700' }}>Explore Our Product Range</h2>
+      <div className="variety-explorer-section">
+        <h2>Explore Our Product Range</h2>
         
-        <div className="explorer-split-container" style={{ display: 'flex', gap: '30px', alignItems: 'flex-start', width: '100%' }}>
+        <div className="explorer-split-container">
           
-          {/* LEFT SIDEBAR MENU (Set to exactly 100px top margin) */}
-          <div className="variety-sidebar-menu" style={{ flex: '0 0 200px', display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '100px' }}>
+          {/* LEFT SIDEBAR MENU */}
+          <div className="variety-sidebar-menu">
             {Object.keys(productDetails).map((key) => (
               <button
                 key={key}
                 onClick={() => setSelectedCategory(key)}
-                style={{
-                  background: selectedCategory === key ? '#E8AF03' : '#fafafa',
-                  color: '#111111',
-                  border: '1px solid',
-                  borderColor: selectedCategory === key ? '#E8AF03' : '#ddd',
-                  padding: '14px 22px',
-                  borderRadius: '6px',
-                  cursor: 'pointer',
-                  fontWeight: '600',
-                  fontSize: '15px',
-                  textAlign: 'left',
-                  textTransform: 'capitalize',
-                  transition: 'all 0.2s ease',
-                  boxShadow: selectedCategory === key ? '0 3px 10px rgba(232, 175, 3, 0.3)' : 'none'
-                }}
+                className={selectedCategory === key ? 'active' : ''}
               >
                 {key === 'pepper' ? 'Black Pepper' : key === 'cardamom' ? 'Green Cardamom' : key}
               </button>
@@ -170,19 +156,17 @@ const Products = () => {
           </div>
 
           {/* RIGHT VARIETY DISPLAY CONTAINER */}
-          <div className="variety-results-display" style={{ flex: '1', background: '#fafafa', padding: '25px', borderRadius: '12px', border: '1px solid #ddd', minHeight: '450px' }}>
-            <h3 style={{ fontSize: '22px', marginTop: '0', marginBottom: '25px', color: '#1E293B', borderBottom: '2px solid #E8AF03', paddingBottom: '12px', fontWeight: '600' }}>
-              {productDetails[selectedCategory].title}
-            </h3>
+          <div className="variety-results-display">
+            <h3>{productDetails[selectedCategory].title}</h3>
             
-            <div className="variety-items-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '15px' }}>
+            <div className="variety-items-grid">
               {productDetails[selectedCategory].items.map((item, index) => (
-                <div key={index} className="variety-item-card" style={{ background: '#fff', border: '1px solid #ddd', padding: '15px', borderRadius: '8px', textAlign: 'center', boxShadow: '0 3px 8px rgba(0,0,0,0.03)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  <div>
-                    <img src={item.img} alt={item.name} style={{ width: '100%', height: '220px', objectFit: 'cover', borderRadius: '4px', marginBottom: '12px' }} />
-                    <h4 style={{ margin: '0 0 8px 0', color: '#1E293B', fontSize: '16px', lineHeight: '1.3', fontWeight: '600' }}>{item.name}</h4>
+                <div key={index} className="variety-item-card">
+                  <div className="variety-card-image-wrapper">
+                    <img src={item.img} alt={item.name} />
+                    <h4>{item.name}</h4>
                   </div>
-                  <p style={{ fontSize: '13px', color: '#111111', lineHeight: '1.4', margin: '0', opacity: 0.9 }}>{item.desc}</p>
+                  <p>{item.desc}</p>
                 </div>
               ))}
             </div>
