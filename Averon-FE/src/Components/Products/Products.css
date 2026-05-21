@@ -1,5 +1,5 @@
 /* =========================================================
-   MAIN AND OVERALL SECTION STYLING Rules
+   BASE DESKTOP STYLES (Default View)
    ========================================================= */
 .products {
     max-width: 1400px;
@@ -21,9 +21,7 @@
     margin: 40px 0;
 }
 
-/* =========================================================
-   SECTION 1: MAIN PRODUCT TILES
-   ========================================================= */
+/* Section 1 Cards */
 .cat-card {
     text-align: center;
     padding: 16px;
@@ -76,9 +74,7 @@
     text-decoration: none;
 }
 
-/* =========================================================
-   SECTION 2: VARIETY EXPLORER 
-   ========================================================= */
+/* Section 2 Containers */
 .variety-explorer-section {
     text-align: left;
     margin-top: 40px;
@@ -100,7 +96,6 @@
     width: 100%;
 }
 
-/* Sidebar Menu Setup */
 .variety-sidebar-menu {
     flex: 0 0 200px;
     display: flex;
@@ -109,7 +104,6 @@
     margin-top: 100px;
 }
 
-/* Default Sidebar Buttons Style */
 .variety-sidebar-menu button {
     background: #fafafa;
     color: #111111;
@@ -122,16 +116,15 @@
     text-align: left;
     text-transform: capitalize;
     transition: all 0.2s ease;
+    width: 100%;
 }
 
-/* Active State Sidebar Buttons Style */
 .variety-sidebar-menu button.active {
     background: #E8AF03;
     border-color: #E8AF03;
     box-shadow: 0 3px 10px rgba(232, 175, 3, 0.3);
 }
 
-/* Variety Grid & Window Panels */
 .variety-results-display {
     flex: 1;
     background: #fafafa;
@@ -157,7 +150,6 @@
     gap: 15px;
 }
 
-/* Variety Explorer Specific Cards */
 .variety-item-card {
     background: #ffffff;
     border: 1px solid #ddd;
@@ -170,7 +162,6 @@
     justify-content: space-between; 
 }
 
-/* Clean, Controlled Images Inside Variety Cards */
 .variety-card-image-wrapper img {
     width: 100%;
     height: 220px;
@@ -193,4 +184,80 @@
     line-height: 1.4;
     margin: 0;
     opacity: 0.9;
+}
+
+
+/* =========================================================
+   MEDIA QUERY: LAPTOPS & TABLETS (Max 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+    .products {
+        padding: 0 40px;
+    }
+    
+    .product-categories {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for top section */
+    }
+
+    .variety-items-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for varieties */
+    }
+}
+
+
+/* =========================================================
+   MEDIA QUERY: SMALL TABLETS & PHONES (Max 768px)
+   ========================================================= */
+@media (max-width: 768px) {
+    .explorer-split-container {
+        flex-direction: column; /* Stack sidebar on top of content */
+        gap: 20px;
+    }
+
+    .variety-sidebar-menu {
+        flex: none;
+        width: 100%;
+        flex-direction: row; /* Horizontal scrollable menu for mobile */
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-top: 0; /* Reset desktop 100px alignment */
+        padding-bottom: 8px;
+    }
+
+    .variety-sidebar-menu button {
+        width: auto;
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    
+    .variety-results-display {
+        padding: 15px;
+    }
+}
+
+
+/* =========================================================
+   MEDIA QUERY: MOBILE PHONES (Max 480px)
+   ========================================================= */
+@media (max-width: 480px) {
+    .products {
+        padding: 0 15px;
+    }
+
+    .product-categories, 
+    .variety-items-grid {
+        grid-template-columns: 1fr; /* Clean 1-column stack */
+    }
+
+    .variety-explorer-section h2 {
+        font-size: 20px;
+    }
+
+    .variety-results-display h3 {
+        font-size: 18px;
+    }
+    
+    .variety-card-image-wrapper img {
+        height: 180px; /* Slight scaling down to look crisp on tiny displays */
+    }
 }
