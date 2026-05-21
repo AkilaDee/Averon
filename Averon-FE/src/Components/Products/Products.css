@@ -58,4 +58,7 @@
 .cat-card .read-more-btn {
     font-size: 0.8rem;    /* Proportionate button scaling */
     padding: 6px 14px;
+    color: #000;
+    background-color: #E8AF03;
+    border-radius: 4px;
 }

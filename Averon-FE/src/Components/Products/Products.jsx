@@ -22,26 +22,30 @@ const Products = () => {
         { name: "Alba Grade", desc: "The highest premium quality grade. Thin, smooth, and highly prized quills (≤ 6 mm diameter).", img: product1 },
         { name: "C5 Extra Special", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
         { name: "C5 Special", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product3 },
-        { name: "C5 Sticks", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 }
+        { name: "C5 Sticks", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 },
+        { name: "Cinnamon Powder", desc: "100% Pure, ultra-fine mesh (60-80).", img: product3 }
       ]
     },
     pepper: {
       title: "Our Black Pepper Range",
       items: [
         { name: "Whole Black Pepper (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
-        { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper }
+        { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper },
+        { name: "Black Pepper Powder", desc: "Standard grade Black pepper powder.", img: pepper }
       ]
     },
     cardamom: {
       title: "Our Green Cardamom Range",
       items: [
-        { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamom }
+        { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamom },
+        { name: "Green Cardamom Powder", desc: "Large, bright green powder packed with essential oils and intense fragrance.", img: cardamom }
       ]
     },
     cloves: {
       title: "Our Clove Range",
       items: [
-        { name: "Hand-Picked Premium Cloves", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves }
+        { name: "Hand-Picked Premium Cloves", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves },
+        { name: "Premium Cloves Powder", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves }
       ]
     },
     vanilla: {
