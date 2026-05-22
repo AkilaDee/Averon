@@ -34,7 +34,7 @@ const Products = () => {
       items: [
         { name: "Alba Grade", desc: "The highest premium quality grade. Thin, smooth, and highly prized quills (≤ 6 mm diameter).", img: product1 },
         { name: "C5 Extra Special", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
-        { name: "C5 Special", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product3 },
+        { name: "C5 Special", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product2 },
         { name: "C5 Sticks", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 },
         { name: "C4 Sticks", desc: "Standard high-quality commercial C4 quills featuring classic aroma and rich golden appearance.", img: C4 },
         { name: "H1 Sticks", desc: "Standard H1 commercial quills featuring classic aroma and rich golden appearance.", img: H1 },
