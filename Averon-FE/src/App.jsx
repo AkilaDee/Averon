@@ -78,12 +78,36 @@ const App = () => {
             <SupplyChain />
           </>
         } />
-        <Route path="/products/cinnamon" element={<Cinnamon />} />
-        <Route path="/products/blackpepper" element={<BlackPepper/>} />
-        <Route path="/products/cloves" element={<Cloves />} />
-        <Route path="/products/cardamom" element={<Cardamom />} />
-        <Route path="/products/vanilla" element={<Vanilla />} />
-        <Route path="/products/nutmeg" element={<Nutmeg />} />
+        <Route path="/products/cinnamon" element={
+          <>
+          <Cinnamon />
+          </>
+          } />
+        <Route path="/products/blackpepper" element={
+          <>
+          <BlackPepper/>
+          </>
+          } />
+        <Route path="/products/cloves" element={
+          <>
+          <Cloves />
+          </>
+          } />
+        <Route path="/products/cardamom" element={
+          <>
+          <Cardamom />
+          </>
+          } />
+        <Route path="/products/vanilla" element={
+          <>
+          <Vanilla />
+          </>
+          } />
+        <Route path="/products/nutmeg" element={
+          <> 
+          <Nutmeg />
+          </>
+          } />
 
 
       </Routes>
