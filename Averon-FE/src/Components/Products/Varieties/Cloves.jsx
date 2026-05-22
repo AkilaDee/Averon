@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './cloves.css';
+import './Cloves.css';
 
 // Asset Imports - Points directly to your cloves assets
 import cloves from '../../../assets/cloves.jpg';

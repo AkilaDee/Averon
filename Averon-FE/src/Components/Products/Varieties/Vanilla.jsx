@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './vanilla.css';
+import './Vanilla.css';
 
 // Asset Imports - Points directly to your vanilla assets
 import vanilla from '../../../assets/vanilla.jpg';

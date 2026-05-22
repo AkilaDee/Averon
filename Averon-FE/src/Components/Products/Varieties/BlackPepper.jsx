@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './blackpepper.css';
+import './Blackpepper.css';
 
 // Asset Imports - Points directly to your pepper assets
 import pepper_500 from '../../../assets/pepper500.jpg';
