@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './nutmeg.css';
+import './Nutmeg.css';
 
 // Asset Imports - Points directly to your nutmeg assets
 import nutmeg from '../../../assets/nutmeg.jpg';
