@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './cardamom.css';
+import './Cardamom.css';
 
 // Asset Imports - Points directly to your cardamom assets
 import cardamom from '../../../assets/cardamom.jpg';
