@@ -1,0 +1,286 @@
+/* =========================================================
+   BASE LAYOUT STYLES (Default Desktop View)
+   ========================================================= */
+.nutmeg-detail-page {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 80px;
+    color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.nut-back-nav {
+    margin-bottom: 30px;
+}
+
+.nut-back-link {
+    color: #E8AF03;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.nut-back-link:hover {
+    color: #bfa002;
+}
+
+/* Hero Section Split Layout */
+.nut-hero-split {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nut-hero-content {
+    flex: 1;
+}
+
+.nut-main-title {
+    font-size: 36px;
+    color: #1E293B;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.nut-scientific-name {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 25px 0;
+}
+
+/* Large Description Block Styles */
+.nut-large-description {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #334155;
+    margin-bottom: 35px;
+}
+
+.nut-large-description p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.nut-highlight-para {
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    color: #0f172a;
+}
+
+/* Specifications Table Formats */
+.nut-section-subheading {
+    font-size: 20px;
+    border-bottom: 2px solid #E8AF03;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.nut-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.nut-table-row {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.nut-spec-label {
+    padding: 12px 0;
+    font-weight: 600;
+    color: #1E293B;
+    width: 35%;
+    font-size: 14px;
+}
+
+.nut-spec-value {
+    padding: 12px 0;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Hero Image Configurations */
+.nut-hero-image-wrapper {
+    flex: 0 0 400px;
+    max-width: 100%;
+}
+
+.nut-main-hero-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Applications Box Design */
+.nut-applications-block {
+    margin-bottom: 50px;
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.nut-apps-heading {
+    font-size: 22px;
+    color: #1E293B;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.nut-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.nut-app-card-title {
+    margin: 0 0 8px 0;
+    color: #E8AF03;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nut-app-card-text {
+    margin: 0;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* Cut Varieties & Grades Section */
+.nut-grades-section {
+    margin-bottom: 40px;
+}
+
+.nut-grades-main-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #1E293B;
+    font-weight: 700;
+    text-align: left;
+}
+
+.nut-grades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.nut-grade-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nut-grade-image-wrapper {
+    text-align: center;
+}
+
+.nut-grade-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.nut-grade-name {
+    margin: 4px 0 8px 0;
+    color: #1E293B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.nut-grade-desc {
+    font-size: 13px;
+    color: #64748B;
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* =========================================================
+   MEDIA QUERY: LAPTOPS & TABLETS (Max 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+    .nutmeg-detail-page {
+        padding: 0 40px;
+    }
+
+    .nut-hero-split {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nut-hero-image-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .nut-main-hero-img {
+        height: 350px;
+    }
+
+    .nut-apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nut-grades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================================
+   MEDIA QUERY: MOBILE PHONES (Max 576px)
+   ========================================================= */
+@media (max-width: 576px) {
+    .nutmeg-detail-page {
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+
+    .nut-main-title {
+        font-size: 28px;
+    }
+
+    .nut-large-description {
+        font-size: 14px;
+    }
+
+    .nut-spec-label {
+        width: 40%;
+        font-size: 13px;
+    }
+
+    .nut-spec-value {
+        font-size: 13px;
+    }
+
+    .nut-apps-grid,
+    .nut-grades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nut-applications-block {
+        padding: 20px;
+    }
+
+    .nut-grades-main-title {
+        font-size: 22px;
+    }
+}

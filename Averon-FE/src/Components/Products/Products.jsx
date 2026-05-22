@@ -3,7 +3,6 @@ import './Products.css'
 import product1 from '../../assets/alba.JPG'
 import product2 from '../../assets/c5spec.JPG'
 import product3 from '../../assets/c5stick.JPG'
-import pepper from '../../assets/pepper.jpg'
 import cinnamon from '../../assets/cinnamon.jpg'
 import cardamom from '../../assets/cardamom.jpg'
 import cloves from '../../assets/cloves.jpg'
@@ -13,6 +12,7 @@ import cinnamon_ground from '../../assets/cinnamon ground.jpg'
 import cloves_ground from '../../assets/cloves ground.jpg'
 import cardamom_ground from '../../assets/cardamom ground.jpg'
 import pepper_ground from '../../assets/pepper ground.jpg'
+import pepper from '../../assets/pepper.jpg'
 import pepper_500 from '../../assets/pepper500.jpg'
 import pepper_cracked from '../../assets/pepper cracked.jpg'
 import quillings from '../../assets/quillings.jpg'
@@ -98,7 +98,7 @@ const Products = () => {
           <img src={pepper_500} alt="black pepper" />
           <h3>Black Pepper</h3>
           <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile.</p>
-          <a href="/products/pepper" className="read-more-btn">Read More</a>
+          <a href="/products/blackpepper" className="read-more-btn">Read More</a>
         </div>
 
         <div className="cat-card">

@@ -1,0 +1,286 @@
+/* =========================================================
+   BASE LAYOUT STYLES (Default Desktop View)
+   ========================================================= */
+.vanilla-detail-page {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 80px;
+    color: #111111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.van-back-nav {
+    margin-bottom: 30px;
+}
+
+.van-back-link {
+    color: #E8AF03;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.van-back-link:hover {
+    color: #bfa002;
+}
+
+/* Hero Section Split Layout */
+.van-hero-split {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.van-hero-content {
+    flex: 1;
+}
+
+.van-main-title {
+    font-size: 36px;
+    color: #1E293B;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.van-scientific-name {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 25px 0;
+}
+
+/* Large Description Block Styles */
+.van-large-description {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #334155;
+    margin-bottom: 35px;
+}
+
+.van-large-description p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.van-highlight-para {
+    margin-bottom: 0 !important;
+    font-weight: 500;
+    color: #0f172a;
+}
+
+/* Specifications Table Formats */
+.van-section-subheading {
+    font-size: 20px;
+    border-bottom: 2px solid #E8AF03;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.van-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.van-table-row {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.van-spec-label {
+    padding: 12px 0;
+    font-weight: 600;
+    color: #1E293B;
+    width: 35%;
+    font-size: 14px;
+}
+
+.van-spec-value {
+    padding: 12px 0;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Hero Image Configurations */
+.van-hero-image-wrapper {
+    flex: 0 0 400px;
+    max-width: 100%;
+}
+
+.van-main-hero-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Applications Box Design */
+.van-applications-block {
+    margin-bottom: 50px;
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.van-apps-heading {
+    font-size: 22px;
+    color: #1E293B;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.van-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.van-app-card-title {
+    margin: 0 0 8px 0;
+    color: #E8AF03;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.van-app-card-text {
+    margin: 0;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* Cut Varieties & Grades Section */
+.van-grades-section {
+    margin-bottom: 40px;
+}
+
+.van-grades-main-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #1E293B;
+    font-weight: 700;
+    text-align: left;
+}
+
+.van-grades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.van-grade-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.van-grade-image-wrapper {
+    text-align: center;
+}
+
+.van-grade-thumb {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.van-grade-name {
+    margin: 4px 0 8px 0;
+    color: #1E293B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.van-grade-desc {
+    font-size: 13px;
+    color: #64748B;
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* =========================================================
+   MEDIA QUERY: LAPTOPS & TABLETS (Max 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+    .vanilla-detail-page {
+        padding: 0 40px;
+    }
+
+    .van-hero-split {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .van-hero-image-wrapper {
+        flex: none;
+        width: 100%;
+    }
+
+    .van-main-hero-img {
+        height: 350px;
+    }
+
+    .van-apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .van-grades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================================
+   MEDIA QUERY: MOBILE PHONES (Max 576px)
+   ========================================================= */
+@media (max-width: 576px) {
+    .vanilla-detail-page {
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+
+    .van-main-title {
+        font-size: 28px;
+    }
+
+    .van-large-description {
+        font-size: 14px;
+    }
+
+    .van-spec-label {
+        width: 40%;
+        font-size: 13px;
+    }
+
+    .van-spec-value {
+        font-size: 13px;
+    }
+
+    .van-apps-grid,
+    .van-grades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .van-applications-block {
+        padding: 20px;
+    }
+
+    .van-grades-main-title {
+        font-size: 22px;
+    }
+}

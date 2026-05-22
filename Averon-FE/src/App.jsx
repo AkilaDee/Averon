@@ -13,6 +13,13 @@ import Products from './Components/Products/Products';
 import SupplyChain from './Components/SupplyChain/SupplyChain';
 import Footer from './Components/Footer/Footer';
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
+import Cinnamon from './Components/Products/Varieties/Cinnamon';
+import BlackPepper from './Components/Products/Varieties/BlackPepper';
+import Cardamom from './Components/Products/Varieties/Cardamom';
+import Cloves from './Components/Products/Varieties/Cloves';
+import Vanilla from './Components/Products/Varieties/Vanilla';
+import Nutmeg from './Components/Products/Varieties/Nutmeg';
+
 
 const ScrollHandler = () => {
   const { pathname, hash } = useLocation();
@@ -71,6 +78,14 @@ const App = () => {
             <SupplyChain />
           </>
         } />
+        <Route path="/products/cinnamon" element={<Cinnamon />} />
+        <Route path="/products/blackpepper" element={<BlackPepper/>} />
+        <Route path="/products/cloves" element={<Cloves />} />
+        <Route path="/products/cardamom" element={<Cardamom />} />
+        <Route path="/products/vanilla" element={<Vanilla />} />
+        <Route path="/products/nutmeg" element={<Nutmeg />} />
+
+
       </Routes>
     </BrowserRouter>
   );
