@@ -87,9 +87,10 @@ const App = () => {
           <>
           <BlackPepper/>
           </>
-          } />
+          } /> 
         <Route path="/products/cloves" element={
           <>
+
           <Cloves />
           </>
           } />
