@@ -186,11 +186,27 @@
     opacity: 0.9;
 }
 
+/* =========================================================
+   MEDIA QUERY: LAPTOPS & TABLETS (Max 1024px)
+   ========================================================= */
+@media (max-width: 1200px) {
+    .products {
+        padding: 0 40px;
+    }
+    
+    .product-categories {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for top section */
+    }
+
+    .variety-items-grid {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns for varieties */
+    }
+}
 
 /* =========================================================
    MEDIA QUERY: LAPTOPS & TABLETS (Max 1024px)
    ========================================================= */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .products {
         padding: 0 40px;
     }
@@ -208,7 +224,7 @@
 /* =========================================================
    MEDIA QUERY: SMALL TABLETS & PHONES (Max 768px)
    ========================================================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .explorer-split-container {
         flex-direction: column; /* Stack sidebar on top of content */
         gap: 20px;
@@ -235,6 +251,70 @@
     }
 }
 
+/* =========================================================
+   MEDIA QUERY: MOBILE PHONES (Max 640px)
+   ========================================================= */
+
+/* =========================================================
+   MEDIA QUERY: MOBILE PHONES (Max 640px & 480px Combined)
+   ========================================================= */
+@media (max-width: 640px) {
+    .products {
+        padding: 0 15px;
+    }
+
+    /* FIX: Changed from 1fr to 2 columns so cards don't stretch too wide */
+    .product-categories, 
+    .variety-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px; /* Tighter gap for smaller mobile screens */
+    }
+
+    .variety-explorer-section h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .variety-results-display {
+        padding: 12px;
+    }
+
+    .variety-results-display h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    /* FIX: Enforce a clean square aspect ratio so images scale perfectly regardless of width */
+    .variety-card-image-wrapper img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1; 
+        object-fit: cover;
+        margin-bottom: 8px;
+    }
+
+    /* Shrink text styles slightly so everything fits comfortably inside the 2-column cards */
+    .variety-item-card {
+        padding: 10px;
+    }
+
+    .variety-item-card h4 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .variety-item-card p {
+        font-size: 11px;
+    }
+
+    .cat-card h3 {
+        font-size: 14px;
+    }
+    
+    .cat-card p {
+        font-size: 11px;
+    }
+}
 
 /* =========================================================
    MEDIA QUERY: MOBILE PHONES (Max 480px)
@@ -258,6 +338,6 @@
     }
     
     .variety-card-image-wrapper img {
-        height: 180px; /* Slight scaling down to look crisp on tiny displays */
+        width: 280px; /* Slight scaling down to look crisp on tiny displays */
     }
 }
