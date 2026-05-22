@@ -7,7 +7,7 @@ import nutmeg from '../../../assets/nutmeg.jpg';
 
 const Nutmeg = () => {
   const specs = [
-    { label: "Available Grades", value: "Whole ABCD Grade Kernels" },
+    { label: "Available Grades", value: "Whole" },
     { label: "Defect Threshold", value: "0% mold cavities or insect boring" },
     { label: "Moisture Content", value: "10% max" },
     { label: "Volatile Oil Content", value: "6.0% - 9.0% v/w (Highly concentrated aromatic matrix)" },
