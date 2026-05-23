@@ -4,7 +4,7 @@
 .vanilla-detail-page {
     max-width: 1400px;
     margin: 30px auto;
-    padding: 0 80px;
+    padding: 80px 80px;
     color: #111111;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }

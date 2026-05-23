@@ -56,7 +56,7 @@ const CinnamonDetail = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="cin-back-nav">
-        <Link to="/products" className="cin-back-link">
+        <Link to="/" className="cin-back-link">
           ← Back to All Products
         </Link>
       </div>

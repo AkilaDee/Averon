@@ -29,7 +29,7 @@ const Vanilla = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="van-back-nav">
-        <Link to="/products" className="van-back-link">
+        <Link to="/" className="van-back-link">
           ← Back to All Products
         </Link>
       </div>

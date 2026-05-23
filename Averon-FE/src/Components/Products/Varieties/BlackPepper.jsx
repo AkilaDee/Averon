@@ -35,7 +35,7 @@ const BlackPepper = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="pep-back-nav">
-        <Link to="/products" className="pep-back-link">
+        <Link to="/" className="pep-back-link">
           ← Back to All Products
         </Link>
       </div>

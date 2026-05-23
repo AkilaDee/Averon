@@ -2,11 +2,11 @@ nav{
 
     width: 100%;
 
-    /* background: #111111; */
+    background: #111111;
 
     color: #fafafa;
 
-    padding: 4px 0 2px;
+    padding: 6px 0 6px;
 
     position: fixed;
 
@@ -187,10 +187,10 @@ nav {
         border-bottom: none;     /* Optional: clean up the border for mobile */
     }
 
-    .logo {
-        /* width: 120px;           
-        margin-bottom: 5px;       */
-    }
+    /* .logo {
+        width: 120px;           
+        margin-bottom: 5px;      
+    } */
 
     /* Ensure the hamburger menu icon stays in the top right corner */
     .menu-icon {

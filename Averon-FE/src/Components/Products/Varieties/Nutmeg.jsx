@@ -29,7 +29,7 @@ const Nutmeg = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="nut-back-nav">
-        <Link to="/products" className="nut-back-link">
+        <Link to="/" className="nut-back-link">
           ← Back to All Products
         </Link>
       </div>

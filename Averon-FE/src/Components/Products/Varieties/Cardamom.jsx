@@ -31,7 +31,7 @@ const Cardamom = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="card-back-nav">
-        <Link to="/products" className="card-back-link">
+        <Link to="/" className="card-back-link">
           ← Back to All Products
         </Link>
       </div>

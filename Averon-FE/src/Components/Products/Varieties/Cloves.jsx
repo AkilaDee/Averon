@@ -31,7 +31,7 @@ const Cloves = () => {
       
       {/* BREADCRUMB NAVIGATION */}
       <div className="clv-back-nav">
-        <Link to="/products" className="clv-back-link">
+        <Link to="/" className="clv-back-link">
           ← Back to All Products
         </Link>
       </div>
