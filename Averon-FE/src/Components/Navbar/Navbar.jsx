@@ -15,11 +15,15 @@ const Navbar = () => {
 
   const toggleMenu = () => setMobileMenu(!mobileMenu);
 
-  // THE KEY LOGIC:
-  // This function will manually force a redirect if we aren't on the home page.
-  const handleNav = (target) => {
+  // FIXED LOGIC BLOCK:
+  // We explicitly intercept the event 'e' to prevent the browser from appending the '#' symbol.
+  // Then we silently pass the scroll destination behind the scenes via history state.
+  const handleNav = (e, target) => {
+    setMobileMenu(false); // Clean up layout: closes the mobile menu automatically upon selection
+    
     if (!isHomePage) {
-      navigate(`/#${target}`);
+      e.preventDefault(); // CRITICAL: Blocks the standard anchor hash append action
+      navigate('/', { state: { scrollTo: target } });
     }
   };
 
@@ -32,7 +36,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+    /* Base class layout forces permanent solid background; sticky handles optional sizing shifts */
+    <nav className={`container nav ${sticky ? 'dark-nav' : ''}`}>
       
       <img 
         src={logo} 
@@ -50,32 +55,32 @@ const Navbar = () => {
 
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
           <li>
-            <Link to='hero' smooth={true} offset={0} duration={500} onClick={() => handleNav('hero')}>
+            <Link to='hero' smooth={true} offset={0} duration={500} onClick={(e) => handleNav(e, 'hero')}>
               Home
             </Link>
           </li>
           <li>
-            <Link to='offers' smooth={true} offset={-220} duration={500} onClick={() => handleNav('offers')}>
+            <Link to='offers' smooth={true} offset={-220} duration={500} onClick={(e) => handleNav(e, 'offers')}>
               Services
             </Link>
           </li>
           <li>
-            <Link to='products' smooth={true} offset={-230} duration={500} onClick={() => handleNav('products')}>
+            <Link to='products' smooth={true} offset={-230} duration={500} onClick={(e) => handleNav(e, 'products')}>
               Catalogue
             </Link>
           </li>
           <li>
-            <Link to='quality' smooth={true} offset={-600} duration={500} onClick={() => handleNav('quality')}>
+            <Link to='quality' smooth={true} offset={-600} duration={500} onClick={(e) => handleNav(e, 'quality')}>
               Quality
             </Link>
           </li>
           <li>
-            <Link to='about' smooth={true} offset={-125} duration={500} onClick={() => handleNav('about')}>
+            <Link to='about' smooth={true} offset={-125} duration={500} onClick={(e) => handleNav(e, 'about')}>
               Our Story
             </Link>
           </li>
           <li>
-            <Link to='contact' smooth={true} offset={-260} duration={500} onClick={() => handleNav('contact')}>
+            <Link to='contact' smooth={true} offset={-260} duration={500} onClick={(e) => handleNav(e, 'contact')}>
               Contact Us
             </Link>
           </li>
@@ -87,4 +92,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

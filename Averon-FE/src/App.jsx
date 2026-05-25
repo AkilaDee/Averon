@@ -20,22 +20,31 @@ import Cloves from './Components/Products/Varieties/Cloves';
 import Vanilla from './Components/Products/Varieties/Vanilla';
 import Nutmeg from './Components/Products/Varieties/Nutmeg';
 
-
+// FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
-  const { pathname, hash } = useLocation();
+  const { pathname, state } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      const target = hash.replace('#', '');
-      scroller.scrollTo(target, {
-        duration: 500,
-        smooth: true,
-        offset: -150,
-      });
+    // 1. Check if a hidden cross-page scroll instruction was passed from the Navbar
+    if (state && state.scrollTo) {
+      // Small delay allows the homepage elements to completely mount before animating the scroll
+      const timer = setTimeout(() => {
+        scroller.scrollTo(state.scrollTo, {
+          duration: 500,
+          smooth: true,
+          offset: -150, // Keeps section headings from being obscured by your fixed navbar
+        });
+      }, 100);
+
+      // Clean history tracking instantly so reloading the page doesn't re-trigger unwanted scrolling
+      window.history.replaceState({}, document.title);
+      
+      return () => clearTimeout(timer);
     } else {
+      // 2. Default step for normal page routes (resets viewport position instantly back to the top)
       window.scrollTo(0, 0);
     }
-  }, [pathname, hash]);
+  }, [pathname, state]);
 
   return null;
 };
@@ -72,45 +81,16 @@ const App = () => {
           </>
         } />
 
-        {/* SUPPLY CHAIN ROUTE - ADDED SEO HERE TOO */}
-        <Route path="/supply-chain" element={
-          <>
-            <SupplyChain />
-          </>
-        } />
-        <Route path="/products/cinnamon" element={
-          <>
-          <Cinnamon />
-          </>
-          } />
-        <Route path="/products/blackpepper" element={
-          <>
-          <BlackPepper/>
-          </>
-          } /> 
-        <Route path="/products/cloves" element={
-          <>
-
-          <Cloves />
-          </>
-          } />
-        <Route path="/products/cardamom" element={
-          <>
-          <Cardamom />
-          </>
-          } />
-        <Route path="/products/vanilla" element={
-          <>
-          <Vanilla />
-          </>
-          } />
-        <Route path="/products/nutmeg" element={
-          <> 
-          <Nutmeg />
-          </>
-          } />
-
-
+        {/* SUPPLY CHAIN ROUTE */}
+        <Route path="/supply-chain" element={<SupplyChain />} />
+        
+        {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
+        <Route path="/products/cinnamon" element={<Cinnamon />} />
+        <Route path="/products/pepper" element={<BlackPepper />} /> 
+        <Route path="/products/cloves" element={<Cloves />} />
+        <Route path="/products/cardamom" element={<Cardamom />} />
+        <Route path="/products/vanilla" element={<Vanilla />} />
+        <Route path="/products/nutmeg" element={<Nutmeg />} />
       </Routes>
     </BrowserRouter>
   );
