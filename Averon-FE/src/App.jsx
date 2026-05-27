@@ -60,10 +60,6 @@ const App = () => {
         {/* LANDING PAGE ROUTE */}
         <Route path="/" element={
           <>
-            {/* <Helmet>
-              <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Sri Lankan Spices UK</title>
-              <meta name="description" content="UK-based direct importer of premium Ceylon Cinnamon and Sri Lankan spices. We grow and manufacture on our own estates to ensure full traceability and consistent quality for B2B and wholesale." />
-            </Helmet> */}
             <Hero />
             <div className="container">
               <Title subTitle='SERVICES' title='Premium Ceylon Spices for Wholesale'/>
@@ -82,15 +78,50 @@ const App = () => {
         } />
 
         {/* SUPPLY CHAIN ROUTE */}
-        <Route path="/supply-chain" element={<SupplyChain />} />
+        <Route path="/supply-chain" element={
+          <>
+          <SupplyChain /> 
+          <Footer />
+          </>
+          } />
         
         {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
-        <Route path="/products/cinnamon" element={<Cinnamon />} />
-        <Route path="/products/pepper" element={<BlackPepper />} /> 
-        <Route path="/products/cloves" element={<Cloves />} />
-        <Route path="/products/cardamom" element={<Cardamom />} />
-        <Route path="/products/vanilla" element={<Vanilla />} />
-        <Route path="/products/nutmeg" element={<Nutmeg />} />
+        <Route path="/products/cinnamon" element={
+          <>
+          <Cinnamon />
+          <Footer />
+          </>
+          } />
+        <Route path="/products/blackpepper" element={
+          <>
+          <BlackPepper />
+          <Footer />
+          </>
+        }/> 
+        <Route path="/products/cloves" element={
+          <>
+          <Cloves />
+          <Footer />
+          </>
+          } />
+        <Route path="/products/cardamom" element={
+          <>
+          <Cardamom />
+          <Footer />
+          </>
+          } />
+        <Route path="/products/vanilla" element={
+          <>
+          <Vanilla />
+          <Footer />
+          </>
+        }/>
+        <Route path="/products/nutmeg" element={
+          <>
+          <Nutmeg />
+          <Footer />
+          </>
+          } />
       </Routes>
     </BrowserRouter>
   );
