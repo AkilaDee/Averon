@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'; // Added for dynamic route tracking
+import { NavLink, useNavigate } from 'react-router-dom'; // 1. Added useNavigate for redirecting
 import logo from '../../assets/logo.png';
 import './Navbar.css';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { FiSearch, FiMail, FiPhone } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState(''); // 2. Track what the user types
+  const navigate = useNavigate(); // 3. Initialize navigation machine
+
+  // 4. Handle the search submission
+  const handleSearchSubmit = (e) => {
+    e.preventDefault(); // Prevents the page from refreshing
+    
+    if (searchQuery.trim()) {
+      // Redirects the user to your products route with a query parameter (e.g. /products?search=cinnamon)
+      navigate(`/products?search=${encodeURIComponent(searchQuery.trim())}`);
+      setSearchQuery(''); // Clears the input field after search
+    }
+  };
 
   return (
     <header className="brusco-header">
@@ -16,20 +29,16 @@ const Navbar = () => {
           <div className="tier-one-center-links">
             <NavLink to="/enquire" className="top-enquire">Enquire Now</NavLink>
             
-            {/* Email Icon */}
             <a href="mailto:info@averonsupplies.co.uk" className="contact-icon-link">
               <FiMail className="contact-inline-icon" /> info@averonsupplies.co.uk
             </a>
             
-            {/* Phone Icon */}
             <a href="tel:+447344469729" className="contact-icon-link">
               <FiPhone className="contact-inline-icon" /> +44 (0) 7344469729
             </a>
           </div>
 
-          {/* 4 Social Icons */}
           <div className="tier-one-socials">
-           
             <a href="https://wa.me/447123456789" target="_blank" rel="noreferrer" className="social-circle wa">
               <FaWhatsapp className="social-icon" />
             </a>
@@ -39,12 +48,6 @@ const Navbar = () => {
             <a href="mailto:info@averonsupplies.co.uk" className="social-circle ml">
               <FaRegEnvelope />
             </a>
-             {/* <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-circle fb">
-              <FaFacebookF />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-circle ig">
-              <FaInstagram />
-            </a> */}
           </div>
         </div>
       </div>
@@ -58,16 +61,19 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          <div className="search-bar-container">
+          {/* 5. CONVERTED TO A FUNCTIONAL FORM LOGIC WRAPPER */}
+          <form onSubmit={handleSearchSubmit} className="search-bar-container">
             <input 
               type="text" 
               placeholder="Type here to search ..." 
               className="nav-search-input" 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)} // Binds input to state
             />
-            <span className="search-icon-btn">
+            <button type="submit" className="search-icon-btn" aria-label="Submit Search">
               <FiSearch />
-            </span>
-          </div>
+            </button>
+          </form>
 
           <div className="brand-statement">
             Sourcing Excellence, Delivering Quality

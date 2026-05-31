@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Hero.css';
 import vid1 from '../../assets/vid.mp4'; 
 import vid2 from '../../assets/vid2.mp4'; 
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -46,9 +48,15 @@ const Hero = () => {
           <p className="hero-subtitle">Importer and Distributor of Quality Ingredients</p>
           
           <div className="hero-btn-group">
-            <a href="/products" className="hero-btn">Product Guide</a>
+            {/* <a href="/products" className="hero-btn">Product Guide</a>
             {/* <a href="#insights" className="hero-btn">Industry Insights</a> */}
-            <a href="/contact-us" className="hero-btn">Enquire Today</a>
+            {/* <a href="/contact-us" className="hero-btn">Enquire Today</a>  */}
+            <Link to="/products" className="hero-btn">
+              Product Guide
+            </Link>
+            <Link to="/contact-us" className="hero-btn">
+              Enquire Today
+            </Link>
           </div>
         </div>
       </section>

@@ -193,6 +193,23 @@
   color: #ffffff;
 }
 
+.search-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px; /* Adjust padding to fit inside your design frame */
+  color: #1E293B;  /* Your theme color */
+  outline: none;
+}
+
+/* Optional hover state to make it premium */
+.search-icon-btn:hover {
+  color: #E8AF03; /* Brand Gold turning on when hovered */
+}
+
 /* ==========================================
    TIER 3: BOTTOM NAVIGATION LINKS (Slate Blue #1E293B)
    ========================================== */
