@@ -19,6 +19,7 @@ import Cardamom from './Components/Products/Varieties/Cardamom';
 import Cloves from './Components/Products/Varieties/Cloves';
 import Vanilla from './Components/Products/Varieties/Vanilla';
 import Nutmeg from './Components/Products/Varieties/Nutmeg';
+import SearchResults from './Components/SearchResults/SearchResults';
 
 // FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
@@ -57,98 +58,103 @@ const App = () => {
       <ScrollHandler /> 
       <Navbar />
       <Routes>
-        {/* LANDING PAGE ROUTE */}
+        {/* LANDING PAGE ROUTE - Fixed and Cleaned */}
         <Route path="/" element={
           <>
             <Hero />
             <div className="container">
               <Title subTitle='' title='Premium Ceylon Spices'/>
               <Offers />
-              
-              
             </div>
             <Footer />
-            
           </>
         } />
 
-         <Route path="/products" element={
+        {/* GLOBAL SEARCH RESULTS ROUTE - Placed here safely as a direct child of <Routes> */}
+        <Route path="/search" element={
           <>
-          <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
-          <Products /> 
-          <Footer />
+            <SearchResults />
+            <Footer />
           </>
-          } />
+        } />
 
-           <Route path="/about-us" element={
+        <Route path="/products" element={
           <>
-          <About setPlayState={setPlayState}/>
-          <Footer />
-          <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+            <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
+            <Products /> 
+            <Footer />
           </>
-          } />
+        } />
 
-           <Route path="/contact-us" element={
+        <Route path="/about-us" element={
           <>
-          <Title subTitle='CONTACT US' title='Get in Touch'/>
-          <Contact />
-          <Footer />
+            <About setPlayState={setPlayState}/>
+            <Footer />
+            <VideoPlayer playState={playState} setPlayState={setPlayState}/>
           </>
-          } />
+        } />
 
-           <Route path="/quality" element={
+        <Route path="/contact-us" element={
           <>
-          <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
-          <Quality />
-          <Footer />
+            <Title subTitle='CONTACT US' title='Get in Touch'/>
+            <Contact />
+            <Footer />
           </>
-          } />
+        } />
+
+        <Route path="/quality" element={
+          <>
+            <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
+            <Quality />
+            <Footer />
+          </>
+        } />
 
         {/* SUPPLY CHAIN ROUTE */}
         <Route path="/supply-chain" element={
           <>
-          <SupplyChain /> 
-          <Footer />
+            <SupplyChain /> 
+            <Footer />
           </>
-          } />
+        } />
         
         {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
         <Route path="/products/cinnamon" element={
           <>
-          <Cinnamon />
-          <Footer />
+            <Cinnamon />
+            <Footer />
           </>
-          } />
+        } />
         <Route path="/products/blackpepper" element={
           <>
-          <BlackPepper />
-          <Footer />
+            <BlackPepper />
+            <Footer />
           </>
         }/> 
         <Route path="/products/cloves" element={
           <>
-          <Cloves />
-          <Footer />
+            <Cloves />
+            <Footer />
           </>
-          } />
+        } />
         <Route path="/products/cardamom" element={
           <>
-          <Cardamom />
-          <Footer />
+            <Cardamom />
+            <Footer />
           </>
-          } />
+        } />
         <Route path="/products/vanilla" element={
           <>
-          <Vanilla />
-          <Footer />
+            <Vanilla />
+            <Footer />
           </>
         }/>
         <Route path="/products/nutmeg" element={
           <>
-          <Nutmeg />
-          <Footer />
+            <Nutmeg />
+            <Footer />
           </>
-          } />
+        } />
       </Routes>
     </BrowserRouter>
   );

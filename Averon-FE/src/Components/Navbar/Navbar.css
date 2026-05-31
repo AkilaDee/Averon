@@ -262,6 +262,29 @@
   padding: 10px 0;
 }
 
+@media (max-width: 560px) {
+  /* 1. Stack the logo and search bar vertically, then center them */
+  .tier-two-container {
+    flex-direction: column;
+    gap: 16px;          /* Adds breathing room between logo and search bar */
+    padding: 16px 20px; /* Slims down side padding on smaller viewports */
+    align-items: center;
+  }
+
+  /* 2. Prevent the search bar from overflowing or breaking its boundaries */
+  .search-bar-container {
+    width: 100%;        /* Forces it to stretch fluidly relative to the parent padding */
+    max-width: 360px;   /* Sets an aesthetic cap so it doesn't look stretched on wider phones */
+    box-sizing: border-box; 
+  }
+}
+
+@media(max-width: 530px){
+     .tier-one-socials {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .tier-one-center-links {
     margin: 0;
@@ -269,9 +292,9 @@
     font-size: 11px;
   }
   
-  .tier-one-socials {
+  /* .tier-one-socials {
     display: none;
-  }
+  } */
 
   .search-bar-container {
     width: 220px;

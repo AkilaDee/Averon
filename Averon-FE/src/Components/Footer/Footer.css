@@ -4,7 +4,7 @@
 .main-footer {
   width: 100%;
   display: flex;
-  margin-top: 60px;
+  margin-top: 100px;
   flex-direction: column;
   font-family: 'Georgia', serif; 
 }

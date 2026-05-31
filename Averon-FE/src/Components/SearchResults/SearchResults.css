@@ -1,0 +1,128 @@
+/* src/pages/SearchResults/SearchResults.css */
+.search-results-page {
+  background-color: #111111;
+  min-height: 80vh;
+  padding: 80px 20px;
+  color: #ffffff;
+}
+
+.search-results-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-meta-badge {
+  color: #E8AF03;
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search-results-heading {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.search-results-heading span {
+  color: #E8AF03;
+}
+
+.search-match-count {
+  color: #94a3b8;
+  font-size: 15px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+}
+
+.results-wrapper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.result-item-card {
+  background-color: #1E293B;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: transform 0.2s ease;
+}
+
+.result-item-card:hover {
+  transform: translateX(4px);
+  border-color: rgba(232, 175, 3, 0.2);
+}
+
+.result-type-tag {
+  background-color: rgba(232, 175, 3, 0.1);
+  color: #E8AF03;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.result-item-title a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.result-item-title a:hover {
+  color: #E8AF03;
+}
+
+.result-item-excerpt {
+  color: #cbd5e1;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 10px 0 18px 0;
+}
+
+.result-action-link {
+  color: #E8AF03;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.no-results-alert-box {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1E293B;
+  border-radius: 12px;
+}
+
+.no-results-alert-box h3 {
+  font-family: 'Georgia', serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.no-results-alert-box p {
+  color: #94a3b8;
+  max-width: 500px;
+  margin: 0 auto 25px auto;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
+.fallback-btn {
+  display: inline-block;
+  background-color: #E8AF03;
+  color: #111111;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
