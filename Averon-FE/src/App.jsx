@@ -62,20 +62,47 @@ const App = () => {
           <>
             <Hero />
             <div className="container">
-              <Title subTitle='SERVICES' title='Premium Ceylon Spices for Wholesale'/>
+              <Title subTitle='' title='Premium Ceylon Spices'/>
               <Offers />
-              <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
-              <Products />
-              <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
-              <Quality />
-              <About setPlayState={setPlayState}/>
-              <Title subTitle='CONTACT US' title='Get in Touch'/>
-              <Contact />
+              
+              
             </div>
             <Footer />
-            <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+            
           </>
         } />
+
+         <Route path="/products" element={
+          <>
+          <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
+          <Products /> 
+          <Footer />
+          </>
+          } />
+
+           <Route path="/about-us" element={
+          <>
+          <About setPlayState={setPlayState}/>
+          <Footer />
+          <VideoPlayer playState={playState} setPlayState={setPlayState}/>
+          </>
+          } />
+
+           <Route path="/contact-us" element={
+          <>
+          <Title subTitle='CONTACT US' title='Get in Touch'/>
+          <Contact />
+          <Footer />
+          </>
+          } />
+
+           <Route path="/quality" element={
+          <>
+          <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
+          <Quality />
+          <Footer />
+          </>
+          } />
 
         {/* SUPPLY CHAIN ROUTE */}
         <Route path="/supply-chain" element={

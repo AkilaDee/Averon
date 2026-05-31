@@ -2,8 +2,7 @@ import React from 'react';
 /* Ensure you import your CSS file at the top */
 import './Offers.css'; 
 import map from '../../assets/map.jpg'
-import stock from '../../assets/stock.jpg'
-import uk from '../../assets/uk.jpg'
+
 import { Link } from 'react-router-dom';
 
 const Offers = () => {

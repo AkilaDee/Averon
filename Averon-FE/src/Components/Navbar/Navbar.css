@@ -1,257 +1,290 @@
-nav{
-
-    width: 100%;
-
-    /* background: #111111; */
-
-    color: #fafafa;
-
-    padding: 6px 0 6px;
-
-    position: fixed;
-
-    top: 0;
-
-    left: 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    z-index: 10;
-
+/* Reset & Base Header Overrides */
+.brusco-header {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-
-.nav-contact-info{
-
-    color: #E8AF03;
-    display: flex;
-    padding: 5px;
-    justify-content: flex-end;
-    gap: 15px; /* Space between spans when horizontal */
-
-    transition: 0.3s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
+/* Inline Contact Icons Configuration */
+.contact-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; 
 }
 
-
-
-.logo{
-
-    width: 180px;
-
+.contact-inline-icon {
+  font-size: 14px;
+  stroke-width: 2.5px; 
+  color: #111111;
 }
 
-
-
-nav ul li{
-
-    display: inline-block;
-
-    list-style: none;
-
-    margin: 5px 20px;
-
-    font-size: 16px;
-    padding: 2px 0 2px;
-
+/* ==========================================
+   TIER 1: TOP UTILITY BAR (Brand Gold #E8AF03)
+   ========================================== */
+.tier-one {
+  background-color: #E8AF03; 
+  height: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0; 
+  color: #111111; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
 }
 
-
-
-.dark-nav{
-
-    background: #111111;
-
-    transition: 0.5s;
-
+.tier-one-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 40px;
 }
 
+.tier-one-center-links {
+  display: flex;
+  gap: 35px;
+  margin: 0 auto; 
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
 
+.tier-one-center-links a {
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
 
-.menu-icon{
+.tier-one-center-links a:hover {
+  opacity: 0.75; 
+}
 
+.top-enquire {
+  text-decoration: underline !important;
+}
+
+.tier-one-socials {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.social-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.social-circle.fb { background-color: #1E3A8A; color: #ffffff; }
+.social-circle.ig { background-color: #C2410C; color: #ffffff; }
+.social-circle.ln { background-color: #fafafa; color: #1E293B; }
+.social-circle.ml { background-color: #111111; color: #fafafa; }
+
+.social-circle:hover {
+  transform: scale(1.08);
+}
+
+/* ==========================================
+   TIER 2: MIDDLE BAR (Rich Black #111111)
+   ========================================== */
+.tier-two {
+  background-color: #111111; 
+  /* Reduced vertical padding from 22px to 16px to prevent row expansion */
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tier-two-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo-img {
+  /* Increased from 48px to 60px to make the logo look cleaner and bolder */
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  display: block;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  border: 1px solid #cbd5e1; 
+  border-radius: 25px;
+  padding: 6px 20px;
+  width: 440px;
+}
+
+.nav-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #111111;
+}
+
+.nav-search-input::placeholder {
+  color: #64748b;
+  font-style: italic;
+}
+
+.search-icon-btn {
+  font-size: 15px;
+  color: #1E293B; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.brand-statement {
+  color: #fafafa; 
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.social-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;         /* Standardizes outer circle size */
+  height: 32px;        /* Standardizes outer circle size */
+  border-radius: 50%;
+  background-color: #25D366; /* Or matching black depending on state */
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Fixes the uneven icon size issue */
+.social-circle svg, 
+.social-circle .social-icon {
+  width: 18px !important;  /* Locks the vector width */
+  height: 18px !important; /* Locks the vector height */
+  display: block;
+}
+
+/* Keep the WhatsApp specific styling ready */
+.social-circle.wa:hover {
+  background-color: #25D366;
+  color: #ffffff;
+}
+
+/* ==========================================
+   TIER 3: BOTTOM NAVIGATION LINKS (Slate Blue #1E293B)
+   ========================================== */
+.tier-three {
+  background-color: #1E293B; 
+}
+
+.tier-three-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-links li a {
+  color: #fafafa; 
+  text-decoration: none;
+  padding: 18px 28px;
+  font-size: 14px;
+  font-weight: 500; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5px;
+  display: block;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.main-nav-links li a:hover {
+  background-color: #111111; 
+  color: #E8AF03;            
+}
+
+.main-nav-links li a.active-nav-item {
+  background-color: #E8AF03; 
+  color: #111111;            
+  font-weight: 600;
+}
+
+.mobile-toggle-icon {
+  display: none;
+  font-size: 24px;
+  color: #fafafa;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .tier-one-center-links {
+    margin: 0;
+    gap: 15px;
+    font-size: 11px;
+  }
+  
+  .tier-one-socials {
     display: none;
+  }
 
-}
+  .search-bar-container {
+    width: 220px;
+  }
 
+  .brand-statement {
+    display: none;
+  }
 
+  .mobile-toggle-icon {
+    display: block;
+  }
 
-/* -------media query--------*/
+  .main-nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1E293B; 
+    flex-direction: column;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
 
-@media (max-width: 1040px){
+  .main-nav-links.open-mobile {
+    display: flex;
+  }
 
-    logo{
-
-        width: 140px;
-
-    }
-
-    nav ul li{
-
-        margin: 10px 15px;
-
-    }
-
-}
-
-@media (max-width: 870px){
-
-    nav{
-
-        padding: 15px 0;
-
-    }
-
-    nav ul{
-
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background: #111111;
-        z-index: -1;
-        width: 200px;
-        padding-top: 70px;
-        transition: 0.5s;
-
-    }
-
-    nav ul li{
-
-        display: block;
-        margin: 25px 40px;
-        text-decoration: underline;
-
-    }
-
-    .menu-icon{
-
-        display: block;
-
-        width: 30px;
-
-        cursor: pointer;
-
-    }
-
-    .hide-mobile-menu{
-
-        right: -200px;
-
-    }
-
-    .nav-contact-info {
-
-        flex-direction: column; /* This forces the stack */
-
-        align-items: flex-end;  /* Keeps the text aligned to the right */
-
-        gap: 5px;               /* Reduces the gap for a tighter stack */
-
-    }
-
-    /* .nav-contact-info span:last-child {
-
-        padding-bottom: 5px;
-
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-    } */
-
-}
-
-@media (max-width: 800px){
-nav {
-        /* Change nav from a row to a column to stack Logo and Contact Info */
-        flex-direction: column; 
-        align-items: flex-start; /* Aligns everything to the left */
-        padding: 1px 2px;     /* Gives the logo some breathing room from the edge */
-        /* width: 150px; */
-    }
-
-    .nav-contact-info {
-        flex-direction: column;  /* Stack phone and email vertically */
-        align-items: flex-start; /* Align text to the left */
-        justify-content: flex-start;
-        width: 100%;             /* Ensure it takes up the width to stay left */
-        padding: 0 0;
-        line-height: 0.8;       /* Reduces the height of each line */
-        margin-bottom: 10px;
-        margin-top: 8px;
-        border-bottom: none;     /* Optional: clean up the border for mobile */
-    }
-
-    /* .logo {
-        width: 120px;           
-        margin-bottom: 5px;      
-    } */
-
-    /* Ensure the hamburger menu icon stays in the top right corner */
-    .menu-icon {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-
-}
-
-@media (max-width: 475px){
-    nav ul{
-        width: 150px;
-    }
-    .nav-contact-info {
-        font-size: 14px;
-        line-height: 0.8;       /* Reduces the height of each line */
-        margin-bottom: 5px;
-    }
-
-
-
-}
-@media (max-width: 450px){
-    .nav-contact-info {
-        font-size: 12px;
-        
-    }
-
-}
-
-@media (max-width: 360px){
-    nav ul{
-        width: 130px;
-        margin-left: 0;
-    }
-    .nav-contact-info {
-        font-size: 10px;
-        
-    }
-    .logo{
-
-        width: 145px;
-
-    }
-}
-@media (max-width: 305px){
-    
-    .nav-contact-info {
-        font-size: 9px;
-        
-    }
-    .logo{
-
-        width: 130px;
-
-    }
-    nav ul{
-        width: 115px;
-        padding-right: 10px;
-        font-size: 10px;
-    }
+  .main-nav-links li a {
+    padding: 16px 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
 }
