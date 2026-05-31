@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
 
           <div className="tier-one-socials">
-            <a href="https://wa.me/447123456789" target="_blank" rel="noreferrer" className="social-circle wa">
+            <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="social-circle wa">
               <FaWhatsapp className="social-icon" />
             </a>
             <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="social-circle ln">

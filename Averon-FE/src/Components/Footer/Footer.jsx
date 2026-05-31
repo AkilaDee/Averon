@@ -88,7 +88,7 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-social-circle ln">
                 <FaLinkedinIn />
               </a> */}
-              <a href="https://wa.me/447123456789" target="_blank" rel="noreferrer" className="footer-social-circle ln">
+              <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="footer-social-circle ln">
                   <FaWhatsapp className="social-icon" />
               </a>
               <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="footer-social-circle ln">
