@@ -119,7 +119,6 @@
 }
 
 .main-logo-img {
-  /* Increased from 48px to 60px to make the logo look cleaner and bolder */
   height: 80px;
   width: auto;
   object-fit: contain;
@@ -264,22 +263,43 @@
 
 @media (max-width: 560px) {
   /* 1. Stack the logo and search bar vertically, then center them */
+.tier-two {
+    padding: 8px 0;
+  }
+
+  /* 2. Stack elements and bring them closer together (Gap dropped from 16px to 8px) */
+ .tier-two {
+    padding-top: 8px;
+    padding-bottom: 14px; /* Increased from 8px to add space to the lower margin */
+  }
+
+  /* 2. Stack elements and bring them closer together */
   .tier-two-container {
     flex-direction: column;
-    gap: 16px;          /* Adds breathing room between logo and search bar */
-    padding: 16px 20px; /* Slims down side padding on smaller viewports */
+    gap: 8px;           /* Keeps space between logo and search bar tight */
+    padding: 0 20px;    
     align-items: center;
   }
 
-  /* 2. Prevent the search bar from overflowing or breaking its boundaries */
+  /* 3. Fluid scaling for the search container */
   .search-bar-container {
-    width: 100%;        /* Forces it to stretch fluidly relative to the parent padding */
-    max-width: 360px;   /* Sets an aesthetic cap so it doesn't look stretched on wider phones */
+    width: 100%;        
+    max-width: 320px;   
     box-sizing: border-box; 
+    margin-top: 2px;
+    margin-bottom: 0;   /* Handled cleanly by the container padding below it */
+    padding: 4px 16px;
+  }
+
+  /* 4. Keeps logo tall and sharp */
+  .main-logo-img {
+    margin: 0;
+    height: 75px;       
+    display: block;
   }
 }
 
-@media(max-width: 530px){
+@media(max-width: 650px){
      .tier-one-socials {
     display: none;
   }

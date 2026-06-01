@@ -58,6 +58,18 @@
   font-weight: 400;
   max-width: 420px;
 }
+/* ==========================================
+   COLUMN HEADERS (Forced Override Engine)
+   ========================================== */
+.footer-col h3.footer-column-title {
+  font-family: 'Georgia', serif;
+  font-size: 22px; 
+  font-weight: 600; 
+  color: #fafafa !important; /* Force silver-white over global overrides */
+  margin-top: 0;
+  margin-bottom: 22px; 
+  margin-left: 25px;
+}
 
 /* ==========================================
    COLUMN 2: NAVIGATION SECTION
@@ -267,7 +279,7 @@
     margin-top: 0; 
     margin-left: 0;
   }
-  .footer-coloumn-title,
+  .footer-col h3.footer-column-title,
   .footer-links-list,
   .contact-item,
   .footer-socials-row {

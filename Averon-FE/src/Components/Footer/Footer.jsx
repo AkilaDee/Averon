@@ -1,16 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../../assets/logo.png'; // Using your existing logo path
+import logo from '../../assets/logo.png'; 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaRegEnvelope } from 'react-icons/fa';
 import { FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
-
-// Placeholder badge imports — adjust filenames or paths as needed
-// import organicBadge from '../../assets/organic-food.png';
-// import brcBadge from '../../assets/brcs.png';
-// import sedexBadge from '../../assets/sedex.png';
-// import campdenBadge from '../../assets/campden.png';
-// import gptwBadge from '../../assets/gptw.png';
-// import bfffBadge from '../../assets/bfff.png';
 
 const Footer = () => {
   return (
@@ -34,22 +26,21 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* COLUMN 2: Navigation Links */}
+          {/* COLUMN 2: Navigation Links (Typo Fixed) */}
           <div className="footer-col links-col">
-            <h3 className="footer-coloumn-title"> Navigation</h3>
+            <h3 className="footer-column-title">Navigation</h3>
             <ul className="footer-links-list">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#catalogue">Catalogue</a></li>
-              <li><a href="#quality">Quality</a></li>
-              <li><a href="#our-story">Our Story</a></li>
-              <li><a href="#contact-us">Contact Us</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/products">Products</a></li>
+              <li><a href="/quality">Quality</a></li>
+              <li><a href="/about-us">Our Story</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
             </ul>
           </div>
 
-          {/* COLUMN 3: Contact Details & Socials */}
+          {/* COLUMN 3: Contact Details & Socials (Typo Fixed) */}
           <div className="footer-col contact-col">
-            <h3 className="footer-coloumn-title">Contact Us</h3>
+            <h3 className="footer-column-title">Contact Us</h3>
             
             <div className="contact-item address-item">
               <FiMapPin className="contact-icon pin-icon" />
@@ -57,9 +48,6 @@ const Footer = () => {
                 <p>42 Porthcawe Road</p>
                 <p>London</p>
                 <p>SE26 5TA</p>
-                {/* <p>Evesham</p>
-                <p>Worcestershire</p>
-                <p>WR11 8JJ</p> */}
               </div>
             </div>
 
@@ -79,15 +67,6 @@ const Footer = () => {
 
             {/* Social Buttons Container */}
             <div className="footer-socials-row">
-              {/* <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer-social-circle fb">
-                <FaFacebookF />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="footer-social-circle ig">
-                <FaInstagram />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="footer-social-circle ln">
-                <FaLinkedinIn />
-              </a> */}
               <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="footer-social-circle ln">
                   <FaWhatsapp className="social-icon" />
               </a>
@@ -102,21 +81,6 @@ const Footer = () => {
 
           {/* COLUMN 4: Certifications & Subscription */}
           <div className="footer-col certs-col">
-            {/* <h3 className="footer-coloumn-title">Certifications & Memberships</h3>
-            
-            {/* 3x2 Badge Grid */}
-            {/* <div className="badges-grid">
-              <div className="badge-tile"><img src={organicBadge} alt="Organic Food Federation" /></div>
-              <div className="badge-tile"><img src={brcBadge} alt="BRGS Certified" /></div>
-              <div className="badge-tile"><img src={sedexBadge} alt="Sedex" /></div>
-              <div className="badge-tile"><img src={campdenBadge} alt="Campden BRI" /></div>
-              <div className="badge-tile"><img src={gptwBadge} alt="Great Place To Work" /></div>
-              <div className="badge-tile"><img src={bfffBadge} alt="British Frozen Food Federation" /></div>
-            </div>
-
-            <button className="newsletter-btn">
-              Subscribe to our Newsletter
-            </button>  */}
           </div>
 
         </div>
