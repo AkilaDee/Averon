@@ -64,7 +64,7 @@ const Hero = () => {
       {/* SECTION B: THE LOWER CONTENT SPLIT (Matches image_899461.jpg) */}
       <div className="hero-infobar">
         <div className="hero-infobar-inner">
-          <h2 className="infobar-title">Trusted Ingredients Supplier for Food Manufacturers</h2>
+          <h2 className="infobar-title">Strategic Ingredients Partner for Premium Grade Ceylon Spices</h2>
           {/* <p className="infobar-text">
             For over 35 years Averon has been searching the globe for interesting products, 
             produced by reputable suppliers who value quality and partnership. As a major importer 
