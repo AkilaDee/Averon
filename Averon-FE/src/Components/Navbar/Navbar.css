@@ -24,10 +24,10 @@
    ========================================== */
 .tier-one {
   background-color: #E8AF03; 
-  height: 15px;
+  height: 14px;
   display: flex;
   align-items: center;
-  padding: 20px 0; 
+  padding: 18px 0; 
   color: #111111; 
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
 }
@@ -100,7 +100,7 @@
 .tier-two {
   background-color: #111111; 
   /* Reduced vertical padding from 22px to 16px to prevent row expansion */
-  padding: 16px 0;
+  padding: 18px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 

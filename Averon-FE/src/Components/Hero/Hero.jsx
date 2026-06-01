@@ -80,7 +80,7 @@ const Hero = () => {
 
         <div className="hero-content">
           <h1 className="hero-title">Welcome to Averon Supplies</h1>
-          <p className="hero-subtitle">Importer and Distributor of Quality Ingredients</p>
+          <p className="hero-subtitle">Importer and Distributor of Premium Spices</p>
           
           <div className="hero-btn-group">
             <Link to="/products" className="hero-btn">
