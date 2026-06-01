@@ -4,23 +4,44 @@ import vid1 from '../../assets/vid.mp4';
 import vid2 from '../../assets/vid2.mp4'; 
 import { Link } from 'react-router-dom';
 
-
 const Hero = () => {
-  const videoRef = useRef(null);
-  const playlist = [vid2, vid1];
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+  
+  // 0 = vid2 (Active first), 1 = vid1
+  const [activeVideo, setActiveVideo] = useState(0);
 
+  // Set playback speed and kick off the initial active video immediately
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5;
-      videoRef.current.play().catch(error => {
-        console.log("Autoplay context tracking:", error);
-      });
+    if (videoRef1.current) {
+      videoRef1.current.playbackRate = 0.5;
+      videoRef1.current.play().catch(err => console.log("Initial playback failed:", err));
     }
-  }, [currentVideoIndex]);
+    if (videoRef2.current) {
+      videoRef2.current.playbackRate = 0.5;
+    }
+  }, []);
 
-  const handleVideoEnded = () => {
-    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % playlist.length);
+  // When Video 1 (vid2) finishes playing
+  const handleVideo1Ended = () => {
+    if (videoRef2.current) {
+      videoRef2.current.currentTime = 0;
+      // Start playing the background video FIRST before changing state visibility
+      videoRef2.current.play().then(() => {
+        setActiveVideo(1); 
+      }).catch(err => console.log("Video 2 transition fail:", err));
+    }
+  };
+
+  // When Video 2 (vid1) finishes playing
+  const handleVideo2Ended = () => {
+    if (videoRef1.current) {
+      videoRef1.current.currentTime = 0;
+      // Start playing the background video FIRST before changing state visibility
+      videoRef1.current.play().then(() => {
+        setActiveVideo(0); 
+      }).catch(err => console.log("Video 1 transition fail:", err));
+    }
   };
 
   return (
@@ -29,17 +50,31 @@ const Hero = () => {
       {/* SECTION A: THE VIDEO CANVAS */}
       <section className="hero-section">
         <div className="video-wrapper">
+          
+          {/* VIDEO ELEMENT 1 (vid2) */}
           <video
-            ref={videoRef}
-            src={playlist[currentVideoIndex]} 
-            autoPlay
+            ref={videoRef1}
+            src={vid2} 
             muted
             playsInline
-            onEnded={handleVideoEnded} 
-            className="hero-video"
+            onEnded={handleVideo1Ended} 
+            className={`hero-video ${activeVideo === 0 ? 'visible' : 'hidden'}`}
           >
             Your browser does not support the video tag.
           </video>
+
+          {/* VIDEO ELEMENT 2 (vid1) */}
+          <video
+            ref={videoRef2}
+            src={vid1} 
+            muted
+            playsInline
+            onEnded={handleVideo2Ended} 
+            className={`hero-video ${activeVideo === 1 ? 'visible' : 'hidden'}`}
+          >
+            Your browser does not support the video tag.
+          </video>
+
           <div className="hero-overlay"></div>
         </div>
 
@@ -48,9 +83,6 @@ const Hero = () => {
           <p className="hero-subtitle">Importer and Distributor of Quality Ingredients</p>
           
           <div className="hero-btn-group">
-            {/* <a href="/products" className="hero-btn">Product Guide</a>
-            {/* <a href="#insights" className="hero-btn">Industry Insights</a> */}
-            {/* <a href="/contact-us" className="hero-btn">Enquire Today</a>  */}
             <Link to="/products" className="hero-btn">
               Product Guide
             </Link>
@@ -61,22 +93,10 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* SECTION B: THE LOWER CONTENT SPLIT (Matches image_899461.jpg) */}
+      {/* SECTION B: THE LOWER CONTENT SPLIT */}
       <div className="hero-infobar">
         <div className="hero-infobar-inner">
           <h2 className="infobar-title">Single-Origin, Premium Grade Ceylon Spices</h2>
-          {/* <p className="infobar-text">
-            For over 35 years Averon has been searching the globe for interesting products, 
-            produced by reputable suppliers who value quality and partnership. As a major importer 
-            and distributor, we collaborate with our food manufacturing, wholesale, and retail 
-            customers, sharing insight, innovation, and ideas and supplying high-quality food 
-            ingredients with integrity.
-          </p>
-          <p className="infobar-text">
-            In addition to supplying great products, we believe your ingredients partner should also 
-            offer first-class technical support, market insights and ideas, and exceptional service. 
-            We look forward to working with you and becoming your ingredients partner.
-          </p> */}
         </div>
       </div>
 
