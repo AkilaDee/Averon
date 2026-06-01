@@ -260,7 +260,109 @@
   cursor: pointer;
   padding: 10px 0;
 }
+/* ==========================================
+   DROPDOWN ENGINE DEFINITIONS
+   ========================================== */
 
+/* The list item container wrapper */
+.nav-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Align layout text and inline arrow graphic */
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-arrow-icon {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+/* Hidden menu block container */
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111111; /* Matches dark theme elements */
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-top: 3px solid #E8AF03; /* Small accent bar matching brand color */
+  border-radius: 0 0 4px 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  z-index: 999;
+}
+
+/* Dropdown individual column link rows */
+.nav-dropdown-menu li {
+  width: 100%;
+  margin: 0 !important; /* Resets structural margins */
+}
+
+.nav-dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fafafa !important;
+  text-decoration: none;
+  font-size: 14.5px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover States */
+.nav-dropdown-menu li a:hover {
+  background-color: #1a1a1a;
+  color: #E8AF03 !important; /* Text switches to brand gold */
+}
+
+/* Hovering over parent activates container overlay visibility and rotates chevron */
+.nav-dropdown-wrapper:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-wrapper:hover .dropdown-arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* ==========================================
+   MOBILE MENU ADAPTERS (Responsive Query)
+   ========================================== */
+@media (max-width: 768px) {
+  .nav-dropdown-menu {
+    position: static; /* Unlocks absolute lock inside mobile views */
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 20px; /* Indents sub-links under main item */
+    border-top: none;
+    display: none; /* Hidden by default in mobile accordion view */
+  }
+
+  /* Keeps submenus visible on mobile panel expansion */
+  .main-nav-links.open-mobile .nav-dropdown-menu {
+    display: block;
+  }
+  
+  .nav-dropdown-menu li a {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+}
 @media (max-width: 560px) {
   /* 1. Stack the logo and search bar vertically, then center them */
 .tier-two {

@@ -125,7 +125,7 @@ const App = () => {
             <Footer />
           </>
         } />
-        <Route path="/products/blackpepper" element={
+        <Route path="/products/black-pepper" element={
           <>
             <BlackPepper />
             <Footer />
@@ -137,7 +137,7 @@ const App = () => {
             <Footer />
           </>
         } />
-        <Route path="/products/cardamom" element={
+        <Route path="/products/green-cardamom" element={
           <>
             <Cardamom />
             <Footer />

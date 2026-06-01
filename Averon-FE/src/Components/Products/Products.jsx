@@ -99,14 +99,14 @@ const Products = () => {
           <img src={pepper_500} alt="black pepper" />
           <h3>Black Pepper</h3>
           <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile.</p>
-          <Link to="/products/blackpepper" className="read-more-btn">Read More</Link>
+          <Link to="/products/black-pepper" className="read-more-btn">Read More</Link>
         </div>
 
         <div className="cat-card">
           <img src={cardamom} alt="Cardamom" />
           <h3>Green Cardamom</h3>
           <p>Premium Ceylon Green Cardamom is prized for its cooling, floral aroma and high cineole content, offering a sweet yet complex flavour profile.</p>
-          <Link to="/products/cardamom" className="read-more-btn">Read More</Link>
+          <Link to="/products/green-cardamom" className="read-more-btn">Read More</Link>
         </div>
 
         <div className="cat-card">

@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import './Navbar.css';
 import { FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
-import { FiSearch, FiMail, FiPhone } from 'react-icons/fi';
+import { FiSearch, FiMail, FiPhone, FiChevronDown } from 'react-icons/fi'; // Imported FiChevronDown
 
 const Navbar = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
@@ -15,11 +15,10 @@ const Navbar = () => {
     if (searchQuery.trim()) {
       navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
       setSearchQuery('');
-      setIsMobileOpen(false); // Optional: Closes the mobile menu if they search from it
+      setIsMobileOpen(false); 
     }
   };
 
-  // Helper function to cleanly close the menu when a link is clicked
   const closeMobileMenu = () => setIsMobileOpen(false);
 
   return (
@@ -40,7 +39,7 @@ const Navbar = () => {
           </div>
 
           <div className="tier-one-socials">
-            <a href="https://wa.me/447123456789" target="_blank" rel="noreferrer" className="social-circle wa">
+            <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="social-circle wa">
               <FaWhatsapp className="social-icon" />
             </a>
             <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="social-circle ln">
@@ -91,7 +90,6 @@ const Navbar = () => {
             &#9776;
           </div>
 
-          {/* ADDED onClick={closeMobileMenu} to every single item link below */}
           <ul className={`main-nav-links ${isMobileOpen ? 'open-mobile' : ''}`}>
             <li>
               <NavLink 
@@ -103,15 +101,52 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+
+            {/* DROPDOWN NAVIGATION ITEM */}
+            <li className="nav-dropdown-wrapper">
               <NavLink 
                 to="/products" 
-                className={({ isActive }) => isActive ? "active-nav-item" : ""}
+                className={({ isActive }) => `dropdown-trigger ${isActive ? "active-nav-item" : ""}`}
                 onClick={closeMobileMenu}
               >
-                Products
+                Products <FiChevronDown className="dropdown-arrow-icon" />
               </NavLink>
+              
+              {/* Dropdown Menu Overlay */}
+              <ul className="nav-dropdown-menu">
+                <li>
+                  <NavLink to="/products/cinnamon" onClick={closeMobileMenu}>
+                    Ceylon Cinnamon
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/products/black-pepper" onClick={closeMobileMenu}>
+                    Black Pepper
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/products/green-cardamom" onClick={closeMobileMenu}>
+                    Green Cardamom
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/products/cloves" onClick={closeMobileMenu}>
+                    Cloves
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/products/vanilla" onClick={closeMobileMenu}>
+                    Vanilla
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/products/nutmeg" onClick={closeMobileMenu}>
+                    Nutmeg
+                  </NavLink>
+                </li>
+              </ul>
             </li>
+
             <li>
               <NavLink 
                 to="/quality" 
