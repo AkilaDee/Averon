@@ -115,7 +115,7 @@ const Navbar = () => {
               {/* Dropdown Menu Overlay */}
               <ul className="nav-dropdown-menu">
                 <li>
-                  <NavLink to="/products/cinnamon" onClick={closeMobileMenu}>
+                  <NavLink to="/products/ceylon-cinnamon" onClick={closeMobileMenu}>
                     Ceylon Cinnamon
                   </NavLink>
                 </li>

@@ -89,10 +89,10 @@ const Products = () => {
           ========================================================= */}
       <div className="product-categories">
         <div className="cat-card">
-          <img src={cinnamon} alt="Cinnamon" />
+          <img src={cinnamon} alt="Ceylon-Cinnamon" />
           <h3>Ceylon Cinnamon</h3>
           <p>Premium Ceylon Cinnamon is valued for its delicate aroma and natural sweetness, offering a refined and distinctive flavor profile.</p>
-          <Link to="/products/cinnamon" className="read-more-btn">Read More</Link>
+          <Link to="/products/ceylon-cinnamon" className="read-more-btn">Read More</Link>
         </div>
 
         <div className="cat-card">

@@ -119,7 +119,7 @@ const App = () => {
         } />
         
         {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
-        <Route path="/products/cinnamon" element={
+        <Route path="/products/ceylon-cinnamon" element={
           <>
             <Cinnamon />
             <Footer />
