@@ -1,10 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async';
 import './Quality.css'
 
 
 const quality = () => {
   return (
     <div className='quality-section'>
+      <Helmet>
+        <title>Spice Quality Assurance & Food Safety Compliance | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Our rigorous spice quality control protocols ensure food-grade compliance. Access Certificates of Analysis (CoA), laboratory testing, and microbial purity data." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/quality" />
+      </Helmet>
       <div className="quality-footer">
     {/* The Two Premium Pillars */}
     <div className="premium-pillars">

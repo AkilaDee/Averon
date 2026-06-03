@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Nutmeg.css';
 
 // Asset Imports - Points directly to your nutmeg assets
@@ -26,7 +27,14 @@ const Nutmeg = () => {
 
   return (
     <div className="nutmeg-detail-page">
-      
+      <Helmet>
+        <title>Wholesale Nutmeg Bulk Supply | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of premium Ceylon Nutmeg. High volatile oil whole ABCD, sound unwrinkled, and ground grades for food manufacturers." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg" />
+      </Helmet>
       {/* BREADCRUMB NAVIGATION */}
       <div className="nut-back-nav">
         <Link to="/" className="nut-back-link">

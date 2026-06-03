@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Cloves.css';
 
 // Asset Imports - Points directly to your cloves assets
@@ -28,7 +29,14 @@ const Cloves = () => {
 
   return (
     <div className="cloves-detail-page">
-      
+      <Helmet>
+        <title>Wholesale Cloves Bulk Supply | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of premium Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves" />
+      </Helmet>
       {/* BREADCRUMB NAVIGATION */}
       <div className="clv-back-nav">
         <Link to="/" className="clv-back-link">

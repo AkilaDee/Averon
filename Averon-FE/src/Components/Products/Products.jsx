@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Products.css'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import product1 from '../../assets/alba.JPG'
 import product2 from '../../assets/c5spec.JPG'
 import product3 from '../../assets/c5stick.JPG'
@@ -83,7 +84,17 @@ const Products = () => {
 
   return (
     <div className='products'>
-
+      <Helmet>
+      {/* Primary target: Wholesale Spices & Bulk Importers */}
+      <title>Wholesale Spices Supplier & Bulk Importers | Averon Supplies</title>
+      
+      <meta 
+        name="description" 
+        content="Direct estate-to-business wholesale supply of single-origin, premium grade Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
+      />
+  
+    <link rel="canonical" href="https://www.averonsupplies.co.uk/products" />
+</Helmet>
       {/* =========================================================
           SECTION 1: MAIN PRODUCTS DISPLAY (CLEANED OF INLINE STYLES)
           ========================================================= */}

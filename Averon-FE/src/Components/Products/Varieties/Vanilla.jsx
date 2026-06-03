@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Vanilla.css';
 
 // Asset Imports - Points directly to your vanilla assets
@@ -26,7 +27,14 @@ const Vanilla = () => {
 
   return (
     <div className="vanilla-detail-page">
-      
+      <Helmet>
+        <title>Wholesale Vanilla Pods Bulk Supply | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of premium Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla" />
+      </Helmet>
       {/* BREADCRUMB NAVIGATION */}
       <div className="van-back-nav">
         <Link to="/" className="van-back-link">

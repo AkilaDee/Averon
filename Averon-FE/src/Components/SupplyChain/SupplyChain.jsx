@@ -1,12 +1,21 @@
 import React from 'react';
 import './SupplyChain.css'; 
 import plants from '../../assets/cinnamon plants.jpg';
+import { Helmet } from 'react-helmet-async';
 // IMPORT your hero background image here
 import heroBg from '../../assets/hero-supply.jpg'; 
 
 const SupplyChain = () => {
   return (
     <div className="supply-chain-page">
+      <Helmet>
+        <title>Direct Spice Supply Chain & Sourcing Traceability | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Explore our single-origin, estate-to-business spice supply chain. We offer fully transparent, traceable sourcing for bulk cinnamon, black pepper, and premium spices." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/supply-chain" />
+      </Helmet>
       {/* Updated Hero Section with Inline Style for the Background */}
       <section 
         className="sc-hero" 

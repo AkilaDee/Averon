@@ -15,7 +15,7 @@ import Footer from './Components/Footer/Footer';
 import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 import Cinnamon from './Components/Products/Varieties/Cinnamon';
 import BlackPepper from './Components/Products/Varieties/BlackPepper';
-import Cardamom from './Components/Products/Varieties/Cardamom';
+import Cardamom from './Components/Products/Varieties/GreenCardamom';
 import Cloves from './Components/Products/Varieties/Cloves';
 import Vanilla from './Components/Products/Varieties/Vanilla';
 import Nutmeg from './Components/Products/Varieties/Nutmeg';

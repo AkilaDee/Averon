@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Cardamom.css';
+import { Helmet } from 'react-helmet-async';
+import './GreenCardamom.css';
 
 // Asset Imports - Points directly to your cardamom assets
 import cardamom from '../../../assets/cardamom.jpg';
 import cardamom_ground from '../../../assets/cardamom ground.jpg';
 
-const Cardamom = () => {
+const GreenCardamom = () => {
   const specs = [
     { label: "Available Grades", value: "Jumbo Green Cardamom (LG), Fine Ground Powder" },
     { label: "Pod Size Profile", value: "7mm – 8mm+ calibrated pods" },
@@ -28,7 +29,14 @@ const Cardamom = () => {
 
   return (
     <div className="cardamom-detail-page">
-      
+      <Helmet>
+        <title>Wholesale Green Cardamom Bulk Supply | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of premium green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom" />
+      </Helmet>
       {/* BREADCRUMB NAVIGATION */}
       <div className="card-back-nav">
         <Link to="/" className="card-back-link">
@@ -108,4 +116,4 @@ const Cardamom = () => {
   );
 };
 
-export default Cardamom;
+export default GreenCardamom;

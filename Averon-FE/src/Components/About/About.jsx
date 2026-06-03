@@ -1,11 +1,20 @@
 import React from 'react'
 import './About.css'
+import { Helmet } from 'react-helmet-async';
 import about_img from '../../assets/about.jpg'
 import play_icon from '../../assets/play-icon.png'
 
 const About = ({setPlayState}) => {
   return (
     <div className='about-wrapper'>
+      <Helmet>
+        <title>About Averon Supplies | Direct Wholesale Spice Importers</title>
+        <meta 
+          name="description" 
+          content="Discover the story behind Averon Supplies. We bridge the gap between single-origin spice estates and global food manufacturing with transparency and integrity." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/about" />
+      </Helmet>
     <div className='about'>
         <div className='about-left'>
             <img src={about_img} alt="" className='about-img'/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import { Helmet } from 'react-helmet-async';
 import msg_icon from '../../assets/msg-icon.png'
 import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
@@ -36,6 +37,14 @@ const Contact = () => {
 
   return (
     <div className='contact'>
+      <Helmet>
+        <title>Contact Our Bulk Spice Procurement & Trade Desk | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Contact Averon Supplies to request wholesale spice samples, secure container-load contract pricing, or arrange a vendor audit with our compliance desk." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" />
+      </Helmet>
         <div className='contact-col'>
             <h3>Send us a message<img src={msg_icon} alt="" /></h3>
             <p>Feel free to reach out</p>

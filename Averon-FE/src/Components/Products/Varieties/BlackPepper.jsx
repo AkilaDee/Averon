@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './BlackPepper.css';
 
 // Asset Imports - Points directly to your pepper assets
@@ -32,7 +33,14 @@ const BlackPepper = () => {
 
   return (
     <div className="pepper-detail-page">
-      
+      <Helmet>
+        <title>Wholesale Black Pepper Bulk Supply | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of single-origin, premium grade Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper" />
+      </Helmet>
       {/* BREADCRUMB NAVIGATION */}
       <div className="pep-back-nav">
         <Link to="/" className="pep-back-link">
