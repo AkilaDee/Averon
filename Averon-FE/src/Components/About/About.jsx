@@ -2,9 +2,8 @@ import React from 'react'
 import './About.css'
 import { Helmet } from 'react-helmet-async';
 import about_img from '../../assets/about.jpg'
-import play_icon from '../../assets/play-icon.png'
 
-const About = ({setPlayState}) => {
+const About = () => {
   return (
     <div className='about-wrapper'>
       <Helmet>
@@ -18,12 +17,11 @@ const About = ({setPlayState}) => {
     <div className='about'>
         <div className='about-left'>
             <img src={about_img} alt="" className='about-img'/>
-            <img src={play_icon} alt="" className='play-icon' onClick={()=>{setPlayState(true)}}/>
 
         </div>
         <div className='about-right'>
             <h3>Our Story</h3>
-            <h2>THE AVERON JOURNEY</h2>
+            <h2>THE  AVERON JOURNEY</h2>
             <p>Averon Supplies Ltd operates as a strategic bridge between the specialized spice gardens of Sri Lanka and the exacting requirements of the British food industry. 
               As a dedicated importer and primary wholesaler, the company is defined by a commitment to providing UK trade and wholesale customers with authentic Ceylon spices without compromise. 
               This heritage provides a distinct market advantage through an exclusive focus on premium-grade products recognized globally for their superior aroma, complex flavor profiles, 

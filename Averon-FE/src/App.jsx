@@ -12,7 +12,6 @@ import Contact from './Components/Contact/Contact';
 import Products from './Components/Products/Products';
 import SupplyChain from './Components/SupplyChain/SupplyChain';
 import Footer from './Components/Footer/Footer';
-import VideoPlayer from './Components/VideoPlayer/VideoPlayer';
 import Cinnamon from './Components/Products/Varieties/Cinnamon';
 import BlackPepper from './Components/Products/Varieties/BlackPepper';
 import Cardamom from './Components/Products/Varieties/GreenCardamom';
@@ -90,7 +89,6 @@ const App = () => {
           <>
             <About setPlayState={setPlayState}/>
             <Footer />
-            <VideoPlayer playState={playState} setPlayState={setPlayState}/>
           </>
         } />
 
