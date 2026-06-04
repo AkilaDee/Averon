@@ -1,60 +1,266 @@
-.contact{
-    margin: 80px auto;
-    max-width: 90%;
+.contact-container {
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+}
+
+/* Master Grid Structure */
+.contact-layout-wrapper {
     display: flex;
-    align-content: center;
     justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 60px;
 }
 
-.contact-col{
-    flex-basis: 48%;
-    color: #676767;
-}
-.contact-col h3{
-    color: #000F38;
-    font-weight: 500;
-    font-size: 25px;
+/* Left Stack Panel */
+.contact-left-content {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-col h3 img{
-    width: 35px;
-    margin-left: 10px;
+/* Right Static Side Image Container */
+.contact-right-sidebar {
+    flex-basis: 25%;
+    align-self: flex-start;
 }
-.contact-col p{
-    max-width: 450px;
-    list-style: 0.3;
+
+.static-image-box {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
 }
-.contact-col ul li{
+
+.static-image-box img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    display: block;
+}
+
+/* Clear Divider Style */
+.corporate-divider {
+    border: 0;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 40px 0;
+    width: 100%;
+}
+
+/* Top Information Layout Block */
+.corporate-info-block {
+    color: #374151;
+}
+
+.corporate-info-block h3 {
+    color: #002B49;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    margin: 20px 0;
-}
-.contact-col ul li img{
-    width: 25px;
-    margin-right: 10px;
-}
-.contact form input, .contact form textarea{
-    display: block;
-    width: 100%;
-    background: #EBECFE;
-    padding: 15px;
-    border: 0;
-    outline: 0;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    resize: none;
-}
-.contact-col span{
-    display: block;
-    margin: 20px 0;
 }
 
-/* -------media query--------*/
-@media (max-width: 700px){
-    .contact{
-        display: block;
+.corporate-info-block h3 img {
+    width: 28px;
+    margin-left: 10px;
+}
+
+.form-intro-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.contact-details-list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.contact-details-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.contact-details-list li img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Badges row layout */
+.compliance-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.compliance-row .badge {
+    background: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+/* Corporate Form Layout Setup */
+.corporate-form-block h2 {
+    color: #002B49;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-required-notice {
+    font-size: 13px;
+    color: #4b5563;
+    margin-bottom: 25px;
+}
+
+.req {
+    color: #cc0000;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.corporate-form-block form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+/* Form Elements inputs */
+.corporate-form-block form input,
+.corporate-form-block form select,
+.corporate-form-block form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #334155;
+    background: #ffffff;
+    border: 1px solid #b6bfc9;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.corporate-form-block form input:focus,
+.corporate-form-block form select:focus,
+.corporate-form-block form textarea:focus {
+    border-color: #002B49;
+    box-shadow: 0 0 0 1px rgba(0, 43, 73, 0.1);
+}
+
+.corporate-form-block form textarea {
+    resize: vertical;
+}
+
+/* Select Arrow Styling */
+.corporate-form-block form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b5563' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+    padding-right: 35px;
+}
+
+/* Corporate Submit Button */
+.corporate-submit-btn {
+    background: #000F38;
+    color: #ffffff;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.corporate-submit-btn img {
+    width: 14px;
+}
+
+.submission-result {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #002B49;
+}
+
+/* FAQ Layout Settings */
+.contact-faq {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 50px;
+}
+
+.contact-faq h2 {
+    color: #002B49;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.faq-item h4 {
+    color: #002B49;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.faq-item p {
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 13.5px;
+}
+
+/* Responsive Rules Configuration */
+@media (max-width: 900px) {
+    .contact-layout-wrapper {
+        flex-direction: column;
     }
-    .contact-col{
-        padding: 20px;
+    .contact-left-content,
+    .contact-right-sidebar {
+        flex-basis: 100%;
+    }
+    .static-image-box img {
+        height: 240px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
     }
 }

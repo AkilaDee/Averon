@@ -6,12 +6,10 @@ import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
-
+import contact_banner from '../../assets/contact-banner.jpg' 
 
 const Contact = () => {
-
-
-   const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -27,16 +25,16 @@ const Contact = () => {
 
     if (res.success) {
       console.log("Success", res);
-      setResult(res.message);
+      setResult("Thank you! Your procurement request has been submitted successfully.");
       event.target.reset();
     } else {
-      console.log("Error", data);
+      console.log("Error", res);
       setResult(res.message);
     }
   };
 
   return (
-    <div className='contact'>
+    <div className='contact-container'>
       <Helmet>
         <title>Contact Our Bulk Spice Procurement & Trade Desk | Averon Supplies</title>
         <meta 
@@ -45,28 +43,114 @@ const Contact = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" />
       </Helmet>
-        <div className='contact-col'>
-            <h3>Send us a message<img src={msg_icon} alt="" /></h3>
-            <p>Feel free to reach out</p>
-            <ul>
-                <li><img src={mail_icon} alt="" />info@averonsupplies.co.uk</li>
-                <li><img src={phone_icon} alt="" />+44 7344469729</li>
-                <li><img src={location_icon} alt="" />42 Porthcawe Road, London <br /> SE26 5TA, United Kingdom</li>
+
+      {/* Main Framework Wrapper */}
+      <div className='contact-layout-wrapper'>
+        
+        {/* LEFT SIDE: Stacks contact details on top, form on bottom */}
+        <div className='contact-left-content'>
+          
+          {/* Section 1: Contact Details */}
+          <div className='corporate-info-block'>
+            <h3>Send us a message <img src={msg_icon} alt="" /></h3>
+            <p className='form-intro-text'>
+              Information around our business activities, industry information, harvest information and products is available through our team of industry experts. Complete the enquiry form below to get in touch.
+            </p>
+            
+            <ul className="contact-details-list">
+              <li><img src={mail_icon} alt="" /> <span>info@averonsupplies.co.uk</span></li>
+              <li><img src={phone_icon} alt="" /> <span>+44 7344469729</span></li>
+              <li><img src={location_icon} alt="" /> <span>42 Porthcawe Road, London, SE26 5TA</span></li>
             </ul>
-        </div >
-        <div className='contact-col'>
-          <form onSubmit={onSubmit}>
-            <label>Your Name</label>
-            <input type="text" name="name" placeholder='Enter your name'required/>
-            <label>Phone Number</label>
-            <input type="tel" name='phone' placeholder='Enter your mobile number' required />
-            <label>Write your message here</label>
-            <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
-            <button type='submit' className='btn dark-btn'>Submit <img src={white_arrow} alt="" /></button>
-          </form>
-          <span>{result}</span>
+
+            {/* <div className="compliance-row">
+              <span className="badge">HACCP Compliant</span>
+              <span className="badge">Sedex Registered</span>
+              <span className="badge">Single-Origin Purity</span>
+            </div> */}
+          </div>
+
+          {/* CLEAR SEPARATION DIVIDER */}
+          <hr className="corporate-divider" />
+
+          {/* Section 2: Clean, Full-Width Corporate Form Layout */}
+          <div className='corporate-form-block'>
+            <h2>Find Out More About Our Ingredients</h2>
+            <p className="form-required-notice">Fields marked with an asterisk (<span className="req">*</span>) are required.</p>
+            
+            <form onSubmit={onSubmit}>
+              <div className="form-field">
+                <label>Name <span className="req">*</span></label>
+                <input type="text" name="name" required/>
+              </div>
+
+              <div className="form-field">
+                <label>Company <span className="req">*</span></label>
+                <input type="text" name="company" required/>
+              </div>
+
+              {/* NEW REPLACEMENT FIELD: How did you hear about us dropdown */}
+              <div className="form-field">
+                <label>How did you discover Averon Supplies? <span className="req">*</span></label>
+                <select name="discovery_source" required>
+                  <option value="">Please Select</option>
+                  <option value="Search Engine">Search Engine (Google/Bing)</option>
+                  <option value="Industry Trade Show">Industry Trade Show / Exhibition</option>
+                  <option value="LinkedIn / Professional Network">LinkedIn / Professional Network</option>
+                  <option value="Word of Mouth">Word of Mouth / Recommendation</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div className="form-field">
+                <label>Email <span className="req">*</span></label>
+                <input type="email" name="email" placeholder="name@company.com" required/>
+              </div>
+
+              <div className="form-field">
+                <label>Telephone <span className="req">*</span></label>
+                <input type="tel" name='phone' required />
+              </div>
+
+              <div className="form-field">
+                <label>Your Enquiry <span className="req">*</span></label>
+                <textarea name="message" rows="6" placeholder="e.g. We need 500kg of crushed spices monthly, or we are looking for a new single-origin supplier..." required></textarea>
+              </div>
+              
+              <button type='submit' className='corporate-submit-btn'>Submit <img src={white_arrow} alt="" /></button>
+            </form>
+            <span className="submission-result">{result}</span>
+          </div>
 
         </div>
+
+        {/* RIGHT SIDE PANEL: Statically positioned small image */}
+        <div className='contact-right-sidebar'>
+          <div className='static-image-box'>
+            <img src={contact_banner} alt="Averon Supplies Quality Sourcing" />
+          </div>
+        </div>
+
+      </div>
+
+      {/* Bottom FAQ Section */}
+      <div className='contact-faq'>
+        <h2>Frequently Asked Sourcing Questions</h2>
+        <div className='faq-grid'>
+          <div className='faq-item'>
+            <h4>Can we request physical samples for laboratory analysis?</h4>
+            <p>Yes. We routinely provide evaluation sample packs of our cinnamon grades, whole cloves, and nutmeg to verified UK food manufacturers and commercial blenders for organoleptic testing and quality assurance verification.</p>
+          </div>
+          <div className='faq-item'>
+            <h4>How do you guarantee single-origin batch consistency?</h4>
+            <p>Unlike standard market brokers who consolidate and blend batches from multiple regional networks, we own and manage production at our own partner estates in Sri Lanka, guaranteeing absolute single-origin purity and strict grade tolerances.</p>
+          </div>
+          <div className='faq-item'>
+            <h4>What documentation accompanies your trade shipments?</h4>
+            <p>Every commercial consignment arrives with full technical documentation, including independent laboratory certificates, strict country-of-origin guarantees, batch-coded traceability files, and technical product specification sheets.</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
