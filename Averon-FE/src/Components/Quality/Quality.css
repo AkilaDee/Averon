@@ -1,150 +1,194 @@
-/* Container for the cards */
-.qualities {
-    margin: 50px auto ;
+.quality-page-container {
+    margin: 40px auto 80px;
     width: 90%;
-    display: flex;
-    /* Forces all cards to match the height of the tallest one */
-    align-items: stretch; 
-    justify-content: space-between;
-    /* Adds space between cards without affecting outer edges */
-    gap: 20px;
-}
-
-/* Individual card styling */
-.quality {
-    /* flex-basis: 30% allows room for the 20px gap */
-    flex-basis: 30%; 
-    position: relative;
-    background: #1E293B;
-    color: #fafafa;
-    
-    /* Internal spacing so text doesn't touch the edges */
-    padding: 30px; 
-    /* Ensures padding doesn't increase the card's width */
-    box-sizing: border-box; 
-    
-    /* Design Polish */
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    
-    /* Internal Flex: helps align items inside the card if needed */
-    display: flex;
-    flex-direction: column;
-}
-
-/* Optional: Spacing for content inside cards */
-.quality h2 {
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #E8AF03;
-    /* text-decoration: underline; */
-}
-
-.quality p {
+    max-width: 1100px;
+    font-family: Arial, sans-serif;
+    color: #111111; /* Clean dark text for standard content */
+    background-color: #ffffff; /* Crisp white background kept from image_ec2b2b.jpg */
     line-height: 1.6;
-    margin-bottom: 0; /* Keeps the bottom clean */
 }
-.quality-footer {
-    margin: 80px auto 0px; /* 'auto' on left/right centers the block */
-    max-width: 1100px;         /* Limits width so text doesn't stretch too far */
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-top: 1px solid rgba(232, 175, 3, 0.2);
-    background: #111111;
-    border-radius: 20px;
-    /* Centering logic for the content inside */
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+
+/* Page Center Title Header */
+.quality-main-title {
     text-align: center;
-}
-
-.premium-pillars {
-    display: flex;
-    /* background: #fafafa; */
-    justify-content: center; /* Centers the two pillars horizontally */
-    gap: 60px;
-    width: 100%;             /* Allows justify-content to work */
-    margin-bottom: 20px;
-}
-
-.pillar {
-    flex: 1;                 /* Gives both pillars equal weight */
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pillar-icon {
-    font-size: 28px;
-    display: block;
-    margin-bottom: 10px;
-    /* filter: sepia(1) saturate(5) hue-rotate(10deg);  */
-    /* Gives emojis a 'gold' tint */
-}
-
-.pillar h3 {
-    color: #E8AF03; /* Gold for the 'Heart' and 'Quality' */
-    font-size: 28px;
-    /* font-family: 'Playfair Display', serif; */
-    /* font-style: italic; */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.pillar p {
-    color: #fafafa;
-    font-size: 20px;
-    line-height: 1.5;
-}
-.divider-gold {
-    width: 50%;
-    height: 2px;
-    background-color: #fafafa;
-    margin: 25px 0 20px;          /* Space above and below the gold line */
-}
-.summary-text {
-    color: #E8AF03;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+    color: #002B49; /* Kept corporate dark blue for the main page title */
     font-size: 32px;
-    margin: 10px 0 10px;
+    font-weight: normal;
+    margin-bottom: 50px;
 }
 
-.sub-text{
-    color: #fafafa;
-    margin-bottom: 5px;
-    font-size: 20px;
+/* Master Alternating Split Layout Framework */
+.quality-split-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
 
+/* Handles text properties for editorial formatting */
+.quality-text-block {
+    flex-basis: 52%;
 }
-/* ------- Responsive Media Query -------- */
-@media (max-width: 1100px) {
-    .qualities {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px; /* Vertical gap between stacked cards */
-    }
-    
-    .quality {
-        flex-basis: auto;
-        width: 100%; /* Cards take full width of the 90% container */
-        padding: 25px;
-    }
-  
+
+.quality-text-block p {
+    font-size: 14px;
+    color: #4b5563; /* Subtle text tone matching the image example */
+    margin-bottom: 18px;
 }
-@media (max-width: 700px) {
-    .premium-pillars {
+
+/* Lead text style highlighting contact links */
+.quality-text-block .highlight-lead-text {
+    font-size: 14.5px;
+    color: #111111; 
+}
+
+.quality-text-block .text-link {
+    color: #b45309; 
+    font-weight: bold;
+}
+
+/* Brand Gold applied directly to the content section headers */
+.quality-text-block h2 {
+    color: #1E293B; /* Your signature gold */
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+/* Enquire Button Style using Brand Gold & Dark Text */
+.enquire-now-btn {
+    display: inline-block;
+    background-color: #E8AF03; /* Brand Gold */
+    color: #111111; /* Brand Dark text for high visibility */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 12px 28px;
+    border-radius: 20px;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.enquire-now-btn:hover {
+    background-color: #d19e02;
+}
+
+/* Handles layout frames for imagery side pieces */
+.quality-image-block {
+    flex-basis: 44%;
+}
+
+/* Row 1 Image */
+.editorial-img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Row 2 Image: Shifted down by ~1cm relative to text */
+.reverse-row .editorial-img-tall {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 38px; 
+}
+
+/* Compliance Badges row alignment underneath content */
+.compliance-badges-footer {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.badge-logo {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111111;
+    border-radius: 3px;
+}
+
+/* Bottom Core Quality Layout Section */
+.qualities-bottom-section {
+    margin: 90px auto 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 60px;
+}
+
+/* Premium visible cards utilizing your brand colors cleanly */
+.quality-detail-card {
+    background-color: #111111; /* Your signature dark black background */
+    border-left: 5px solid #E8AF03; /* Thick premium brand gold left border accent */
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quality-detail-card h2 {
+    color: #E8AF03; /* Brand gold header text */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+}
+
+.quality-detail-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fafafa; /* Your brand premium light text for perfect readability inside dark blocks */
+    margin: 0;
+}
+
+/* ------- Responsive Adaptations Layout Framework -------- */
+@media (max-width: 950px) {
+    .qualities-bottom-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .quality-split-row {
         flex-direction: column;
-        align-items: center;
         gap: 30px;
     }
     
-    .summary-text {
-        font-size: 18px;
+    .quality-split-row.reverse-row {
+        flex-direction: column-reverse;
+    }
+
+    .quality-text-block, 
+    .quality-image-block {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .editorial-img {
+        height: 350px;
+    }
+
+    .reverse-row .editorial-img-tall {
+        height: 350px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .quality-detail-card {
+        padding: 20px;
     }
 }

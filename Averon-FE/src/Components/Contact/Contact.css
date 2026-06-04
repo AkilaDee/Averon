@@ -1,94 +1,73 @@
-.contact-container {
-    margin: 60px auto;
+.contact-page-container {
+    margin: 40px auto 80px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     font-family: Arial, sans-serif;
+    color: #111111;
+    background-color: #ffffff;
+    line-height: 1.6;
 }
 
-/* Master Grid Structure */
-.contact-layout-wrapper {
+/* Page Center Title Header */
+.contact-main-title {
+    text-align: center;
+    color: #111111;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+/* Master Alternating Split Layout Framework */
+.contact-split-row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 50px;
     margin-bottom: 60px;
 }
 
-/* Left Stack Panel */
-.contact-left-content {
-    flex-basis: 70%;
-    display: flex;
-    flex-direction: column;
+/* Layout Blocks */
+.contact-text-block {
+    flex-basis: 52%;
 }
 
-/* Right Static Side Image Container */
-.contact-right-sidebar {
-    flex-basis: 25%;
-    align-self: flex-start;
+.contact-image-block {
+    flex-basis: 44%;
 }
 
-.static-image-box {
-    width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid #d1d5db;
-    background: #f9fafb;
-}
-
-.static-image-box img {
-    width: 100%;
-    height: 180px; 
-    object-fit: cover;
-    display: block;
-}
-
-/* Clear Divider Style */
-.corporate-divider {
-    border: 0;
-    height: 1px;
-    background: #e5e7eb;
-    margin: 40px 0;
-    width: 100%;
-}
-
-/* Top Information Layout Block */
-.corporate-info-block {
-    color: #374151;
-}
-
-.corporate-info-block h3 {
-    color: #002B49;
-    font-size: 26px;
+/* Row 1 Text Styling */
+.contact-text-block h3 {
+    color: #111111;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
 }
 
-.corporate-info-block h3 img {
-    width: 28px;
+.msg-icon-inline {
+    width: 26px;
     margin-left: 10px;
 }
 
 .form-intro-text {
     font-size: 14px;
-    line-height: 1.6;
     color: #4b5563;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .contact-details-list {
     padding: 0;
     list-style: none;
-    margin-bottom: 20px;
 }
 
 .contact-details-list li {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     font-size: 14px;
-    color: #1f2937;
+    color: #111111;
 }
 
 .contact-details-list li img {
@@ -96,29 +75,12 @@
     height: 18px;
 }
 
-/* Badges row layout */
-.compliance-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.compliance-row .badge {
-    background: #f3f4f6;
-    border: 1px solid #e5e7eb;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #4b5563;
-}
-
-/* Corporate Form Layout Setup */
-.corporate-form-block h2 {
-    color: #002B49;
-    font-size: 24px;
+/* Row 2 Headings (Using Brand Gold) */
+.contact-text-block h2 {
+    color: #E8AF03;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .form-required-notice {
@@ -130,137 +92,183 @@
 .req {
     color: #cc0000;
     font-weight: bold;
-    margin-left: 2px;
 }
 
-.form-field {
+/* Form Element Construction */
+.corporate-web-form .form-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     width: 100%;
 }
 
-.corporate-form-block form label {
-    font-size: 14px;
+.corporate-web-form label {
+    font-size: 13.5px;
     font-weight: bold;
-    color: #1f2937;
-    margin-bottom: 8px;
+    color: #111111;
+    margin-bottom: 6px;
 }
 
-/* Form Elements inputs */
-.corporate-form-block form input,
-.corporate-form-block form select,
-.corporate-form-block form textarea {
+.corporate-web-form input,
+.corporate-web-form select,
+.corporate-web-form textarea {
     width: 100%;
-    padding: 10px 12px;
+    padding: 11px 14px;
     font-size: 14px;
-    color: #334155;
+    color: #111111;
     background: #ffffff;
     border: 1px solid #b6bfc9;
     border-radius: 4px;
     outline: none;
     font-family: inherit;
     box-sizing: border-box;
-    transition: border-color 0.15s ease-in-out;
+    transition: border-color 0.2s ease;
 }
 
-.corporate-form-block form input:focus,
-.corporate-form-block form select:focus,
-.corporate-form-block form textarea:focus {
-    border-color: #002B49;
-    box-shadow: 0 0 0 1px rgba(0, 43, 73, 0.1);
+.corporate-web-form input:focus,
+.corporate-web-form select:focus,
+.corporate-web-form textarea:focus {
+    border-color: #E8AF03;
 }
 
-.corporate-form-block form textarea {
+.corporate-web-form textarea {
     resize: vertical;
 }
 
-/* Select Arrow Styling */
-.corporate-form-block form select {
+/* Custom Dropdown Arrow */
+.corporate-web-form select {
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234b5563' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
-    background-position: right 12px center;
+    background-position: right 14px center;
     background-size: 14px;
-    padding-right: 35px;
 }
 
-/* Corporate Submit Button */
+/* Submit Action Button using Brand Gold */
 .corporate-submit-btn {
-    background: #000F38;
-    color: #ffffff;
-    padding: 10px 24px;
+    background: #E8AF03;
+    color: #111111;
+    padding: 12px 28px;
     font-size: 14px;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
+    transition: opacity 0.2s ease;
+}
+
+.corporate-submit-btn:hover {
+    opacity: 0.9;
 }
 
 .corporate-submit-btn img {
-    width: 14px;
+    width: 12px;
 }
 
 .submission-result {
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: bold;
-    color: #002B49;
+    color: #E8AF03;
 }
 
-/* FAQ Layout Settings */
+/* Sizing and Alignment of Images */
+.editorial-img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Row 2 Image: Drops precisely down ~1cm (38px) relative to form start */
+.reverse-row .editorial-img-tall {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 38px; 
+}
+
+/* FAQ Block Design (Highly Visible Layout) */
 .contact-faq {
+    margin: 90px auto 40px;
     border-top: 1px solid #e5e7eb;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 .contact-faq h2 {
-    color: #002B49;
+    color: #111111;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .faq-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
 }
 
-.faq-item h4 {
-    color: #002B49;
+.faq-item-card {
+    background-color: #111111; /* Brand Solid Dark Background */
+    border-left: 5px solid #E8AF03; /* Left Border Signature Accent Gold Bar */
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item-card h4 {
+    color: #E8AF03; /* Brand Gold Title Text */
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 12px;
     font-weight: bold;
 }
 
-.faq-item p {
-    color: #4b5563;
+.faq-item-card p {
+    color: #fafafa; /* Brand Light Text inside card */
     line-height: 1.6;
     font-size: 13.5px;
+    margin: 0;
 }
 
-/* Responsive Rules Configuration */
+/* ------- Responsive Adaptations Layout Framework -------- */
 @media (max-width: 900px) {
-    .contact-layout-wrapper {
+    .contact-split-row {
         flex-direction: column;
+        gap: 35px;
     }
-    .contact-left-content,
-    .contact-right-sidebar {
+    
+    .contact-split-row.reverse-row {
+        flex-direction: column-reverse;
+    }
+
+    .contact-text-block, 
+    .contact-image-block {
         flex-basis: 100%;
+        width: 100%;
     }
-    .static-image-box img {
-        height: 240px; 
+
+    .editorial-img {
+        height: 350px;
+    }
+
+    .reverse-row .editorial-img-tall {
+        height: 350px;
+        margin-top: 0; /* Clear alignment adjustments on responsive break points */
     }
 }
 
 @media (max-width: 600px) {
     .faq-grid {
         grid-template-columns: 1fr;
+    }
+    .faq-item-card {
+        padding: 20px;
     }
 }
