@@ -4,7 +4,7 @@ import './Certifications.css';
 
 // Asset Imports
 import cert_hero from '../../assets/certifications.jpg'; 
-import compliance_bg from '../../assets/bcg.jpg'; 
+import compliance_bg from '../../assets/accreditations.jpg'; 
 
 const Certifications = () => {
   return (
