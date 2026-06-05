@@ -4,7 +4,7 @@ import './SupplyChain.css';
 
 // Asset Imports
 import supply_hero from '../../assets/supply-chain.jpg'; 
-import chain_metrics from '../../assets/bcg.jpg'; 
+import chain_metrics from '../../assets/supply-method.jpg'; 
 
 // NOTE: Adjust these image paths to match your actual local file names for the pillars
 import farm_sourcing from '../../assets/drying.jpg';
