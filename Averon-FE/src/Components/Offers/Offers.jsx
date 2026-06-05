@@ -212,7 +212,7 @@ const Offers = () => {
               <h4 className="pillar-title">Sourcing Regions</h4>
             </div>
             <div className="pillar-content-bottom">
-              <p className="pillar-desc">Sourcing from the most fertile organic micro-climate farming regions across Sri Lanka.</p>
+              <p className="pillar-desc">Sourcing from the most fertile micro-climate farming regions across Sri Lanka.</p>
               <Link to="/sourcing-regions" className="pillar-action-arrow">
                 Learn More →
               </Link>
@@ -224,7 +224,7 @@ const Offers = () => {
               <h4 className="pillar-title">Certifications</h4>
             </div>
             <div className="pillar-content-bottom">
-              <p className="pillar-desc">USDA, EU, and UK Organic certified facilities with complete batch traceability maps.</p>
+              <p className="pillar-desc">Certified facilities with complete batch traceability maps.</p>
               <Link to="/certifications" className="pillar-action-arrow">
                 Learn More →
               </Link>
@@ -236,7 +236,7 @@ const Offers = () => {
               <h4 className="pillar-title">Processing</h4>
             </div>
             <div className="pillar-content-bottom">
-              <p className="pillar-desc">State-of-the-art processing facilities ensuring total batch control and premium quality passports.</p>
+              <p className="pillar-desc">Processing facilities ensuring total batch control and premium quality passports.</p>
               <Link to="/processing" className="pillar-action-arrow">
                 Learn More →
               </Link>
