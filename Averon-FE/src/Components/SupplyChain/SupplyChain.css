@@ -1,215 +1,342 @@
-/* Container & Global Page Styles */
-.supply-chain-page {
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-  font-family: 'Outfit', sans-serif;
+/* --- SUPPLY CHAIN PAGE ARCHITECTURAL SPECIFICATION --- */
+
+.premium-heritage-supply {
+    background-color: #fcfbf7;
+    width: 100%;
+    color: #2b2b2b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.avrn-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* --- THE HERO FIX: Navbar Visibility --- */
-.sc-hero {
-  /* Increased top padding (160px) to give the Navbar breathing room */
-  padding: 160px 0 100px; 
-  text-align: center;
-  color: #fff; /* Force text to white for the dark background */
-  
-  /* These properties ensure the background image behaves */
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll; 
-  position: relative;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-}
-
-/* This adds the dark tint so your white links stay visible */
-.sc-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Adjust 0.6 for more/less darkness */
-  z-index: 1;
-}
-
-.sc-hero .avrn-container {
-  position: relative;
-  z-index: 2; /* Put text above the dark tint */
-}
-
-.title-large {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  margin-bottom: 20px;
-  color: #fff;
-}
-.title-medium{
-    font-size: 1.4rem;
-    color: #111111;
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-.title-medium-white{
-    font-size: 1.4rem;
-    color: #fafafa;
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-
-.description {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  color: #f0f0f0;
-}
-
-/* --- THE ORIGIN SECTION FIX --- */
-.section-split .avrn-container {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 80px 20px;
-}
-
-.avrn-content {
-  flex: 1;
-}
-
-.avrn-visual {
-  flex: 1;
-}
-
-.avrn-visual img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-}
-
-/* --- PROCESS GRID --- */
-.process-section {
-  padding: 80px 0;
-  background-color: #fbfbfb;
-}
-
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.process-card {
-  padding: 30px;
-  background: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.process-image {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-
-.process-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.process-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-  border-color: #e8af03;
-}
-
-.process-card:hover img {
-  transform: scale(1.1);
-}
-
-/* --- DARK SECTION --- */
-.dark-bg {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 100px 0;
-  text-align: center;
-}
-
-.benefit-row {
-
-  display: flex;
-
-  gap: 60px;
-
-  margin-bottom: 60px;
-
-}
-
-
-
-.benefit h4 {
-
-  color: #e8af03; /* Gold accent */
-
-  font-size: 1.5rem;
-
-  margin-bottom: 15px;
-
-}
-
-
-
-.tagline {
-
-  border-top: 1px solid #333;
-
-  padding-top: 40px;
-
-  text-align: center;
-
-}
-
-
-
-.tagline h3 {
-
-  font-size: 2rem;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-  color: #e8af03;
-
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-  .section-split .avrn-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .benefit-row {
-    flex-direction: column;
+/* --- SECTION 1: HERO FRAME --- */
+.supply-hero-section {
+    width: 100%;
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
-  }
-  
-  .sc-hero {
-    padding-top: 120px;
-  }
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 20px;
+}
+
+.supply-hero-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.center-divider-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.line-arm.light {
+    background-color: rgba(232, 175, 3, 0.6);
+}
+
+.tag-text-main.light {
+    color: #E8AF03;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.serif-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    letter-spacing: -0.5px;
+}
+
+.elegant-hero-subtitle {
+    font-size: 16.5px;
+    color: #e2e8f0;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* --- SECTION 2: STAGES SPLIT ENGINE --- */
+.chain-stages-container {
+    max-width: 1240px;
+    margin: 100px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.section-header-block {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+}
+
+.serif-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #1a1e21;
+    margin: 0 0 15px 0;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #616863;
+    line-height: 1.6;
+}
+
+.stages-split-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.stage-split-row {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.stage-split-row.reverse {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+
+.stage-split-row.reverse .stage-text-block {
+    order: 2;
+}
+
+.stage-split-row.reverse .stage-visual-block {
+    order: 1;
+}
+
+.stage-index {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.serif-stage-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #1a1e21;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.stage-body-text {
+    font-size: 14.5px;
+    color: #5c645e;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.stage-image-frame {
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* --- SECTION 3: COMPLIANCE MATRIX PANEL --- */
+.supply-compliance-panel {
+    background-color: #1E293B;
+    width: 100%;
+}
+
+.supply-panel-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: stretch;
+}
+
+.compliance-specs-frame {
+    padding: 100px 80px 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel-kicker-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.serif-panel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.panel-narrative-para {
+    font-size: 14.5px;
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.compliance-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.check-bullet {
+    color: #E8AF03;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.check-text {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.check-text strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.gold-button-link {
+    display: inline-block;
+    background-color: #E8AF03;
+    color: #111111;
+    padding: 15px 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+    align-self: flex-start;
+}
+
+.gold-button-link:hover {
+    opacity: 0.95;
+}
+
+.compliance-visual-frame {
+    position: relative;
+    min-height: 550px;
+    background-color: #111111;
+    overflow: hidden;
+}
+
+.compliance-bg-layer {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4) contrast(1.1);
+}
+
+.protection-overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    border-left: 2px solid #E8AF03;
+    padding-left: 25px;
+}
+
+.overlay-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- ADAPTIVE LAYOUT MEDIA BREAKPOINTS --- */
+@media (max-width: 1100px) {
+    .supply-panel-inner {
+        grid-template-columns: 1fr;
+    }
+    .compliance-visual-frame {
+        min-height: 350px;
+        order: 1;
+    }
+    .compliance-specs-frame {
+        padding: 70px 40px;
+        order: 2;
+    }
+    .chain-stages-container {
+        padding: 0 30px;
+        margin: 80px auto;
+    }
+    .stage-split-row, .stage-split-row.reverse {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .stage-split-row.reverse .stage-text-block, .stage-split-row.reverse .stage-visual-block {
+        order: unset;
+    }
+    .serif-hero-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 650px) {
+    .supply-hero-section {
+        padding: 80px 20px;
+    }
+    .serif-hero-title {
+        font-size: 32px;
+    }
+    .elegant-hero-subtitle {
+        font-size: 15px;
+    }
+    .chain-stages-container {
+        padding: 0 20px;
+        margin: 60px auto;
+    }
+    .serif-section-title {
+        font-size: 30px;
+    }
+    .serif-stage-title {
+        font-size: 23px;
+    }
+    .stage-image-frame {
+        height: 220px;
+    }
+    .protection-overlay {
+        bottom: 30px;
+        left: 20px;
+        right: 20px;
+    }
+    .overlay-quote {
+        font-size: 17px;
+    }
 }

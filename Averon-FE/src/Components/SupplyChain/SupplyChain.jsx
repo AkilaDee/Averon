@@ -1,134 +1,117 @@
 import React from 'react';
-import './SupplyChain.css'; 
-import plants from '../../assets/cinnamon plants.jpg';
-import { Helmet } from 'react-helmet-async';
-// IMPORT your hero background image here
-import heroBg from '../../assets/hero-supply.jpg'; 
+import { Link } from 'react-router-dom';
+import './SupplyChain.css';
+
+// Asset Imports
+import supply_hero from '../../assets/supply-chain.jpg'; 
+import chain_metrics from '../../assets/bcg.jpg'; 
+
+// NOTE: Adjust these image paths to match your actual local file names for the pillars
+import farm_sourcing from '../../assets/drying.jpg';
+import logistics_img from '../../assets/grading.jpg';
 
 const SupplyChain = () => {
   return (
-    <div className="supply-chain-page">
-      <Helmet>
-        <title>Direct Spice Supply Chain & Sourcing Traceability | Averon Supplies</title>
-        <meta 
-          name="description" 
-          content="Explore our single-origin, estate-to-business spice supply chain. We offer fully transparent, traceable sourcing for bulk cinnamon, black pepper, and premium spices." 
-        />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/supply-chain" />
-      </Helmet>
-      {/* Updated Hero Section with Inline Style for the Background */}
-      <section 
-        className="sc-hero" 
-        style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(${heroBg})` 
-        }}
-      >
-        <div className="avrn-container">
-          <span className="badge">Our Heritage</span>
-          <h1 className="title-large">The Averon Story: From Our Roots to Your Table</h1>
-          <p className="description">
-            Expertly Graded. Sustainably Harvested. Delivered at Peak Freshness.
+    <div className="premium-heritage-supply">
+      
+      {/* SECTION 1: HERO ARCHITECTURE */}
+      <section className="supply-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9)), url(${supply_hero})` }}>
+        <div className="supply-hero-inner">
+          <div className="center-divider-tag">
+            <span className="line-arm light"></span>
+            <span className="tag-text-main light">FARM TO CONTAINER</span>
+            <span className="line-arm light"></span>
+          </div>
+          <h1 className="serif-hero-title">Ethical Supply Chain Ecosystem</h1>
+          <p className="elegant-hero-subtitle">
+            Complete structural visibility from family-owned estate grids to industrial border clearances. We eliminate traditional broker layers to secure pure batches, stable pricing matrixes, and absolute food safety.
           </p>
         </div>
       </section>
 
-      {/* Origin Section */}
-      <section className="avrn-section section-split">
-        <div className="avrn-container">
-          <div className="avrn-content">
-            <h2 className="title-medium">The Heart of the Southern Province</h2>
-            <p>
-              Averon Supplies is not just an importer; we are the UK branch of a family legacy. 
-              Our story begins in the mineral-rich soils of Sri Lanka’s Southern Province, 
-              at our family estate in <strong>Matara District</strong>.
-            </p>
-            <p>
-              While the world’s spice trade often relies on "commodity blending," mixing bark 
-              from thousands of anonymous farms, we do the opposite. We offer 
-              <strong> Single-Estate Traceability</strong>.
-            </p>
+      {/* SECTION 2: VERTICAL INTEGRATION STAGES */}
+      <section className="chain-stages-container">
+        <div className="section-header-block">
+          <h2 className="serif-section-title">Direct Vertical Integration</h2>
+          <p className="section-subtitle">By owning nodes at both the origin harvesting blocks and international distribution lines, we offer full oversight of your botanical lot passports.</p>
+        </div>
+
+        <div className="stages-split-layout">
+          
+          {/* Node A */}
+          <div className="stage-split-row">
+            <div className="stage-text-block">
+              <span className="stage-index">STAGE A</span>
+              <h3 className="serif-stage-title">7,000+ Monitored Smallholders</h3>
+              <p className="stage-body-text">
+                Our supply chain begins directly in the micro-climate agricultural communities of Sri Lanka. We cultivate ongoing multi-generational relationships with vetted local farmers, supplying them with clean botanical stock, sustainable soil management strategies, and guaranteed fair-trade price locks. This transparent relationship safeguards your pipeline against adulteration risks and artificial crop inflation.
+              </p>
+            </div>
+            <div className="stage-visual-block">
+              <div className="stage-image-frame" style={{ backgroundImage: `url(${farm_sourcing})` }}></div>
+            </div>
           </div>
-          <div className="avrn-visual">
-            <img src={plants} alt="Avrn cinnamon plants" />
+
+          {/* Node B (Alternating Layout) */}
+          <div className="stage-split-row reverse">
+            <div className="stage-text-block">
+              <span className="stage-index">STAGE B</span>
+              <h3 className="serif-stage-title">Global Consolidation & Freight Forwarding</h3>
+              <p className="stage-body-text">
+                Once processing and triple-shield packaging are completed at our certified central facility, lots are cleared through customs with comprehensive batch passport documentation. Working alongside elite global ocean freight lines, we manage all shipping logistics from the Port of Colombo directly to your regional warehouse hub, ensuring a continuous, temperature-monitored distribution cycle.
+              </p>
+            </div>
+            <div className="stage-visual-block">
+              <div className="stage-image-frame" style={{ backgroundImage: `url(${logistics_img})` }}></div>
+            </div>
           </div>
+
         </div>
       </section>
 
-      {/* The Process Section */}
-      <section className="process-section">
-        <div className="avrn-container">
-            <h2 className="title-medium text-center">The Art of the "Cinnamon Cigar"</h2>
-            <p className="text-center">
-            Harvested during the monsoon months when the bark is most supple and essential oils are at their peak.
+      {/* SECTION 3: THE POLICY CORE (DARK ASSURANCE PANEL) */}
+      <section className="supply-compliance-panel">
+        <div className="supply-panel-inner">
+          
+          <div className="compliance-specs-frame">
+            <span className="panel-kicker-tag">COMPLIANCE & ETHICS</span>
+            <h3 className="serif-panel-title">Enterprise Risk Mitigation</h3>
+            <p className="panel-narrative-para">
+              Industrial spice procurement demands more than just premium quality; it requires corporate vulnerability shielding. Averon Supplies enforces strict auditing standards across every single handling node.
             </p>
 
-            <div className="process-grid">
-            {/* Step 1 */}
-            <div className="process-card">
-                <div className="process-image">
-                <img src="/assets/harvest.jpg" alt="Traditional pre-dawn cinnamon harvest" />
-                </div>
-                <h3>1. The Pre-Dawn Harvest</h3>
-                <p>Farmers select mature shoots, cut at a 45-degree angle to ensure the tree regrows stronger.</p>
+            <div className="compliance-checklist">
+              <div className="check-item">
+                <span className="check-bullet">&#10003;</span>
+                <p className="check-text"><strong>Fair-Trade Pricing Guarantee:</strong> Bypassing exploitative regional trading auctions to keep financial equity directly in farming communities.</p>
+              </div>
+              <div className="check-item">
+                <span className="check-bullet">&#10003;</span>
+                <p className="check-text"><strong>Lot-Level Batch Audits:</strong> Every incoming pallet maps perfectly back to its collection collection node via unified digital serial indices.</p>
+              </div>
+              <div className="check-item">
+                <span className="check-bullet">&#10003;</span>
+                <p className="check-text"><strong>Aflatoxin & Chemical Barriers:</strong> Routine lab diagnostics ensure complete compliance with stringent UK, EU, and USDA food safety limits.</p>
+              </div>
             </div>
 
-            {/* Step 2 */}
-            <div className="process-card">
-                <div className="process-image">
-                <img src="/assets/brass-rod.jpg" alt="Artisan using a brass rod" />
-                </div>
-                <h3>2. The Brass Rod Technique</h3>
-                <p>Shoots are rubbed with traditional brass rods to loosen the inner bark and release the aroma.</p>
+            <div className="cta-link-wrapper">
+              <Link to="/processing" className="gold-button-link">
+                EXPLORE PROCESSING STANDARDS
+              </Link>
             </div>
-
-            {/* Step 3 */}
-            <div className="process-card">
-                <div className="process-image">
-                <img src="/assets/hand-rolling.jpg" alt="Master peeler hand-rolling" />
-                </div>
-                <h3>3. Hand-Rolling</h3>
-                <p>Master peelers hand-layer delicate inner bark into the iconic multi-layered "cigar" look.</p>
-            </div>
-            </div>
-        </div>
-    </section>
-
-      {/* Why Direct Matters */}
-     <section className="avrn-section dark-bg">
-
-        <div className="avrn-container">
-
-          <h2 className="title-medium-white">Why "Direct" Matters for You</h2>
-
-          <div className="benefit-row">
-
-            <div className="benefit">
-
-              <h4>Unrivalled Freshness</h4>
-
-              <p>Arriving in the UK with a volatile oil content that machine-processed spices cannot match.</p>
-
-            </div>
-
-            <div className="benefit">
-
-              <h4>Total Transparency</h4>
-
-              <p>We manage the entire chain, from the first cut in Matara to the delivery at your door.</p>
-
-            </div>
-
           </div>
 
-          <div className="tagline">
-
-            <h3>Pure. Direct. Traceable.</h3>
-
+          <div className="compliance-visual-frame">
+            <div className="compliance-bg-layer" style={{ backgroundImage: `url(${chain_metrics})` }}></div>
+            <div className="protection-overlay">
+              <p className="overlay-quote">"Securing international supply networks through transparent pricing, verified traceability, and ethical accountability."</p>
+            </div>
           </div>
 
         </div>
-
       </section>
+
     </div>
   );
 };

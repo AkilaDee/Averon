@@ -407,7 +407,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 720px) {
   .tier-one-center-links {
     margin: 0;
     gap: 15px;

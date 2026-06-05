@@ -94,11 +94,11 @@ const Hero = () => {
       </section>
 
       {/* SECTION B: THE LOWER CONTENT SPLIT */}
-      <div className="hero-infobar">
+      {/* <div className="hero-infobar">
         <div className="hero-infobar-inner">
           <h2 className="infobar-title">Single-Origin, Premium Grade Ceylon Spices</h2>
         </div>
-      </div>
+      </div> */}
 
     </div>
   );

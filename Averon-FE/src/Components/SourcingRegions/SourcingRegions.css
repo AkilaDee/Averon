@@ -1,0 +1,433 @@
+/* --- SOURCING REGIONS ARCHITECTURAL SPECIFICATION --- */
+
+.premium-heritage-regions {
+    background-color: #fcfbf7;
+    width: 100%;
+    color: #2b2b2b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- SECTION 1: HERO FRAME --- */
+.regions-hero-section {
+    width: 100%;
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 20px;
+}
+
+.regions-hero-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.center-divider-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.line-arm.light {
+    background-color: rgba(232, 175, 3, 0.6);
+}
+
+.tag-text-main.light {
+    color: #E8AF03;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.serif-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    letter-spacing: -0.5px;
+}
+
+.elegant-hero-subtitle {
+    font-size: 16.5px;
+    color: #e2e8f0;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* --- SECTION 2: TERROIR SYSTEM --- */
+.terroir-grid-container {
+    max-width: 1240px;
+    margin: 100px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.section-header-block {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.serif-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #1a1e21;
+    margin: 0 0 15px 0;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #616863;
+    line-height: 1.6;
+}
+
+.terroir-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.terroir-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #f1efe9;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terroir-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(124, 104, 77, 0.06);
+}
+
+.terroir-img-frame {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaddca;
+}
+
+.terroir-bg-layer {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.terroir-card:hover .terroir-bg-layer {
+    transform: scale(1.05);
+}
+
+.elevation-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(26, 30, 33, 0.85);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.terroir-body {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.region-meta {
+    font-size: 12px;
+    font-weight: 700;
+    color: #bfa37a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 15px 0;
+}
+
+.card-description-text {
+    font-size: 14px;
+    color: #5c645e;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- SECTION 3: TECHNICAL STATS MATRIX --- */
+.regions-technical-panel {
+    background-color: #1E293B;
+    padding: 90px 0;
+    width: 100%;
+}
+
+.regions-panel-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.panel-kicker-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.serif-panel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.panel-narrative-para {
+    font-size: 14.5px;
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.gold-button-link {
+    display: inline-block;
+    background-color: #E8AF03;
+    color: #111111;
+    padding: 15px 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.gold-button-link:hover {
+    opacity: 0.95;
+}
+
+.panel-stats-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.metric-box {
+    border-left: 2px solid #E8AF03;
+    padding-left: 25px;
+}
+
+.metric-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    font-size: 13px;
+    color: #9ca3af;
+    letter-spacing: 0.5px;
+}
+
+/* --- SECTION 2: SRI LANKA MAP SHOWCASE ARTIFACT --- */
+.sourcing-map-showcase {
+    background-color: #ffffff;
+    padding: 100px 0 60px 0;
+    width: 100%;
+    border-bottom: 1px solid #ebe9e1;
+}
+
+.map-inner-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: grid;
+    /* Shifts layout dominance gracefully toward the text column */
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 80px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.map-text-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gold-kicker-text {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #bfa37a;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.map-narrative {
+    font-size: 14.5px;
+    color: #5c645e;
+    line-height: 1.75;
+    margin: 20px 0 35px 0;
+}
+
+.map-legend-box {
+    background-color: #fcfbf7;
+    border: 1px solid #eaddca;
+    border-radius: 6px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.legend-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.legend-dot.coast { background-color: #E8AF03; }
+.legend-dot.highlands { background-color: #bfa37a; }
+
+.legend-text {
+    font-size: 13.5px;
+    color: #2b2b2b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.legend-text strong {
+    color: #1a1e21;
+    font-weight: 600;
+}
+
+.map-visual-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- THE ENGINE THAT SHRINKS THE MAP GRAPHIC --- */
+.map-graphic-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 390px; /* Reduced from 520px to make the map look tighter and more elegant */
+    background-color: #fbfaf5;
+    padding: 15px;    /* Marginally reduced internal framing gap */
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.02);
+}
+
+.map-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.map-graphic-overlay-border {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid rgba(234, 221, 202, 0.4);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+/* --- MAP RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1000px) {
+    .map-inner-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 0 30px;
+    }
+    .sourcing-map-showcase {
+        padding: 70px 0 40px 0;
+    }
+    .map-graphic-wrapper {
+        max-width: 420px; /* Expands cleanly to act as a focused focal break when stacked vertically */
+    }
+}
+
+@media (max-width: 650px) {
+    .map-inner-container {
+        padding: 0 20px;
+    }
+    .map-legend-box {
+        padding: 20px;
+    }
+}
+
+/* --- BREAKPOINTS --- */
+@media (max-width: 1100px) {
+    .terroir-cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .regions-panel-inner {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .terroir-grid-container {
+        padding: 0 30px;
+        margin: 80px auto;
+    }
+    .serif-hero-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 650px) {
+    .regions-hero-section {
+        padding: 80px 20px;
+    }
+    .serif-hero-title {
+        font-size: 32px;
+    }
+    .elegant-hero-subtitle {
+        font-size: 15px;
+    }
+    .terroir-grid-container {
+        padding: 0 15px;
+        margin: 60px auto;
+    }
+    .serif-section-title {
+        font-size: 30px;
+    }
+}

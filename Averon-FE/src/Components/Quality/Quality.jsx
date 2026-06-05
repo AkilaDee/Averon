@@ -17,7 +17,7 @@ const Quality = () => {
         <link rel="canonical" href="https://www.averonsupplies.co.uk/quality" />
       </Helmet>
 
-      <h1 className="quality-main-title">Quality</h1>
+      {/* <h1 className="quality-main-title">Quality</h1> */}
 
       {/* ROW 1: What We Offer & Sourcing Method */}
       <div className="quality-split-row">

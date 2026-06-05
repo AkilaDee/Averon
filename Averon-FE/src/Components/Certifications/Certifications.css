@@ -1,0 +1,291 @@
+/* --- COMPLIANCE & CERTIFICATIONS ARCHITECTURAL SPECIFICATION --- */
+
+.premium-heritage-certs {
+    background-color: #fcfbf7;
+    width: 100%;
+    color: #2b2b2b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- SECTION 1: HERO CONTAINER --- */
+.certs-hero-section {
+    width: 100%;
+    min-height: 460px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 20px;
+}
+
+.certs-hero-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.center-divider-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.line-arm light {
+    background-color: rgba(232, 175, 3, 0.6);
+}
+
+.tag-text-main.light {
+    color: #E8AF03;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.serif-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    letter-spacing: -0.5px;
+}
+
+.elegant-hero-subtitle {
+    font-size: 16.5px;
+    color: #e2e8f0;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+/* --- SECTION 2: FRAMEWORK STRUCTURAL GRID --- */
+.framework-grid-container {
+    max-width: 1240px;
+    margin: 100px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.section-header-block {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px auto;
+}
+
+.serif-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #1a1e21;
+    margin: 0 0 15px 0;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: #616863;
+    line-height: 1.6;
+}
+
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.framework-card {
+    background-color: #ffffff;
+    border: 1px solid #f1efe9;
+    border-radius: 6px;
+    padding: 45px 40px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.framework-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(124, 104, 77, 0.05);
+}
+
+.card-accent-bar {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    right: 40px;
+    height: 3px;
+    background-color: #E8AF03;
+    opacity: 0.7;
+}
+
+.framework-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    color: #bfa37a;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.serif-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #1a1e21;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #5c645e;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- SECTION 3: DOWNLOAD & REQUEST MODAL LINE --- */
+.spec-download-panel {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+}
+
+.spec-panel-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.panel-kicker-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.serif-panel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.panel-narrative-para {
+    font-size: 14.5px;
+    color: #d1d5db;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contact-reassurance-box {
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.box-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #9ca3af;
+    margin: 0 0 15px 0;
+}
+
+.box-email {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.box-phone {
+    font-size: 14px;
+    color: #E8AF03;
+    margin: 0 0 30px 0;
+}
+
+.gold-action-btn {
+    display: block;
+    background-color: #E8AF03;
+    color: #111111;
+    padding: 14px 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.gold-action-btn:hover {
+    background-color: #f3be1a;
+}
+
+/* --- RESPONSIVE STRUCTURAL MEDIA QUERIES --- */
+@media (max-width: 1000px) {
+    .framework-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .spec-panel-inner {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .framework-grid-container {
+        padding: 0 30px;
+        margin: 80px auto;
+    }
+    .serif-hero-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 650px) {
+    .certs-hero-section {
+        padding: 80px 20px;
+    }
+    .serif-hero-title {
+        font-size: 32px;
+    }
+    .elegant-hero-subtitle {
+        font-size: 15px;
+    }
+    .framework-grid-container {
+        padding: 0 15px;
+        margin: 60px auto;
+    }
+    .serif-section-title {
+        font-size: 30px;
+    }
+    .framework-card {
+        padding: 35px 25px;
+    }
+    .card-accent-bar {
+        left: 25px;
+        right: 25px;
+    }
+    .contact-reassurance-box {
+        padding: 30px 20px;
+    }
+    .box-email {
+        font-size: 17px;
+    }
+}

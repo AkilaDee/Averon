@@ -19,6 +19,9 @@ import Cloves from './Components/Products/Varieties/Cloves';
 import Vanilla from './Components/Products/Varieties/Vanilla';
 import Nutmeg from './Components/Products/Varieties/Nutmeg';
 import SearchResults from './Components/SearchResults/SearchResults';
+import SourcingRegions from './Components/SourcingRegions/SourcingRegions';
+import Processing from './Components/Processing/Processing';
+import Certifications from './Components/Certifications/Certifications';
 
 // FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
@@ -62,7 +65,6 @@ const App = () => {
           <>
             <Hero />
             <div className="container">
-              <Title subTitle='' title='Premium Ceylon Spices'/>
               <Offers />
             </div>
             <Footer />
@@ -150,6 +152,24 @@ const App = () => {
         <Route path="/products/nutmeg" element={
           <>
             <Nutmeg />
+            <Footer />
+          </>
+        } />
+        <Route path="/sourcing-regions" element={
+          <>
+            <SourcingRegions />
+            <Footer />
+          </>
+        } />
+        <Route path="/processing" element={
+          <>
+            <Processing />
+            <Footer />
+          </>
+        } />
+         <Route path="/certifications" element={
+          <>
+            <Certifications />
             <Footer />
           </>
         } />

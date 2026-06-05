@@ -1,88 +1,307 @@
-import React from 'react';
-/* Ensure you import your CSS file at the top */
+import React, { useRef } from 'react';
 import './Offers.css'; 
-import map from '../../assets/map.jpg'
-
 import { Link } from 'react-router-dom';
 
+// Image Imports
+import map from '../../assets/map.jpg';
+import cinnamon_ground from '../../assets/cinnamon.jpg';
+// NOTE: Adjust these paths below to match your actual local file names
+import black_pepper from '../../assets/pepper.jpg'; 
+import cardamom from '../../assets/cardamom.jpg';
+import cloves from '../../assets/cloves.jpg';
+import nutmeg_mace from '../../assets/nutmeg.jpg';
+import vanilla from '../../assets/vanilla.jpg';
+import supply_chain from '../../assets/supply-chain.jpg';
+import processing from '../../assets/processing.jpg';
+import regions from '../../assets/regions.jpg';
+import certifications from '../../assets/certifications.jpg';
+
+
+
 const Offers = () => {
+  const scrollTrackRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollTrackRef.current) {
+      const { scrollLeft, clientWidth } = scrollTrackRef.current;
+      
+      // Calculate smooth translation jump step equivalent to 1 full card column block width
+      const cardStep = clientWidth / 4; 
+      const offset = direction === 'left' ? -cardStep : cardStep;
+      
+      scrollTrackRef.current.scrollTo({
+        left: scrollLeft + offset,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <div className='services' id='offers'>
-      <div className="averon-container">
-        {/* 1. Sourcing Section */}
-        <section className="averon-section section-split">
-          <div className="averon-content">
-            <span className="badge">Direct from Estate</span>
-            <h2 className="title-large-offer">Sourcing That Bypasses Global Middlemen</h2>
-            <p className="description-offer">
-              We source directly from Sri Lankan estates to ensure your spices arrive within weeks of harvest, not months.
-            </p>
-            <Link to="/supply-chain" className="sc-button">
-              Explore our supply chain →
-            </Link>
-          </div>
-          <div className="averon-visual map-placeholder">
-            <p>Sri Lanka Sourcing Map</p>
-            <img src={map} alt="" />
-          </div>
-        </section>
+    <div className='premium-heritage-offers' id='offers'>
+      
+      {/* SECTION 1: HERITAGE INTRO BLOCK */}
+      <section className="heritage-intro-section">
+        <div className="center-divider-tag">
+          <span className="line-arm"></span>
+          <span className="tag-text-main">OUR DIVISIONS</span>
+          <span className="line-arm"></span>
+        </div>
+        <h2 className="serif-main-title">Premium Pure Ceylon Spices</h2>
+        <p className="elegant-intro-subtitle">
+          From the historic estate gardens of Sri Lanka directly to your enterprise — authentic, single-origin ingredients cultivated with care and harvested with generational purpose.
+        </p>
+      </section>
 
-        {/* 2 & 3. Quality & Compliance Grid */}
-        <section className="averon-section section-bg">
-          <div className="grid-dual">
-            {/* Comparison Table */}
-            <div className="card table-card">
-              <h3 className="title-medium-offer">The "True" Difference</h3>
-              <table className="comparison-table">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Ceylon Cinnamon</th>
-                    <th>Cassia</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="text-feature">COUMARIN LEVEL</td>
-                    <td className="text-safe">Ultra-Low</td>
-                    <td className="text-unsafe">High (Risk)</td>
-                  </tr>
-                  <tr>
-                    <td className="text-feature">FLAVOUR</td>
-                    <td>Sweet & Delicate</td>
-                    <td>Pungent</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            {/* Compliance Card */}
-            <div className="card dark-card">
-              <h3 className="title-medium-offer">Compliance & Safety</h3>
-              <p className="description-offer-alt">
-                Fully FSA Registered and HACCP compliant. We provide complete traceability for every batch.
-              </p>
-              <a 
-                href="https://drive.google.com/uc?export=download&id=1Rx9zO61Ru7jaCNSRRiJd6Gxh_Zs_8xqh" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="primary-button"
-                style={{ 
-                  display: 'inline-flex',   // Changed to inline-flex for easier centering
-                  alignItems: 'center',     // Vertical center
-                  justifyContent: 'center', // Horizontal center
-                  textAlign: 'center',      // Backup for text wrapping
-                  textDecoration: 'none'    // Removes the default link underline
-                }}
-              >
-                Download Product Specification (PDF)
-              </a>
-            </div>
-          </div>
-        </section>
-
+      {/* SECTION 2: THE CAROUSEL DIVISIONS GRID WITH NAVIGATION ARROWS */}
+      <section className="divisions-carousel-container">
         
+        {/* Navigation Arrows */}
+        <button 
+          className="carousel-arrow left-arrow" 
+          onClick={() => scroll('left')} 
+          aria-label="Scroll left"
+        >
+          &#8592;
+        </button>
+        <button 
+          className="carousel-arrow right-arrow" 
+          onClick={() => scroll('right')} 
+          aria-label="Scroll right"
+        >
+          &#8594;
+        </button>
+
+        {/* Scrollable Track */}
+        <div className="divisions-card-grid" ref={scrollTrackRef}>
+          
+          {/* Card 1: Flagship Ceylon Cinnamon */}
+          <div className="division-item-card flagship-highlight">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${cinnamon_ground})` }}
+              ></div>
+              <span className="flagship-badge-pill">OUR CROWN JEWEL</span>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Ceylon Cinnamon</h3>
+              <p className="card-description-text">
+                The true cinnamon. Rare, thin, multi-layered quills hand-peeled in the Southern Province, offering an ultra-low coumarin, sweet aromatic profile.
+              </p>
+              <Link to="/products/ceylon-cinnamon" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 2: Black Pepper */}
+          <div className="division-item-card">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${black_pepper})` }}
+              ></div>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Black Pepper</h3>
+              <p className="card-description-text">
+                High-piperine berries, sun-dried uniformly to deliver a sharp, pure, and clean heat index trusted by top culinary blenders.
+              </p>
+               <Link to="/products/black-pepper" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 3: Cardamom */}
+          <div className="division-item-card">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${cardamom})` }}
+              ></div>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Green Cardamom</h3>
+              <p className="card-description-text">
+                Intensely aromatic, hand-picked green pods sorted strictly for exceptional volatile oil density and vibrant whole color retention.
+              </p>
+               <Link to="/products/green-cardamom" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 4: Cloves */}
+          <div className="division-item-card">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${cloves})` }}
+              ></div>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Cloves</h3>
+              <p className="card-description-text">
+                Dense, hand-picked whole floral buds collected fresh for commercial grinding lines, rich essential oil distillation, and wholesale distribution.
+              </p>
+               <Link to="/products/cloves" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 5: Nutmeg & Mace */}
+          <div className="division-item-card">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${nutmeg_mace})` }}
+              ></div>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Nutmeg & Mace</h3>
+              <p className="card-description-text">
+                Heavy, high-grade kernels and vibrant outer mace lacy bands, sun-dried uniformly to lock in rich, warm essential volatile oils.
+              </p>
+               <Link to="/products/nutmeg" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card 6: Dedicated Vanilla Card */}
+          <div className="division-item-card">
+            <div className="division-img-wrapper">
+              <div 
+                className="fallback-spice-bg" 
+                style={{ backgroundImage: `url(${vanilla})` }}
+              ></div>
+            </div>
+            <div className="division-content-pane">
+              <h3 className="serif-card-title">Ceylon Vanilla</h3>
+              <p className="card-description-text">
+                Plump, oily, gourmet-grade Bourbon-type vanilla pods cured patiently to yield an exceptionally deep vanillin content and sweet floral finish.
+              </p>
+               <Link to="/products/vanilla" className="elegant-explore-link">
+                EXPLORE →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: FULL-BLEED STORY PILLARS ROW */}
+      <section className="story-pillars-outer-wrapper">
+        <div className="full-bleed-story-pillars">
+          
+          <div className="story-pillar-item" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.75)), url(${supply_chain})` }}>
+            <div className="pillar-header-group">
+              <h4 className="pillar-title">Supply Chain</h4>
+            </div>
+            <div className="pillar-content-bottom">
+              <p className="pillar-desc">Smallholder farmers across Sri Lanka growing certified premium spice varieties.</p>
+               <Link to="/supply-chain" className="pillar-action-arrow">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+
+          <div className="story-pillar-item" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.75)), url(${regions})` }}>
+            <div className="pillar-header-group">
+              <h4 className="pillar-title">Sourcing Regions</h4>
+            </div>
+            <div className="pillar-content-bottom">
+              <p className="pillar-desc">Sourcing from the most fertile organic micro-climate farming regions across Sri Lanka.</p>
+              <Link to="/sourcing-regions" className="pillar-action-arrow">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+
+          <div className="story-pillar-item" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.75)), url(${certifications})` }}>
+            <div className="pillar-header-group">
+              <h4 className="pillar-title">Certifications</h4>
+            </div>
+            <div className="pillar-content-bottom">
+              <p className="pillar-desc">USDA, EU, and UK Organic certified facilities with complete batch traceability maps.</p>
+              <Link to="/certifications" className="pillar-action-arrow">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+
+          <div className="story-pillar-item" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.75)), url(${processing})` }}>
+            <div className="pillar-header-group">
+              <h4 className="pillar-title">Processing</h4>
+            </div>
+            <div className="pillar-content-bottom">
+              <p className="pillar-desc">State-of-the-art processing facilities ensuring total batch control and premium quality passports.</p>
+              <Link to="/processing" className="pillar-action-arrow">
+                Learn More →
+              </Link>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* SECTION 4: THE TECHNICAL SHOWDOWN SECTION */}
+      <div className="technical-section-wrapper">
+        <section className="technical-safety-panel">
+          <div className="technical-panel-inner">
+            <div className="safety-text-side">
+              <span className="panel-kicker-tag">OUR PURPOSE</span>
+              <h3 className="serif-panel-title">True Cinnamon vs Commercial Imitations</h3>
+              <p className="panel-narrative-para">
+                Averon Supplies runs on transparency. We want bulk spice procurement managers to look directly at the values. The global market is saturated with cheap Cassia alternatives that introduce potential coumarin chemical exposure risks. True Ceylon Cinnamon guarantees chemical peace of mind and an exquisite flavor profile.
+              </p>
+              
+              <div className="clean-heritage-table-container">
+                <table className="heritage-data-table">
+                  <thead>
+                    <tr>
+                      <th>ANALYSIS METRIC</th>
+                      <th>CEYLON CINNAMON</th>
+                      <th>MARKET CASSIA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="metric-label-bold">Coumarin Contamination</td>
+                      <td className="text-success-gold">Ultra-Low (~0.004%)</td>
+                      <td className="text-error-red">High (Toxicity Risk)</td>
+                    </tr>
+                    <tr>
+                      <td className="metric-label-bold">Flavor Notes</td>
+                      <td>Sweet, Multi-layered, Eugenol</td>
+                      <td>Harsh, Bitter, Pungent</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="safety-action-side">
+              <div className="compliance-quote-card">
+                <p className="quote-body">
+                  "A clean, disease-free food supply ecosystem achieved through direct micro-climate sourcing, complete transparency, and total supply-chain integrity."
+                </p>
+                <div className="quote-divider-line"></div>
+                <a 
+                  href="https://drive.google.com/uc?export=download&id=1Rx9zO61Ru7jaCNSRRiJd6Gxh_Zs_8xqh" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="heritage-download-btn"
+                >
+                  DOWNLOAD PRODUCT SPECIFICATION (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
+
     </div>
   );
 };

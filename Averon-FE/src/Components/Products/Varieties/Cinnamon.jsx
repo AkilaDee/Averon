@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Cinnamon.css';
 
 // Asset Imports - Points directly to your existing asset setup

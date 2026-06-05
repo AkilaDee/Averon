@@ -45,7 +45,7 @@ const Contact = () => {
         <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" />
       </Helmet>
 
-      <h1 className="contact-main-title">Contact Us</h1>
+      {/* <h1 className="contact-main-title">Contact Us</h1> */}
 
       {/* ROW 1: Contact Details - Text Left, Image Right */}
       <div className="contact-split-row">

@@ -1,316 +1,480 @@
-:root {
-  --cinnamon: #78350f;
-  --forest: #14532d;
-  --slate: #1e293b; 
-  --bg-light: #f8fafc;
+/* --- PREMIUM HERITAGE STYLING ARCHITECTURE --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+.premium-heritage-offers {
+    background-color: #fcfbf7; /* Warm high-end cream background */
+    padding: 90px 0 0 0;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2b2b2b;
 }
 
-.averon-container img{
-    width: 40%;
-}
-
-.averon-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.averon-section {
-  padding: 20px 0;
-}
-
-/* Layout Patterns */
-.section-split {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .section-split { flex-direction: row; }
-}
-
-.grid-dual {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  
-}
-
-@media (min-width: 768px) {
-  .grid-dual { grid-template-columns: 1fr 1fr; }
-}
-
-/* Typography */
-.badge {
-  color: var(--cinnamon);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-.title-large-offer { font-size: 2.5rem; color: var(--slate); margin-top: 10px; }
-.title-medium-offer { font-size: 1.5rem; margin-bottom: 20px; color: #FAFAFA;}
-.description-offer { color: #64748b; line-height: 1.6; }
-
-/* Cards & Tables */
-.card {
-  padding: 30px;
-  border-radius: 16px;
-  border: 1px solid #e2e8f0;
-  background: #111111;
-  color:#fafafa;
-}
-
-.dark-card {
-  background: var(--slate);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.image-wrapper {
-  width: 80px;
-  height: 80px;
-  min-width: 80px; /* Ensures the image doesn't get squashed */
-  border-radius: 12px;
-  overflow: hidden; /* Crops the image to the border-radius */
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-.logistics-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* This is the "magic" property: it crops the photo perfectly */
-  display: block;
-}
-
-.info-block {
-  display: flex;
-  align-items: center; /* Aligns text vertically with the middle of the image */
-  gap: 24px;
-  padding: 15px;
-  transition: all 0.3s ease;
-  border-radius: 16px;
-}
-
-.info-block:hover {
-  background-color: #f8fafc;
-  transform: translateX(5px); /* Subtle "slide" effect instead of a lift */
-}
-/* --- Vertical Feature Grid Styling --- */
-
-.feature-grid {
-  gap: 40px;
-  margin-top: 60px;
-}
-
-.feature-card {
-  display: flex;
-  flex-direction: column;
-  background: white;
-  border-radius: 24px;
-  overflow: hidden; /* Important: Clips the image to the card's rounded corners */
-  border: 1px solid #f1f5f9;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-.feature-image-container {
-  width: 100%;
-  height: 250px; /* Bigger vertical presence */
-  background-color: #f8fafc;
-}
-
-.feature-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the photo fills the space without stretching */
-  transition: scale 0.5s ease;
-}
-
-.feature-card:hover .feature-image {
-  scale: 1.05; /* Subtle zoom effect on hover */
-}
-
-.feature-text {
-  padding: 30px;
-}
-
-.title-medium-offer {
-  font-size: 1.4rem;
-  color: #FAFAFA;
-  font-size: 24px;
-  margin-bottom: 12px;
-  /* text-decoration: underline; */
-}
-.sc-button {
-  display: inline-block;
-  background-color: #111111; /* Dark background to match your brand */
-  color: #E8AF03;           /* Your gold accent color */
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  border: 1px solid #E8AF03;
-  transition: all 0.3s ease;
-  margin-top: 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.sc-button:hover {
-  background-color: #E8AF03;
-  color: #111111;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(232, 175, 3, 0.2);
-}
-
-/* Ensure the description doesn't push the button too far */
-.description-offer {
-  color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 10px; /* Reduced margin to keep button close to text */
-}
-.description-offer-small {
-  color: #64748b;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Responsive: Ensure they don't look too tall on mobile */
-@media (max-width: 768px) {
-  .feature-image-container {
-    height: 200px;
-  }
-}
-/* --- Info Cards & Logistics Section --- */
-
-/* Centers the two blocks on large screens */
-.small-gap {
-  margin-top: 40px;
-  border-top: 1px solid #f1f5f9;
-  padding-top: 80px !important;
-}
-
-.image-wrapper {
-  width: 80px;
-  height: 80px;
-  display: flex;
-  background: #f1f5f9;
-  min-width: 80px; /* Ensures the image doesn't get squashed */
-  border-radius: 12px;
-  overflow: hidden; /* Crops the image to the border-radius */
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-}
-
-.logistics-image {
-  width: 100% !important;
-  height: 100%;
-  object-fit: cover; /* This is the "magic" property: it crops the photo perfectly */
-  display: block;
-}
-
-.info-block {
-  display: flex;
-  align-items: center; /* Aligns text vertically with the middle of the image */
-  gap: 24px;
-  color:#111111;
-  padding: 15px;
-  transition: all 0.3s ease;
-  border-radius: 16px;
-  background: #E8AF03;
-  border: 10px solid rgba(0, 0, 0, 0.1); /* Subtle dark border */
-  box-sizing: border-box; /* Ensures the border doesn't make the box wider */
-}
-
-.info-block:hover {
-  background-color: #f8fafc;
-  transform: translateX(5px); /* Subtle "slide" effect instead of a lift */
-}
-
-/* Typography for the info cards */
-.title-small {
-  font-size: 22px;
-  font-weight: 900;
-  color: #000F38;
-  font-weight: bold;
-  margin-bottom: 8px;
-  margin-top: 0;
-}
-
-.info-block p {
-  color: #111111;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Highlight the "No Hidden Fees" part */
-.info-block strong {
-  color: var(--forest);
-  font-weight: 700;
-}
-
-/* Hover effect to make it feel interactive */
-.info-block:hover {
-  transform: translateY(-5px);
-}
-
-/* Responsive adjustment: stack icons on very small screens */
-@media (max-width: 480px) {
-  .info-block {
-    flex-direction: column;
+/* --- SECTION 1: HERITAGE INTRO BANNER --- */
+.heritage-intro-section {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
     text-align: center;
+    padding: 0 20px;
+}
+
+.center-divider-tag {
+    display: flex;
     align-items: center;
-  }
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
+.line-arm {
+    width: 30px;
+    height: 1px;
+    background-color: #bfa37a; /* Muted gold line accents */
 }
 
-.comparison-table th { border-bottom: 2px solid var(--bg-light); padding: 10px 0; color: #E8AF03; font-size: 24px;}
-.comparison-table td { padding: 15px 0; border-bottom: 1px solid #f1f5f9; text-align: center; font-size: 16px;}
-.text-safe { color: #16a34a; font-weight: bold; }
-.text-unsafe {color: #DC2626; font-weight: bold;}
-.text-feature {color: #fafafa; font-weight: bold; font-size: 18px; text-align: left !important}
-
-/* Buttons */
-.primary-button {
-  background: white;
-  color: var(--slate);
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 20px;
+.tag-text-main {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #7c684d;
+    text-transform: uppercase;
 }
 
-.averon-visual {
-  width: 100%;
-  background: var(--bg-light);
-  aspect-ratio: 16/9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  color: #111111;
-  border: 10px solid rgba(0, 0, 0, 0.1); /* Subtle dark border */
-  box-sizing: border-box; /* Ensures the border doesn't make the box wider */
+.serif-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    color: #1a1e21; 
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+
+.elegant-intro-subtitle {
+    font-size: 15.5px;
+    color: #5c645e;
+    line-height: 1.7;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* --- SECTION 2: THE CAROUSEL WRAPPER ARCHITECTURE --- */
+.divisions-carousel-container {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto 100px auto;
+    width: 92%;
+    padding: 0 50px; 
+    box-sizing: border-box;
+}
+
+.divisions-card-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 15px 5px 25px 5px;
+    scrollbar-width: none; 
+}
+
+.divisions-card-grid::-webkit-scrollbar {
+    display: none; 
+}
+
+.division-item-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f1efe9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(25% - 15px); 
+    box-sizing: border-box;
+}
+
+.division-item-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(124, 104, 77, 0.08);
+}
+
+.division-img-wrapper {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background-color: #eaddca;
+    overflow: hidden; /* Fixes zoom spillover */
+}
+
+.fallback-spice-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.95) contrast(1.02);
+    transition: transform 0.5s ease;
+}
+
+.division-item-card:hover .fallback-spice-bg {
+    transform: scale(1.06); /* Cinematic image zoom on card hover */
+}
+
+.flagship-badge-pill {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #E8AF03;
+    color: #111111;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.division-content-pane {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.serif-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    color: #111111;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.card-description-text {
+    font-size: 13.5px;
+    color: #616863;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+
+.elegant-explore-link {
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #E8AF03;
+    align-self: flex-start;
+    padding-bottom: 2px;
+}
+
+.elegant-inactive-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: #bfa37a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.flagship-highlight {
+    border: 1px solid #e2cfb4;
+    background-color: #fffdf9;
+}
+
+/* --- CAROUSEL NAVIGATION ARROWS --- */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fcfbf7;
+    border: 2px solid #1a1e21; 
+    color: #1a1e21;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(26, 30, 33, 0.15);
+    transition: all 0.25s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: #1a1e21;
+    color: #ffffff;
+    border-color: #1a1e21;
+    box-shadow: 0 6px 20px rgba(26, 30, 33, 0.3);
+}
+
+.left-arrow { left: 2px; }
+.right-arrow { right: 2px; }
+
+/* --- SECTION 3: DEEP FULL-BLEED STORY HOVER PILLARS --- */
+.story-pillars-outer-wrapper {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto 100px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.full-bleed-story-pillars {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: transparent;
+    border-radius: 16px; 
+    overflow: hidden; 
+    gap: 2px; 
+}
+
+.story-pillar-item {
+    padding: 40px 25px;
+    min-height: 460px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s ease;
+    cursor: pointer;
+}
+
+.story-pillar-item:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pillar-header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.pillar-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
+
+.pillar-content-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pillar-desc {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+.pillar-action-arrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #bfa37a;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.story-pillar-item:hover .pillar-action-arrow {
+    color: #E8AF03;
+}
+
+/* --- SECTION 4: THE TECHNICAL SAFETY DATA OVERVIEW --- */
+.technical-section-wrapper {
+    width: 100%;
+    background-color: #fcfbf7;
+    padding-top: 100px; 
+}
+
+.technical-safety-panel {
+    background-color: #1E293B;
+    padding: 100px 0;
+    width: 100%;
+    border-top: 1px solid #111111;
+}
+
+.technical-panel-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.panel-kicker-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.serif-panel-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.panel-narrative-para {
+    font-size: 14.5px;
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.clean-heritage-table-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.heritage-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    color: #e5e7eb;
+}
+
+.heritage-data-table th {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 0;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.heritage-data-table td {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-label-bold {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.text-success-gold {
+    color: #E8AF03;
+    font-weight: 600;
+}
+
+.text-error-red {
+    color: #f87171;
+    font-weight: 600;
+}
+
+.compliance-quote-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+}
+
+.quote-body {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin: 0 0 30px 0;
+}
+
+.quote-divider-line {
+    width: 40px;
+    height: 1px;
+    background-color: #E8AF03;
+    margin: 0 auto 30px auto;
+}
+
+.heritage-download-btn {
+    display: block;
+    width: 100%;
+    background-color: #E8AF03;
+    color: #111111;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.heritage-download-btn:hover {
+    opacity: 0.95;
+}
+
+/* --- ADAPTIVE LAYOUT MEDIA BREAKPOINTS --- */
+@media (max-width: 1100px) {
+    .division-item-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+    .divisions-carousel-container {
+        padding: 0 40px;
+    }
+    .full-bleed-story-pillars {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 12px;
+    }
+    .story-pillar-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .technical-panel-inner {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .story-pillars-outer-wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .serif-main-title { font-size: 34px; }
+    .serif-panel-title { font-size: 28px; }
+}
+
+@media (max-width: 650px) {
+    .division-item-card {
+        flex: 0 0 88%;
+    }
+    .carousel-arrow {
+        display: none;
+    }
+    .divisions-carousel-container {
+        padding: 0 15px;
+    }
+    .full-bleed-story-pillars {
+        grid-template-columns: 1fr;
+    }
+    .story-pillars-outer-wrapper {
+        padding: 0 15px;
+    }
+    .story-pillar-item {
+        min-height: 380px;
+        padding: 30px 20px;
+    }
 }
