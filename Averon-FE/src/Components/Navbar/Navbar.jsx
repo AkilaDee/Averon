@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="tier-one">
         <div className="tier-one-container">
           <div className="tier-one-center-links">
-            <NavLink to="/enquire" className="top-enquire">Enquire Now</NavLink>
+            <NavLink to="/contact-us" className="top-enquire">Enquire Now</NavLink>
             
             <a href="mailto:info@averonsupplies.co.uk" className="contact-icon-link">
               <FiMail className="contact-inline-icon" /> info@averonsupplies.co.uk
