@@ -1,4 +1,6 @@
-/* --- SUPPLY CHAIN PAGE ARCHITECTURAL SPECIFICATION --- */
+/* ==========================================================================
+   SUPPLY CHAIN PAGE ARCHITECTURAL SPECIFICATION
+   ========================================================================== */
 
 .premium-heritage-supply {
     background-color: #fcfbf7;
@@ -37,6 +39,8 @@
 
 .line-arm.light {
     background-color: rgba(232, 175, 3, 0.6);
+    width: 40px;
+    height: 1px;
 }
 
 .tag-text-main.light {
@@ -148,6 +152,11 @@
     background-repeat: no-repeat;
     border-radius: 8px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* Maximized visual weight specifically for the farmers asset */
+.stage-image-frame.farmers-extended-frame {
+    height: 490px;
 }
 
 /* --- SECTION 3: COMPLIANCE MATRIX PANEL --- */
@@ -279,7 +288,10 @@
     margin: 0;
 }
 
-/* --- ADAPTIVE LAYOUT MEDIA BREAKPOINTS --- */
+/* ==========================================================================
+   ADAPTIVE LAYOUT MEDIA BREAKPOINTS
+   ========================================================================== */
+
 @media (max-width: 1100px) {
     .supply-panel-inner {
         grid-template-columns: 1fr;
@@ -300,11 +312,16 @@
         grid-template-columns: 1fr;
         gap: 35px;
     }
-    .stage-split-row.reverse .stage-text-block, .stage-split-row.reverse .stage-visual-block {
+    .stage-split-row.reverse .stage-text-block, 
+    .stage-split-row.reverse .stage-visual-block {
         order: unset;
     }
     .serif-hero-title {
         font-size: 42px;
+    }
+    /* Scaled down to balance stacked tablet layouts */
+    .stage-image-frame.farmers-extended-frame {
+        height: 360px;
     }
 }
 
@@ -328,8 +345,10 @@
     .serif-stage-title {
         font-size: 23px;
     }
-    .stage-image-frame {
-        height: 220px;
+    /* Uniform layout containment for narrow mobile screens */
+    .stage-image-frame, 
+    .stage-image-frame.farmers-extended-frame {
+        height: 240px;
     }
     .protection-overlay {
         bottom: 30px;

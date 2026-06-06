@@ -191,7 +191,7 @@
 }
 
 .contact-reassurance-box {
-    background-color: rgba(15, 23, 42, 0.6);
+    background-color: #111111;
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 40px;

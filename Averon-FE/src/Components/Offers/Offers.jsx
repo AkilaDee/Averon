@@ -3,7 +3,6 @@ import './Offers.css';
 import { Link } from 'react-router-dom';
 
 // Image Imports
-import map from '../../assets/map.jpg';
 import cinnamon_ground from '../../assets/cinnamon.jpg';
 // NOTE: Adjust these paths below to match your actual local file names
 import black_pepper from '../../assets/pepper.jpg'; 

@@ -8,8 +8,8 @@ import supply_hero from '../../assets/supply-chain.jpg';
 import chain_metrics from '../../assets/supply-method.jpg'; 
 
 // NOTE: Adjust these image paths to match your actual local file names for the pillars
-import farm_sourcing from '../../assets/drying.jpg';
-import logistics_img from '../../assets/grading.jpg';
+import farm_sourcing from '../../assets/farmers.jpg';
+import logistics_img from '../../assets/freight.jpg';
 
 const SupplyChain = () => {
   return (
@@ -20,7 +20,7 @@ const SupplyChain = () => {
         <title>Ethical Spice Supply Chain & Sourcing | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Explore Averon Supplies Ltd's vertically integrated supply chain. From 7,000+ monitored smallholders in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement." 
+          content="Explore Averon Supplies Ltd's vertically integrated supply chain. From estates in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement." 
         />
         <meta name="keywords" content="ethical spice sourcing, sustainable spice supply chain, wholesale cinnamon logistics, direct farm spice procurement, single-origin traceability, fair trade spice supplier UK" />
         <link rel="canonical" href="https://averonsupplies.co.uk/supply-chain" />
@@ -64,13 +64,14 @@ const SupplyChain = () => {
           <div className="stage-split-row">
             <div className="stage-text-block">
               <span className="stage-index">STAGE A</span>
-              <h3 className="serif-stage-title">7,000+ Monitored Smallholders</h3>
+              <h3 className="serif-stage-title">Estates in Sri Lanka</h3>
               <p className="stage-body-text">
                 Our supply chain begins directly in the micro-climate agricultural communities of Sri Lanka. We cultivate ongoing multi-generational relationships with vetted local farmers, supplying them with clean botanical stock, sustainable soil management strategies, and guaranteed fair-trade price locks. This transparent relationship safeguards your pipeline against adulteration risks and artificial crop inflation.
               </p>
             </div>
             <div className="stage-visual-block">
-              <div className="stage-image-frame" style={{ backgroundImage: `url(${farm_sourcing})` }}></div>
+              {/* Added extended-height modifier class here */}
+              <div className="stage-image-frame farmers-extended-frame" style={{ backgroundImage: `url(${farm_sourcing})` }}></div>
             </div>
           </div>
 
