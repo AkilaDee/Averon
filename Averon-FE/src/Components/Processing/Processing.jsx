@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Processing.css';
 
 // Asset Imports
@@ -14,6 +15,27 @@ import packaging from '../../assets/packing.jpg';
 const Processing = () => {
   return (
     <div className="premium-heritage-processing">
+      
+      {/* SECTION 0: SEO & HEAD METADATA */}
+      <Helmet>
+        <title>Industrial Spice Processing & Milling Standards | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Discover Averon Supplies Ltd's industrial processing architecture. From strict optical sorting and controlled dehydration to vacuum triple-shield packaging under critical control metrics." 
+        />
+        <meta name="keywords" content="industrial spice processing, cinnamon milling, spice dehydration, optical sorting spices, triple shield packaging, bulk spice quality control, moisture target spices" />
+        <link rel="canonical" href="https://averonsupplies.co.uk/processing" />
+        
+        {/* OpenGraph Metadata for Professional Sharing */}
+        <meta property="og:title" content="Industrial Spice Processing Integrity & Milling | Averon Supplies Ltd" />
+        <meta property="og:description" content="Combining generational milling craftsmanship with modern food safety mechanisms. Review our batch verification standards and zero-tolerance contamination protocols." />
+        <meta property="og:url" content="https://averonsupplies.co.uk/processing" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={processing_hero} />
+
+        {/* Robots Instructions */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       
       {/* SECTION 1: HERO ARCHITECTURE */}
       <section className="processing-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9)), url(${processing_hero})` }}>

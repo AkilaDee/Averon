@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './SupplyChain.css';
 
 // Asset Imports
@@ -13,6 +14,27 @@ import logistics_img from '../../assets/grading.jpg';
 const SupplyChain = () => {
   return (
     <div className="premium-heritage-supply">
+      
+      {/* SECTION 0: SEO & HEAD METADATA */}
+      <Helmet>
+        <title>Ethical Spice Supply Chain & Sourcing | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Explore Averon Supplies Ltd's vertically integrated supply chain. From 7,000+ monitored smallholders in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement." 
+        />
+        <meta name="keywords" content="ethical spice sourcing, sustainable spice supply chain, wholesale cinnamon logistics, direct farm spice procurement, single-origin traceability, fair trade spice supplier UK" />
+        <link rel="canonical" href="https://averonsupplies.co.uk/supply-chain" />
+        
+        {/* OpenGraph Metadata for Professional Sharing */}
+        <meta property="og:title" content="Directly Integrated B2B Spice Supply Chain | Averon Supplies Ltd" />
+        <meta property="og:description" content="Eliminating broker middle-layers to provide fixed price matrixes, lot-level batch tracking, and rigorous chemical barrier testing directly from origin." />
+        <meta property="og:url" content="https://averonsupplies.co.uk/supply-chain" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={supply_hero} />
+
+        {/* Robots Instructions */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       
       {/* SECTION 1: HERO ARCHITECTURE */}
       <section className="supply-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9)), url(${supply_hero})` }}>

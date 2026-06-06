@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'; // Ensure npm install react-helmet or react-helmet-async is completed
 import './Certifications.css';
 
 // Asset Imports
@@ -9,6 +10,27 @@ import compliance_bg from '../../assets/accreditations.jpg';
 const Certifications = () => {
   return (
     <div className="premium-heritage-certs">
+      
+      {/* SECTION 0: SEO & HEAD METADATA */}
+      <Helmet>
+        <title>Spice Import Compliance & HACCP Certifications | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Review Averon Supplies Ltd's statutory compliance metrics. Verified UK Food Business Operator (FBO), strict FSA guidelines, fully-documented HACCP systems, and 100% batch traceability." 
+        />
+        <meta name="keywords" content="FBO registered, UK Food Standards Agency compliance, HACCP spice supplier, spice traceability audit, wholesale spice certification UK, non-irradiated cinnamon technical sheet" />
+        <link rel="canonical" href="https://averonsupplies.co.uk/certifications" />
+        
+        {/* OpenGraph Metadata for Professional Sharing (LinkedIn/B2B Networks) */}
+        <meta property="og:title" content="Regulatory Compliance & Technical Spice Standards | Averon Supplies Ltd" />
+        <meta property="og:description" content="Direct wholesale distribution backed by documented UK food safety frameworks, mandatory HACCP controls, and complete single-origin traceability protocols." />
+        <meta property="og:url" content="https://averonsupplies.co.uk/certifications" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={cert_hero} />
+
+        {/* Robots Instructions */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       
       {/* SECTION 1: HERO ARCHITECTURE */}
       <section className="certs-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.8), rgba(26, 30, 33, 0.93)), url(${cert_hero})` }}>
