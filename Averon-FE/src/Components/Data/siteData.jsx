@@ -71,5 +71,29 @@ export const SITE_INDEX = [
     url: "/products",
     type: "Product",
     text: "Hand-picked Vanilla sourced directly from selected estates. High volatile oil fractions, laboratory verified traceability."
+  },
+  {
+    title: "Supply Chain",
+    url: "/supply-chain",
+    type: "Page Content",
+    text: "Explore our vertically integrated logistics engine. Trace our single-origin processing pipeline from estate cultivation and strict HACCP compliance frameworks to direct maritime container distribution."
+  },
+  {
+    title: "Sourcing Regions",
+    url: "/sourcing-regions",
+    type: "Page Content",
+    text: "An analysis of Sri Lanka's premium micro-climates. Discover our ethical sourcing networks across the Southern coastal silica belts and Central Highlands, partnering with over 7,000 vetted regional smallholders."
+  },
+  {
+    title: "Certifications & Quality",
+    url: "/certifications",
+    type: "Page Content",
+    text: "Review our institutional food safety benchmarks. Access statutory UK Food Business Operator (FBO) documentation, GFSI-recognized audit standards, and our comprehensive HACCP-based preventative control models."
+  },
+  {
+    title: "Processing Facilities",
+    url: "/processing",
+    type: "Page Content",
+    text: "Inside our clean-room milling and dehydration infrastructure. Learn about our low-temperature milling speeds, multi-stage mechanical sieving, and triple-stage rare-earth magnetic metal detection protocols."
   }
 ];
