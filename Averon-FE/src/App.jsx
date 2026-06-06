@@ -22,6 +22,7 @@ import SearchResults from './Components/SearchResults/SearchResults';
 import SourcingRegions from './Components/SourcingRegions/SourcingRegions';
 import Processing from './Components/Processing/Processing';
 import Certifications from './Components/Certifications/Certifications';
+import TermsOfBusiness from './Components/TermsOfBusiness/TermsOfBusiness';
 
 // FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
@@ -170,6 +171,12 @@ const App = () => {
          <Route path="/certifications" element={
           <>
             <Certifications />
+            <Footer />
+          </>
+        } />
+        <Route path="/terms-of-business" element={
+          <>
+            <TermsOfBusiness />
             <Footer />
           </>
         } />

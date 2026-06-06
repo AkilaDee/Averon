@@ -92,7 +92,7 @@ const Footer = () => {
           <p className="copyright-text">
             © 2026 - Averon Supplies. All Rights Reserved.
           </p>
-          <a href="#terms" className="terms-link">
+          <a href="/terms-of-business" className="terms-link">
             Terms of Business
           </a>
         </div>

@@ -1,0 +1,182 @@
+/* ==========================================================================
+   TERMS OF BUSINESS ARCHITECTURAL SPECIFICATION
+   ========================================================================== */
+
+.premium-heritage-legal {
+    background-color: #fcfbf7;
+    width: 100%;
+    color: #2b2b2b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* --- SECTION 1: LEGAL HERO FRAME --- */
+.legal-hero-section {
+    background-color: #1a1e21;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2e3438;
+}
+
+.legal-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-kicker-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #E8AF03;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.serif-legal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.elegant-legal-subtitle {
+    font-size: 14px;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* --- SECTION 2: GRID STRUCTURE --- */
+.legal-content-container {
+    max-width: 1240px;
+    margin: 80px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.legal-grid-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 2.2fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* --- SIDEBAR CORPORATE COMPONENT --- */
+.legal-sidebar-info {
+    position: sticky;
+    top: 40px;
+}
+
+.corporate-card-sticky {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e0;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.corporate-card-sticky h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #1a1e21;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e0;
+}
+
+.corporate-card-sticky p {
+    font-size: 13.5px;
+    color: #5c645e;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.corporate-card-sticky p strong {
+    color: #1a1e21;
+    font-weight: 600;
+}
+
+.corporate-card-sticky p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- ARTICLES & CLAUSES ENGINE --- */
+.legal-clauses-article {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.clause-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #1a1e21;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.clause-block p {
+    font-size: 14.5px;
+    color: #4a4a4a;
+    line-height: 1.75;
+    margin: 0 0 15px 0;
+}
+
+.clause-block ul, .clause-block ol {
+    margin: 0 0 15px 0;
+    padding-left: 25px;
+}
+
+.clause-block li {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.clause-block li strong {
+    color: #1a1e21;
+}
+
+.clause-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   ADAPTIVE SCREEN BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 960px) {
+    .legal-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .legal-sidebar-info {
+        position: static;
+    }
+    .legal-content-container {
+        padding: 0 30px;
+        margin: 50px auto;
+    }
+    .serif-legal-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 600px) {
+    .legal-content-container {
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+    .serif-legal-title {
+        font-size: 28px;
+    }
+    .clause-block h2 {
+        font-size: 19px;
+    }
+    .corporate-card-sticky {
+        padding: 20px;
+    }
+}
