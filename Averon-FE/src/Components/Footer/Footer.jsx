@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer-col brand-info-col">
             <img src={logo} alt="Averon Logo" className="footer-logo" />
             <p className="footer-bio-text">
-              Direct importers of authentic Ceylon Cinnamon and premium Sri Lankan spices. 
+              Direct importer of authentic Ceylon Cinnamon and premium Sri Lankan spices. 
               We cultivate, harvest, and process on our own estates to ensure absolute traceability
                and uncompromised grade accuracy for UK wholesale markets.
             </p>
