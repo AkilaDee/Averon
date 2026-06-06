@@ -35,12 +35,6 @@ const Nutmeg = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="nut-back-nav">
-        <Link to="/" className="nut-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
 
       {/* HERO SECTION CONTAINER */}
       <div className="nut-hero-split">

@@ -41,12 +41,7 @@ const BlackPepper = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="pep-back-nav">
-        <Link to="/" className="pep-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
+      
 
       {/* HERO SECTION CONTAINER */}
       <div className="pep-hero-split">

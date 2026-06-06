@@ -62,12 +62,6 @@ const CinnamonDetail = () => {
           />
           <link rel="canonical" href="https://www.averonsupplies.co.uk/products/ceylon-cinnamon" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="cin-back-nav">
-        <Link to="/" className="cin-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
 
       {/* HERO SECTION CONTAINER */}
       <div className="cin-hero-split">

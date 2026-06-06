@@ -37,12 +37,6 @@ const Cloves = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="clv-back-nav">
-        <Link to="/" className="clv-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
 
       {/* HERO SECTION CONTAINER */}
       <div className="clv-hero-split">

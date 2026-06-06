@@ -35,12 +35,6 @@ const Vanilla = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="van-back-nav">
-        <Link to="/" className="van-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
 
       {/* HERO SECTION CONTAINER */}
       <div className="van-hero-split">

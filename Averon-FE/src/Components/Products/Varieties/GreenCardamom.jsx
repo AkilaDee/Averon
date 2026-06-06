@@ -37,12 +37,6 @@ const GreenCardamom = () => {
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom" />
       </Helmet>
-      {/* BREADCRUMB NAVIGATION */}
-      <div className="card-back-nav">
-        <Link to="/" className="card-back-link">
-          ← Back to All Products
-        </Link>
-      </div>
 
       {/* HERO SECTION CONTAINER */}
       <div className="card-hero-split">
