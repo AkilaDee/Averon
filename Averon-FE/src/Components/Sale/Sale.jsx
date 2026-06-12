@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { CartContext } from './CartContext';
 import { spiceInventory } from '../Data/ProductData';
-import './sale.css';
+import './Sale.css';
 
 export default function Sale() {
   const { cart, addToCart, updateQuantity, removeFromCart } = useContext(CartContext);
