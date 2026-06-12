@@ -62,7 +62,8 @@
     max-width: 1240px;
     margin: 0 auto 100px auto;
     width: 92%;
-    padding: 0 50px; 
+    /* INCREASED from 50px to 80px to give the arrows a wider lane */
+    padding: 0 80px; 
     box-sizing: border-box;
 }
 
@@ -209,8 +210,8 @@
     box-shadow: 0 6px 20px rgba(26, 30, 33, 0.3);
 }
 
-.left-arrow { left: 2px; }
-.right-arrow { right: 2px; }
+.left-arrow { left: 15px; }
+.right-arrow { right: 15px; }
 
 /* --- SECTION 3: DEEP FULL-BLEED STORY HOVER PILLARS --- */
 .story-pillars-outer-wrapper {
@@ -433,9 +434,14 @@
     .division-item-card {
         flex: 0 0 calc(50% - 10px);
     }
+    /* REDUCED padding down to 50px on tablets so it doesn't squish your cards */
     .divisions-carousel-container {
-        padding: 0 40px;
+        padding: 0 50px;
     }
+    /* PUSHED arrows tighter to the edge on tablets to respect the screen size */
+    .left-arrow { left: 5px; }
+    .right-arrow { right: 5px; }
+
     .full-bleed-story-pillars {
         grid-template-columns: repeat(2, 1fr);
         border-radius: 12px;

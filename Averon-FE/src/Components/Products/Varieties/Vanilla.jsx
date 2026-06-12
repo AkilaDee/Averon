@@ -39,7 +39,7 @@ const Vanilla = () => {
       {/* HERO SECTION CONTAINER */}
       <div className="van-hero-split">
         <div className="van-hero-content">
-          <h1 className="van-main-title">Gourmet Grade A Vanilla</h1>
+          <h1 className="van-main-title">Vanilla</h1>
           <p className="van-scientific-name">Vanilla planifolia</p>
           
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}

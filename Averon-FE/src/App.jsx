@@ -24,6 +24,10 @@ import Processing from './Components/Processing/Processing';
 import Certifications from './Components/Certifications/Certifications';
 import TermsOfBusiness from './Components/TermsOfBusiness/TermsOfBusiness';
 
+// NEW IMPORTS FOR THE BASKET / CLEARANCE ARCHITECTURE
+import { CartProvider } from './Components/Sale/CartContext';
+import Sale from './Components/Sale/Sale'; // Points to your lowercase sale.jsx file
+
 // FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
   const { pathname, state } = useLocation();
@@ -57,131 +61,142 @@ const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
-    <BrowserRouter>
-      <ScrollHandler /> 
-      <Navbar />
-      <Routes>
-        {/* LANDING PAGE ROUTE - Fixed and Cleaned */}
-        <Route path="/" element={
-          <>
-            <Hero />
-            <div className="container">
-              <Offers />
-            </div>
-            <Footer />
-          </>
-        } />
+    // STEP 1: Wrap everything inside the CartProvider so all pages can read/write to the allocation basket
+    <CartProvider>
+      <BrowserRouter>
+        <ScrollHandler /> 
+        <Navbar />
+        <Routes>
+          {/* LANDING PAGE ROUTE - Fixed and Cleaned */}
+          <Route path="/" element={
+            <>
+              <Hero />
+              <div className="container">
+                <Offers />
+              </div>
+              <Footer />
+            </>
+          } />
 
-        {/* GLOBAL SEARCH RESULTS ROUTE - Placed here safely as a direct child of <Routes> */}
-        <Route path="/search" element={
-          <>
-            <SearchResults />
-            <Footer />
-          </>
-        } />
+          {/* NEW ROUTE: DYNAMIC SALE / SPOT ALLOCATION CATALOG PAGE */}
+          <Route path="/sale" element={
+            <>
+              <Sale />
+              <Footer />
+            </>
+          } />
 
-        <Route path="/products" element={
-          <>
-            <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
-            <Products /> 
-            <Footer />
-          </>
-        } />
+          {/* GLOBAL SEARCH RESULTS ROUTE */}
+          <Route path="/search" element={
+            <>
+              <SearchResults />
+              <Footer />
+            </>
+          } />
 
-        <Route path="/about-us" element={
-          <>
-            <About setPlayState={setPlayState}/>
-            <Footer />
-          </>
-        } />
+          <Route path="/products" element={
+            <>
+              <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
+              <Products /> 
+              <Footer />
+            </>
+          } />
 
-        <Route path="/contact-us" element={
-          <>
-            <Title subTitle='CONTACT US' title='Get in Touch'/>
-            <Contact />
-            <Footer />
-          </>
-        } />
+          <Route path="/about-us" element={
+            <>
+              <About setPlayState={setPlayState}/>
+              <Footer />
+            </>
+          } />
 
-        <Route path="/quality" element={
-          <>
-            <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
-            <Quality />
-            <Footer />
-          </>
-        } />
+          <Route path="/contact-us" element={
+            <>
+              <Title subTitle='CONTACT US' title='Get in Touch'/>
+              <Contact />
+              <Footer />
+            </>
+          } />
 
-        {/* SUPPLY CHAIN ROUTE */}
-        <Route path="/supply-chain" element={
-          <>
-            <SupplyChain /> 
-            <Footer />
-          </>
-        } />
-        
-        {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
-        <Route path="/products/ceylon-cinnamon" element={
-          <>
-            <Cinnamon />
-            <Footer />
-          </>
-        } />
-        <Route path="/products/black-pepper" element={
-          <>
-            <BlackPepper />
-            <Footer />
-          </>
-        }/> 
-        <Route path="/products/cloves" element={
-          <>
-            <Cloves />
-            <Footer />
-          </>
-        } />
-        <Route path="/products/green-cardamom" element={
-          <>
-            <Cardamom />
-            <Footer />
-          </>
-        } />
-        <Route path="/products/vanilla" element={
-          <>
-            <Vanilla />
-            <Footer />
-          </>
-        }/>
-        <Route path="/products/nutmeg" element={
-          <>
-            <Nutmeg />
-            <Footer />
-          </>
-        } />
-        <Route path="/sourcing-regions" element={
-          <>
-            <SourcingRegions />
-            <Footer />
-          </>
-        } />
-        <Route path="/processing" element={
-          <>
-            <Processing />
-            <Footer />
-          </>
-        } />
-         <Route path="/certifications" element={
-          <>
-            <Certifications />
-            <Footer />
-          </>
-        } />
-        <Route path="/terms-of-business" element={
-          <>
-            <TermsOfBusiness />
-            <Footer />
-          </>
-        } />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/quality" element={
+            <>
+              <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
+              <Quality />
+              <Footer />
+            </>
+          } />
+
+          {/* SUPPLY CHAIN ROUTE */}
+          <Route path="/supply-chain" element={
+            <>
+              <SupplyChain /> 
+              <Footer />
+            </>
+          } />
+          
+          {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
+          <Route path="/products/ceylon-cinnamon" element={
+            <>
+              <Cinnamon />
+              <Footer />
+            </>
+          } />
+          <Route path="/products/black-pepper" element={
+            <>
+              <BlackPepper />
+              <Footer />
+            </>
+          }/> 
+          <Route path="/products/cloves" element={
+            <>
+              <Cloves />
+              <Footer />
+            </>
+          } />
+          <Route path="/products/green-cardamom" element={
+            <>
+              <Cardamom />
+              <Footer />
+            </>
+          } />
+          <Route path="/products/vanilla" element={
+            <>
+              <Vanilla />
+              <Footer />
+            </>
+          }/>
+          <Route path="/products/nutmeg" element={
+            <>
+              <Nutmeg />
+              <Footer />
+            </>
+          } />
+          <Route path="/sourcing-regions" element={
+            <>
+              <SourcingRegions />
+              <Footer />
+            </>
+          } />
+          <Route path="/processing" element={
+            <>
+              <Processing />
+              <Footer />
+            </>
+          } />
+           <Route path="/certifications" element={
+            <>
+              <Certifications />
+              <Footer />
+            </>
+          } />
+          <Route path="/terms-of-business" element={
+            <>
+              <TermsOfBusiness />
+              <Footer />
+            </>
+          } />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

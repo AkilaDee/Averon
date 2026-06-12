@@ -1,0 +1,474 @@
+/* --- Core Layout Configuration --- */
+
+
+.sale-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.sale-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* Category Selection Filter Tabs */
+.filter-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Catalog Product Display Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 240px;
+  background: #f7f7f7;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-variety {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a07810;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #111;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.card-price-row {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 18px;
+}
+
+.card-price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.card-price span {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 400;
+}
+
+.view-details-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.view-details-btn:hover {
+  background: #000;
+}
+
+/* --- Floating Core Cart Trigger Icon Button --- */
+/* --- Core Layout Configuration --- */
+.sale-page-wrapper {
+  padding: 40px max(4%, 20px);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #faf9f6;
+  min-height: 100vh;
+  position: relative; /* CRUCIAL: This acts as an anchor for our cart button */
+}
+
+/* --- Cart Trigger Button (Now Anchored perfectly to the top right of the page) --- */
+.floating-cart-trigger {
+  position: absolute;   /* Changed from fixed to absolute */
+  right: max(4%, 20px); /* Aligns perfectly with the right edge of your product grid */
+  top: 40px;            /* Lowers it to line up perfectly with your "Sale" heading */
+  background: #0b723a;  
+  color: #fff;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  z-index: 99;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.floating-cart-trigger:hover {
+  transform: scale(1.05);
+  background-color: #095c2f;
+}
+
+.floating-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #cc0000;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- Global Modal Backdrop Base --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* --- Product Detail Popup Layout (Image 1 Style) --- */
+.product-popup {
+  background: #fff;
+  width: 90%;
+  max-width: 840px;
+  max-height: 90vh;
+  border-radius: 16px;
+  overflow-y: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .product-popup { grid-template-columns: 1fr; }
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.popup-left-pane {
+  padding: 30px;
+  background: #fff;
+}
+
+.popup-main-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.popup-bullet-details {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.popup-right-pane {
+  padding: 40px 30px;
+  background: #fbfbf9;
+  border-left: 1px solid #f0efeb;
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-status-tag {
+  background: #fff3cd;
+  color: #856404;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+
+.popup-title {
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
+  color: #111;
+}
+
+.pack-config-selector {
+  margin-bottom: 30px;
+}
+
+.pack-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+.active-size-pill {
+  border: 2px solid #111;
+  padding: 10px 20px;
+  background: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.popup-price {
+  font-size: 1.6rem;
+  color: #cc0000;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.action-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.quantity-input-wrapper {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.qty-input-box {
+  width: 45px;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.qty-arrow-container {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+}
+
+.qty-arrow-btn {
+  background: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  height: 21px;
+  width: 24px;
+  font-size: 0.65rem;
+}
+
+.qty-arrow-btn:first-child { border-bottom: 1px solid #ccc; }
+
+.add-to-cart-action-btn {
+  flex-grow: 1;
+  background: #0b723a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* --- Sliding Cart Panel Drawer Layout (Image 2 Style) --- */
+.cart-sliding-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -5px 0 35px rgba(0, 0, 0, 0.15);
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-header {
+  padding: 24px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.shipping-promo-banner {
+  background: #fff;
+  padding: 16px 24px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.drawer-scroll-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.drawer-cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.drawer-item-thumbnail {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+
+.drawer-item-details {
+  flex-grow: 1;
+}
+
+.drawer-item-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.drawer-item-packdesc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.drawer-item-price-line {
+  font-weight: 600;
+  color: #111;
+  font-size: 1rem;
+}
+
+.drawer-checkout-section {
+  border-top: 1px solid #eee;
+  padding: 24px;
+  background: #fafafa;
+}
+
+.total-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.checkout-action-btn {
+  width: 100%;
+  background: #0b723a;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

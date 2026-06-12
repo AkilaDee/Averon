@@ -46,7 +46,7 @@ const BlackPepper = () => {
       {/* HERO SECTION CONTAINER */}
       <div className="pep-hero-split">
         <div className="pep-hero-content">
-          <h1 className="pep-main-title">High-Piperine Black Pepper</h1>
+          <h1 className="pep-main-title">Black Pepper</h1>
           <p className="pep-scientific-name">Piper nigrum</p>
           
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}

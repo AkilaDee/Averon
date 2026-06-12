@@ -41,7 +41,7 @@ const Cloves = () => {
       {/* HERO SECTION CONTAINER */}
       <div className="clv-hero-split">
         <div className="clv-hero-content">
-          <h1 className="clv-main-title">Hand-Picked Premium Cloves</h1>
+          <h1 className="clv-main-title">Cloves</h1>
           <p className="clv-scientific-name">Syzygium aromaticum</p>
           
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}

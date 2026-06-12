@@ -41,7 +41,7 @@ const GreenCardamom = () => {
       {/* HERO SECTION CONTAINER */}
       <div className="card-hero-split">
         <div className="card-hero-content">
-          <h1 className="card-main-title">Jumbo Green Cardamom</h1>
+          <h1 className="card-main-title">Green Cardamom</h1>
           <p className="card-scientific-name">Elettaria cardamomum</p>
           
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}

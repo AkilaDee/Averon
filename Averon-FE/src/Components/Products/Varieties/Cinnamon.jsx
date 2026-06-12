@@ -66,7 +66,7 @@ const CinnamonDetail = () => {
       {/* HERO SECTION CONTAINER */}
       <div className="cin-hero-split">
         <div className="cin-hero-content">
-          <h1 className="cin-main-title">Premium Ceylon Cinnamon</h1>
+          <h1 className="cin-main-title">Ceylon Cinnamon</h1>
           <p className="cin-scientific-name">Cinnamomum verum</p>
           
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
@@ -78,7 +78,7 @@ const CinnamonDetail = () => {
               This tedious manual processing method preserves the delicate essential oils within the bark matrix, yielding a sophisticated sensory profile defined by subtle sweetness, warm woody undercurrents, and distinct citrus top notes. Because it contains trace amounts of coumarin (less than 0.005%), our cinnamon represents the safest, most refined choice for international food manufacturing, specialized medical nutraceuticals, and upscale culinary retail networks across Europe and North America.
             </p>
             <p className="cin-highlight-para">
-              Every step of our supply chain—from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting—is strictly regulated. This ensures that our premium grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
+              Every step of our supply chain from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting is strictly regulated. This ensures that our premium grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
             </p>
           </div>
           
