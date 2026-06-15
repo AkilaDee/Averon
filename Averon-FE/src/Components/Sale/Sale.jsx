@@ -2,14 +2,21 @@ import React, { useState, useContext, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import './Sale.css';
 
+
 // 1. Physical asset imports mapping directly to your spice naming convention
 import cinnamonQuillsImg from '../../assets/cinnamon.jpg';
 import cinnamonGroundImg from '../../assets/cinnamon ground.jpg';
-import CardamomWholeImg from '../../assets/cardamom.jpg';
-import CardamomGroundImg from '../../assets/cardamom ground.jpg';
+import cardamomWholeImg from '../../assets/cardamom.jpg';
+import cardamomGroundImg from '../../assets/cardamom ground.jpg';
 import clovesWholeImg from '../../assets/cloves.jpg';
-import BlackPepperWholeImg from '../../assets/pepper.jpg';
-import BlackPepperGroundImg from '../../assets/pepper ground.jpg';
+import clovesGroundImg from '../../assets/cloves ground.jpg';
+import blackPepperWholeImg from '../../assets/pepper.jpg';
+import blackPepperGroundImg from '../../assets/pepper ground.jpg';
+import nutmegWholeImg from '../../assets/nutmeg.jpg';
+import vanillaWholeImg from '../../assets/vanilla.jpg';
+
+
+
 
 
 const SPICE_IMAGE_MAP = {
@@ -19,20 +26,25 @@ const SPICE_IMAGE_MAP = {
     'Ground': cinnamonGroundImg,
   },
   'Black Pepper': {
-    'Whole': BlackPepperWholeImg,
-    'Powder': BlackPepperGroundImg,
-    'Ground': BlackPepperGroundImg,
+    'Whole': blackPepperWholeImg,
+    'Powder': blackPepperGroundImg,
+    'Ground': blackPepperGroundImg,
   },
   'Cardamom': {
-    'Whole': CardamomWholeImg,
-    'Powder': CardamomGroundImg,
-    'Ground': CardamomGroundImg,
-  },
-  'Clove': {
-    'Whole': clovesWholeImg,
+    'Whole': cardamomWholeImg,
+    'Powder': cardamomGroundImg,
+    'Ground': cardamomGroundImg,
   },
   'Cloves': {
     'Whole': clovesWholeImg,
+    'Powder': clovesGroundImg,
+    'Ground': clovesGroundImg,
+  },
+  'Nutmeg': {
+    'Whole': nutmegWholeImg,
+  },
+  'Vanilla': {
+    'Whole': vanillaWholeImg,
   }
 };
 
@@ -72,7 +84,7 @@ export default function Sale() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:5000/api/products');
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/products`);
         const data = await response.json();
         
         const formattedData = data.map(item => {
@@ -110,7 +122,7 @@ export default function Sale() {
     try {
       const targetItem = cart[0];
 
-      const response = await fetch('http://127.0.0.1:5000/api/payments/checkout', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/payments/checkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
