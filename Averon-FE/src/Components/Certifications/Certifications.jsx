@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async'; // Ensure npm install react-helmet 
 import './Certifications.css';
 
 // Asset Imports
-import cert_hero from '../../assets/certifications.jpg'; 
+import cert_hero from '../../assets/certifications.webp'; 
 import compliance_bg from '../../assets/accreditations.jpg'; 
 
 const Certifications = () => {

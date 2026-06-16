@@ -4,10 +4,10 @@ import { Helmet } from 'react-helmet-async';
 import './BlackPepper.css';
 
 // Asset Imports - Points directly to your pepper assets
-import pepper_500 from '../../../assets/pepper500.jpg';
-import pepper from '../../../assets/pepper.jpg';
-import pepper_cracked from '../../../assets/pepper cracked.jpg';
-import pepper_ground from '../../../assets/pepper ground.jpg';
+import pepper_500 from '../../../assets/pepper500.webp';
+import pepper from '../../../assets/pepper.webp';
+import pepper_cracked from '../../../assets/pepper cracked.webp';
+import pepper_ground from '../../../assets/pepper ground.webp';
 
 const BlackPepper = () => {
   const specs = [

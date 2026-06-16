@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import './GreenCardamom.css';
 
 // Asset Imports - Points directly to your cardamom assets
-import cardamom from '../../../assets/cardamom.jpg';
-import cardamom_ground from '../../../assets/cardamom ground.jpg';
+import cardamom from '../../../assets/cardamom.webp';
+import cardamom_ground from '../../../assets/cardamom ground.webp';
 
 const GreenCardamom = () => {
   const specs = [

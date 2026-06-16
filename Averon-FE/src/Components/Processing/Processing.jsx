@@ -4,13 +4,13 @@ import { Helmet } from 'react-helmet-async';
 import './Processing.css';
 
 // Asset Imports
-import processing_hero from '../../assets/processing.jpg'; 
-import sorting_line from '../../assets/cinnamon ground.jpg'; 
+import processing_hero from '../../assets/processing.webp'; 
+import sorting_line from '../../assets/cinnamon ground.webp'; 
 
 // NOTE: Adjust these image paths to match your actual local file names for the steps
-import grading from '../../assets/grading.jpg'; 
-import drying from '../../assets/drying.jpg';
-import packaging from '../../assets/packing.jpg';
+import grading from '../../assets/grading.webp'; 
+import drying from '../../assets/drying.webp';
+import packaging from '../../assets/packing.webp';
 
 const Processing = () => {
   return (

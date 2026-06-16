@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import './Vanilla.css';
 
 // Asset Imports - Points directly to your vanilla assets
-import vanilla from '../../../assets/vanilla.jpg';
+import vanilla from '../../../assets/vanilla.webp';
 
 const Vanilla = () => {
   const specs = [

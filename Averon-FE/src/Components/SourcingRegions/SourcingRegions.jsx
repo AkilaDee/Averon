@@ -4,14 +4,13 @@ import { Helmet } from 'react-helmet-async';
 import './SourcingRegions.css';
 
 // Asset Imports
-import regions_hero_bg from '../../assets/regions.jpg'; // Using standard industrial/estate backdrop for hero
-import map_asset from '../../assets/regions.jpg';   // Map asset brought explicitly into the DOM layout
+import regions_hero_bg from '../../assets/regions.webp'; // Using standard industrial/estate backdrop for hero
 import map from '../../assets/map.jpg';   // Map asset brought explicitly into the DOM layout
 
 // NOTE: Adjust these image names/paths to match the ones available in your assets folder
-import central_highlands from '../../assets/central_highlands.jpg'; 
-import southern_coast from '../../assets/southern_coast.jpg';
-import low_country from '../../assets/low_country.jpg';
+import central_highlands from '../../assets/central_highlands.webp'; 
+import southern_coast from '../../assets/southern_coast.webp';
+import low_country from '../../assets/low_country.webp';
 
 const SourcingRegions = () => {
   return (

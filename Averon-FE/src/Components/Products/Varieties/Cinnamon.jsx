@@ -13,15 +13,15 @@ import './Cinnamon.css';
 // import C4 from '../../assets/C4.jpg';
 // import H1 from '../../assets/H1.jpg';
 // import H2 from '../../assets/H2.png';
-import product1 from '../../../assets/alba.JPG'
-import product2 from '../../../assets/c5spec.JPG'
-import product3 from '../../../assets/c5stick.JPG'
-import cinnamon from '../../../assets/cinnamon.jpg'
+import product1 from '../../../assets/alba.webp'
+import product2 from '../../../assets/c5spec.webp'
+import product3 from '../../../assets/c5stick.webp'
+import cinnamon from '../../../assets/cinnamon.webp'
 import C4 from '../../../assets/C4.jpg'
 import H1 from '../../../assets/H1.jpg'
 import H2 from '../../../assets/H2.png'
-import cinnamon_ground from '../../../assets/cinnamon ground.jpg'
-import quillings from '../../../assets/quillings.jpg'
+import cinnamon_ground from '../../../assets/cinnamon ground.webp'
+import quillings from '../../../assets/quillings.webp'
 
 
 

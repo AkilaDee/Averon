@@ -2,8 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async';
 import './Quality.css'
 
-import quality_img1 from '../../assets/harvest_field.jpg' 
-import quality_img2 from '../../assets/processing_drying.jpg'
+import quality_img1 from '../../assets/harvest_field.webp' 
+import quality_img2 from '../../assets/processing_drying.webp'
 
 const Quality = () => {
   return (

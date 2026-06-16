@@ -4,16 +4,16 @@ import './Sale.css';
 
 
 // 1. Physical asset imports mapping directly to your spice naming convention
-import cinnamonQuillsImg from '../../assets/cinnamon.jpg';
-import cinnamonGroundImg from '../../assets/cinnamon ground.jpg';
-import cardamomWholeImg from '../../assets/cardamom.jpg';
-import cardamomGroundImg from '../../assets/cardamom ground.jpg';
-import clovesWholeImg from '../../assets/cloves.jpg';
-import clovesGroundImg from '../../assets/cloves ground.jpg';
-import blackPepperWholeImg from '../../assets/pepper.jpg';
-import blackPepperGroundImg from '../../assets/pepper ground.jpg';
-import nutmegWholeImg from '../../assets/nutmeg.jpg';
-import vanillaWholeImg from '../../assets/vanilla.jpg';
+import cinnamonQuillsImg from '../../assets/cinnamon.webp';
+import cinnamonGroundImg from '../../assets/cinnamon ground.webp';
+import cardamomWholeImg from '../../assets/cardamom.webp';
+import cardamomGroundImg from '../../assets/cardamom ground.webp';
+import clovesWholeImg from '../../assets/cloves.webp';
+import clovesGroundImg from '../../assets/cloves ground.webp';
+import blackPepperWholeImg from '../../assets/pepper.webp';
+import blackPepperGroundImg from '../../assets/pepper ground.webp';
+import nutmegWholeImg from '../../assets/nutmeg.webp';
+import vanillaWholeImg from '../../assets/vanilla.webp';
 
 
 

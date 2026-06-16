@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import './Nutmeg.css';
 
 // Asset Imports - Points directly to your nutmeg assets
-import nutmeg from '../../../assets/nutmeg.jpg';
+import nutmeg from '../../../assets/nutmeg.webp';
 
 const Nutmeg = () => {
   const specs = [

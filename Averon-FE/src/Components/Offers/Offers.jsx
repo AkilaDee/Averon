@@ -3,17 +3,17 @@ import './Offers.css';
 import { Link } from 'react-router-dom';
 
 // Image Imports
-import cinnamon_ground from '../../assets/cinnamon.jpg';
+import cinnamon_ground from '../../assets/cinnamon.webp';
 // NOTE: Adjust these paths below to match your actual local file names
-import black_pepper from '../../assets/pepper.jpg'; 
-import cardamom from '../../assets/cardamom.jpg';
-import cloves from '../../assets/cloves.jpg';
-import nutmeg_mace from '../../assets/nutmeg.jpg';
-import vanilla from '../../assets/vanilla.jpg';
-import supply_chain from '../../assets/supply-chain.jpg';
-import processing from '../../assets/processing.jpg';
-import regions from '../../assets/regions.jpg';
-import certifications from '../../assets/certifications.jpg';
+import black_pepper from '../../assets/pepper.webp'; 
+import cardamom from '../../assets/cardamom.webp';
+import cloves from '../../assets/cloves.webp';
+import nutmeg_mace from '../../assets/nutmeg.webp';
+import vanilla from '../../assets/vanilla.webp';
+import supply_chain from '../../assets/supply-chain.webp';
+import processing from '../../assets/processing.webp';
+import regions from '../../assets/regions.webp';
+import certifications from '../../assets/certifications.webp';
 
 
 

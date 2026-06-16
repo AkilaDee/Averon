@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet-async';
 import './SupplyChain.css';
 
 // Asset Imports
-import supply_hero from '../../assets/supply-chain.jpg'; 
-import chain_metrics from '../../assets/supply-method.jpg'; 
+import supply_hero from '../../assets/supply-chain.webp'; 
+import chain_metrics from '../../assets/supply-method.webp'; 
 
 // NOTE: Adjust these image paths to match your actual local file names for the pillars
-import farm_sourcing from '../../assets/farmers.jpg';
-import logistics_img from '../../assets/freight.jpg';
+import farm_sourcing from '../../assets/farmers.webp';
+import logistics_img from '../../assets/freight.webp';
 
 const SupplyChain = () => {
   return (

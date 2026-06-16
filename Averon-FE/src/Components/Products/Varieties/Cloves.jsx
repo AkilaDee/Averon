@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import './Cloves.css';
 
 // Asset Imports - Points directly to your cloves assets
-import cloves from '../../../assets/cloves.jpg';
-import cloves_ground from '../../../assets/cloves ground.jpg';
+import cloves from '../../../assets/cloves.webp';
+import cloves_ground from '../../../assets/cloves ground.webp';
 
 const Cloves = () => {
   const specs = [

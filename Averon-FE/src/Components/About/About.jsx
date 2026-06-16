@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import { Helmet } from 'react-helmet-async';
-import about_img from '../../assets/about.jpg'
+import about_img from '../../assets/about.webp'
 
 const About = () => {
   return (
