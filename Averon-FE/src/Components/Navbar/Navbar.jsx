@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom'; 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 import './Navbar.css';
 import { FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { FiSearch, FiMail, FiPhone, FiChevronDown } from 'react-icons/fi'; // Imported FiChevronDown
@@ -57,7 +57,11 @@ const Navbar = () => {
         <div className="tier-two-container">
           <div className="logo-wrapper">
             <NavLink to="/" onClick={closeMobileMenu}>
-              <img src={logo} alt="Averon Logo" className="main-logo-img" />
+              <img src={logo} 
+                alt="Averon Logo" 
+                className="main-logo-img"
+                width="234"
+                height="80" />
             </NavLink>
           </div>
 

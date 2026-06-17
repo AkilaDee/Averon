@@ -1,30 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll';
+import { CartProvider } from './Components/Sale/CartContext';
+
+// Normal imports (used on homepage - load immediately)
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
-import Quality from './Components/Quality/Quality';
 import Offers from './Components/Offers/Offers';
-import Title from './Components/Title/Title';
-import About from './Components/About/About';
-import Contact from './Components/Contact/Contact';
-import Products from './Components/Products/Products';
-import SupplyChain from './Components/SupplyChain/SupplyChain';
 import Footer from './Components/Footer/Footer';
 import Cinnamon from './Components/Products/Varieties/Cinnamon';
-import BlackPepper from './Components/Products/Varieties/BlackPepper';
-import Cardamom from './Components/Products/Varieties/GreenCardamom';
-import Cloves from './Components/Products/Varieties/Cloves';
-import Vanilla from './Components/Products/Varieties/Vanilla';
-import Nutmeg from './Components/Products/Varieties/Nutmeg';
-import SearchResults from './Components/SearchResults/SearchResults';
-import SourcingRegions from './Components/SourcingRegions/SourcingRegions';
-import Processing from './Components/Processing/Processing';
-import Certifications from './Components/Certifications/Certifications';
-import TermsOfBusiness from './Components/TermsOfBusiness/TermsOfBusiness';
-import { CartProvider } from './Components/Sale/CartContext';
-import Sale from './Components/Sale/Sale';
 
+// Lazy loaded (only load when user visits that page)
+const Quality = lazy(() => import('./Components/Quality/Quality'));
+const Title = lazy(() => import('./Components/Title/Title'));
+const About = lazy(() => import('./Components/About/About'));
+const Contact = lazy(() => import('./Components/Contact/Contact'));
+const Products = lazy(() => import('./Components/Products/Products'));
+const SupplyChain = lazy(() => import('./Components/SupplyChain/SupplyChain'));
+const BlackPepper = lazy(() => import('./Components/Products/Varieties/BlackPepper'));
+const Cardamom = lazy(() => import('./Components/Products/Varieties/GreenCardamom'));
+const Cloves = lazy(() => import('./Components/Products/Varieties/Cloves'));
+const Vanilla = lazy(() => import('./Components/Products/Varieties/Vanilla'));
+const Nutmeg = lazy(() => import('./Components/Products/Varieties/Nutmeg'));
+const SearchResults = lazy(() => import('./Components/SearchResults/SearchResults'));
+const SourcingRegions = lazy(() => import('./Components/SourcingRegions/SourcingRegions'));
+const Processing = lazy(() => import('./Components/Processing/Processing'));
+const Certifications = lazy(() => import('./Components/Certifications/Certifications'));
+const TermsOfBusiness = lazy(() => import('./Components/TermsOfBusiness/TermsOfBusiness'));
+const Sale = lazy(() => import('./Components/Sale/Sale'));
 const ScrollHandler = () => {
   const { pathname, state } = useLocation();
 
@@ -55,6 +58,7 @@ const App = () => {
       <BrowserRouter>
         <ScrollHandler />
         <Navbar />
+        <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={
             <>
@@ -225,6 +229,7 @@ const App = () => {
           } />
 
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </CartProvider>
   );

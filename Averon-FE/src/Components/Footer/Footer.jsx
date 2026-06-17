@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../../assets/logo.png'; 
+import logo from '../../assets/logo.webp'; 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaRegEnvelope } from 'react-icons/fa';
 import { FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
 
@@ -53,27 +53,27 @@ const Footer = () => {
 
             <div className="contact-item">
               <FiMail className="contact-icon" />
-              <a href="mailto:info@averonsupplies.co.uk" className="contact-link">
+              <a href="mailto:info@averonsupplies.co.uk" className="contact-link" aria-label="Send us an email">
                 info@averonsupplies.co.uk
               </a>
             </div>
 
             <div className="contact-item">
               <FiPhone className="contact-icon" />
-              <a href="tel:+447344469729" className="contact-link">
+              <a href="tel:+447344469729" className="contact-link" aria-label="Call Us">
                 +44 (0) 7344 469729
               </a>
             </div>
 
             {/* Social Buttons Container */}
             <div className="footer-socials-row">
-              <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="footer-social-circle ln">
+              <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="footer-social-circle ln" aria-label="Contact us on WhatsApp">
                   <FaWhatsapp className="social-icon" />
               </a>
-              <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="footer-social-circle ln">
+              <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="footer-social-circle ln" aria-label="Visit our LinkedIn page">
                   <FaLinkedinIn className="social-icon"/>
               </a>
-              <a href="mailto:info@averonsupplies.co.uk" className="footer-social-circle ln">
+              <a href="mailto:info@averonsupplies.co.uk" className="footer-social-circle ln" aria-label="Send us an email">
                   <FaRegEnvelope className="social-icon"/>
               </a>
             </div>
