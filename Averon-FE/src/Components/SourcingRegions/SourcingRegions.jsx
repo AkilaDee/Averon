@@ -5,7 +5,7 @@ import './SourcingRegions.css';
 
 // Asset Imports
 import regions_hero_bg from '../../assets/regions.webp'; // Using standard industrial/estate backdrop for hero
-import map from '../../assets/map.webp';   // Map asset brought explicitly into the DOM layout
+import map from '../../assets/map.jpeg';   // Map asset brought explicitly into the DOM layout
 
 // NOTE: Adjust these image names/paths to match the ones available in your assets folder
 import central_highlands from '../../assets/central_highlands.webp'; 
