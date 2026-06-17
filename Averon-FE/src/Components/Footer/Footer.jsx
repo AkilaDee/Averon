@@ -13,7 +13,11 @@ const Footer = () => {
           
           {/* COLUMN 1: Brand Info */}
           <div className="footer-col brand-info-col">
-            <img src={logo} alt="Averon Logo" className="footer-logo" />
+            <img src={logo} 
+              alt="Averon Logo" 
+              className="main-logo-img"
+              width="234"
+              height="80" />
             <p className="footer-bio-text">
               Direct importer of authentic Ceylon Cinnamon and premium Sri Lankan spices. 
               We cultivate, harvest, and process on our own estates to ensure absolute traceability
