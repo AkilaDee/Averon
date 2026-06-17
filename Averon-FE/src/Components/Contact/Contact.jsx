@@ -6,8 +6,8 @@ import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
-import contact_banner1 from '../../assets/contact-banner.jpg' 
-import contact_banner2 from '../../assets/about_supply.jpg' // Import a secondary image for Row 2
+import contact_banner1 from '../../assets/contact-banner.webp' 
+import contact_banner2 from '../../assets/about_supply.webp' // Import a secondary image for Row 2
 
 const Contact = () => {
   const [result, setResult] = React.useState("");

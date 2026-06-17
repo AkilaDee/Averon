@@ -18,9 +18,9 @@ import pepper from '../../assets/pepper.webp'
 import pepper_500 from '../../assets/pepper500.webp'
 import pepper_cracked from '../../assets/pepper cracked.webp'
 import quillings from '../../assets/quillings.webp'
-import C4 from '../../assets/C4.jpg'
-import H1 from '../../assets/H1.jpg'
-import H2 from '../../assets/H2.png'
+import C4 from '../../assets/C4.webp'
+import H1 from '../../assets/H1.webp'
+import H2 from '../../assets/H2.webp'
 
 
 

@@ -13,6 +13,7 @@ const Hero = () => {
 
   // Set playback speed and kick off the initial active video immediately
   useEffect(() => {
+  const timer = setTimeout(() => {
     if (videoRef1.current) {
       videoRef1.current.playbackRate = 0.5;
       videoRef1.current.play().catch(err => console.log("Initial playback failed:", err));
@@ -20,7 +21,9 @@ const Hero = () => {
     if (videoRef2.current) {
       videoRef2.current.playbackRate = 0.5;
     }
-  }, []);
+  }, 500);
+  return () => clearTimeout(timer);
+}, []);
 
   // When Video 1 (vid2) finishes playing
   const handleVideo1Ended = () => {
@@ -54,10 +57,11 @@ const Hero = () => {
           {/* VIDEO ELEMENT 1 (vid2) */}
           <video
             ref={videoRef1}
-            src={vid2} 
+            src={vid2}
             muted
             playsInline
-            onEnded={handleVideo1Ended} 
+            preload="none"
+            onEnded={handleVideo1Ended}
             className={`hero-video ${activeVideo === 0 ? 'visible' : 'hidden'}`}
           >
             Your browser does not support the video tag.
@@ -66,10 +70,11 @@ const Hero = () => {
           {/* VIDEO ELEMENT 2 (vid1) */}
           <video
             ref={videoRef2}
-            src={vid1} 
+            src={vid1}
             muted
             playsInline
-            onEnded={handleVideo2Ended} 
+            preload="none"
+            onEnded={handleVideo2Ended}
             className={`hero-video ${activeVideo === 1 ? 'visible' : 'hidden'}`}
           >
             Your browser does not support the video tag.
@@ -79,7 +84,9 @@ const Hero = () => {
         </div>
 
         <div className="hero-content">
-          <h1 className="hero-title">Welcome to Averon Supplies</h1>
+          <h1 className="hero-title" style={{ contentVisibility: 'auto' }}>
+            Welcome to Averon Supplies
+          </h1>
           <p className="hero-subtitle">Importer and Distributor of Premium Spices</p>
           
           <div className="hero-btn-group">
