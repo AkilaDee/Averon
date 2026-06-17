@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll';
-// import { Helmet } from 'react-helmet-async';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Quality from './Components/Quality/Quality';
@@ -23,33 +22,24 @@ import SourcingRegions from './Components/SourcingRegions/SourcingRegions';
 import Processing from './Components/Processing/Processing';
 import Certifications from './Components/Certifications/Certifications';
 import TermsOfBusiness from './Components/TermsOfBusiness/TermsOfBusiness';
-
-// NEW IMPORTS FOR THE BASKET / CLEARANCE ARCHITECTURE
 import { CartProvider } from './Components/Sale/CartContext';
-import Sale from './Components/Sale/Sale'; // Points to your lowercase sale.jsx file
+import Sale from './Components/Sale/Sale';
 
-// FIX: Intercepts background route states so the page scrolls cleanly without relying on # hashes in the URL bar
 const ScrollHandler = () => {
   const { pathname, state } = useLocation();
 
   useEffect(() => {
-    // 1. Check if a hidden cross-page scroll instruction was passed from the Navbar
     if (state && state.scrollTo) {
-      // Small delay allows the homepage elements to completely mount before animating the scroll
       const timer = setTimeout(() => {
         scroller.scrollTo(state.scrollTo, {
           duration: 500,
           smooth: true,
-          offset: -150, // Keeps section headings from being obscured by your fixed navbar
+          offset: -150,
         });
       }, 100);
-
-      // Clean history tracking instantly so reloading the page doesn't re-trigger unwanted scrolling
       window.history.replaceState({}, document.title);
-      
       return () => clearTimeout(timer);
     } else {
-      // 2. Default step for normal page routes (resets viewport position instantly back to the top)
       window.scrollTo(0, 0);
     }
   }, [pathname, state]);
@@ -61,139 +51,179 @@ const App = () => {
   const [playState, setPlayState] = useState(false);
 
   return (
-    // STEP 1: Wrap everything inside the CartProvider so all pages can read/write to the allocation basket
     <CartProvider>
       <BrowserRouter>
-        <ScrollHandler /> 
+        <ScrollHandler />
         <Navbar />
         <Routes>
-          {/* LANDING PAGE ROUTE - Fixed and Cleaned */}
           <Route path="/" element={
             <>
-              <Hero />
-              <div className="container">
-                <Offers />
-              </div>
+              <main>
+                <Hero />
+                <div className="container">
+                  <Offers />
+                </div>
+              </main>
               <Footer />
             </>
           } />
 
-          {/* NEW ROUTE: DYNAMIC SALE / SPOT ALLOCATION CATALOG PAGE */}
           <Route path="/sale" element={
             <>
-              <Sale />
+              <main>
+                <Sale />
+              </main>
               <Footer />
             </>
           } />
 
-          {/* GLOBAL SEARCH RESULTS ROUTE */}
           <Route path="/search" element={
             <>
-              <SearchResults />
+              <main>
+                <SearchResults />
+              </main>
               <Footer />
             </>
           } />
 
           <Route path="/products" element={
             <>
-              <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
-              <Products /> 
+              <main>
+                <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
+                <Products />
+              </main>
               <Footer />
             </>
           } />
 
           <Route path="/about-us" element={
             <>
-              <About setPlayState={setPlayState}/>
+              <main>
+                <About setPlayState={setPlayState}/>
+              </main>
               <Footer />
             </>
           } />
 
           <Route path="/contact-us" element={
             <>
-              <Title subTitle='CONTACT US' title='Get in Touch'/>
-              <Contact />
+              <main>
+                <Title subTitle='CONTACT US' title='Get in Touch'/>
+                <Contact />
+              </main>
               <Footer />
             </>
           } />
 
           <Route path="/quality" element={
             <>
-              <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
-              <Quality />
+              <main>
+                <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
+                <Quality />
+              </main>
               <Footer />
             </>
           } />
 
-          {/* SUPPLY CHAIN ROUTE */}
           <Route path="/supply-chain" element={
             <>
-              <SupplyChain /> 
+              <main>
+                <SupplyChain />
+              </main>
               <Footer />
             </>
           } />
-          
-          {/* FIXED WHOLESALE SPICE SUB-ROUTES */}
+
           <Route path="/products/ceylon-cinnamon" element={
             <>
-              <Cinnamon />
+              <main>
+                <Cinnamon />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/products/black-pepper" element={
             <>
-              <BlackPepper />
+              <main>
+                <BlackPepper />
+              </main>
               <Footer />
             </>
-          }/> 
+          } />
+
           <Route path="/products/cloves" element={
             <>
-              <Cloves />
+              <main>
+                <Cloves />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/products/green-cardamom" element={
             <>
-              <Cardamom />
+              <main>
+                <Cardamom />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/products/vanilla" element={
             <>
-              <Vanilla />
+              <main>
+                <Vanilla />
+              </main>
               <Footer />
             </>
-          }/>
+          } />
+
           <Route path="/products/nutmeg" element={
             <>
-              <Nutmeg />
+              <main>
+                <Nutmeg />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/sourcing-regions" element={
             <>
-              <SourcingRegions />
+              <main>
+                <SourcingRegions />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/processing" element={
             <>
-              <Processing />
+              <main>
+                <Processing />
+              </main>
               <Footer />
             </>
           } />
-           <Route path="/certifications" element={
+
+          <Route path="/certifications" element={
             <>
-              <Certifications />
+              <main>
+                <Certifications />
+              </main>
               <Footer />
             </>
           } />
+
           <Route path="/terms-of-business" element={
             <>
-              <TermsOfBusiness />
+              <main>
+                <TermsOfBusiness />
+              </main>
               <Footer />
             </>
           } />
+
         </Routes>
       </BrowserRouter>
     </CartProvider>

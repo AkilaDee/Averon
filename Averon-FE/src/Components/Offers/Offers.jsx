@@ -87,7 +87,7 @@ const Offers = () => {
               <p className="card-description-text">
                 The true cinnamon. Rare, thin, multi-layered quills hand-peeled in the Southern Province, offering an ultra-low coumarin, sweet aromatic profile.
               </p>
-              <Link to="/products/ceylon-cinnamon" className="elegant-explore-link">
+              <Link to="/products/ceylon-cinnamon" className="elegant-explore-link" aria-label="Explore Ceylon Cinnamon">
                 EXPLORE →
               </Link>
             </div>
@@ -106,7 +106,7 @@ const Offers = () => {
               <p className="card-description-text">
                 High-piperine berries, sun-dried uniformly to deliver a sharp, pure, and clean heat index trusted by top culinary blenders.
               </p>
-               <Link to="/products/black-pepper" className="elegant-explore-link">
+               <Link to="/products/black-pepper" className="elegant-explore-link" aria-label="Explore Black Pepper">
                 EXPLORE →
               </Link>
             </div>
@@ -125,7 +125,7 @@ const Offers = () => {
               <p className="card-description-text">
                 Intensely aromatic, hand-picked green pods sorted strictly for exceptional volatile oil density and vibrant whole color retention.
               </p>
-               <Link to="/products/green-cardamom" className="elegant-explore-link">
+               <Link to="/products/green-cardamom" className="elegant-explore-link" aria-label="Explore Green Cardamom">
                 EXPLORE →
               </Link>
             </div>
@@ -144,7 +144,7 @@ const Offers = () => {
               <p className="card-description-text">
                 Dense, hand-picked whole floral buds collected fresh for commercial grinding lines, rich essential oil distillation, and wholesale distribution.
               </p>
-               <Link to="/products/cloves" className="elegant-explore-link">
+               <Link to="/products/cloves" className="elegant-explore-link" aria-label="Explore Cloves">
                 EXPLORE →
               </Link>
             </div>
@@ -163,7 +163,7 @@ const Offers = () => {
               <p className="card-description-text">
                 Heavy, high-grade kernels and vibrant outer mace lacy bands, sun-dried uniformly to lock in rich, warm essential volatile oils.
               </p>
-               <Link to="/products/nutmeg" className="elegant-explore-link">
+               <Link to="/products/nutmeg" className="elegant-explore-link" aria-label="Explore Nutmeg">
                 EXPLORE →
               </Link>
             </div>
@@ -182,7 +182,7 @@ const Offers = () => {
               <p className="card-description-text">
                 Plump, oily, gourmet-grade Bourbon-type vanilla pods cured patiently to yield an exceptionally deep vanillin content and sweet floral finish.
               </p>
-               <Link to="/products/vanilla" className="elegant-explore-link">
+               <Link to="/products/vanilla" className="elegant-explore-link" aria-label="Explore Vanilla">
                 EXPLORE →
               </Link>
             </div>
@@ -200,7 +200,7 @@ const Offers = () => {
             </div>
             <div className="pillar-content-bottom">
               <p className="pillar-desc">Smallholder farmers across Sri Lanka growing certified premium spice varieties.</p>
-               <Link to="/supply-chain" className="pillar-action-arrow">
+               <Link to="/supply-chain" className="pillar-action-arrow" aria-label="Learn more about Supply chain">
                 Learn More →
               </Link>
             </div>
@@ -212,7 +212,7 @@ const Offers = () => {
             </div>
             <div className="pillar-content-bottom">
               <p className="pillar-desc">Sourcing from the most fertile micro-climate farming regions across Sri Lanka.</p>
-              <Link to="/sourcing-regions" className="pillar-action-arrow">
+              <Link to="/sourcing-regions" className="pillar-action-arrow"aria-label="Learn more about Sourcing Regions">
                 Learn More →
               </Link>
             </div>
@@ -224,7 +224,7 @@ const Offers = () => {
             </div>
             <div className="pillar-content-bottom">
               <p className="pillar-desc">Certified facilities with complete batch traceability maps.</p>
-              <Link to="/certifications" className="pillar-action-arrow">
+              <Link to="/certifications" className="pillar-action-arrow" aria-label="Learn more about Certifications">
                 Learn More →
               </Link>
             </div>
@@ -236,7 +236,7 @@ const Offers = () => {
             </div>
             <div className="pillar-content-bottom">
               <p className="pillar-desc">Processing facilities ensuring total batch control and premium quality passports.</p>
-              <Link to="/processing" className="pillar-action-arrow">
+              <Link to="/processing" className="pillar-action-arrow" aria-label="Learn more about Processing">
                 Learn More →
               </Link>
             </div>

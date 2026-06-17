@@ -39,13 +39,13 @@ const Navbar = () => {
           </div>
 
           <div className="tier-one-socials">
-            <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="social-circle wa">
+            <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="social-circle wa" aria-label="Contact us on WhatsApp">
               <FaWhatsapp className="social-icon" />
             </a>
-            <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="social-circle ln">
+            <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="social-circle ln" aria-label="Visit our LinkedIn page">
               <FaLinkedinIn />
             </a>
-            <a href="mailto:info@averonsupplies.co.uk" className="social-circle ml">
+            <a href="mailto:info@averonsupplies.co.uk" className="social-circle ml" aria-label="Send us an email">
               <FaRegEnvelope />
             </a>
           </div>
