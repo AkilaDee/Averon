@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Hero.css';
-import vid1 from '../../assets/vid.mp4'; 
-import vid2 from '../../assets/vid2.mp4'; 
+import vid1 from '../../assets/vid.MP4'; 
+import vid2 from '../../assets/vid2.MP4'; 
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
