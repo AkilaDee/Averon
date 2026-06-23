@@ -84,7 +84,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-content">
-          <h1 className="hero-title" style={{ contentVisibility: 'auto' }}>
+          <h1 className="hero-title" >
             Welcome to Averon Supplies
           </h1>
           <p className="hero-subtitle">Importer and Distributor of Premium Spices</p>
