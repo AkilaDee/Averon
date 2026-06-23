@@ -13,16 +13,13 @@ const Hero = () => {
 
   // Set playback speed and kick off the initial active video immediately
   useEffect(() => {
-  const timer = setTimeout(() => {
-    if (videoRef1.current) {
-      videoRef1.current.playbackRate = 0.5;
-      videoRef1.current.play().catch(err => console.log("Initial playback failed:", err));
-    }
-    if (videoRef2.current) {
-      videoRef2.current.playbackRate = 0.5;
-    }
-  }, 500);
-  return () => clearTimeout(timer);
+  if (videoRef1.current) {
+    videoRef1.current.playbackRate = 0.5;
+    videoRef1.current.play().catch(err => console.log("Initial playback failed:", err));
+  }
+  if (videoRef2.current) {
+    videoRef2.current.playbackRate = 0.5;
+  }
 }, []);
 
   // When Video 1 (vid2) finishes playing
