@@ -139,13 +139,13 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/products/vanilla" onClick={closeMobileMenu}>
-                    Vanilla
+                  <NavLink to="/products/nutmeg" onClick={closeMobileMenu}>
+                    Nutmeg
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/products/nutmeg" onClick={closeMobileMenu}>
-                    Nutmeg
+                  <NavLink to="/products/vanilla" onClick={closeMobileMenu}>
+                    Vanilla
                   </NavLink>
                 </li>
               </ul>
