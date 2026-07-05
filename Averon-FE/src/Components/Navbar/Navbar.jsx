@@ -160,6 +160,51 @@ const Navbar = () => {
                 Quality
               </NavLink>
             </li>
+            
+            {/* DROPDOWN NAVIGATION ITEM */}
+            <li className="nav-dropdown-wrapper">
+              <NavLink 
+                to="/insights" 
+                className={({ isActive }) => `dropdown-trigger ${isActive ? "active-nav-item" : ""}`}
+                onClick={closeMobileMenu}
+              >
+                Insights <FiChevronDown className="dropdown-arrow-icon" />
+              </NavLink>
+              
+              {/* Dropdown Menu Overlay */}
+              <ul className="nav-dropdown-menu">
+                <li>
+                  <NavLink to="/insights/alba-grade-cinnamon" onClick={closeMobileMenu}>
+                    Alba Grade Cinnamon
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/ceylon-cinnamon-vs-cassia" onClick={closeMobileMenu}>
+                    Cinnamon vs Cassia
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/coumarin-in-cinnamon" onClick={closeMobileMenu}>
+                    Coumarin in Cinnamon
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/cinnamon-testing" onClick={closeMobileMenu}>
+                    Cinnamon Testing
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/cinnamon-grading" onClick={closeMobileMenu}>
+                    Cinnamon Grading
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/ceylon-cinnamon-origin" onClick={closeMobileMenu}>
+                    Cinnamon Origin
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
             <li>
               <NavLink 
                 to="/about-us" 

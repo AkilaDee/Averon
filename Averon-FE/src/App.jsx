@@ -28,6 +28,14 @@ const Processing = lazy(() => import('./Components/Processing/Processing'));
 const Certifications = lazy(() => import('./Components/Certifications/Certifications'));
 const TermsOfBusiness = lazy(() => import('./Components/TermsOfBusiness/TermsOfBusiness'));
 const Sale = lazy(() => import('./Components/Sale/Sale'));
+const Insights = lazy(() => import('./Components/Insights/Insights'));
+const WhatIsAlbaGrade = lazy(() => import('./Components/Insights/Articles/WhatIsAlbaGrade'));
+const IdentifyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/IdentifyCeylonCinnamon'));
+const WhatIsCoumarin = lazy(() => import('./Components/Insights/Articles/WhatIsCoumarin'));
+const LeadAndPesticideTesting = lazy(() => import('./Components/Insights/Articles/LeadAndPesticideTesting'));
+const CinnamonGradingExplained = lazy(() => import('./Components/Insights/Articles/CinnamonGradingExplained'));
+const WhyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/WhyCeylonCinnamon'));
+
 const ScrollHandler = () => {
   const { pathname, state } = useLocation();
 
@@ -108,6 +116,14 @@ const App = () => {
               <Footer />
             </>
           } />
+
+          <Route path="/insights" element={<main><Insights /></main>} />
+          <Route path="/insights/alba-grade-cinnamon" element={<main><WhatIsAlbaGrade /></main>} />
+          <Route path="/insights/ceylon-cinnamon-vs-cassia" element={<main><IdentifyCeylonCinnamon /></main>} />
+          <Route path="/insights/coumarin-in-cinnamon" element={<main><WhatIsCoumarin /></main>} />
+          <Route path="/insights/cinnamon-testing" element={<main><LeadAndPesticideTesting /></main>} />
+          <Route path="/insights/cinnamon-grading" element={<main><CinnamonGradingExplained /></main>} />
+          <Route path="/insights/ceylon-cinnamon-origin" element={<main><WhyCeylonCinnamon /></main>} />
 
           <Route path="/contact-us" element={
             <>
