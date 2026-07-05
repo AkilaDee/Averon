@@ -2,60 +2,62 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Insights.css';
 
+// Import your images here — replace filenames with your actual ones
+import imgAlba from '../../assets/alba-grade.webp';
+import imgCassia from '../../assets/cinnamon-vs-cassia.webp';
+import imgCoumarin from '../../assets/coumarin.webp';
+import imgTesting from '../../assets/lab-test.webp';
+import imgGrading from '../../assets/grades.webp';
+import imgOrigin from '../../assets/estate.webp';
+
 const articles = [
   {
     slug: 'alba-grade-cinnamon',
     title: 'What is Alba Grade Cinnamon?',
-    description:
-      'Alba is the rarest and finest grade of Ceylon cinnamon, yet most buyers have never heard of it. Learn what the grade means, the strict diameter standard it must meet, and why it commands a premium that C5 and C4 simply cannot match.',
+    description: 'Alba is the rarest and finest grade of Ceylon cinnamon, yet most buyers have never heard of it. Learn what the grade means, the strict diameter standard it must meet, and why it commands a premium that C5 and C4 simply cannot match.',
     category: 'Grading & Quality',
     readTime: '5 min read',
-    image: null,
+    image: imgAlba,
   },
   {
     slug: 'ceylon-cinnamon-vs-cassia',
     title: 'How to Identify Real Ceylon Cinnamon vs Cassia',
-    description:
-      'Most cinnamon sold in the UK is not Ceylon. It is Cassia, a cheaper, harsher substitute. We break down the visual, aromatic, and chemical differences, and show you exactly how to verify what you are buying before it reaches your production line.',
+    description: 'Most cinnamon sold in the UK is not Ceylon. It is Cassia, a cheaper, harsher substitute. We break down the visual, aromatic, and chemical differences, and show you exactly how to verify what you are buying before it reaches your production line.',
     category: 'Authentication',
     readTime: '7 min read',
-    image: null,
+    image: imgCassia,
   },
   {
     slug: 'coumarin-in-cinnamon',
     title: 'What is Coumarin and Why Does It Matter?',
-    description:
-      'Coumarin is a naturally occurring compound in cinnamon that becomes a concern at high doses. Ceylon contains almost none. Cassia can contain up to 12,000 mg/kg. We explain what this means for daily use, food manufacturing, and why regulatory bodies across Europe have flagged it.',
+    description: 'Coumarin is a naturally occurring compound in cinnamon that becomes a concern at high doses. Ceylon contains almost none. Cassia can contain up to 12,000 mg/kg. We explain what this means for daily use, food manufacturing, and why regulatory bodies across Europe have flagged it.',
     category: 'Food Safety',
     readTime: '6 min read',
-    image: null,
+    image: imgCoumarin,
   },
   {
     slug: 'ceylon-cinnamon-testing',
     title: 'Lead and Pesticide Testing in Cinnamon. What to Look For',
-    description:
-      'Independent testing has found elevated lead and pesticide residues in a significant number of commercially available cinnamon products. We explain what Maximum Residue Limits mean, what a Certificate of Analysis should cover, and the questions every buyer should ask their supplier.',
+    description: 'Independent testing has found elevated lead and pesticide residues in a significant number of commercially available cinnamon products. We explain what Maximum Residue Limits mean, what a Certificate of Analysis should cover, and the questions every buyer should ask their supplier.',
     category: 'Testing & Compliance',
     readTime: '8 min read',
-    image: null,
+    image: imgTesting,
   },
   {
     slug: 'ceylon-cinnamon-grading',
     title: 'Ceylon Cinnamon Grading Explained',
-    description:
-      'Ceylon cinnamon is graded by quill diameter, consistency, and layering, a system most suppliers do not explain clearly. This guide covers every grade from Alba to C4, what each is best suited for, and why strict adherence to diameter standards matters more than the label alone.',
+    description: 'Ceylon cinnamon is graded by quill diameter, consistency, and layering, a system most suppliers do not explain clearly. This guide covers every grade from Alba to C4, what each is best suited for, and why strict adherence to diameter standards matters more than the label alone.',
     category: 'Grading & Quality',
     readTime: '6 min read',
-    image: null,
+    image: imgGrading,
   },
   {
     slug: 'ceylon-cinnamon-origin',
     title: 'Why Ceylon Cinnamon Comes Only From Sri Lanka',
-    description:
-      'True cinnamon, Cinnamomum verum grows in very few places on earth, and Sri Lanka remains its undisputed home. We trace the history, the geography, and the climate conditions that make authentic Ceylon cinnamon impossible to replicate anywhere else in the world.',
+    description: 'True cinnamon, Cinnamomum verum grows in very few places on earth, and Sri Lanka remains its undisputed home. We trace the history, the geography, and the climate conditions that make authentic Ceylon cinnamon impossible to replicate anywhere else in the world.',
     category: 'Origin & Provenance',
     readTime: '5 min read',
-    image: null,
+    image: imgOrigin,
   },
 ];
 
@@ -86,19 +88,25 @@ const Insights = () => {
       {/* ARTICLE GRID */}
       <div className="insights-grid-outer">
         <div className="insights-grid">
-          {articles.map((article, i) => (
+          {articles.map((article) => (
             <Link
               to={`/insights/${article.slug}`}
               key={article.slug}
               className="insight-card"
             >
-              {/* IMAGE PLACEHOLDER */}
+              {/* IMAGE */}
               <div className="insight-card-img">
-                <div className="insight-card-img-inner">
-                  <span className="insight-card-number">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                </div>
+                {article.image ? (
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="insight-card-img-real"
+                  />
+                ) : (
+                  <div className="insight-card-img-inner">
+                    <span className="insight-card-number">??</span>
+                  </div>
+                )}
               </div>
 
               {/* CONTENT */}
@@ -112,10 +120,8 @@ const Insights = () => {
                   </span>
                   <span className="insight-read-time">{article.readTime}</span>
                 </div>
-
                 <h2 className="insight-card-title">{article.title}</h2>
                 <p className="insight-card-desc">{article.description}</p>
-
                 <span className="insight-card-cta">
                   Read article <span className="insight-arrow">→</span>
                 </span>
