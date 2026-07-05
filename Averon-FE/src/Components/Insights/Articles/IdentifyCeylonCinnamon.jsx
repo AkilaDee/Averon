@@ -113,7 +113,7 @@ const IdentifyCeylonCinnamon = () => {
                 </tr>
                 <tr>
                   <td>Cassia (C. cassia)</td>
-                  <td>1–12 g/kg</td>
+                  <td>1 - 12 g/kg</td>
                   <td>Can exceed limits at regular consumption</td>
                 </tr>
               </tbody>
