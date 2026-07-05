@@ -122,7 +122,7 @@ export const SITE_INDEX = [
     text: "Coumarin is a naturally occurring compound in cinnamon. Cassia contains up to 12,000 mg/kg while Ceylon contains almost none. Learn what this means for daily consumption, food manufacturing, and regulatory compliance."
   },
   {
-    title: "Lead and Pesticide Testing in Cinnamon — What to Look For",
+    title: "Lead and Pesticide Testing in Cinnamon - What to Look For",
     url: "/insights/cinnamon-testing",
     type: "Insight",
     text: "Independent testing has found elevated lead and pesticide residues in commercially available cinnamon. Learn what Maximum Residue Limits mean, what a COA should cover, and the questions every buyer should ask their supplier."
