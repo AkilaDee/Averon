@@ -32,7 +32,7 @@ const Insights = lazy(() => import('./Components/Insights/Insights'));
 const WhatIsAlbaGrade = lazy(() => import('./Components/Insights/Articles/WhatIsAlbaGrade'));
 const IdentifyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/IdentifyCeylonCinnamon'));
 const WhatIsCoumarin = lazy(() => import('./Components/Insights/Articles/WhatIsCoumarin'));
-const LeadAndPesticideTesting = lazy(() => import('./Components/Insights/Articles/LeadAndPesticideTesting'));
+const LeadandPesticideTesting = lazy(() => import('./Components/Insights/Articles/LeadandPesticideTesting'));
 const CinnamonGradingExplained = lazy(() => import('./Components/Insights/Articles/CinnamonGradingExplained'));
 const WhyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/WhyCeylonCinnamon'));
 
@@ -121,7 +121,7 @@ const App = () => {
           <Route path="/insights/alba-grade-cinnamon" element={<main><WhatIsAlbaGrade /></main>} />
           <Route path="/insights/ceylon-cinnamon-vs-cassia" element={<main><IdentifyCeylonCinnamon /></main>} />
           <Route path="/insights/coumarin-in-cinnamon" element={<main><WhatIsCoumarin /></main>} />
-          <Route path="/insights/cinnamon-testing" element={<main><LeadAndPesticideTesting /></main>} />
+          <Route path="/insights/cinnamon-testing" element={<main><LeadandPesticideTesting /></main>} />
           <Route path="/insights/cinnamon-grading" element={<main><CinnamonGradingExplained /></main>} />
           <Route path="/insights/ceylon-cinnamon-origin" element={<main><WhyCeylonCinnamon /></main>} />
 

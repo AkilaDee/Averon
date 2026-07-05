@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Articles.css';
 
-const LeadAndPesticideTesting = () => {
+const LeadandPesticideTesting = () => {
   return (
     <div className="article-page">
 
@@ -215,4 +215,4 @@ const LeadAndPesticideTesting = () => {
   );
 };
 
-export default LeadAndPesticideTesting;
+export default LeadandPesticideTesting;
