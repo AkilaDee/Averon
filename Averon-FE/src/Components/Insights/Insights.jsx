@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Insights.css';
 
 // Import your images here — replace filenames with your actual ones
-import imgAlba from '../../assets/alba-grade.webp';
+import imgAlba from '../../assets/alba-gd.webp';
 import imgCassia from '../../assets/cinnamon-vs-cassia.webp';
 import imgCoumarin from '../../assets/coumarin.webp';
 import imgTesting from '../../assets/lab-test.webp';
