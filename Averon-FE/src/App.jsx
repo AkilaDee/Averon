@@ -8,9 +8,9 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
 import Footer from './Components/Footer/Footer';
-import Cinnamon from './Components/Products/Varieties/Cinnamon';
 
 // Lazy loaded (only load when user visits that page)
+const Cinnamon = lazy(() => import('./Components/Products/Varieties/Cinnamon'));
 const Quality = lazy(() => import('./Components/Quality/Quality'));
 const Title = lazy(() => import('./Components/Title/Title'));
 const About = lazy(() => import('./Components/About/About'));
@@ -66,185 +66,199 @@ const App = () => {
       <BrowserRouter>
         <ScrollHandler />
         <Navbar />
-        <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={
-            <>
-              <main>
-                <Hero />
-                <div className="container">
-                  <Offers />
-                </div>
-              </main>
-              <Footer />
-            </>
-          } />
+        <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
+          <Routes>
 
-          <Route path="/sale" element={
-            <>
-              <main>
-                <Sale />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/" element={
+              <>
+                <main>
+                  <Hero />
+                  <div className="container">
+                    <Offers />
+                  </div>
+                </main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/search" element={
-            <>
-              <main>
-                <SearchResults />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/sale" element={
+              <>
+                <main><Sale /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products" element={
-            <>
-              <main>
-                <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
-                <Products />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/search" element={
+              <>
+                <main><SearchResults /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/about-us" element={
-            <>
-              <main>
-                <About setPlayState={setPlayState}/>
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/products" element={
+              <>
+                <main>
+                  <Title subTitle='OUR CATALOGUE' title='Exceptional Quality in Every Batch'/>
+                  <Products />
+                </main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/insights" element={<main><Insights /></main>} />
-          <Route path="/insights/alba-grade-cinnamon" element={<main><WhatIsAlbaGrade /></main>} />
-          <Route path="/insights/ceylon-cinnamon-vs-cassia" element={<main><IdentifyCeylonCinnamon /></main>} />
-          <Route path="/insights/coumarin-in-cinnamon" element={<main><WhatIsCoumarin /></main>} />
-          <Route path="/insights/cinnamon-testing" element={<main><LeadandPesticideTesting /></main>} />
-          <Route path="/insights/cinnamon-grading" element={<main><CinnamonGradingExplained /></main>} />
-          <Route path="/insights/ceylon-cinnamon-origin" element={<main><WhyCeylonCinnamon /></main>} />
+            <Route path="/about-us" element={
+              <>
+                <main><About setPlayState={setPlayState}/></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/contact-us" element={
-            <>
-              <main>
-                <Title subTitle='CONTACT US' title='Get in Touch'/>
-                <Contact />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/contact-us" element={
+              <>
+                <main>
+                  <Title subTitle='CONTACT US' title='Get in Touch'/>
+                  <Contact />
+                </main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/quality" element={
-            <>
-              <main>
-                <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
-                <Quality />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/quality" element={
+              <>
+                <main>
+                  <Title subTitle='EXCEPTIONAL QUALITY' title='Rigorous Standards, Fully Compliant'/>
+                  <Quality />
+                </main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/supply-chain" element={
-            <>
-              <main>
-                <SupplyChain />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights" element={
+              <>
+                <main><Insights /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/ceylon-cinnamon" element={
-            <>
-              <main>
-                <Cinnamon />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/alba-grade-cinnamon" element={
+              <>
+                <main><WhatIsAlbaGrade /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/black-pepper" element={
-            <>
-              <main>
-                <BlackPepper />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/ceylon-cinnamon-vs-cassia" element={
+              <>
+                <main><IdentifyCeylonCinnamon /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/cloves" element={
-            <>
-              <main>
-                <Cloves />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/coumarin-in-cinnamon" element={
+              <>
+                <main><WhatIsCoumarin /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/green-cardamom" element={
-            <>
-              <main>
-                <Cardamom />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/cinnamon-testing" element={
+              <>
+                <main><LeadandPesticideTesting /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/vanilla" element={
-            <>
-              <main>
-                <Vanilla />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/cinnamon-grading" element={
+              <>
+                <main><CinnamonGradingExplained /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/products/nutmeg" element={
-            <>
-              <main>
-                <Nutmeg />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/insights/ceylon-cinnamon-origin" element={
+              <>
+                <main><WhyCeylonCinnamon /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/sourcing-regions" element={
-            <>
-              <main>
-                <SourcingRegions />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/supply-chain" element={
+              <>
+                <main><SupplyChain /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/processing" element={
-            <>
-              <main>
-                <Processing />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/products/ceylon-cinnamon" element={
+              <>
+                <main><Cinnamon /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/certifications" element={
-            <>
-              <main>
-                <Certifications />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/products/black-pepper" element={
+              <>
+                <main><BlackPepper /></main>
+                <Footer />
+              </>
+            } />
 
-          <Route path="/terms-of-business" element={
-            <>
-              <main>
-                <TermsOfBusiness />
-              </main>
-              <Footer />
-            </>
-          } />
+            <Route path="/products/cloves" element={
+              <>
+                <main><Cloves /></main>
+                <Footer />
+              </>
+            } />
 
-        </Routes>
+            <Route path="/products/green-cardamom" element={
+              <>
+                <main><Cardamom /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/products/vanilla" element={
+              <>
+                <main><Vanilla /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/products/nutmeg" element={
+              <>
+                <main><Nutmeg /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/sourcing-regions" element={
+              <>
+                <main><SourcingRegions /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/processing" element={
+              <>
+                <main><Processing /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/certifications" element={
+              <>
+                <main><Certifications /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/terms-of-business" element={
+              <>
+                <main><TermsOfBusiness /></main>
+                <Footer />
+              </>
+            } />
+
+          </Routes>
         </Suspense>
       </BrowserRouter>
     </CartProvider>

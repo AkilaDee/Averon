@@ -53,6 +53,7 @@ const Footer = () => {
                 <p>42 Porthcawe Road</p>
                 <p>London</p>
                 <p>SE26 5TA</p>
+                <p>United Kingdom</p>
               </div>
             </div>
 

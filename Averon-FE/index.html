@@ -15,18 +15,20 @@
         document.head.appendChild(script);
       });
     </script>
-    
+
     <link rel="preconnect" href="https://www.google-analytics.com">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
-    
-    <meta name="description" content="UK-based Direct Importer of Premium Ceylon Cinnamon and Spices. Sourced exclusively from our own estates in Sri Lanka to ensure full traceability and consistent quality for wholesale.">
+
+    <!-- Fixed meta description — under 160 characters -->
+    <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality.">
 
     <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
 
+    <!-- WebSite Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -36,9 +38,30 @@
       "url": "https://www.averonsupplies.co.uk/"
     }
     </script>
-    
+
+    <!-- Organization Schema — fixes Identity Schema and Local Business warnings -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Averon Supplies Ltd",
+      "url": "https://www.averonsupplies.co.uk",
+      "logo": "https://www.averonsupplies.co.uk/averonlogo.png",
+      "description": "UK direct importer and distributor of premium Ceylon cinnamon and spices, sourced from our own estates in Sri Lanka.",
+      "telephone": "+447344469729",
+      "email": "info@averonsupplies.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/averon-supplies-ltd"
+      ]
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="/averonlogo.png">
-    
+
     <meta property="og:title" content="Averon Supplies | Premium Ceylon Spices">
     <meta property="og:description" content="Direct-from-estate Sri Lankan spices for the UK wholesale market.">
     <meta property="og:type" content="website">
