@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../../assets/logo.webp'; 
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp, FaRegEnvelope } from 'react-icons/fa';
@@ -30,20 +31,20 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* COLUMN 2: Navigation Links (Typo Fixed) */}
+          {/* COLUMN 2: Navigation Links */}
           <div className="footer-col links-col">
             <h3 className="footer-column-title">Navigation</h3>
             <ul className="footer-links-list">
-              <li><a href="/">Home</a></li>
-              <li><a href="/products">Products</a></li>
-              <li><a href="/quality">Quality</a></li>
-              <li><a href="/about-us">About Us</a></li>
-              <li><a href="/insights">Insights</a></li>
-              <li><a href="/contact-us">Contact Us</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/products">Products</Link></li>
+              <li><Link to="/quality">Quality</Link></li>
+              <li><Link to="/about-us">About Us</Link></li>
+              <li><Link to="/insights">Insights</Link></li>
+              <li><Link to="/contact-us">Contact Us</Link></li>
             </ul>
           </div>
 
-          {/* COLUMN 3: Contact Details & Socials (Typo Fixed) */}
+          {/* COLUMN 3: Contact Details & Socials */}
           <div className="footer-col contact-col">
             <h3 className="footer-column-title">Contact Us</h3>
             
@@ -98,9 +99,9 @@ const Footer = () => {
           <p className="copyright-text">
             © 2026 - Averon Supplies. All Rights Reserved.
           </p>
-          <a href="/terms-of-business" className="terms-link">
+          <Link to="/terms-of-business" className="terms-link">
             Terms of Business
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
