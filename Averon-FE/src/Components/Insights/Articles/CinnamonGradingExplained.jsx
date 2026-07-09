@@ -103,6 +103,48 @@ const CinnamonGradingExplained = () => {
             finer grades in terms of chemical composition, merely different in presentation.
             For extraction and grinding, C4 is often the most cost-effective choice.
           </p>
+          <h3>M5 ≤ 18mm</h3>
+<p>
+  M5 quills have a diameter of up to 18mm and represent the first of the broader
+  commercial grades used primarily for processing applications. The bark is thicker
+  and the roll less refined than the C grades, but the essential oil content remains
+  genuine Ceylon in character. M5 is well suited to flavour extraction processes
+  and fine grinding operations where precise quill appearance is not a requirement
+  but authentic Ceylon origin and aromatic integrity still matter.
+</p>
+
+<h3>M4 ≤ 21mm</h3>
+<p>
+  M4 is a broad-diameter grade with quills up to 21mm, used predominantly in
+  spice grinding and steam distillation applications. At this diameter, the bark
+  is considerably thicker and the quill less tightly rolled, making it unsuitable
+  for retail or culinary presentation but entirely appropriate for industrial
+  processing. The cinnamaldehyde content remains consistent with Ceylon cinnamon
+  and M4 is a cost-effective choice for manufacturers requiring authentic
+  Cinnamomum verum for extraction at scale.
+</p>
+
+<h3>H1 ≤ 25mm</h3>
+<p>
+  H1 represents the heavier end of the commercial Ceylon cinnamon grading spectrum,
+  with quills up to 25mm in diameter. This grade is used in bulk grinding operations
+  and high-volume food service supply chains where the raw material is fully processed
+  before reaching the consumer. H1 provides genuine Ceylon origin at an accessible
+  price point for operations requiring large volumes of authentic Cinnamomum verum
+  without the cost premium of finer presentation grades.
+</p>
+
+<h3>H2 ≤ 30mm</h3>
+<p>
+  H2 is the broadest commercially available grade of Ceylon cinnamon quill, with
+  diameters up to 30mm. It is used exclusively in industrial milling, large-scale
+  oleoresin extraction, and essential oil distillation. Despite the significant
+  difference in quill diameter from the premium grades, H2 is still genuine
+  Cinnamomum verum, the species integrity and low coumarin characteristic of
+  Ceylon cinnamon are maintained throughout the grading spectrum. For industrial
+  buyers processing cinnamon at scale, H2 offers the most cost-effective access
+  to authentic Ceylon origin.
+</p>
 
           <h2>The Complete Grade Reference</h2>
 
@@ -145,6 +187,30 @@ const CinnamonGradingExplained = () => {
                   <td>C4</td>
                   <td>≤ 16mm</td>
                   <td>Extraction, grinding, industrial</td>
+                  <td>Lower</td>
+                </tr>
+                <tr>
+                  <td>M5</td>
+                  <td>≤ 18mm</td>
+                  <td>Flavor extraction & fine grinding</td>
+                  <td>Lower</td>
+                </tr>
+                <tr>
+                  <td>M4</td>
+                  <td>≤ 21mm</td>
+                  <td>Spice grinding & distillation</td>
+                  <td>Lower</td>
+                </tr>
+                <tr>
+                  <td>H1</td>
+                  <td>≤ 25mm</td>
+                  <td>Bulk grinding & food service</td>
+                  <td>Lower</td>
+                </tr>
+                <tr>
+                  <td>H2</td>
+                  <td>≤ 30mm</td>
+                  <td>Industrial milling & extraction</td>
                   <td>Lower</td>
                 </tr>
               </tbody>

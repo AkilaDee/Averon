@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) - deferred until after page load -->
+    <!-- Google tag (gtag.js) - deferred 3 seconds after page load -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -9,10 +9,12 @@
       gtag('config', 'G-SYJ53TGMBP');
 
       window.addEventListener('load', function() {
-        var script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-SYJ53TGMBP';
-        script.async = true;
-        document.head.appendChild(script);
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-SYJ53TGMBP';
+          script.async = true;
+          document.head.appendChild(script);
+        }, 3000);
       });
     </script>
 
@@ -23,7 +25,6 @@
 
     <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
 
-    <!-- Fixed meta description — under 160 characters -->
     <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality.">
 
     <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
@@ -39,7 +40,7 @@
     }
     </script>
 
-    <!-- Organization Schema — fixes Identity Schema and Local Business warnings -->
+    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,6 +66,10 @@
     <meta property="og:title" content="Averon Supplies | Premium Ceylon Spices">
     <meta property="og:description" content="Direct-from-estate Sri Lankan spices for the UK wholesale market.">
     <meta property="og:type" content="website">
+
+    <!-- MODULEPRELOAD: replace XXXXX with your actual JS filename from dist/assets/ -->
+    <link rel="modulepreload" href="/assets/index-XXXXX.js">
+
   </head>
   <body>
     <div id="root"></div>
