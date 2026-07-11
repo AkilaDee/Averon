@@ -83,7 +83,7 @@ const CinnamonDetail = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="cin-section-subheading">Technical Specifications</h3>
+          <h2 className="cin-section-subheading">Technical Specifications</h2>
           <table className="cin-specs-table">
             <tbody>
               {specs.map((spec, index) => (
@@ -104,7 +104,7 @@ const CinnamonDetail = () => {
 
       {/* APPLICATIONS SECTION BLOCK */}
       <div className="cin-applications-block">
-        <h3 className="cin-apps-heading">Primary Industry Applications</h3>
+        <h2 className="cin-apps-heading">Primary Industry Applications</h2>
         <div className="cin-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="cin-app-card">
