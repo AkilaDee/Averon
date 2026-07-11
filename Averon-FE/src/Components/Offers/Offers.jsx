@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './Offers.css'; 
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 // Image Imports
 import cinnamon_ground from '../../assets/cinnamon.webp';
@@ -37,6 +38,12 @@ const Offers = () => {
 
   return (
     <div className='premium-heritage-offers' id='offers'>
+
+      <Helmet>
+        <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
+        <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
+      </Helmet>
       
       {/* SECTION 1: HERITAGE INTRO BLOCK */}
       <section className="heritage-intro-section">

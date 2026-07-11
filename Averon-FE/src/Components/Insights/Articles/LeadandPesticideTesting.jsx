@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const LeadandPesticideTesting = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>Lead and Pesticide Testing in Cinnamon | Averon Supplies</title>
+        <meta name="description" content="Independent testing has found elevated lead and pesticide residues in commercially available cinnamon. Learn what a COA should cover and what to ask your supplier." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/cinnamon-testing" />
+      </Helmet>
 
       <div className="article-hero">
         <div className="article-hero-inner">

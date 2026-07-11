@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const CinnamonGradingExplained = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>Ceylon Cinnamon Grading Explained — From Alba to C4 | Averon Supplies</title>
+        <meta name="description" content="Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/cinnamon-grading" />
+      </Helmet>
 
       <div className="article-hero">
         <div className="article-hero-inner">

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const WhyCeylonCinnamon = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>Why Ceylon Cinnamon Comes Only From Sri Lanka | Averon Supplies</title>
+        <meta name="description" content="True cinnamon — Cinnamomum verum — is native to Sri Lanka. Learn the history, geography and climate conditions that make authentic Ceylon cinnamon impossible to replicate elsewhere." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-origin" />
+      </Helmet>
 
       <div className="article-hero">
         <div className="article-hero-inner">

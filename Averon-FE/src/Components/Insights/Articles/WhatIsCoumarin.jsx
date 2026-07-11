@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const WhatIsCoumarin = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>What is Coumarin and Why Does It Matter? | Averon Supplies</title>
+        <meta name="description" content="Coumarin is a naturally occurring compound in cinnamon. Cassia contains up to 12,000mg/kg while Ceylon contains almost none. Learn what this means for food safety." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/coumarin-in-cinnamon" />
+      </Helmet>
 
       <div className="article-hero">
         <div className="article-hero-inner">

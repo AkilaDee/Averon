@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const WhatIsAlbaGrade = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>What is Alba Grade Cinnamon? | Averon Supplies</title>
+        <meta name="description" content="Alba is the finest grade of Ceylon cinnamon with a diameter of 6mm or less. Learn what the grade means, the strict diameter standard, and why it commands a premium." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/alba-grade-cinnamon" />
+      </Helmet>
 
       {/* HERO */}
       <div className="article-hero">

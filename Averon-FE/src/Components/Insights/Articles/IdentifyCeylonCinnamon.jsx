@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import '../Articles.css';
 
 const IdentifyCeylonCinnamon = () => {
   return (
     <div className="article-page">
+      <Helmet>
+        <title>How to Identify Real Ceylon Cinnamon vs Cassia | Averon Supplies</title>
+        <meta name="description" content="Most cinnamon sold in the UK is Cassia, not Ceylon. Learn the visual, aromatic and chemical differences and how to verify what you are buying." />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-vs-cassia" />
+      </Helmet>
 
       <div className="article-hero">
         <div className="article-hero-inner">
