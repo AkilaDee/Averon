@@ -83,7 +83,7 @@ const GreenCardamom = () => {
         <div className="card-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="card-app-card">
-              <h4 className="card-app-card-title">{app.area}</h4>
+              <h3 className="card-app-card-title">{app.area}</h3>
               <p className="card-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -98,7 +98,7 @@ const GreenCardamom = () => {
             <div key={index} className="card-grade-card">
               <div className="card-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="card-grade-thumb" />
-                <h4 className="card-grade-name">{item.name}</h4>
+                <h3 className="card-grade-name">{item.name}</h3>
               </div>
               <p className="card-grade-desc">{item.desc}</p>
             </div>

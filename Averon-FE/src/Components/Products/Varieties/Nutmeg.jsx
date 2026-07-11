@@ -81,7 +81,7 @@ const Nutmeg = () => {
         <div className="nut-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="nut-app-card">
-              <h4 className="nut-app-card-title">{app.area}</h4>
+              <h3 className="nut-app-card-title">{app.area}</h3>
               <p className="nut-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -96,7 +96,7 @@ const Nutmeg = () => {
             <div key={index} className="nut-grade-card">
               <div className="nut-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="nut-grade-thumb" />
-                <h4 className="nut-grade-name">{item.name}</h4>
+                <h3 className="nut-grade-name">{item.name}</h3>
               </div>
               <p className="nut-grade-desc">{item.desc}</p>
             </div>

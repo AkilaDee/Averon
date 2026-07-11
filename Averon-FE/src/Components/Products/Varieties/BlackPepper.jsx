@@ -88,7 +88,7 @@ const BlackPepper = () => {
         <div className="pep-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="pep-app-card">
-              <h4 className="pep-app-card-title">{app.area}</h4>
+              <h3 className="pep-app-card-title">{app.area}</h3>
               <p className="pep-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -103,7 +103,7 @@ const BlackPepper = () => {
             <div key={index} className="pep-grade-card">
               <div className="pep-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="pep-grade-thumb" />
-                <h4 className="pep-grade-name">{item.name}</h4>
+                <h3 className="pep-grade-name">{item.name}</h3>
               </div>
               <p className="pep-grade-desc">{item.desc}</p>
             </div>

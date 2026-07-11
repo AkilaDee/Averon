@@ -83,7 +83,7 @@ const Cloves = () => {
         <div className="clv-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="clv-app-card">
-              <h4 className="clv-app-card-title">{app.area}</h4>
+              <h3 className="clv-app-card-title">{app.area}</h3>
               <p className="clv-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -98,7 +98,7 @@ const Cloves = () => {
             <div key={index} className="clv-grade-card">
               <div className="clv-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="clv-grade-thumb" />
-                <h4 className="clv-grade-name">{item.name}</h4>
+                <h3 className="clv-grade-name">{item.name}</h3>
               </div>
               <p className="clv-grade-desc">{item.desc}</p>
             </div>

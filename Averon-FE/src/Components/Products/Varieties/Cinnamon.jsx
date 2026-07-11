@@ -108,7 +108,7 @@ const CinnamonDetail = () => {
         <div className="cin-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="cin-app-card">
-              <h4 className="cin-app-card-title">{app.area}</h4>
+              <h3 className="cin-app-card-title">{app.area}</h3>
               <p className="cin-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -123,7 +123,7 @@ const CinnamonDetail = () => {
             <div key={index} className="cin-grade-card">
               <div className="cin-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="cin-grade-thumb" />
-                <h4 className="cin-grade-name">{item.name}</h4>
+                <h3 className="cin-grade-name">{item.name}</h3>
               </div>
               <p className="cin-grade-desc">{item.desc}</p>
             </div>
