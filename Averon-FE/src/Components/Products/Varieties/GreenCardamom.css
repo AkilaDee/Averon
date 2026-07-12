@@ -185,18 +185,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.card-grade-image-wrapper {
-    text-align: center;
+    max-width: 260px;
 }
 
 .card-grade-thumb {
     width: 100%;
-    height: 200px;
+    height: 260px;
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 12px;
+}
+
+.card-grade-image-wrapper {
+    text-align: center;
 }
 
 .card-grade-name {

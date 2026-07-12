@@ -140,7 +140,7 @@
 .cin-apps-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 15px;
 }
 
 .cin-app-card-title {
@@ -185,18 +185,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.cin-grade-image-wrapper {
-    text-align: center;
+    max-width: 260px;
 }
 
 .cin-grade-thumb {
     width: 100%;
-    height: 200px;
+    height: 260px;
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 12px;
+}
+
+.cin-grade-image-wrapper {
+    text-align: center;
 }
 
 .cin-grade-name {
