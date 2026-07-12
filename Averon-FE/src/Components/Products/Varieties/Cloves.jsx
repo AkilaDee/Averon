@@ -58,7 +58,7 @@ const Cloves = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="clv-section-subheading">Technical Specifications</h3>
+          <h2 className="clv-section-subheading">Technical Specifications</h2>
           <table className="clv-specs-table">
             <tbody>
               {specs.map((spec, index) => (
@@ -98,7 +98,7 @@ const Cloves = () => {
             <div key={index} className="clv-grade-card">
               <div className="clv-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="clv-grade-thumb" />
-                <h4 className="clv-grade-name">{item.name}</h4>
+                <h3 className="clv-grade-name">{item.name}</h3>
               </div>
               <p className="clv-grade-desc">{item.desc}</p>
             </div>

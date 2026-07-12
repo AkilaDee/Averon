@@ -58,7 +58,7 @@ const GreenCardamom = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="card-section-subheading">Technical Specifications</h3>
+          <h2 className="card-section-subheading">Technical Specifications</h2>
           <table className="card-specs-table">
             <tbody>
               {specs.map((spec, index) => (
@@ -98,7 +98,7 @@ const GreenCardamom = () => {
             <div key={index} className="card-grade-card">
               <div className="card-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="card-grade-thumb" />
-                <h4 className="card-grade-name">{item.name}</h4>
+                <h3 className="card-grade-name">{item.name}</h3>
               </div>
               <p className="card-grade-desc">{item.desc}</p>
             </div>

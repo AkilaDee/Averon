@@ -56,7 +56,7 @@ const Vanilla = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="van-section-subheading">Technical Specifications</h3>
+          <h2 className="van-section-subheading">Technical Specifications</h2>
           <table className="van-specs-table">
             <tbody>
               {specs.map((spec, index) => (
@@ -96,7 +96,7 @@ const Vanilla = () => {
             <div key={index} className="van-grade-card">
               <div className="van-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="van-grade-thumb" />
-                <h4 className="van-grade-name">{item.name}</h4>
+                <h3 className="van-grade-name">{item.name}</h3>
               </div>
               <p className="van-grade-desc">{item.desc}</p>
             </div>

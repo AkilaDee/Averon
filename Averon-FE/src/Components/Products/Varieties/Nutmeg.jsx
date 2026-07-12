@@ -56,7 +56,7 @@ const Nutmeg = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="nut-section-subheading">Technical Specifications</h3>
+          <h2 className="nut-section-subheading">Technical Specifications</h2>
           <table className="nut-specs-table">
             <tbody>
               {specs.map((spec, index) => (
@@ -96,7 +96,7 @@ const Nutmeg = () => {
             <div key={index} className="nut-grade-card">
               <div className="nut-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="nut-grade-thumb" />
-                <h4 className="nut-grade-name">{item.name}</h4>
+                <h3 className="nut-grade-name">{item.name}</h3>
               </div>
               <p className="nut-grade-desc">{item.desc}</p>
             </div>
