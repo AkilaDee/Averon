@@ -63,7 +63,7 @@ const BlackPepper = () => {
           </div>
           
           {/* TECHNICAL SPECIFICATIONS TABLE */}
-          <h3 className="pep-section-subheading">Technical Specifications</h3>
+          <h2 className="pep-section-subheading">Technical Specifications</h2>
           <table className="pep-specs-table">
             <tbody>
               {specs.map((spec, index) => (
