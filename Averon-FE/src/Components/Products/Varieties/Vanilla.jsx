@@ -81,7 +81,7 @@ const Vanilla = () => {
         <div className="van-apps-grid">
           {applications.map((app, index) => (
             <div key={index} className="van-app-card">
-              <h3 className="van-app-card-title">{app.area}</h3>
+              <h4 className="van-app-card-title">{app.area}</h4>
               <p className="van-app-card-text">{app.text}</p>
             </div>
           ))}
@@ -96,7 +96,7 @@ const Vanilla = () => {
             <div key={index} className="van-grade-card">
               <div className="van-grade-image-wrapper">
                 <img src={item.img} alt={item.name} className="van-grade-thumb" />
-                <h3 className="van-grade-name">{item.name}</h3>
+                <h4 className="van-grade-name">{item.name}</h4>
               </div>
               <p className="van-grade-desc">{item.desc}</p>
             </div>
