@@ -100,31 +100,31 @@ const Products = () => {
           ========================================================= */}
       <div className="product-categories">
         <div className="cat-card">
-          <img src={cinnamon} alt="Ceylon-Cinnamon" />
+          <img src={cinnamon} alt="Ceylon-Cinnamon" fetchPriority="high"/>
           <h3>Ceylon Cinnamon</h3>
           <p>Premium Ceylon Cinnamon is valued for its delicate aroma and natural sweetness, offering a refined and distinctive flavor profile.</p>
-          <Link to="/products/ceylon-cinnamon" className="read-more-btn">Read More</Link>
+          <Link to="/products/ceylon-cinnamon" className="read-more-btn">Explore Ceylon Cinamon</Link>
         </div>
 
         <div className="cat-card">
           <img src={pepper_500} alt="black pepper" />
           <h3>Black Pepper</h3>
           <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile.</p>
-          <Link to="/products/black-pepper" className="read-more-btn">Read More</Link>
+          <Link to="/products/black-pepper" className="read-more-btn">Explore Black Pepper</Link>
         </div>
 
         <div className="cat-card">
           <img src={cardamom} alt="Cardamom" />
           <h3>Green Cardamom</h3>
           <p>Premium Ceylon Green Cardamom is prized for its cooling, floral aroma and high cineole content, offering a sweet yet complex flavour profile.</p>
-          <Link to="/products/green-cardamom" className="read-more-btn">Read More</Link>
+          <Link to="/products/green-cardamom" className="read-more-btn">Explore Cardamom</Link>
         </div>
 
         <div className="cat-card">
           <img src={cloves} alt="Cloves" />
           <h3>Cloves</h3>
           <p>Premium Ceylon Cloves are prized for its intense, warm aroma and high eugenol oil content, offering a bold and pungent flavour profile.</p>
-          <Link to="/products/cloves" className="read-more-btn">Read More</Link>
+          <Link to="/products/cloves" className="read-more-btn">Explore Cloves</Link>
         </div>
       </div>
 
@@ -133,14 +133,14 @@ const Products = () => {
           <img src={vanilla} alt="Vanilla" />
           <h3>Vanilla</h3>
           <p>Premium Ceylon Vanilla is valued for its rich, cream-like aroma and deep, complex sweetness, offering a velvety and distinctive flavor profile.</p>
-          <Link to="/products/vanilla" className="read-more-btn">Read More</Link>
+          <Link to="/products/vanilla" className="read-more-btn">Explore Vanilla</Link>
         </div>
 
         <div className="cat-card">
           <img src={nutmeg} alt="Nutmeg" />
           <h3>Nutmeg</h3>
           <p>Premium Sri Lankan Nutmeg is valued for its warm, woody aroma and high essential oil content, offering a highly aromatic and distinctive flavor profile.</p>
-          <Link to="/products/nutmeg" className="read-more-btn">Read More</Link>
+          <Link to="/products/nutmeg" className="read-more-btn">Explore Nutmeg</Link>
         </div>
       </div>
 
