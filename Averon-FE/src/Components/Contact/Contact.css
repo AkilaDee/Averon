@@ -8,6 +8,11 @@
     line-height: 1.6;
 }
 
+.contact-page-container p,
+.contact-page-container span {
+  color: #3d3d3d;  
+}
+
 /* Page Center Title Header */
 .contact-main-title {
     text-align: center;
@@ -15,6 +20,10 @@
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 50px;
+}
+
+.contact-info-title {
+  color: #1a1e21;  
 }
 
 /* Master Alternating Split Layout Framework */
@@ -71,8 +80,9 @@
 }
 
 .contact-details-list li img {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Row 2 Headings (Using Brand Gold) */

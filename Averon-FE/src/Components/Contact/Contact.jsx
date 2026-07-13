@@ -50,7 +50,7 @@ const Contact = () => {
       {/* ROW 1: Contact Details - Text Left, Image Right */}
       <div className="contact-split-row">
         <div className="contact-text-block">
-          <h3>Send us a message <img src={msg_icon} alt="" className="msg-icon-inline" /></h3>
+          <h2>Send us a message <img src={msg_icon} alt="" className="msg-icon-inline" /></h2>
           <p className='form-intro-text'>
             Information around our business activities, industry information, harvest information and products is available through our team of industry experts. Complete our direct enquiry pipeline below to connect with our logistics desk.
           </p>
@@ -80,17 +80,17 @@ const Contact = () => {
           <form onSubmit={onSubmit} className="corporate-web-form">
             <div className="form-field">
               <label>Name <span className="req">*</span></label>
-              <input type="text" name="name" required/>
+              <input type="text" id="name" name="name" required/>
             </div>
 
             <div className="form-field">
               <label>Company <span className="req">*</span></label>
-              <input type="text" name="company" required/>
+              <input type="text" id="company" name="company" required/>
             </div>
 
             <div className="form-field">
               <label>How did you discover Averon Supplies? <span className="req">*</span></label>
-              <select name="discovery_source" required>
+              <select id="discovery_source" name="discovery_source" required>
                 <option value="">Please Select</option>
                 <option value="Search Engine">Search Engine (Google/Bing)</option>
                 <option value="Industry Trade Show">Industry Trade Show / Exhibition</option>
@@ -102,17 +102,17 @@ const Contact = () => {
 
             <div className="form-field">
               <label>Email <span className="req">*</span></label>
-              <input type="email" name="email" placeholder="name@company.com" required/>
+              <input type="email" id="email" name="email" placeholder="name@company.com" required/>
             </div>
 
             <div className="form-field">
               <label>Telephone <span className="req">*</span></label>
-              <input type="tel" name='phone' required />
+              <input type="tel" id="phone" name='phone' required />
             </div>
 
             <div className="form-field">
               <label>Your Enquiry <span className="req">*</span></label>
-              <textarea name="message" rows="6" placeholder="e.g. We need 500kg of crushed spices monthly, or we are looking for a new single-origin supplier..." required></textarea>
+              <textarea id="message" name="message" rows="6" placeholder="e.g. We need 500kg of crushed spices monthly, or we are looking for a new single-origin supplier..." required></textarea>
             </div>
             
             <button type='submit' className='corporate-submit-btn'>
@@ -128,15 +128,15 @@ const Contact = () => {
         <h2>Frequently Asked Sourcing Questions</h2>
         <div className='faq-grid'>
           <div className='faq-item-card'>
-            <h4>Can we request physical samples for laboratory analysis?</h4>
+            <h3>Can we request physical samples for laboratory analysis?</h3>
             <p>Yes. We routinely provide evaluation sample packs of our cinnamon grades, whole cloves, and nutmeg to verified UK food manufacturers and commercial blenders for organoleptic testing and quality assurance verification.</p>
           </div>
           <div className='faq-item-card'>
-            <h4>How do you guarantee single-origin batch consistency?</h4>
+            <h3>How do you guarantee single-origin batch consistency?</h3>
             <p>Unlike standard market brokers who consolidate and blend batches from multiple regional networks, we own and manage production at our own partner estates in Sri Lanka, guaranteeing absolute single-origin purity and strict grade tolerances.</p>
           </div>
           <div className='faq-item-card'>
-            <h4>What documentation accompanies your trade shipments?</h4>
+            <h3>What documentation accompanies your trade shipments?</h3>
             <p>Every commercial consignment arrives with full technical documentation, including independent laboratory certificates, strict country-of-origin guarantees, batch-coded traceability files, and technical product specification sheets.</p>
           </div>
         </div>
