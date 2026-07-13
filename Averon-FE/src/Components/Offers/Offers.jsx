@@ -42,7 +42,6 @@ const Offers = () => {
       <Helmet>
         <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
         <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
       </Helmet>
       
       {/* SECTION 1: HERITAGE INTRO BLOCK */}
