@@ -11,16 +11,18 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "source": "dist",
-    "destination": "dist",
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
-    },
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
-    "crawl": true,
-    "inlineCss": false
+  "source": "dist",
+  "destination": "dist",
+  "minifyHtml": {
+    "collapseWhitespace": false,
+    "removeComments": false
   },
+  "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+  "crawl": true,
+  "inlineCss": false,
+  "skipThirdPartyRequests": true,
+  "userAgent": "ReactSnap"
+},
   "dependencies": {
     "lucide-react": "^1.16.0",
     "react": "^19.2.0",
