@@ -9,22 +9,44 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* --- SECTION 1: HERO FRAME --- */
+/* --- SECTION 1: HERO FRAME (Optimized for HTML DOM LCP discovery) --- */
 .supply-hero-section {
+    position: relative;
     width: 100%;
     min-height: 480px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
     padding: 100px 20px;
+    overflow: hidden;
+}
+
+/* Hardcoded high-performance background image layers */
+.supply-hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.supply-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9));
+    z-index: 2;
 }
 
 .supply-hero-inner {
+    position: relative;
+    z-index: 3;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -144,19 +166,27 @@
     margin: 0;
 }
 
+/* Image containment slots */
 .stage-image-frame {
+    position: relative;
     width: 100%;
-    height: 320px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 350px;
     border-radius: 8px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
 }
 
 /* Maximized visual weight specifically for the farmers asset */
 .stage-image-frame.farmers-extended-frame {
     height: 490px;
+}
+
+/* Uniform layout controller for embedded stage HTML images */
+.stage-embedded-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* --- SECTION 3: COMPLIANCE MATRIX PANEL --- */
@@ -265,8 +295,6 @@
 .compliance-bg-layer {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
     filter: brightness(0.4) contrast(1.1);
 }
 
@@ -277,6 +305,7 @@
     right: 50px;
     border-left: 2px solid #E8AF03;
     padding-left: 25px;
+    z-index: 5;
 }
 
 .overlay-quote {

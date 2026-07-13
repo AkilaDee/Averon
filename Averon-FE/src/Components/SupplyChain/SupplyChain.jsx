@@ -6,8 +6,6 @@ import './SupplyChain.css';
 // Asset Imports
 import supply_hero from '../../assets/supply-chain.webp'; 
 import chain_metrics from '../../assets/supply-method.webp'; 
-
-// NOTE: Adjust these image paths to match your actual local file names for the pillars
 import farm_sourcing from '../../assets/farmers.webp';
 import logistics_img from '../../assets/freight.webp';
 
@@ -25,6 +23,9 @@ const SupplyChain = () => {
         <meta name="keywords" content="ethical spice sourcing, sustainable spice supply chain, wholesale cinnamon logistics, direct farm spice procurement, single-origin traceability, fair trade spice supplier UK" />
         <link rel="canonical" href="https://averonsupplies.co.uk/supply-chain" />
         
+        {/* Fix Render-Blocking CSS by Preloading It */}
+        <link rel="preload" href="/assets/index-13N7qzJ_.css" as="style" />
+
         {/* OpenGraph Metadata for Professional Sharing */}
         <meta property="og:title" content="Directly Integrated B2B Spice Supply Chain | Averon Supplies Ltd" />
         <meta property="og:description" content="Eliminating broker middle-layers to provide fixed price matrixes, lot-level batch tracking, and rigorous chemical barrier testing directly from origin." />
@@ -36,8 +37,18 @@ const SupplyChain = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
       
-      {/* SECTION 1: HERO ARCHITECTURE */}
-      <section className="supply-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9)), url(${supply_hero})` }}>
+      {/* SECTION 1: HERO ARCHITECTURE (Optimized for LCP Image Discovery) */}
+      <section className="supply-hero-section">
+        {/* Render LCP image via HTML tag instead of CSS background image */}
+        <img 
+          src={supply_hero} 
+          alt="" 
+          className="supply-hero-bg-img" 
+          fetchpriority="high" 
+          loading="eager"
+        />
+        <div className="supply-hero-overlay"></div>
+        
         <div className="supply-hero-inner">
           <div className="center-divider-tag">
             <span className="line-arm light"></span>
@@ -70,8 +81,9 @@ const SupplyChain = () => {
               </p>
             </div>
             <div className="stage-visual-block">
-              {/* Added extended-height modifier class here */}
-              <div className="stage-image-frame farmers-extended-frame" style={{ backgroundImage: `url(${farm_sourcing})` }}></div>
+              <div className="stage-image-frame farmers-extended-frame">
+                <img src={farm_sourcing} alt="Estates in Sri Lanka" className="stage-embedded-img" loading="lazy" />
+              </div>
             </div>
           </div>
 
@@ -85,7 +97,9 @@ const SupplyChain = () => {
               </p>
             </div>
             <div className="stage-visual-block">
-              <div className="stage-image-frame" style={{ backgroundImage: `url(${logistics_img})` }}></div>
+              <div className="stage-image-frame">
+                <img src={logistics_img} alt="Global Freight Forwarding" className="stage-embedded-img" loading="lazy" />
+              </div>
             </div>
           </div>
 
@@ -126,7 +140,9 @@ const SupplyChain = () => {
           </div>
 
           <div className="compliance-visual-frame">
-            <div className="compliance-bg-layer" style={{ backgroundImage: `url(${chain_metrics})` }}></div>
+            <div className="compliance-bg-layer">
+              <img src={chain_metrics} alt="Compliance data verification" className="stage-embedded-img" loading="lazy" />
+            </div>
             <div className="protection-overlay">
               <p className="overlay-quote">"Securing international supply networks through transparent pricing, verified traceability, and ethical accountability."</p>
             </div>
