@@ -10,7 +10,7 @@
 
 .contact-page-container p,
 .contact-page-container span {
-  color: #3d3d3d;  
+    color: #3d3d3d;  
 }
 
 /* Page Center Title Header */
@@ -23,7 +23,7 @@
 }
 
 .contact-info-title {
-  color: #1a1e21;  
+    color: #1a1e21;  
 }
 
 /* Master Alternating Split Layout Framework */
@@ -80,17 +80,20 @@
 }
 
 .contact-details-list li img {
-  width: 18px;
-  height: auto;
-  object-fit: contain;
+    width: 18px;
+    height: auto;
+    object-fit: contain;
 }
 
-/* Row 2 Headings (Using Brand Gold) */
+/* Row 2 Headings (Optimized for Web Accessibility Contrast) */
 .contact-text-block h2 {
-    color: #E8AF03;
+    color: #111111; /* Changed to off-black to pass 4.5:1 contrast ratio against white */
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+    border-bottom: 3px solid #E8AF03; /* Preserves brand gold safely as a visual asset decoration */
+    display: inline-block;
+    padding-bottom: 4px;
 }
 
 .form-required-notice {
@@ -184,7 +187,7 @@
     margin-top: 20px;
     font-size: 14px;
     font-weight: bold;
-    color: #E8AF03;
+    color: #1b4332; /* Changed from gold to a high-contrast dark green for success text visibility */
 }
 
 /* Sizing and Alignment of Images */
@@ -232,12 +235,14 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
-.faq-item-card h4 {
-    color: #E8AF03; /* Brand Gold Title Text */
+/* Fixed selector from h4 to h3 to match your actual HTML architecture */
+.faq-item-card h3 {
+    color: #E8AF03; /* Gold text passes contrast safely on dark background (#111111) */
     font-size: 15px;
     margin-top: 0;
     margin-bottom: 12px;
     font-weight: bold;
+    line-height: 1.4;
 }
 
 .faq-item-card p {

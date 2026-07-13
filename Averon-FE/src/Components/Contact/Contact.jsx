@@ -7,7 +7,7 @@ import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
 import contact_banner1 from '../../assets/contact-banner.webp' 
-import contact_banner2 from '../../assets/about_supply.webp' // Import a secondary image for Row 2
+import contact_banner2 from '../../assets/about_supply.webp' 
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -45,9 +45,7 @@ const Contact = () => {
         <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" />
       </Helmet>
 
-      {/* <h1 className="contact-main-title">Contact Us</h1> */}
-
-      {/* ROW 1: Contact Details - Text Left, Image Right */}
+      {/* ROW 1: Contact Details */}
       <div className="contact-split-row">
         <div className="contact-text-block">
           <h2>Send us a message <img src={msg_icon} alt="" className="msg-icon-inline" /></h2>
@@ -67,7 +65,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* ROW 2: Form Intake - Image Left, Form Right (Shifted down ~1cm) */}
+      {/* ROW 2: Form Intake */}
       <div className="contact-split-row reverse-row">
         <div className="contact-image-block">
           <img src={contact_banner2} alt="Bulk Trade Delivery Operations" className="editorial-img-tall" />
@@ -79,17 +77,17 @@ const Contact = () => {
           
           <form onSubmit={onSubmit} className="corporate-web-form">
             <div className="form-field">
-              <label>Name <span className="req">*</span></label>
+              <label htmlFor="name">Name <span className="req">*</span></label>
               <input type="text" id="name" name="name" required/>
             </div>
 
             <div className="form-field">
-              <label>Company <span className="req">*</span></label>
+              <label htmlFor="company">Company <span className="req">*</span></label>
               <input type="text" id="company" name="company" required/>
             </div>
 
             <div className="form-field">
-              <label>How did you discover Averon Supplies? <span className="req">*</span></label>
+              <label htmlFor="discovery_source">How did you discover Averon Supplies? <span className="req">*</span></label>
               <select id="discovery_source" name="discovery_source" required>
                 <option value="">Please Select</option>
                 <option value="Search Engine">Search Engine (Google/Bing)</option>
@@ -101,17 +99,17 @@ const Contact = () => {
             </div>
 
             <div className="form-field">
-              <label>Email <span className="req">*</span></label>
+              <label htmlFor="email">Email <span className="req">*</span></label>
               <input type="email" id="email" name="email" placeholder="name@company.com" required/>
             </div>
 
             <div className="form-field">
-              <label>Telephone <span className="req">*</span></label>
+              <label htmlFor="phone">Telephone <span className="req">*</span></label>
               <input type="tel" id="phone" name='phone' required />
             </div>
 
             <div className="form-field">
-              <label>Your Enquiry <span className="req">*</span></label>
+              <label htmlFor="message">Your Enquiry <span className="req">*</span></label>
               <textarea id="message" name="message" rows="6" placeholder="e.g. We need 500kg of crushed spices monthly, or we are looking for a new single-origin supplier..." required></textarea>
             </div>
             
@@ -123,7 +121,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* BOTTOM SECTION: High Visibility FAQ Grid */}
+      {/* BOTTOM SECTION: FAQ Grid */}
       <div className='contact-faq'>
         <h2>Frequently Asked Sourcing Questions</h2>
         <div className='faq-grid'>
