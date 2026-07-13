@@ -6,8 +6,6 @@ import './Processing.css';
 // Asset Imports
 import processing_hero from '../../assets/processing.webp'; 
 import sorting_line from '../../assets/cinnamon ground.webp'; 
-
-// NOTE: Adjust these image paths to match your actual local file names for the steps
 import grading from '../../assets/grading.webp'; 
 import drying from '../../assets/drying.webp';
 import packaging from '../../assets/packing.webp';
@@ -37,8 +35,17 @@ const Processing = () => {
         <meta name="robots" content="index, follow" />
       </Helmet>
       
-      {/* SECTION 1: HERO ARCHITECTURE */}
-      <section className="processing-hero-section" style={{ backgroundImage: `linear-gradient(rgba(26, 30, 33, 0.75), rgba(26, 30, 33, 0.9)), url(${processing_hero})` }}>
+      {/* SECTION 1: HERO ARCHITECTURE (Optimized DOM Pattern for LCP) */}
+      <section className="processing-hero-section">
+        <img 
+          src={processing_hero} 
+          alt="" 
+          className="processing-hero-bg-img"
+          fetchpriority="high"
+          loading="eager"
+        />
+        <div className="processing-hero-overlay"></div>
+        
         <div className="processing-hero-inner">
           <div className="center-divider-tag">
             <span className="line-arm light"></span>
@@ -71,11 +78,13 @@ const Processing = () => {
               </p>
             </div>
             <div className="pipeline-image-side">
-              <div className="pipeline-img-frame" style={{ backgroundImage: `url(${grading})` }}></div>
+              <div className="pipeline-img-frame">
+                <img src={grading} alt="Manual spice sorting and premium batch grading process" className="pipeline-embedded-img" loading="lazy" />
+              </div>
             </div>
           </div>
 
-          {/* Step 2 (Alternating via CSS row-reverse) */}
+          {/* Step 2 */}
           <div className="pipeline-row reverse">
             <div className="pipeline-text-side">
               <span className="step-number">02</span>
@@ -85,7 +94,9 @@ const Processing = () => {
               </p>
             </div>
             <div className="pipeline-image-side">
-              <div className="pipeline-img-frame" style={{ backgroundImage: `url(${drying})` }}></div>
+              <div className="pipeline-img-frame">
+                <img src={drying} alt="Climate controlled low temperature drying beds" className="pipeline-embedded-img" loading="lazy" />
+              </div>
             </div>
           </div>
 
@@ -99,14 +110,16 @@ const Processing = () => {
               </p>
             </div>
             <div className="pipeline-image-side">
-              <div className="pipeline-img-frame" style={{ backgroundImage: `url(${packaging})` }}></div>
+              <div className="pipeline-img-frame">
+                <img src={packaging} alt="Food grade vacuum triple shield packaging line" className="pipeline-embedded-img" loading="lazy" />
+              </div>
             </div>
           </div>
 
         </div>
       </section>
 
-      {/* NEW SECTION 3: THE ART OF THE CINNAMON CIGAR */}
+      {/* SECTION 3: THE ART OF THE CINNAMON CIGAR (Heading Order Fixed to H3) */}
       <section className="cinnamon-craft-showcase">
         <div className="craft-inner-container">
           
@@ -124,7 +137,8 @@ const Processing = () => {
             <div className="craft-card">
               <div className="craft-card-header">
                 <span className="craft-index">I</span>
-                <h4 className="serif-craft-title">The Pre-Dawn Harvest</h4>
+                {/* Fixed semantic level skip from h4 to h3 */}
+                <h3 className="serif-craft-title">The Pre-Dawn Harvest</h3>
               </div>
               <p className="craft-description">
                 Farmers select mature shoots, cutting precisely at a 45-degree angle to ensure the parent tree sustains no structural duress and regrows stronger.
@@ -135,7 +149,8 @@ const Processing = () => {
             <div className="craft-card">
               <div className="craft-card-header">
                 <span className="craft-index">II</span>
-                <h4 className="serif-craft-title">The Brass Rod Technique</h4>
+                {/* Fixed semantic level skip from h4 to h3 */}
+                <h3 className="serif-craft-title">The Brass Rod Technique</h3>
               </div>
               <p className="craft-description">
                 Shoots are methodically rubbed with traditional brass rods to loosen the inner bark from the woody core, activating and releasing the distinct aromatic top notes.
@@ -146,7 +161,8 @@ const Processing = () => {
             <div className="craft-card">
               <div className="craft-card-header">
                 <span className="craft-index">III</span>
-                <h4 className="serif-craft-title">Hand-Rolling Execution</h4>
+                {/* Fixed semantic level skip from h4 to h3 */}
+                <h3 className="serif-craft-title">Hand-Rolling Execution</h3>
               </div>
               <p className="craft-description">
                 Master peelers hand-layer delicate inner bark sheets into one another, naturally curling into the iconic, multi-layered "cigar" look unique to true Ceylon quills.
@@ -163,7 +179,7 @@ const Processing = () => {
         <div className="processing-panel-inner">
           
           <div className="safety-visual-frame">
-            <div className="safety-bg-layer" style={{ backgroundImage: `url(${sorting_line})` }}></div>
+            <img src={sorting_line} alt="" className="safety-bg-layer" loading="lazy" />
             <div className="protection-overlay">
               <p className="overlay-quote">"Zero-tolerance policy for cross-contamination, ensuring absolute commercial purity."</p>
             </div>
