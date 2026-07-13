@@ -45,6 +45,10 @@ const Hero = () => {
         <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
         <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
+
+        {/* HREFLANG FIX FOR THE HOMEPAGE */}
+        <link rel="alternate" href="https://www.averonsupplies.co.uk/" hreflang="en-gb" />
+        <link rel="alternate" href="https://www.averonsupplies.co.uk/" hreflang="x-default" />
       </Helmet>
 
       <section className="hero-section">
