@@ -43,7 +43,7 @@ const Offers = () => {
         </div>
         <h2 className="serif-main-title">Premium Pure Ceylon Spices</h2>
         <p className="elegant-intro-subtitle">
-          From the historic estate gardens of Sri Lanka directly to your enterprise — authentic, single-origin ingredients cultivated with care and harvested with generational purpose.
+          From our historic Sri Lankan estates directly to your business. Premium, single-origin spices backed by generations of expertise in cultivation, harvesting, and manufacturing.
         </p>
       </section>
 
