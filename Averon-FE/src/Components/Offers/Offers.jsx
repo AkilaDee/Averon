@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
 import './Offers.css'; 
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 // Image Imports
 import cinnamon_ground from '../../assets/cinnamon.webp';
-// NOTE: Adjust these paths below to match your actual local file names
 import black_pepper from '../../assets/pepper.webp'; 
 import cardamom from '../../assets/cardamom.webp';
 import cloves from '../../assets/cloves.webp';
@@ -16,8 +14,6 @@ import processing from '../../assets/processing.webp';
 import regions from '../../assets/regions.webp';
 import certifications from '../../assets/certifications.webp';
 
-
-
 const Offers = () => {
   const scrollTrackRef = useRef(null);
 
@@ -25,7 +21,6 @@ const Offers = () => {
     if (scrollTrackRef.current) {
       const { scrollLeft, clientWidth } = scrollTrackRef.current;
       
-      // Calculate smooth translation jump step equivalent to 1 full card column block width
       const cardStep = clientWidth / 4; 
       const offset = direction === 'left' ? -cardStep : cardStep;
       
@@ -38,11 +33,6 @@ const Offers = () => {
 
   return (
     <div className='premium-heritage-offers' id='offers'>
-
-      <Helmet>
-        <title>Averon Supplies Ltd | Premium Ceylon Cinnamon & Spices</title>
-        <meta name="description" content="UK direct importer of premium Ceylon cinnamon and spices. Sourced from our own estates in Sri Lanka with full traceability and consistent wholesale quality." />
-      </Helmet>
       
       {/* SECTION 1: HERITAGE INTRO BLOCK */}
       <section className="heritage-intro-section">
