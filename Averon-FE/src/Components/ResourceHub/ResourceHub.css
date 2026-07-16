@@ -1,0 +1,203 @@
+/* ==========================================================================
+   RESOURCE HUB - PREMIUM B2B STYLING
+   ========================================================================== */
+
+:root {
+  --color-charcoal: #12151a;      /* Rich dark slate/black */
+  --color-slate-dark: #1e2530;    /* Card backgrounds */
+  --color-slate-light: #4b5563;   /* Muted text/subtitles */
+  --color-gold: #c5a059;          /* Primary gold accent */
+  --color-gold-hover: #e5c17d;    /* Lighter bright gold */
+  --color-border: #2e3746;        /* Subtle divider borders */
+  --color-bg-light: #f9fafb;      /* Section background */
+}
+
+/* Section Container */
+.resource-hub-section {
+  background-color: var(--color-bg-light);
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header & Accent Divider */
+.center-divider-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.line-arm {
+  height: 1px;
+  width: 40px;
+  background-color: var(--color-gold);
+  opacity: 0.7;
+}
+
+.tag-text-main {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.serif-main-title {
+  font-family: "Playfair Display", "Didot", "Georgia", serif;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-charcoal);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.01em;
+}
+
+.elegant-intro-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-slate-light);
+  max-width: 600px;
+  margin: 0 auto 64px auto;
+}
+
+/* Grid Layout */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* Base Card Styling */
+.resource-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-gold);
+  box-shadow: 0 12px 30px rgba(18, 21, 26, 0.05);
+}
+
+/* Featured / Highlight Card (The B2B Action Call) */
+.resource-card.highlight-card {
+  background-color: var(--color-charcoal);
+  border: 1px solid var(--color-slate-dark);
+}
+
+.resource-card.highlight-card:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 16px 40px rgba(18, 21, 26, 0.25);
+}
+
+/* Meta Category Tags */
+.resource-meta {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* Card Typography */
+.resource-card-title {
+  font-family: "Playfair Display", "Didot", "Georgia", serif;
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--color-charcoal);
+  margin: 0 0 16px 0;
+  font-weight: 400;
+}
+
+.highlight-card .resource-card-title {
+  color: #ffffff;
+}
+
+.resource-card-excerpt {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-slate-light);
+  margin: 0 0 32px 0;
+}
+
+.highlight-card .resource-card-excerpt {
+  color: #a0aec0;
+}
+
+/* Button & Link Interactions */
+.resource-link-group {
+  margin-top: auto;
+}
+
+.resource-internal-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.resource-internal-link:hover {
+  color: var(--color-gold);
+}
+
+/* Link Hover Animation */
+.resource-internal-link span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.resource-internal-link:hover span {
+  transform: translateX(4px);
+}
+
+/* Highlighted Button Styling */
+.resource-internal-link.highlight-btn {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+  padding: 12px 24px;
+  border-radius: 2px;
+  text-align: center;
+  display: block;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resource-internal-link.highlight-btn:hover {
+  background-color: var(--color-gold-hover);
+  color: var(--color-charcoal);
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  .resource-hub-section {
+    padding: 60px 16px;
+  }
+  
+  .serif-main-title {
+    font-size: 30px;
+  }
+  
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .resource-card {
+    padding: 30px;
+  }
+}

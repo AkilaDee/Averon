@@ -7,6 +7,7 @@ import { CartProvider } from './Components/Sale/CartContext';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
+import ResourceHub from './Components/ResourceHub/ResourceHub';
 import Footer from './Components/Footer/Footer';
 
 // Lazy loaded (only load when user visits that page)
@@ -75,6 +76,7 @@ const App = () => {
                   <Hero />
                   <div className="container">
                     <Offers />
+                    <ResourceHub />
                   </div>
                 </main>
                 <Footer />
