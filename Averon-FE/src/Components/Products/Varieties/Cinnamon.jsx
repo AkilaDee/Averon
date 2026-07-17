@@ -55,12 +55,12 @@ const CinnamonDetail = () => {
   return (
     <div className="cinnamon-detail-page">
       <Helmet>
-        <title>Ceylon Cinnamon Wholesale & Bulk Supply | Averon Supplies</title>
-          <meta 
-            name="description" 
-            content="Direct estate-to-business container supply of single-origin, premium grade Ceylon Cinnamon (Alba, C5 Special, C5, C4). Full traceability for food manufacturers." 
-          />
-          <link rel="canonical" href="https://www.averonsupplies.co.uk/products/ceylon-cinnamon" />
+        <title>Premium Ceylon Cinnamon | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Premium Ceylon Cinnamon, sourced from our own estates in Sri Lanka, capturing the rich aroma, delicate flavor, and absolute purity of true cinnamon." 
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/ceylon-cinnamon" />
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}
