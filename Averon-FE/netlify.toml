@@ -2,9 +2,15 @@
   command = "npm run build"
   publish = "dist"
 
-# Enforce clean URLs (strips trailing slashes and 301 redirects)
+# Force permanent 301 redirect removing trailing slashes
 [[redirects]]
   from = "/*/"
   to = "/:splat"
   status = 301
-  forced = true
+  force = true
+
+# Fallback for React Router (Single Page App)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
