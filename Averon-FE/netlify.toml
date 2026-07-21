@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Enforce clean URLs (strips trailing slashes and 301 redirects)
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  forced = true
