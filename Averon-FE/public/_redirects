@@ -1,1 +1,5 @@
-/*    /index.html   200
+# Force permanent 301 redirect to strip trailing slashes globally
+/*_/    /:splat    301!
+
+# SPA Fallback for React Router (Must always be at the bottom)
+/*      /index.html   200
