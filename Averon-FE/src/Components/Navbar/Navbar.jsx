@@ -179,6 +179,26 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/insights/organic-ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
+                    Organic Ceylon Cinnamon
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/ceylon-cinnamon-superfood-guide" onClick={closeMobileMenu}>
+                    Cinnamon Super Food
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/unlock-ceylon-dosage-guide" onClick={closeMobileMenu}>
+                    Ceylon Cinnamon Dosage
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/insights/ceylon-cinnamon-capsules" onClick={closeMobileMenu}>
+                    Ceylon Cinnamon Capsules
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/insights/ceylon-cinnamon-vs-cassia" onClick={closeMobileMenu}>
                     Cinnamon vs Cassia
                   </NavLink>
