@@ -199,6 +199,11 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/insights/unlock-ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
+                    Ceylon Cinnamon Health Benefits
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/insights/ceylon-cinnamon-vs-cassia" onClick={closeMobileMenu}>
                     Cinnamon vs Cassia
                   </NavLink>
