@@ -189,7 +189,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/unlock-ceylon-dosage-guide" onClick={closeMobileMenu}>
+                  <NavLink to="/insights/ceylon-cinnamon-dosage-guide" onClick={closeMobileMenu}>
                     Ceylon Cinnamon Dosage
                   </NavLink>
                 </li>
