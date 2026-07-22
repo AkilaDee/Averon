@@ -34,7 +34,7 @@ const articles = [
     image: imgCapsuleDosage,
   },
   {
-    slug: 'unlock-ceylon-cinnamon-benefits',
+    slug: 'ceylon-cinnamon-benefits',
     title: 'Top Health Benefits of Ceylon Cinnamon',
     description: 'Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how "true cinnamon" enhances wellness and cuisine.',
     category: 'Health & Wellness',
@@ -42,7 +42,7 @@ const articles = [
     image: imgUnlockBenefits,
   },
   {
-    slug: 'ceylon-cinnamon-superfood-guide',
+    slug: 'ceylon-cinnamon-superfood',
     title: 'Ceylon Cinnamon Sticks: The Ultimate Superfood Guide',
     description: 'Discover the health benefits of Ceylon cinnamon sticks, the "true cinnamon," renowned for its rich history and ability to manage blood sugar and inflammation. Choose organic Ceylon for maximum wellness.',
     category: 'Health & Wellness',
@@ -50,7 +50,7 @@ const articles = [
     image: imgSuperfood,
   },
   {
-    slug: 'organic-ceylon-cinnamon-benefits',
+    slug: 'organic-ceylon-cinnamon',
     title: 'Organic Ceylon Cinnamon: Health Benefits & Uses',
     description: 'Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.',
     category: 'Health & Wellness',
