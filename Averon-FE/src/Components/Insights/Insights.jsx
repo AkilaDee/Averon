@@ -9,9 +9,38 @@ import imgCoumarin from '../../assets/coumarin.webp';
 import imgTesting from '../../assets/lab-test.webp';
 import imgGrading from '../../assets/grades.webp';
 import imgOrigin from '../../assets/estate.webp';
-import imgSuperfood from '../../assets/superfood.webp'; // Add your asset for this new article
+import imgSuperfood from '../../assets/superfood.webp';
+import imgOrganicBenefits from '../../assets/organic-benefits.webp';
+import imgUnlockBenefits from '../../assets/cinnamon ground.webp';
+import imgCapsuleDosage from '../../assets/dosage.webp'; 
+import imgCapsule from '../../assets/capsule.webp'; 
+
 
 const articles = [
+  {
+    slug: 'best-ceylon-cinnamon-capsules',
+    title: 'Best Ceylon Cinnamon Capsules: Safe & Effective Supplement',
+    description: 'Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.',
+    category: 'Health & Wellness',
+    readTime: '7 min read',
+    image: imgCapsule,
+  },
+  {
+    slug: 'ceylon-cinnamon-capsule-dosage-guide',
+    title: 'Ceylon Cinnamon Capsule Dosage Guide: Safe and Effective',
+    description: 'Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.',
+    category: 'Health & Wellness',
+    readTime: '7 min read',
+    image: imgCapsuleDosage,
+  },
+  {
+    slug: 'unlock-ceylon-cinnamon-benefits',
+    title: 'Top Health Benefits of Ceylon Cinnamon',
+    description: 'Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how "true cinnamon" enhances wellness and cuisine.',
+    category: 'Health & Wellness',
+    readTime: '7 min read',
+    image: imgUnlockBenefits,
+  },
   {
     slug: 'ceylon-cinnamon-superfood-guide',
     title: 'Ceylon Cinnamon Sticks: The Ultimate Superfood Guide',
@@ -19,6 +48,14 @@ const articles = [
     category: 'Health & Wellness',
     readTime: '7 min read',
     image: imgSuperfood,
+  },
+  {
+    slug: 'organic-ceylon-cinnamon-benefits',
+    title: 'Organic Ceylon Cinnamon: Health Benefits & Uses',
+    description: 'Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.',
+    category: 'Health & Wellness',
+    readTime: '6 min read',
+    image: imgOrganicBenefits,
   },
   {
     slug: 'alba-grade-cinnamon',

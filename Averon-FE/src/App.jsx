@@ -31,8 +31,12 @@ const TermsOfBusiness = lazy(() => import('./Components/TermsOfBusiness/TermsOfB
 const Sale = lazy(() => import('./Components/Sale/Sale'));
 const Insights = lazy(() => import('./Components/Insights/Insights'));
 const CinnamonSuperfoodGuide = lazy(() => import('./Components/Insights/Articles/CeylonCinnamonSuperfoodGuide'));
+const CeylonCinnamonCapsuleDosageGuide = lazy(() => import('./Components/Insights/Articles/CeylonCinnamonCapsuleDosageGuide'));
+const BestCeylonCinnamonCapsulesGuide = lazy(() => import('./Components/Insights/Articles/BestCeylonCinnamonCapsulesGuide'));
+const OrganicCeylonCinnamonBenefits = lazy(() => import('./Components/Insights/Articles/OrganicCeylonCinnamonBenefits'));
+const UnlockCeylonCinnamonBenefits = lazy(() => import('./Components/Insights/Articles/UnlockCeylonCinnamonBenefits'));
 const WhatIsAlbaGrade = lazy(() => import('./Components/Insights/Articles/WhatIsAlbaGrade'));
-const IdentifyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/IdentifyCeylonCinnamon'));
+const IdentifyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/TrueCinnamonVsCassia'));
 const WhatIsCoumarin = lazy(() => import('./Components/Insights/Articles/WhatIsCoumarin'));
 const LeadandPesticideTesting = lazy(() => import('./Components/Insights/Articles/LeadandPesticideTesting'));
 const CinnamonGradingExplained = lazy(() => import('./Components/Insights/Articles/CinnamonGradingExplained'));
@@ -147,7 +151,32 @@ const App = () => {
                 <Footer />
               </>
             } />
+            <Route path="/insights/unlock-ceylon-cinnamon-benefits" element={
+              <>
+                <main><UnlockCeylonCinnamonBenefits /></main>
+                <Footer />
+              </>
+            } />
 
+             <Route path="/insights/ceylon-cinnamon-capsules-guide" element={
+              <>
+                <main><BestCeylonCinnamonCapsulesGuide /></main>
+                <Footer />
+              </>
+            } />
+
+             <Route path="/insights/organic-ceylon-cinnamon-benefits" element={
+              <>
+                <main><OrganicCeylonCinnamonBenefits /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/insights/ceylon-cinnamon-capsule-dosage-guide" element={
+              <>
+                <main><CeylonCinnamonCapsuleDosageGuide /></main>
+                <Footer />
+              </>
+            } />
             <Route path="/insights/alba-grade-cinnamon" element={
               <>
                 <main><WhatIsAlbaGrade /></main>
