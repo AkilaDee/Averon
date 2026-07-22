@@ -9,8 +9,17 @@ import imgCoumarin from '../../assets/coumarin.webp';
 import imgTesting from '../../assets/lab-test.webp';
 import imgGrading from '../../assets/grades.webp';
 import imgOrigin from '../../assets/estate.webp';
+import imgSuperfood from '../../assets/superfood.webp'; // Add your asset for this new article
 
 const articles = [
+  {
+    slug: 'ceylon-cinnamon-superfood-guide',
+    title: 'Ceylon Cinnamon Sticks: The Ultimate Superfood Guide',
+    description: 'Discover the health benefits of Ceylon cinnamon sticks, the "true cinnamon," renowned for its rich history and ability to manage blood sugar and inflammation. Choose organic Ceylon for maximum wellness.',
+    category: 'Health & Wellness',
+    readTime: '7 min read',
+    image: imgSuperfood,
+  },
   {
     slug: 'alba-grade-cinnamon',
     title: 'What is Alba Grade Cinnamon?',
@@ -62,6 +71,7 @@ const articles = [
 ];
 
 const categoryColours = {
+  'Health & Wellness': '#2d5a3d',
   'Grading & Quality': '#926A02',
   'Authentication': '#1E293B',
   'Food Safety': '#5C4008',

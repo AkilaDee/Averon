@@ -30,6 +30,7 @@ const Certifications = lazy(() => import('./Components/Certifications/Certificat
 const TermsOfBusiness = lazy(() => import('./Components/TermsOfBusiness/TermsOfBusiness'));
 const Sale = lazy(() => import('./Components/Sale/Sale'));
 const Insights = lazy(() => import('./Components/Insights/Insights'));
+const CinnamonSuperfoodGuide = lazy(() => import('./Components/Insights/Articles/CeylonCinnamonSuperfoodGuide'));
 const WhatIsAlbaGrade = lazy(() => import('./Components/Insights/Articles/WhatIsAlbaGrade'));
 const IdentifyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/IdentifyCeylonCinnamon'));
 const WhatIsCoumarin = lazy(() => import('./Components/Insights/Articles/WhatIsCoumarin'));
@@ -137,6 +138,12 @@ const App = () => {
             <Route path="/insights" element={
               <>
                 <main><Insights /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/insights/ceylon-cinnamon-superfood-guide" element={
+              <>
+                <main><CinnamonSuperfoodGuide /></main>
                 <Footer />
               </>
             } />
