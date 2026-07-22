@@ -158,7 +158,7 @@ const App = () => {
               </>
             } />
 
-             <Route path="/insights/ceylon-cinnamon-capsules-guide" element={
+             <Route path="/insights/ceylon-cinnamon-capsules" element={
               <>
                 <main><BestCeylonCinnamonCapsulesGuide /></main>
                 <Footer />
@@ -171,7 +171,7 @@ const App = () => {
                 <Footer />
               </>
             } />
-            <Route path="/insights/ceylon-cinnamon-capsule-dosage-guide" element={
+            <Route path="/insights/ceylon-cinnamon-dosage-guide" element={
               <>
                 <main><CeylonCinnamonCapsuleDosageGuide /></main>
                 <Footer />
@@ -198,14 +198,14 @@ const App = () => {
               </>
             } />
 
-            <Route path="/insights/cinnamon-testing" element={
+            <Route path="/insights/ceylon-cinnamon-testing" element={
               <>
                 <main><LeadandPesticideTesting /></main>
                 <Footer />
               </>
             } />
 
-            <Route path="/insights/cinnamon-grading" element={
+            <Route path="/insights/ceylon-cinnamon-grading" element={
               <>
                 <main><CinnamonGradingExplained /></main>
                 <Footer />

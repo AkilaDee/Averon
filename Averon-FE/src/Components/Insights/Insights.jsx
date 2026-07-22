@@ -18,7 +18,7 @@ import imgCapsule from '../../assets/capsule.webp';
 
 const articles = [
   {
-    slug: 'ceylon-cinnamon-capsules-guide',
+    slug: 'ceylon-cinnamon-capsules',
     title: 'Best Ceylon Cinnamon Capsules: Safe & Effective Supplement',
     description: 'Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.',
     category: 'Health & Wellness',
@@ -26,7 +26,7 @@ const articles = [
     image: imgCapsule,
   },
   {
-    slug: 'ceylon-cinnamon-capsule-dosage-guide',
+    slug: 'ceylon-cinnamon-dosage-guide',
     title: 'Ceylon Cinnamon Capsule Dosage Guide: Safe and Effective',
     description: 'Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.',
     category: 'Health & Wellness',
