@@ -9,7 +9,7 @@ const UnlockCeylonCinnamonBenefits = () => {
       <Helmet>
         <title>Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies</title>
         <meta name="description" content="Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how 'true cinnamon' enhances wellness and cuisine." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/unlock-ceylon-cinnamon-benefits" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-benefits" />
       </Helmet>
 
       <div className="article-hero">

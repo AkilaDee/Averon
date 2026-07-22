@@ -9,7 +9,7 @@ const BestCeylonCinnamonCapsulesGuide = () => {
       <Helmet>
         <title>Best Ceylon Cinnamon Capsules: Safe & Effective Supplement | Averon Supplies</title>
         <meta name="description" content="Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/best-ceylon-cinnamon-capsules" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-capsules" />
       </Helmet>
 
       <div className="article-hero">

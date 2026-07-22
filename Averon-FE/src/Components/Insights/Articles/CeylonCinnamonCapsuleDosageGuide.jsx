@@ -9,7 +9,7 @@ const CeylonCinnamonCapsuleDosageGuide = () => {
       <Helmet>
         <title>Ceylon Cinnamon Capsule Dosage Guide: Safe and Effective | Averon Supplies</title>
         <meta name="description" content="Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-capsule-dosage-guide" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-dosage-guide" />
       </Helmet>
 
       <div className="article-hero">

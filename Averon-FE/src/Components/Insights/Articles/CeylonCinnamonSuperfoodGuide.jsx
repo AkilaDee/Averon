@@ -9,7 +9,7 @@ const CeylonCinnamonSuperfoodGuide = () => {
       <Helmet>
         <title>Ceylon Cinnamon Sticks: The Ultimate Superfood Guide | Averon Supplies</title>
         <meta name="description" content="Discover the health benefits of Ceylon cinnamon sticks, the true cinnamon, renowned for its rich history and ability to manage blood sugar and inflammation. Choose organic Ceylon for maximum wellness." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-superfood-guide" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-superfood" />
       </Helmet>
 
       <div className="article-hero">

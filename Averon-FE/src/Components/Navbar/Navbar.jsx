@@ -179,12 +179,12 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/organic-ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
+                  <NavLink to="/insights/organic-ceylon-cinnamon" onClick={closeMobileMenu}>
                     Organic Ceylon Cinnamon
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/ceylon-cinnamon-superfood-guide" onClick={closeMobileMenu}>
+                  <NavLink to="/insights/ceylon-cinnamon-superfood" onClick={closeMobileMenu}>
                     Cinnamon Super Food
                   </NavLink>
                 </li>
@@ -199,8 +199,8 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/unlock-ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
-                    Ceylon Cinnamon Health Benefits
+                  <NavLink to="/insights/ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
+                    Ceylon Cinnamon Benefits
                   </NavLink>
                 </li>
                 <li>

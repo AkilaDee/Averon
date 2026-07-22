@@ -145,13 +145,13 @@ const App = () => {
                 <Footer />
               </>
             } />
-            <Route path="/insights/ceylon-cinnamon-superfood-guide" element={
+            <Route path="/insights/ceylon-cinnamon-superfood" element={
               <>
                 <main><CinnamonSuperfoodGuide /></main>
                 <Footer />
               </>
             } />
-            <Route path="/insights/unlock-ceylon-cinnamon-benefits" element={
+            <Route path="/insights/ceylon-cinnamon-benefits" element={
               <>
                 <main><UnlockCeylonCinnamonBenefits /></main>
                 <Footer />
@@ -165,7 +165,7 @@ const App = () => {
               </>
             } />
 
-             <Route path="/insights/organic-ceylon-cinnamon-benefits" element={
+             <Route path="/insights/organic-ceylon-cinnamon" element={
               <>
                 <main><OrganicCeylonCinnamonBenefits /></main>
                 <Footer />
