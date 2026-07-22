@@ -18,7 +18,7 @@ import imgCapsule from '../../assets/capsule.webp';
 
 const articles = [
   {
-    slug: 'best-ceylon-cinnamon-capsules',
+    slug: 'ceylon-cinnamon-capsules-guide',
     title: 'Best Ceylon Cinnamon Capsules: Safe & Effective Supplement',
     description: 'Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.',
     category: 'Health & Wellness',
