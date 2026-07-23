@@ -41,6 +41,8 @@ const WhatIsCoumarin = lazy(() => import('./Components/Insights/Articles/WhatIsC
 const LeadandPesticideTesting = lazy(() => import('./Components/Insights/Articles/LeadandPesticideTesting'));
 const CinnamonGradingExplained = lazy(() => import('./Components/Insights/Articles/CinnamonGradingExplained'));
 const WhyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/WhyCeylonCinnamon'));
+const CeylonSpiceHeritage = lazy(() => import('./Components/Insights/Articles/CeylonSpiceHeritage'));
+
 
 const ScrollHandler = () => {
   const { pathname, state } = useLocation();
@@ -180,6 +182,12 @@ const App = () => {
             <Route path="/insights/alba-grade-cinnamon" element={
               <>
                 <main><WhatIsAlbaGrade /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/insights/ceylon-spice-heritage" element={
+              <>
+                <main><CeylonSpiceHeritage /></main>
                 <Footer />
               </>
             } />

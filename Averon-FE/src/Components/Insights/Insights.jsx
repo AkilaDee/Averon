@@ -14,9 +14,18 @@ import imgOrganicBenefits from '../../assets/organic-benefits.webp';
 import imgUnlockBenefits from '../../assets/cinnamon ground.webp';
 import imgCapsuleDosage from '../../assets/dosage.webp'; 
 import imgCapsule from '../../assets/capsule.webp'; 
+import imgHeritage from '../../assets/about.webp'; 
 
 
 const articles = [
+  {
+    slug: 'ceylon-spice-heritage',
+    title: 'The Master Guide to Authentic Ceylon Spices: Heritage, Health, and Flavour',
+    description: 'Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan spices, from true cinnamon to hand-harvested cardamoms and cloves.',
+    category: 'Origin & Provenance',
+    readTime: '9 min read',
+    image: imgHeritage,
+  },
   {
     slug: 'ceylon-cinnamon-capsules',
     title: 'Best Ceylon Cinnamon Capsules: Safe & Effective Supplement',
@@ -124,7 +133,7 @@ const Insights = () => {
       <div className="insights-hero">
         <div className="insights-hero-inner">
           <span className="insights-eyebrow">Knowledge Centre</span>
-          <h1 className="insights-hero-title">Ceylon Cinnamon Insights</h1>
+          <h1 className="insights-hero-title">Ceylon Cinnamon & Spice Insights</h1>
           <p className="insights-hero-sub">
             Sourced from 15+ years of direct cultivation in Sri Lanka. Practical knowledge
             for buyers, manufacturers, and anyone serious about what goes into their product.
@@ -181,7 +190,7 @@ const Insights = () => {
       {/* BOTTOM CTA */}
       <div className="insights-bottom-cta">
         <div className="insights-bottom-inner">
-          <h3 className="insights-cta-title">Sourcing Ceylon cinnamon for your business?</h3>
+          <h3 className="insights-cta-title">Sourcing Ceylon spices for your business?</h3>
           <p className="insights-cta-sub">
             Request a sample pack or our wholesale pricing matrix.
           </p>
