@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom'; 
 import logo from '../../assets/logo.webp';
 import './Navbar.css';
-import { FaLinkedinIn, FaRegEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaRegEnvelope, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { FiSearch, FiMail, FiPhone, FiChevronDown } from 'react-icons/fi'; // Imported FiChevronDown
 
 const Navbar = () => {
@@ -39,8 +39,11 @@ const Navbar = () => {
           </div>
 
           <div className="tier-one-socials">
-            <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="social-circle wa" aria-label="Contact us on WhatsApp">
-              <FaWhatsapp className="social-icon" />
+             <a href="https://www.facebook.com/averonsuppliesltd" target="_blank" rel="noreferrer" className="social-circle fb" aria-label="Visit our Facebook page">
+              <FaFacebook className="social-icon fb" />
+            </a>
+            <a href="https://www.instagram.com/averonsuppliesltd" target="_blank" rel="noreferrer" className="social-circle in" aria-label="Visit our instagram page">
+              <FaInstagram className="social-icon ig" />
             </a>
             <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="social-circle ln" aria-label="Visit our LinkedIn page">
               <FaLinkedinIn />

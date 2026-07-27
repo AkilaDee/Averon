@@ -172,7 +172,7 @@
   width: 32px;         /* Standardizes outer circle size */
   height: 32px;        /* Standardizes outer circle size */
   border-radius: 50%;
-  background-color: #25D366; /* Or matching black depending on state */
+  background-color: #cb3005; /* Or matching black depending on state */
   text-decoration: none;
   transition: all 0.2s ease;
   box-sizing: border-box;
