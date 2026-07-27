@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './Insights.css';
-
 
 import imgAlba from '../../assets/alba-gd.webp';
 import imgCassia from '../../assets/cinnamon-vs-cassia.webp';
@@ -17,8 +16,6 @@ import imgCapsuleDosage from '../../assets/dosage.webp';
 import imgCapsule from '../../assets/capsule.webp'; 
 import imgHeritage from '../../assets/about.webp'; 
 import imgUsage from '../../assets/quillings.webp'; 
-
-
 
 const articles = [
   {
@@ -137,89 +134,144 @@ const categoryColours = {
 };
 
 const Insights = () => {
+  // Grab the dynamic slug parameter if your route is configured as /insights/:slug
+  const { slug } = useParams();
+
+  // Find if an active article matches the URL slug
+  const activeArticle = slug ? articles.find((a) => a.slug === slug) : null;
+
   return (
     <div className="insights-page">
       <Helmet>
-        <title>Ceylon Cinnamon & Spice Insights & Knowledge Centre | Averon Supplies</title>
-        <meta 
-          name="description" 
-          content="Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka." 
-        />
-        <link 
-          rel="canonical" 
-          href="https://www.averonsupplies.co.uk/insights" 
-          hreflang="en-GB"
-        />
+        {activeArticle ? (
+          <>
+            <title>{activeArticle.title} | Averon Supplies Insights</title>
+            <meta name="description" content={activeArticle.description} />
+            <link 
+              rel="canonical" 
+              href={`https://www.averonsupplies.co.uk/insights/${activeArticle.slug}`} 
+              hreflang="en-GB"
+            />
+          </>
+        ) : (
+          <>
+            <title>Ceylon Cinnamon & Spice Insights & Knowledge Centre | Averon Supplies</title>
+            <meta 
+              name="description" 
+              content="Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka." 
+            />
+            <link 
+              rel="canonical" 
+              href="https://www.averonsupplies.co.uk/insights" 
+              hreflang="en-GB"
+            />
+          </>
+        )}
       </Helmet>
 
-      {/* HERO */}
-      <div className="insights-hero">
-        <div className="insights-hero-inner">
-          <span className="insights-eyebrow">Knowledge Centre</span>
-          <h1 className="insights-hero-title">Ceylon Cinnamon & Spice Insights</h1>
-          <p className="insights-hero-sub">
-            Sourced from 15+ years of direct cultivation in Sri Lanka. Practical knowledge
-            for buyers, manufacturers, and anyone serious about what goes into their product.
-          </p>
-        </div>
-      </div>
+      {activeArticle ? (
+        /* =========================================================
+            INDIVIDUAL ARTICLE VIEW (When a slug is present)
+           ========================================================= */
+        <div className="single-article-container" style={{ padding: '40px 20px', maxWidth: '800px', margin: '0 auto' }}>
+          <span style={{ color: categoryColours[activeArticle.category] || '#926A02', fontWeight: 'bold' }}>
+            {activeArticle.category}
+          </span>
+          <h1 style={{ margin: '15px 0' }}>{activeArticle.title}</h1>
+          <p style={{ color: '#666', marginBottom: '20px' }}>{activeArticle.readTime}</p>
+          
+          {activeArticle.image && (
+            <img 
+              src={activeArticle.image} 
+              alt={activeArticle.title} 
+              style={{ width: '100%', maxHeight: '400px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px' }} 
+            />
+          )}
 
-      {/* ARTICLE GRID */}
-      <div className="insights-grid-outer">
-        <div className="insights-grid">
-          {articles.map((article) => (
-            <Link
-              to={`/insights/${article.slug}`}
-              key={article.slug}
-              className="insight-card"
-            >
-              {/* IMAGE */}
-              <div className="insight-card-img">
-                {article.image ? (
-                  <img
-                    src={article.image}
-                    alt={article.title}
-                    className="insight-card-img-real"
-                  />
-                ) : (
-                  <div className="insight-card-img-inner">
-                    <span className="insight-card-number">??</span>
+          <div className="article-body">
+            <p style={{ fontSize: '1.1rem', lineHeight: '1.6' }}>{activeArticle.description}</p>
+            {/* Render full article body layout elements here */}
+          </div>
+
+          <div style={{ marginTop: '40px' }}>
+            <Link to="/insights" className="insights-cta-btn">← Back to Knowledge Centre</Link>
+          </div>
+        </div>
+      ) : (
+        /* =========================================================
+            MAIN INSIGHTS HUB GRID VIEW (When viewing /insights)
+           ========================================================= */
+        <>
+          {/* HERO */}
+          <div className="insights-hero">
+            <div className="insights-hero-inner">
+              <span className="insights-eyebrow">Knowledge Centre</span>
+              <h1 className="insights-hero-title">Ceylon Cinnamon & Spice Insights</h1>
+              <p className="insights-hero-sub">
+                Sourced from 15+ years of direct cultivation in Sri Lanka. Practical knowledge
+                for buyers, manufacturers, and anyone serious about what goes into their product.
+              </p>
+            </div>
+          </div>
+
+          {/* ARTICLE GRID */}
+          <div className="insights-grid-outer">
+            <div className="insights-grid">
+              {articles.map((article) => (
+                <Link
+                  to={`/insights/${article.slug}`}
+                  key={article.slug}
+                  className="insight-card"
+                >
+                  {/* IMAGE */}
+                  <div className="insight-card-img">
+                    {article.image ? (
+                      <img
+                        src={article.image}
+                        alt={article.title}
+                        className="insight-card-img-real"
+                      />
+                    ) : (
+                      <div className="insight-card-img-inner">
+                        <span className="insight-card-number">??</span>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
 
-              {/* CONTENT */}
-              <div className="insight-card-body">
-                <div className="insight-card-meta">
-                  <span
-                    className="insight-category"
-                    style={{ color: categoryColours[article.category] || '#926A02' }}
-                  >
-                    {article.category}
-                  </span>
-                  <span className="insight-read-time">{article.readTime}</span>
-                </div>
-                <h2 className="insight-card-title">{article.title}</h2>
-                <p className="insight-card-desc">{article.description}</p>
-                <span className="insight-card-cta">
-                  Read article <span className="insight-arrow">→</span>
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
+                  {/* CONTENT */}
+                  <div className="insight-card-body">
+                    <div className="insight-card-meta">
+                      <span
+                        className="insight-category"
+                        style={{ color: categoryColours[article.category] || '#926A02' }}
+                      >
+                        {article.category}
+                      </span>
+                      <span className="insight-read-time">{article.readTime}</span>
+                    </div>
+                    <h2 className="insight-card-title">{article.title}</h2>
+                    <p className="insight-card-desc">{article.description}</p>
+                    <span className="insight-card-cta">
+                      Read article <span className="insight-arrow">→</span>
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
 
-      {/* BOTTOM CTA */}
-      <div className="insights-bottom-cta">
-        <div className="insights-bottom-inner">
-          <h3 className="insights-cta-title">Sourcing Ceylon spices for your business?</h3>
-          <p className="insights-cta-sub">
-            Request a sample pack or our wholesale pricing matrix.
-          </p>
-          <Link to="/contact-us" className="insights-cta-btn">Get in Touch</Link>
-        </div>
-      </div>
+          {/* BOTTOM CTA */}
+          <div className="insights-bottom-cta">
+            <div className="insights-bottom-inner">
+              <h3 className="insights-cta-title">Sourcing Ceylon spices for your business?</h3>
+              <p className="insights-cta-sub">
+                Request a sample pack or our wholesale pricing matrix.
+              </p>
+              <Link to="/contact-us" className="insights-cta-btn">Get in Touch</Link>
+            </div>
+          </div>
+        </>
+      )}
 
     </div>
   );
