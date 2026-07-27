@@ -42,7 +42,7 @@ const Contact = () => {
           name="description" 
           content="Contact Averon Supplies to request wholesale spice samples, secure container-load contract pricing, or arrange a vendor audit with our compliance desk." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" hreflang="en-GB"/>
       </Helmet>
 
       {/* ROW 1: Contact Details */}
