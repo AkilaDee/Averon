@@ -214,6 +214,11 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink to="/insights/ceylon-cinnamon-usage" onClick={closeMobileMenu}>
+                    Cinnamon Usage
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink to="/insights/coumarin-in-cinnamon" onClick={closeMobileMenu}>
                     Coumarin in Cinnamon
                   </NavLink>

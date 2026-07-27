@@ -42,6 +42,8 @@ const LeadandPesticideTesting = lazy(() => import('./Components/Insights/Article
 const CinnamonGradingExplained = lazy(() => import('./Components/Insights/Articles/CinnamonGradingExplained'));
 const WhyCeylonCinnamon = lazy(() => import('./Components/Insights/Articles/WhyCeylonCinnamon'));
 const CeylonSpiceHeritage = lazy(() => import('./Components/Insights/Articles/CeylonSpiceHeritage'));
+const CinnamonUsage = lazy(() => import('./Components/Insights/Articles/CinnamonUsage'));
+
 
 
 const ScrollHandler = () => {
@@ -195,6 +197,13 @@ const App = () => {
             <Route path="/insights/ceylon-cinnamon-vs-cassia" element={
               <>
                 <main><IdentifyCeylonCinnamon /></main>
+                <Footer />
+              </>
+            } />
+
+            <Route path="/insights/ceylon-cinnamon-usage" element={
+              <>
+                <main><CinnamonUsage /></main>
                 <Footer />
               </>
             } />

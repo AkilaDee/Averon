@@ -15,6 +15,8 @@ import imgUnlockBenefits from '../../assets/cinnamon ground.webp';
 import imgCapsuleDosage from '../../assets/dosage.webp'; 
 import imgCapsule from '../../assets/capsule.webp'; 
 import imgHeritage from '../../assets/about.webp'; 
+import imgUsage from '../../assets/quillings.webp'; 
+
 
 
 const articles = [
@@ -89,6 +91,14 @@ const articles = [
     category: 'Food Safety',
     readTime: '6 min read',
     image: imgCoumarin,
+  },
+  {
+    slug: 'ceylon-cinnamon-usage',
+    title: 'Cinnamon Usage: What is Good for Cinnamon?',
+    description: 'Discover the many uses of cinnamon, from blood sugar balance to skincare. Learn what is good for cinnamon and how to incorporate it safely into your routine.',
+    category: 'Health & Wellness',
+    readTime: '7 min read',
+    image: imgUsage,
   },
   {
     slug: 'ceylon-cinnamon-testing',
