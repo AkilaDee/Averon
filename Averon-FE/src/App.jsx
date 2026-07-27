@@ -115,6 +115,42 @@ const App = () => {
                 <Footer />
               </>
             } />
+            <Route path="/products/ceylon-cinnamon" element={
+              <>
+                <main><Cinnamon /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/products/black-pepper" element={
+              <>
+                <main><BlackPepper /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/products/cloves" element={
+              <>
+                <main><Cloves /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/products/green-cardamom" element={
+              <>
+                <main><Cardamom /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/products/vanilla" element={
+              <>
+                <main><Vanilla /></main>
+                <Footer />
+              </>
+            } />
+            <Route path="/products/nutmeg" element={
+              <>
+                <main><Nutmeg /></main>
+                <Footer />
+              </>
+            } />
 
             <Route path="/about-us" element={
               <>
@@ -239,48 +275,6 @@ const App = () => {
             <Route path="/supply-chain" element={
               <>
                 <main><SupplyChain /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/ceylon-cinnamon" element={
-              <>
-                <main><Cinnamon /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/black-pepper" element={
-              <>
-                <main><BlackPepper /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/cloves" element={
-              <>
-                <main><Cloves /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/green-cardamom" element={
-              <>
-                <main><Cardamom /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/vanilla" element={
-              <>
-                <main><Vanilla /></main>
-                <Footer />
-              </>
-            } />
-
-            <Route path="/products/nutmeg" element={
-              <>
-                <main><Nutmeg /></main>
                 <Footer />
               </>
             } />

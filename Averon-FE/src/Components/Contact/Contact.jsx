@@ -37,12 +37,16 @@ const Contact = () => {
   return (
     <div className='contact-page-container'>
       <Helmet>
-        <title>Contact Our Bulk Spice Procurement & Trade Desk | Averon Supplies</title>
+        <title>Get in Touch | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Contact Averon Supplies to request wholesale spice samples, secure container-load contract pricing, or arrange a vendor audit with our compliance desk." 
+          content="Contact Averon Supplies for wholesale Ceylon spice inquiries, custom container pricing, and sample requests." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/contact-us" hreflang="en-GB"/>
+        <link 
+          rel="canonical" 
+          href="https://www.averonsupplies.co.uk/contact-us" 
+          hreflang="en-GB" 
+        />
       </Helmet>
 
       {/* ROW 1: Contact Details */}

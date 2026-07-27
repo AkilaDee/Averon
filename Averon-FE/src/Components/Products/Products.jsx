@@ -55,7 +55,7 @@ const productDetails = {
       { name: "Black Pepper Ground", desc: "Standard grade Black pepper powder.", img: pepper_ground }
     ]
   },
-  'cardamom': {
+  'green-cardamom': {
     slug: 'green-cardamom',
     title: "Our Green Cardamom Range",
     description: "Prized green cardamom pods and premium ground variants packed with natural essential oils.",
