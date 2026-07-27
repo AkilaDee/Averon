@@ -74,9 +74,12 @@ const Footer = () => {
 
             {/* Social Buttons Container */}
             <div className="footer-socials-row">
-              <a href="https://wa.me/447344469729" target="_blank" rel="noreferrer" className="footer-social-circle ln" aria-label="Contact us on WhatsApp">
-                  <FaWhatsapp className="social-icon" />
-              </a>
+               <a href="https://www.facebook.com/averonsuppliesltd" target="_blank" rel="noreferrer" className="footer-social-circle fb" aria-label="Visit our Facebook page">
+                  <FaFacebookF className="social-icon" />
+               </a>
+               <a href="https://www.instagram.com/averonsuppliesltd" target="_blank" rel="noreferrer" className="footer-social-circle ig" aria-label="Visit our instagram page">
+                  <FaInstagram className="social-icon" />
+               </a>
               <a href="https://linkedin.com/company/averon-supplies-ltd" target="_blank" rel="noreferrer" className="footer-social-circle ln" aria-label="Visit our LinkedIn page">
                   <FaLinkedinIn className="social-icon"/>
               </a>
