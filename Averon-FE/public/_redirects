@@ -1,7 +1,5 @@
-http://averonsuppliesltd.com/*    https://www.averonsupplies.co.uk/:splat    301!
-https://averonsuppliesltd.com/*   https://www.averonsupplies.co.uk/:splat    301!
-http://www.averonsuppliesltd.com/*  https://www.averonsupplies.co.uk/:splat    301!
-https://www.averonsuppliesltd.com/* https://www.averonsupplies.co.uk/:splat    301!
-http://averonsupplies.co.uk/*     https://www.averonsupplies.co.uk/:splat    301!
+http://averonsupplies.co.uk/*      https://www.averonsupplies.co.uk/:splat    301!
+https://averonsupplies.co.uk/*     https://www.averonsupplies.co.uk/:splat    301!
+http://www.averonsupplies.co.uk/*  https://www.averonsupplies.co.uk/:splat    301!
 
 /*    /index.html    200
