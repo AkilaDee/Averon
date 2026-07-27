@@ -50,7 +50,7 @@ const CinnamonUsage = () => {
 
           <h3>2. A Powerhouse of Antioxidants</h3>
           <p>
-            Your body is constantly fighting oxidative stress caused by free radicals—unstable molecules that can damage your cells and contribute to chronic diseases. The natural antioxidants in cinnamon powder, specifically polyphenols, are highly effective at neutralizing these free radicals. In fact, in comparative studies of various spices, cinnamon consistently ranks near the top for antioxidant activity, even outperforming &quot;superfoods&quot; like garlic and oregano.
+            Your body is constantly fighting oxidative stress caused by free radicals unstable molecules that can damage your cells and contribute to chronic diseases. The natural antioxidants in cinnamon powder, specifically polyphenols, are highly effective at neutralizing these free radicals. In fact, in comparative studies of various spices, cinnamon consistently ranks near the top for antioxidant activity, even outperforming &quot;superfoods&quot; like garlic and oregano.
           </p>
 
           <h3>3. Fighting Inflammation</h3>
@@ -153,7 +153,7 @@ const CinnamonUsage = () => {
           <h3 className="article-related-title">Related Insights</h3>
           <div className="article-related-links">
             <Link to="/insights/cinnamon-grading" className="article-related-link">
-              Ceylon Cinnamon Grading Explained — From Alba to C4 →
+              Ceylon Cinnamon Grading Explained - From Alba to C4 →
             </Link>
             <Link to="/insights/ceylon-cinnamon-vs-cassia" className="article-related-link">
               How to Identify Real Ceylon Cinnamon vs Cassia →

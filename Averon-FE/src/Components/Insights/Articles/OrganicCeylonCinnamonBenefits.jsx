@@ -272,7 +272,7 @@ const OrganicCeylonCinnamonBenefits = () => {
 
           <h2>Conclusion: Embracing the Benefits of Organic Ceylon Cinnamon</h2>
           <p>
-            Organic Ceylon cinnamon is more than just a flavorful spice—it's a powerhouse of health benefits. From enhancing heart health to aiding in weight management, its advantages are undeniable.
+            Organic Ceylon cinnamon is more than just a flavorful spice, it's a powerhouse of health benefits. From enhancing heart health to aiding in weight management, its advantages are undeniable.
           </p>
           <p>
             Incorporating this spice into your daily routine can be simple and rewarding. Whether you sprinkle it on your oatmeal or brew it into tea, the possibilities are endless.

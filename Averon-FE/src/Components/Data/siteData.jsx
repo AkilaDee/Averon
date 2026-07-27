@@ -1,9 +1,9 @@
 export const SITE_INDEX = [
   {
-    title: "Home — Direct Global Sourcing",
+    title: "Home Direct Global Sourcing",
     url: "/",
     type: "Page Content",
-    text: "Averon Supplies has been searching the globe for interesting products, engineering direct global supply chains with reputable producers. High-purity food ingredients, Ceylon cinnamon, and spice distribution matrices."
+    text: "Averon Supplies is the direct soucing partner of preum ingredients, engineering direct global supply chains with reputable producers. High-purity food ingredients, Ceylon cinnamon, and spice distribution matrices."
   },
   {
     title: "About Us",
@@ -30,7 +30,8 @@ export const SITE_INDEX = [
     url: "/products",
     type: "Product",
     text: "Genuine Sri Lankan Ceylon Cinnamon. Ultra-low coumarin levels, delicate sweet flavor profile, premium organic food manufacturing grade."
-  },{
+  },
+  {
     title: "Ceylon Cinnamon Sticks",
     url: "/products",
     type: "Product",

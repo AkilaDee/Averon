@@ -35,7 +35,7 @@ const CeylonCinnamonSuperfoodGuide = () => {
 
           <p className="article-lead">
             Imagine the warm, sweet, and woody aroma drifting from your morning bowl of oatmeal or your favorite winter beverage. For most of us, this beloved flavor is simply a comforting pantry staple. However, behind its delicious taste lies a fascinating history and a complex nutritional profile that has captivated both ancient healers and modern scientists.
-            Today, we are diving deep into the world of this incredible botanical. We will explore the origins of its popularity, decode the science behind its health claims, and explain why choosing the right variety—specifically, Ceylon—can make all the difference for your health.
+            Today, we are diving deep into the world of this incredible botanical. We will explore the origins of its popularity, decode the science behind its health claims, and explain why choosing the right variety specifically, Ceylon can make all the difference for your health.
           </p>
 
           <h2>From Ancient Remedies to Modern Pantries</h2>
@@ -143,7 +143,7 @@ const CeylonCinnamonSuperfoodGuide = () => {
 
           <h2>Conclusion</h2>
           <p>
-            The journey of this remarkable bark—from an ancient, treasured commodity to a scientifically backed modern health staple—is truly extraordinary. The next time someone asks you, "when did cinnamon become popular as a superfood?" you will know that its rise to fame is backed by thousands of years of traditional use and decades of rigorous modern science.
+            The journey of this remarkable bark from an ancient, treasured commodity to a scientifically backed modern health staple is truly extraordinary. The next time someone asks you, "when did cinnamon become popular as a superfood?" you will know that its rise to fame is backed by thousands of years of traditional use and decades of rigorous modern science.
           </p>
           <p>
             By actively incorporating cinnamon into a healthy diet, you are doing much more than enhancing the flavor of your food. You are managing your blood sugar, fighting off inflammation, and flooding your body with premium antioxidants. Just remember to read your labels carefully: prioritize authentic, organic Ceylon to ensure you are getting all the magnificent health benefits safely.
@@ -166,7 +166,7 @@ const CeylonCinnamonSuperfoodGuide = () => {
           <h3 className="article-related-title">Related Insights</h3>
           <div className="article-related-links">
             <Link to="/insights/cinnamon-grading" className="article-related-link">
-              Ceylon Cinnamon Grading Explained — From Alba to C4 →
+              Ceylon Cinnamon Grading Explained - From Alba to C4 →
             </Link>
             <Link to="/insights/ceylon-cinnamon-vs-cassia" className="article-related-link">
               How to Identify Real Ceylon Cinnamon vs Cassia →

@@ -52,7 +52,7 @@ const CeylonSpiceHeritage = () => {
             Later, the Portuguese, Dutch, and British empires successively vied for control over the island, specifically to monopolise the lucrative trade of Ceylon spices. This rich, complex history of trade and colonisation did not just export the island's treasures to the world; it also introduced new culinary techniques that eventually melded with local traditions to create the diverse landscape of modern Sri Lankan cuisine.
           </p>
           <p>
-            The island's unique terroir—characterised by rich soils, abundant monsoon rains, and tropical sunshine—imparts an unmatched depth to its agricultural produce. Sourcing direct from this legendary origin ensures that every batch retains its volatile oils, rich history, and uncompromised health benefits.
+            The island's unique terroir characterised by rich soils, abundant monsoon rains, and tropical sunshine imparts an unmatched depth to its agricultural produce. Sourcing direct from this legendary origin ensures that every batch retains its volatile oils, rich history, and uncompromised health benefits.
           </p>
 
           <h2>The Core Collection: Premium Ceylon Spices</h2>
@@ -106,7 +106,7 @@ const CeylonSpiceHeritage = () => {
 
           <h3>5. Nutmeg and Mace</h3>
           <p>
-            The nutritional profile of pure nutmeg and mace is incredibly impressive, boasting essential minerals like manganese, magnesium, and copper. Nutmeg provides a warm, sweet, and comforting edge, while mace—the delicate, lacy outer webbing of the nutmeg seed—offers a lighter, slightly sharper, and more refined aromatic profile.
+            The nutritional profile of pure nutmeg and mace is incredibly impressive, boasting essential minerals like manganese, magnesium, and copper. Nutmeg provides a warm, sweet, and comforting edge, while mace the delicate, lacy outer webbing of the nutmeg seed offers a lighter, slightly sharper, and more refined aromatic profile.
           </p>
           <p>
             In Sri Lankan cooking, a delicate grating of nutmeg is often the secret ingredient in sweet treats like Watalappan (a coconut custard) and rich meat curries.
@@ -158,7 +158,7 @@ const CeylonSpiceHeritage = () => {
               Why Ceylon Cinnamon Comes Only From Sri Lanka →
             </Link>
             <Link to="/insights/ceylon-cinnamon-grading" className="article-related-link">
-              Ceylon Cinnamon Grading Explained — From Alba to C4 →
+              Ceylon Cinnamon Grading Explained - From Alba to C4 →
             </Link>
           </div>
         </div>

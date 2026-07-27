@@ -8,7 +8,7 @@ const WhyCeylonCinnamon = () => {
     <div className="article-page">
       <Helmet>
         <title>Why Ceylon Cinnamon Comes Only From Sri Lanka | Averon Supplies</title>
-        <meta name="description" content="True cinnamon — Cinnamomum verum — is native to Sri Lanka. Learn the history, geography and climate conditions that make authentic Ceylon cinnamon impossible to replicate elsewhere." />
+        <meta name="description" content="True cinnamon (Cinnamomum verum) is native to Sri Lanka. Learn the history, geography and climate conditions that make authentic Ceylon cinnamon impossible to replicate elsewhere." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-origin" />
       </Helmet>
 

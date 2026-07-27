@@ -16,7 +16,7 @@ const LeadandPesticideTesting = () => {
         <div className="article-hero-inner">
           <Link to="/insights" className="article-back">← Back to Insights</Link>
           <span className="article-category-tag">Testing & Compliance</span>
-          <h1 className="article-title">Lead and Pesticide Testing in Cinnamon — What to Look For</h1>
+          <h1 className="article-title">Lead and Pesticide Testing in Cinnamon - What to Look For</h1>
           <p className="article-subtitle">
             Independent testing has found elevated contaminant levels in commercially available cinnamon. Here is what every buyer needs to know.
           </p>

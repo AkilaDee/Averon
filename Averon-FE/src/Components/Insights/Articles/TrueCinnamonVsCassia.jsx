@@ -91,7 +91,7 @@ const TrueCinnamonVsCassia = () => {
             If cinnamon is so healthy, should we be eating it by the spoonful? Not necessarily. This is where the distinction between ceylon cinnamon vs cassia cinnamon becomes a matter of safety.
           </p>
           <p>
-            The primary concern lies in a naturally occurring chemical compound called coumarin. The coumarin content in cassia cinnamon is quite high—sometimes up to 1%. While this might not sound like much, consuming large amounts of coumarin on a regular basis has been directly linked to liver damage.
+            The primary concern lies in a naturally occurring chemical compound called coumarin. The coumarin content in cassia cinnamon is quite high sometimes up to 1%. While this might not sound like much, consuming large amounts of coumarin on a regular basis has been directly linked to liver damage.
           </p>
           <p>
             This brings up a vital medical consideration regarding liver toxicity and cinnamon intake. In some European countries, health agencies have even set strict limits on the amount of Cassia cinnamon allowed in commercially baked goods due to these exact safety concerns.
@@ -99,7 +99,7 @@ const TrueCinnamonVsCassia = () => {
 
           <h3>Is Daily Cinnamon Consumption Safe?</h3>
           <p>
-            So, is daily cinnamon consumption safe? The answer is yes—but it depends entirely on the type you choose. True Ceylon cinnamon contains merely trace amounts of coumarin (around 0.004%), making it completely safe for daily consumption, even in supplement form.
+            So, is daily cinnamon consumption safe? The answer is yes, but it depends entirely on the type you choose. True Ceylon cinnamon contains merely trace amounts of coumarin (around 0.004%), making it completely safe for daily consumption, even in supplement form.
           </p>
           <p>
             When choosing the right cinnamon for health, especially if you plan to use it daily in smoothies, oatmeal, or as a dietary supplement, Ceylon is undeniably the safest option. There is a vast safety gap between daily Ceylon cinnamon and cinnamon sold as generic Cassia.
@@ -173,7 +173,7 @@ const TrueCinnamonVsCassia = () => {
               Ceylon Cinnamon Sticks: The Ultimate Superfood Guide →
             </Link>
             <Link to="/insights/cinnamon-grading" className="article-related-link">
-              Ceylon Cinnamon Grading Explained — From Alba to C4 →
+              Ceylon Cinnamon Grading Explained - From Alba to C4 →
             </Link>
           </div>
         </div>

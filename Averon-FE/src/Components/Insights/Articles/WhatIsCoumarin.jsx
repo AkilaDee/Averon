@@ -95,7 +95,7 @@ const WhatIsCoumarin = () => {
           <p>
             To put those numbers in context: a single teaspoon of ground Cassia cinnamon weighs
             approximately 2.6 grams. For Vietnamese Cassia, that single teaspoon could contain
-            more coumarin than the daily tolerable intake for a 70kg adult — from one use.
+            more coumarin than the daily tolerable intake for a 70kg adult - from one use.
           </p>
 
           <h2>Who Should Be Most Concerned?</h2>
@@ -174,7 +174,7 @@ const WhatIsCoumarin = () => {
               How to Identify Real Ceylon Cinnamon vs Cassia →
             </Link>
             <Link to="/insights/cinnamon-testing" className="article-related-link">
-              Lead and Pesticide Testing in Cinnamon — What to Look For →
+              Lead and Pesticide Testing in Cinnamon - What to Look For →
             </Link>
           </div>
         </div>
