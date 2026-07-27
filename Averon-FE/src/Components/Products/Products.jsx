@@ -55,7 +55,7 @@ const productDetails = {
       { name: "Black Pepper Ground", desc: "Standard grade Black pepper powder.", img: pepper_ground }
     ]
   },
-  cardamom: {
+  'cardamom': {
     slug: 'green-cardamom',
     title: "Our Green Cardamom Range",
     description: "Prized green cardamom pods and premium ground variants packed with natural essential oils.",
@@ -66,7 +66,7 @@ const productDetails = {
       { name: "Green Cardamom Ground", desc: "Large, bright green powder packed with essential oils and intense fragrance.", img: cardamom_ground }
     ]
   },
-  cloves: {
+  'cloves': {
     slug: 'cloves',
     title: "Our Clove Range",
     description: "Whole full-headed cloves and high-eugenol ground clove powders for commercial applications.",
@@ -77,7 +77,7 @@ const productDetails = {
       { name: "Premium Cloves Ground", desc: "Whole, full-headed cloves with zero headless units, high in eugenol oil.", img: cloves_ground }
     ]
   },
-  vanilla: {
+  'vanilla': {
     slug: 'vanilla',
     title: "Our Vanilla Range",
     description: "Plump, moisture-rich Gourmet Grade A Bourbon vanilla pods with a rich flavor profile.",
@@ -87,7 +87,7 @@ const productDetails = {
       { name: "Gourmet Grade A Bourbon Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich flavour profile.", img: vanilla }
     ]
   },
-  nutmeg: {
+  'nutmeg': {
     slug: 'nutmeg',
     title: "Our Nutmeg Range",
     description: "High-density, oil-rich whole nutmeg nuts sourced directly from Sri Lankan estates.",
