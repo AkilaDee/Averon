@@ -22,11 +22,6 @@ import C4 from '../../assets/C4.webp'
 import H1 from '../../assets/H1.webp'
 import H2 from '../../assets/H2.webp'
 
-
-
-
-
-
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('cinnamon');
 
@@ -85,46 +80,51 @@ const Products = () => {
   return (
     <div className='products'>
       <Helmet>
-      {/* Primary target: Wholesale Spices & Bulk Importers */}
-      <title>Wholesale Spices Supplier & Bulk Importers | Averon Supplies</title>
-      
-      <meta 
-        name="description" 
-        content="Direct estate-to-business wholesale supply of single-origin, premium grade Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
-      />
+        {/* Dynamically update the Title and Canonical based on the selected spice */}
+        <title>{productDetails[selectedCategory].title} | Averon Supplies</title>
+        
+        <meta 
+          name="description" 
+          content="Direct estate-to-business wholesale supply of single-origin, premium grade Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
+        />
   
-    <link rel="canonical" href="https://www.averonsupplies.co.uk/products" hreflang="en-GB"/>
-</Helmet>
+        <link 
+          rel="canonical" 
+          href={`https://www.averonsupplies.co.uk/products/${selectedCategory}`} 
+          hreflang="en-GB"
+        />
+      </Helmet>
+
       {/* =========================================================
-          SECTION 1: MAIN PRODUCTS DISPLAY (CLEANED OF INLINE STYLES)
+          SECTION 1: MAIN PRODUCTS DISPLAY
           ========================================================= */}
       <div className="product-categories">
         <div className="cat-card">
           <img src={cinnamon} alt="Ceylon-Cinnamon" fetchPriority="high"/>
           <h3>Ceylon Cinnamon</h3>
           <p>Premium Ceylon Cinnamon is valued for its delicate aroma and natural sweetness, offering a refined and distinctive flavor profile.</p>
-          <Link to="/products/ceylon-cinnamon" className="read-more-btn">Explore Ceylon Cinamon</Link>
+          <Link to="/products/cinnamon" className="read-more-btn" onClick={() => setSelectedCategory('cinnamon')}>Explore Ceylon Cinnamon</Link>
         </div>
 
         <div className="cat-card">
           <img src={pepper_500} alt="black pepper" />
           <h3>Black Pepper</h3>
           <p>Premium Sri Lankan black pepper is valued for its bold aroma and high piperine content, offering a vibrant and distinctive flavour profile.</p>
-          <Link to="/products/black-pepper" className="read-more-btn">Explore Black Pepper</Link>
+          <Link to="/products/pepper" className="read-more-btn" onClick={() => setSelectedCategory('pepper')}>Explore Black Pepper</Link>
         </div>
 
         <div className="cat-card">
           <img src={cardamom} alt="Cardamom" />
           <h3>Green Cardamom</h3>
           <p>Premium Ceylon Green Cardamom is prized for its cooling, floral aroma and high cineole content, offering a sweet yet complex flavour profile.</p>
-          <Link to="/products/green-cardamom" className="read-more-btn">Explore Cardamom</Link>
+          <Link to="/products/cardamom" className="read-more-btn" onClick={() => setSelectedCategory('cardamom')}>Explore Cardamom</Link>
         </div>
 
         <div className="cat-card">
           <img src={cloves} alt="Cloves" />
           <h3>Cloves</h3>
           <p>Premium Ceylon Cloves are prized for its intense, warm aroma and high eugenol oil content, offering a bold and pungent flavour profile.</p>
-          <Link to="/products/cloves" className="read-more-btn">Explore Cloves</Link>
+          <Link to="/products/cloves" className="read-more-btn" onClick={() => setSelectedCategory('cloves')}>Explore Cloves</Link>
         </div>
       </div>
 
@@ -133,21 +133,21 @@ const Products = () => {
           <img src={vanilla} alt="Vanilla" />
           <h3>Vanilla</h3>
           <p>Premium Ceylon Vanilla is valued for its rich, cream-like aroma and deep, complex sweetness, offering a velvety and distinctive flavor profile.</p>
-          <Link to="/products/vanilla" className="read-more-btn">Explore Vanilla</Link>
+          <Link to="/products/vanilla" className="read-more-btn" onClick={() => setSelectedCategory('vanilla')}>Explore Vanilla</Link>
         </div>
 
         <div className="cat-card">
           <img src={nutmeg} alt="Nutmeg" />
           <h3>Nutmeg</h3>
           <p>Premium Sri Lankan Nutmeg is valued for its warm, woody aroma and high essential oil content, offering a highly aromatic and distinctive flavor profile.</p>
-          <Link to="/products/nutmeg" className="read-more-btn">Explore Nutmeg</Link>
+          <Link to="/products/nutmeg" className="read-more-btn" onClick={() => setSelectedCategory('nutmeg')}>Explore Nutmeg</Link>
         </div>
       </div>
 
       <hr style={{ border: 'none', borderTop: '1px solid #ddd', margin: '40px 0' }} />
 
       {/* =========================================================
-          SECTION 2: VARIETY EXPLORER (SIDEBAR AT EXACTLY 100PX)
+          SECTION 2: VARIETY EXPLORER
           ========================================================= */}
       <div className="variety-explorer-section">
         <h2>Explore Our Product Range</h2>
@@ -162,7 +162,7 @@ const Products = () => {
                 onClick={() => setSelectedCategory(key)}
                 className={selectedCategory === key ? 'active' : ''}
               >
-                {key === 'pepper' ? 'Black Pepper' : key === 'cardamom' ? 'Green Cardamom' : key}
+                {key === 'pepper' ? 'Black Pepper' : key === 'cardamom' ? 'Green Cardamom' : key.charAt(0).toUpperCase() + key.slice(1)}
               </button>
             ))}
           </div>

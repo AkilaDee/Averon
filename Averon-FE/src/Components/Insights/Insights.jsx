@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Insights.css';
 
 
@@ -138,6 +139,18 @@ const categoryColours = {
 const Insights = () => {
   return (
     <div className="insights-page">
+      <Helmet>
+        <title>Ceylon Cinnamon & Spice Insights & Knowledge Centre | Averon Supplies</title>
+        <meta 
+          name="description" 
+          content="Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka." 
+        />
+        <link 
+          rel="canonical" 
+          href="https://www.averonsupplies.co.uk/insights" 
+          hreflang="en-GB"
+        />
+      </Helmet>
 
       {/* HERO */}
       <div className="insights-hero">
