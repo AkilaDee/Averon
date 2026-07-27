@@ -93,7 +93,7 @@ const Products = () => {
         content="Direct estate-to-business wholesale supply of single-origin, premium grade Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
       />
   
-    <link rel="canonical" href="https://www.averonsupplies.co.uk/products" />
+    <link rel="canonical" href="https://www.averonsupplies.co.uk/products" hreflang="en-GB"/>
 </Helmet>
       {/* =========================================================
           SECTION 1: MAIN PRODUCTS DISPLAY (CLEANED OF INLINE STYLES)

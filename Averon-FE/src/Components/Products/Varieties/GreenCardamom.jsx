@@ -35,7 +35,7 @@ const GreenCardamom = () => {
           name="description" 
           content="Direct estate-to-business wholesale supply of premium green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom" hreflang="en-GB"/>
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}

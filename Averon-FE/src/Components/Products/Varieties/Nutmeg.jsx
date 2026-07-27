@@ -33,7 +33,7 @@ const Nutmeg = () => {
           name="description" 
           content="Direct estate-to-business wholesale supply of premium Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg" hreflang="en-GB"/>
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}

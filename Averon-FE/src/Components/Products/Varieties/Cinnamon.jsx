@@ -60,7 +60,7 @@ const CinnamonDetail = () => {
           name="description" 
           content="Premium Ceylon Cinnamon, sourced from our own estates in Sri Lanka, capturing the rich aroma, delicate flavor, and absolute purity of true cinnamon." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/ceylon-cinnamon" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/ceylon-cinnamon" hreflang="en-GB"/>
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}
