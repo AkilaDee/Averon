@@ -41,11 +41,50 @@ const Offers = () => {
           <span className="tag-text-main">OUR DIVISIONS</span>
           <span className="line-arm"></span>
         </div>
-        <h2 className="serif-main-title">Premium Pure Ceylon Spices</h2>
+        <h2 className="serif-main-title">Premium Pure Ceylon Spices: Direct-from-Estate Excellence</h2>
         <p className="elegant-intro-subtitle">
           From our historic Sri Lankan estates directly to your business. Premium, single-origin spices backed by generations of expertise in cultivation, harvesting, and manufacturing.
         </p>
+
+        {/* Extended Heritage & Industrial Narrative */}
+        <div className="heritage-extended-narrative" style={{ marginTop: '2.5rem', textAlign: 'left' }}>
+          <h3 className="serif-card-title" style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'inherit' }}>Our Heritage of Cultivation and Manufacturing Mastery</h3>
+          <p className="card-description-text" style={{ marginBottom: '1.25rem', lineHeight: '1.7' }}>
+            From our historic Sri Lankan estates directly to your enterprise, we deliver an elite portfolio of single-origin Ceylon spices backed by generations of uncompromised expertise in tropical agriculture, meticulous harvesting, and advanced manufacturing. Rooted in the island's fertile microclimates, high-altitude hill countries, and nutrient-dense soils, our agricultural operations bridge the gap between traditional generational farming and rigorous modern processing standards.
+          </p>
+          <p className="card-description-text" style={{ marginBottom: '2rem', lineHeight: '1.7' }}>
+            Every botanical in our catalog ranging from high-piperine Ceylon Black Pepper and premium Green Cardamom to eugenol-rich Ceylon Cloves, aromatic Nutmeg, and hand-pollinated Vanilla is cultivated with absolute precision. We reject mass-market shortcuts, ensuring that every batch preserves its peak chemical density, volatile oil integrity, and natural aromatic profile without artificial additives, chemical enhancements, or blending compromises.
+          </p>
+
+          <h3 className="serif-card-title" style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'inherit' }}>Industrial Reliability and Global Supply Chain Integrity</h3>
+          <p className="card-description-text" style={{ marginBottom: '1.25rem', lineHeight: '1.7' }}>
+            Designed specifically for international B2B buyers, food manufacturers, industrial extractors, and gourmet retail brands across Europe, North America, and beyond, our supply chain guarantees total transparency and traceability. We maintain strict control over every stage of the lifecycle:
+          </p>
+          
+          <ul className="card-description-text" style={{ listStyleType: 'disc', paddingLeft: '1.5rem', marginBottom: '1.5rem', lineHeight: '1.8' }}>
+            <li style={{ marginBottom: '0.75rem' }}>
+              <strong>Sustainable Sourcing:</strong> Partnering exclusively with verified, ethical agroforestry networks across Sri Lanka that prioritize ecological balance and long-term land stewardship.
+            </li>
+            <li style={{ marginBottom: '0.75rem' }}>
+              <strong>Rigorous Quality Control:</strong> Implementing strict moisture monitoring, advanced sizing protocols, and comprehensive laboratory screenings to eliminate foreign matter, mold risks, and chemical contaminants.
+            </li>
+            <li style={{ marginBottom: '0.75rem' }}>
+              <strong>Unmatched Potency:</strong> Delivering exceptional bulk densities and high volatile oil yields (such as peak eugenol and vanillin concentrations) that translate directly into superior process efficiency and lower raw material weights for large-scale operations.
+            </li>
+          </ul>
+
+          <p className="card-description-text" style={{ fontStyle: 'italic', lineHeight: '1.7' }}>
+            Partner with us to elevate your commercial product lines with authentic, single-origin spices built to satisfy the world's most demanding quality benchmarks.
+          </p>
+        </div>
       </section>
+
+      {/* Slider Section Topic Header */}
+        <div className="center-divider-tag" style={{ marginBottom: '25px' }}>
+          <span className="line-arm"></span>
+          <span className="tag-text-main">EXPLORE OUR PORTFOLIO</span>
+          <span className="line-arm"></span>
+        </div>
 
       {/* SECTION 2: THE CAROUSEL DIVISIONS GRID WITH NAVIGATION ARROWS */}
       <section className="divisions-carousel-container">
