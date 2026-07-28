@@ -7,8 +7,8 @@ const CeylonSpiceHeritage = () => {
   return (
     <div className="article-page">
       <Helmet>
-        <title>The Master Guide to Authentic Ceylon Spices | Averon Supplies</title>
-        <meta name="description" content="Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan spices, from true cinnamon to hand-harvested cardamoms and cloves." />
+        <title>The Master Guide to Authentic Ceylon Spice | Averon Supplies</title>
+        <meta name="description" content="Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-spice-heritage" />
       </Helmet>
 
@@ -16,10 +16,10 @@ const CeylonSpiceHeritage = () => {
         <div className="article-hero-inner">
           <Link to="/insights" className="article-back">← Back to Insights</Link>
           <span className="article-category-tag">Origin & Provenance</span>
-          <h1 className="article-title">The Master Guide to Authentic Ceylon Spices: Heritage, Health, and Flavour</h1>
+          <h1 className="article-title">The Master Guide to Authentic Ceylon Spice: Heritage, Health, and Flavour</h1>
           <p className="article-subtitle">
             Explore the rich history, exceptional terroir, and profound health benefits of single-origin 
-            Sri Lankan spices, from true cinnamon to hand-harvested cardamoms and cloves.
+            Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves.
           </p>
           <div className="article-meta">
             <span>By Averon Supplies</span>
@@ -35,13 +35,13 @@ const CeylonSpiceHeritage = () => {
         <article className="article-body">
 
           <p className="article-lead">
-            For centuries, cultures around the globe have turned to the botanical world not just for sustenance, but for healing. Long before modern medicine, our ancestors relied on the restorative powers found in nature’s larder. Today, modern science has begun to validate what traditional healers have always known: cooking with natural spices is one of the easiest, most delicious ways to support your overall wellbeing.
+            For centuries, cultures around the globe have turned to the botanical world not just for sustenance, but for healing. Long before modern medicine, our ancestors relied on the restorative powers found in nature’s larder. Today, modern science has begun to validate what traditional healers have always known: cooking with natural ceylon spice is one of the easiest, most delicious ways to support your overall wellbeing.
           </p>
           <p>
             The moment you step into a traditional Sri Lankan kitchen, you are enveloped in an intoxicating symphony of aromas. The sudden crackle of mustard seeds hitting hot coconut oil, the earthy warmth of roasting cumin, and the floral sweetness of cardamom all blend to create a sensory experience unlike any other. For centuries, this tear-drop island in the Indian Ocean has been a global epicentre for culinary magic, primarily driven by the unparalleled quality of single-origin Lankan spices.
           </p>
           <p>
-            Whether you are looking to boost your immune system, reduce bodily inflammation, or perfect an authentic curry, your kitchen cupboards hold the key. Far more than just culinary afterthoughts, the right herbs and spices can transform a bland, uninspiring dish into a medicinal masterpiece.
+            Whether you are looking to boost your immune system, reduce bodily inflammation, or perfect an authentic curry, your kitchen cupboards hold the key. Far more than just culinary afterthoughts, the right herbs and any premium ceylon spice can transform a bland, uninspiring dish into a medicinal masterpiece.
           </p>
 
           <h2>The Heritage of the Spice Island</h2>
@@ -49,7 +49,7 @@ const CeylonSpiceHeritage = () => {
             To truly appreciate the depth of these flavours, one must look at the fascinating history of the maritime spice trade in Ceylon. Long before the modern era, Arab, Chinese, and Indian merchants braved treacherous oceans to reach Sri Lanka's shores, lured by the promise of exotic aromatics. The island's strategic location on the ancient Silk Road of the sea made it a bustling hub of commerce.
           </p>
           <p>
-            Later, the Portuguese, Dutch, and British empires successively vied for control over the island, specifically to monopolise the lucrative trade of Ceylon spices. This rich, complex history of trade and colonisation did not just export the island's treasures to the world; it also introduced new culinary techniques that eventually melded with local traditions to create the diverse landscape of modern Sri Lankan cuisine.
+            Later, the Portuguese, Dutch, and British empires successively vied for control over the island, specifically to monopolise the lucrative trade of every certified ceylon spice. This rich, complex history of trade and colonisation did not just export the island's treasures to the world; it also introduced new culinary techniques that eventually melded with local traditions to create the diverse landscape of modern Sri Lankan cuisine.
           </p>
           <p>
             The island's unique terroir characterised by rich soils, abundant monsoon rains, and tropical sunshine imparts an unmatched depth to its agricultural produce. Sourcing direct from this legendary origin ensures that every batch retains its volatile oils, rich history, and uncompromised health benefits.
@@ -57,7 +57,7 @@ const CeylonSpiceHeritage = () => {
 
           <h2>The Core Collection: Premium Ceylon Spices</h2>
           <p>
-            Integrating these powerhouse ingredients into your daily diet can yield incredible results. Here is a comprehensive look at the core spices we trade, their unique properties, and how to make the most of them in your kitchen.
+            Integrating these powerhouse ingredients into your daily diet can yield incredible results. Here is a comprehensive look at the core ceylon spice varieties we trade, their unique properties, and how to make the most of them in your kitchen.
           </p>
 
           <h3>1. Ceylon Cinnamon: The Crown Jewel</h3>
@@ -135,7 +135,7 @@ const CeylonSpiceHeritage = () => {
 
           <h2>Sourcing Authentic Ceylon Spices</h2>
           <p>
-            To truly experience the authentic taste of Lankan spices, the quality of your ingredients matters immensely. Supermarket spices that have been sitting on shelves for years will yield lackluster results.
+            To truly experience the authentic taste of Lankan ceylon spice, the quality of your ingredients matters immensely. Supermarket products that have been sitting on shelves for years will yield lackluster results.
           </p>
           <p>
             When you begin shopping, look for organic fair trade export seasonings. Sourcing directly from single-origin estates and specialist merchants ensures you receive a premium, ethically harvested product while supporting the livelihoods of traditional spice farmers on the island.
