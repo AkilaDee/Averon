@@ -111,7 +111,7 @@ const TrueCinnamonVsCassia = () => {
             If cinnamon is so healthy, should we be eating it by the spoonful? Not necessarily. This is where the distinction between <strong>ceylon cinnamon versus cassia</strong> becomes a matter of safety.
           </p>
           <p>
-            The primary concern lies in a naturally occurring chemical compound called coumarin. The coumarin content in cassia cinnamon is quite high—sometimes up to 1%. While this might not sound like much, consuming large amounts of coumarin on a regular basis has been directly linked to liver damage.
+            The primary concern lies in a naturally occurring chemical compound called coumarin. The coumarin content in cassia cinnamon is quite high, sometimes up to 1%. While this might not sound like much, consuming large amounts of coumarin on a regular basis has been directly linked to liver damage.
           </p>
           <p>
             This brings up a vital medical consideration regarding liver toxicity and cinnamon intake. In some European countries, health agencies have even set strict limits on the amount of Cassia cinnamon allowed in commercially baked goods due to these exact safety concerns.
