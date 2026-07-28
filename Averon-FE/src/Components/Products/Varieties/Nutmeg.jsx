@@ -45,13 +45,21 @@ const Nutmeg = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="nut-large-description">
             <p>
-              Sourced from sustainable agroforestry networks in the fertile wet zones, our whole Nutmeg kernels (<strong>Myristica fragrans</strong>) represent a structurally superior tier of tree-born spices. The tree-ripened fruits are harvested immediately upon splitting open to reveal the bright red aril (mace) surrounding the inner nut. The nutmeg kernels are extracted and slowly dried within their protective inner shells to safeguard the interior volatile oil matrix against rancidity and oxidation.
+              Nutmeg (<strong>Myristica fragrans</strong>) is globally renowned for possessing significantly higher volatile oil concentrations and complex aromatic profiles compared to alternative origins around the world. Sourced directly from sustainable agroforestry networks in the fertile wet zones of sri lanka, our whole nutmeg kernels represent a pinnacle tier of botanical purity and agricultural craftsmanship.
+
+The cultivation of authentic nutmeg requires meticulous generational expertise and an uncompromising commitment to traditional harvesting standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the nutmeg crop lifecycle with absolute precision.
+
+Our tree-ripened nutmeg fruits are harvested immediately upon splitting open to reveal the bright red aril (mace) surrounding the inner nut. The nutmeg kernels are extracted and slowly dried within their protective inner shells to safeguard the interior volatile oil matrix against rancidity and oxidation. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              Once the drying cycle is complete, the outer shells are gently cracked open to reveal dense, heavily marbled kernels that are entirely free of external blemishes, mold cavities, or insect boring. Sri Lankan nutmeg is highly valued by industrial food processors due to its robust volatile oil content (6% to 9% v/w), delivering a characteristically warm, intensely woody, and slightly sweet flavor profile that holds up remarkably well in processed formats.
+              Once the drying cycle is complete, the outer shells are gently cracked open to reveal dense, heavily marbled nutmeg kernels that are entirely free of external blemishes, mold cavities, or insect boring. Sri Lankan nutmeg is highly valued by industrial food processors due to its robust volatile oil content (6% to 9% v/w), delivering a characteristically warm, intensely woody, and slightly sweet nutmeg aroma profile accompanied by a bold, aromatic punch.
+
+Our strict hand-sorting and structural grading standards enforce a near-zero threshold for broken kernels or under-matured nutmeg. Because of this rich natural concentration and robust volatile oil content, our whole nutmeg kernels hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="nut-highlight-para">
-              Our strict compliance with advanced aflatoxin testing and thorough physical sorting protocols ensures that our whole nutmeg kernels consistently pass the most stringent food safety screenings at European ports of entry. This makes them a reliable base for industrial meat packing, commercial baking mixes, and premium cosmetic fragrance blending.
+              For industrial meat packing, commercial baking mixes, and premium cosmetic fragrance blending seeking the finest nutmeg, this superior concentration of natural essential oils translates into an unmatched flavor and aromatic release. Whether these premium whole nutmeg kernels are freshly grated into gourmet culinary dishes, distilled for high-end perfumery, or utilized by global manufacturing facilities to create specialty extracts, our nutmeg delivers a potent, multi-layered sensory experience.
+
+Our strict compliance with advanced aflatoxin testing, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean, premium nutmeg spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           

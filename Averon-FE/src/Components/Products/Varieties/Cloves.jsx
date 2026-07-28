@@ -47,13 +47,21 @@ const Cloves = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="clv-large-description">
             <p>
-              Our premium Ceylon Cloves (<strong>Syzygium aromaticum</strong>) are harvested during the optimal dry winter windows from ancient spice gardens spanning the mid-elevation hillsides. The unopened flower buds are hand-picked when they transition from green to a vibrant pinkish-red, capturing them at the exact physiological moment when their eugenol content peaks. The buds are then carefully hand-separated from their clusters and shade-dried on clean platforms until they turn a deep, rich dark brown with lighter crown tips.
+              Ceylon Cloves (<strong>Syzygium aromaticum</strong>) are globally renowned for possessing significantly higher eugenol oil concentrations and complex aromatic profiles compared to alternative origins around the world. Sourced directly from ancient spice gardens spanning the mid-elevation hillsides of sri lanka, our cloves represent a pinnacle tier of botanical purity and agricultural craftsmanship.
+
+The cultivation of authentic cloves requires meticulous generational expertise and an uncompromising commitment to traditional harvesting standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the cloves crop lifecycle with absolute precision.
+
+Our premium ceylon cloves are harvested during the optimal dry winter windows from ancient spice gardens. The unopened flower buds are hand-picked when they transition from green to a vibrant pinkish-red, capturing them at the exact physiological moment when their eugenol content peaks. The buds are then carefully hand-separated from their clusters and shade-dried on clean platforms until they turn a deep, rich dark brown with lighter crown tips. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              Sri Lankan cloves are globally distinct due to their massive volatile oil yield, routinely testing between 16% and 20% v/w. This high concentration of eugenol oil gives them an exceptionally strong, warm, and highly pungent flavor profile, while also providing powerful natural antimicrobial and antioxidant benefits. Our hand-picking standards enforce a near-zero threshold for headless cloves, woody stems, or moisture-depleted "mother cloves."
+              Sri Lankan cloves are globally distinct due to their massive volatile oil yield, routinely testing between 16% and 20% v/w. This high concentration of eugenol essential oils gives them an exceptionally strong, warm, and highly pungent flavor profile, while also providing powerful natural antimicrobial and antioxidant benefits.
+
+Our hand-picking standards enforce a near-zero threshold for headless cloves, woody stems, or moisture-depleted "mother cloves." This structural superiority delivers an intensely warm, sweet, and highly aromatic cloves aroma profile accompanied by a bold, numbing punch. Because of this rich natural concentration and robust volatile oil content, our whole cloves hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="clv-highlight-para">
-              This uncompromised structural grading makes our whole cloves ideal for sophisticated industrial curing, custom spice brines, pharmaceutical oral-care formulations, and high-yield oil distillation houses where absolute purity and raw chemical potency are non-negotiable standards.
+              For sophisticated industrial curing, custom spice brines, pharmaceutical oral-care formulations, and high-yield oil distillation houses seeking the finest cloves, this superior concentration of natural eugenol translates into an unmatched chemical and flavor release. Whether these premium whole cloves are infused into rich artisanal broths, distilled for pharmaceutical applications, or utilized by global manufacturing facilities to extract high-potency extracts, our cloves deliver a potent, multi-layered sensory experience.
+
+Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, premium cloves spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           

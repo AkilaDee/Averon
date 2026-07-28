@@ -47,13 +47,21 @@ const GreenCardamom = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="card-large-description">
             <p>
-              Sourced from the humid, canopy-shaded hill countries of Sri Lanka, our Green Cardamom (<strong>Elettaria cardamomum</strong>) represents a pinnacle tier of botanical purity. The pods are individually hand-picked at precise maturity thresholds just before they open, ensuring that the intensely fragrant internal black seeds remain completely sealed, unexposed to air, and fully saturated with volatile essential oils rich in cineole and limonene.
+              Green Cardamom (<strong>Elettaria cardamomum</strong>) is globally renowned for possessing significantly higher aromatic oil concentrations and complex flavor profiles compared to alternative origins around the world. Sourced directly from the humid, canopy-shaded hill countries of sri lanka, our green cardamom pods represent a pinnacle tier of botanical purity and agricultural craftsmanship.
+
+The cultivation of authentic Elettaria cardamomum requires meticulous generational expertise and an uncompromising commitment to traditional harvesting standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the green cardamom crop lifecycle with absolute precision.
+
+The green cardamom pods are individually hand-picked at precise maturity thresholds just before they naturalize and open, ensuring that the intensely fragrant internal black seeds remain completely sealed, unexposed to air, and fully saturated with volatile essential oils rich in cineole and limonene. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              Following harvest, the pods are immediately transferred to specialized, temperature-controlled flue-curing chambers. This rapid, non-chemical drying process locks in the vibrant, deep green chlorophyll pigmentation while permanently sealing the pod structure against moisture ingress. We strictly avoid the use of artificial colorants, bleaching agents, or chemical preservatives, offering an entirely natural product that complies cleanly with international green-label regulations.
+              Following harvest, the green cardamom pods are immediately transferred to drying process. This rapid, non-chemical drying process locks in the vibrant, deep green chlorophyll pigmentation while permanently sealing the pod structure against moisture ingress. We strictly avoid the use of artificial colorants, bleaching agents, or chemical preservatives, offering an entirely natural product that complies cleanly with international green-label regulations.
+
+Our jumbo green cardamom and cardamom pods are meticulously sorted to isolate only plump, uniform pods measuring 7mm to 8mm and above, ensuring an uncompromised aesthetic presentation for premium retail packs. This structural superiority delivers an intensely cooling, sweet-spicy, and highly floral cardamom aroma profile accompanied by a bold, pungent punch. Because of this rich natural concentration and robust volatile oil content, our pods hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="card-highlight-para">
-              Our Jumbo LG range is meticulously sorted to isolate only plump, uniform pods measuring 7mm to 8mm and above, ensuring an uncompromised aesthetic presentation for premium retail packs. With its intensely cooling, sweet-spicy, and highly floral aroma profile, this cardamom is highly prized by gourmet beverage infusers, fine Scandinavian baking networks, and global aromatherapy extraction labs.
+              For fine Scandinavian baking networks, artisan pastry chefs, and gourmet beverage infusers seeking the finest green cardamom, this superior concentration of natural cineole and limonene translates into an unmatched flavor release. Whether this premium green cardamom is crushed into traditional spiced breads, infused into rich artisanal coffees, or utilized by global aromatherapy extraction labs to capture exotic fragrance notes, our green cardamom delivers a potent, multi-layered sensory experience.
+
+Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, premium green cardamom spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           

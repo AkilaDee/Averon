@@ -45,13 +45,21 @@ const Vanilla = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="van-large-description">
             <p>
-              Our Gourmet Grade A Vanilla pods (<strong>Vanilla planifolia</strong>) are the product of a highly intensive, artisan-led cultivation process based in the cool, elevated microclimates of the island. Each orchid flower is meticulously hand-pollinated within a single morning window. The resulting vanilla beans are left to mature on the vine for up to nine months to max out their base vanillin precursors, before undergoing a traditional Bourbon curing process spanning several months.
+              Vanilla (<strong>Vanilla planifolia</strong>) is globally renowned for possessing significantly higher vanillin concentrations and complex aromatic profiles compared to alternative origins around the world. Sourced directly from the cool, elevated microclimates of the island in sri lanka, our gourmet Grade A vanilla pods represent a pinnacle tier of botanical purity and agricultural craftsmanship.
+
+The cultivation of authentic Vanilla planifolia requires meticulous generational expertise and an uncompromising commitment to traditional hand-farming standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the vanilla crop lifecycle with absolute precision.
+
+Each orchid flower is meticulously hand-pollinated within a single morning window. The resulting vanilla beans are left to mature on the vine for up to nine months to maximize their base vanillin precursors, before undergoing a traditional Bourbon curing process spanning several months. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              This extensive curing process involves alternating daily cycles of sun-sweating and slow indoor shade-drying, allowing the natural vanillin to crystallize smoothly within the pod wall. The resulting premium beans are highly flexible, oily, and plump, possessing a rich moisture content of 30% to 35% and a deep, dark brown lustrous skin that yields an incredibly smooth, cream-like flavor profile.
+              This extensive curing process involves alternating daily cycles of sun-sweating and slow indoor shade-drying, allowing the natural vanillin to crystallize smoothly within the vanilla pod wall. The resulting premium vanilla beans are highly flexible, oily, and plump, possessing a rich moisture content of 30% to 35% and a deep, dark brown lustrous skin that yields an incredibly smooth, cream-like vanilla aroma profile accompanied by a bold, aromatic punch.
+
+Our strict hand-sorting and structural grading standards enforce a near-zero threshold for split, dry, or under-cured vanilla pods. Because of this rich natural concentration and robust volatile oil content, our whole vanilla beans hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="van-highlight-para">
-              Free from any chemical accelerants or artificial plumping agents, our vanilla beans are specifically optimized for fine dining pastry production, premium dairy infusions, and natural extract formulations where a deep, rich vanilla profile with high seed density is required.
+              Free from any chemical accelerants or artificial plumping agents, our vanilla beans are specifically optimized for fine dining pastry production, premium dairy infusions, and natural extract formulations where a deep, rich vanilla profile with high seed density is required. Whether these premium whole vanilla pods are scraped for artisanal ice creams, infused into gourmet confectionery, or utilized by global manufacturing facilities to create specialty extracts, our vanilla delivers a potent, multi-layered sensory experience.
+
+Our strict compliance with advanced quality assurance, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean, premium vanilla spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           

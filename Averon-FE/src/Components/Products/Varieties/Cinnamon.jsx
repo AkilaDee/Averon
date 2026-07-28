@@ -72,13 +72,24 @@ const CinnamonDetail = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="cin-large-description">
             <p>
-              Our premium Ceylon Cinnamon is cultivated and harvested exclusively within the dedicated agricultural zones of southern Sri Lanka, a geographic region uniquely optimized for the production of authentic <strong>Cinnamomum verum</strong>. Unlike common Cassia bark (Indonesian and Chinese varieties) which is thick, rugged, and high in toxic coumarin levels, genuine Ceylon Cinnamon is celebrated for its highly complex, multi-layered quill structure. The outer bark is delicately scraped away by generational artisans, after which the fine inner bark is peeled in paper-thin layers and joined together to form a single, solid compound quill.
+              Our premium Ceylon Cinnamon (<strong>Cinnamomum zeylanicum</strong>) is cultivated and harvested exclusively within the dedicated agricultural zones of sri lanka and southern regions, a geographic area uniquely optimized for the production of authentic Ceylon Cinnamon. Derived from the majestic Cinnamomum verum tree often referred to as the cinnamon tree. This spice is universally known as true cinnamon. Unlike common Cassia bark (Indonesian and Chinese varieties) which is thick, rugged, and high in toxic coumarin levels, genuine Ceylon Cinnamon is celebrated for its highly complex, multi-layered quill structure.
+
+The outer cinnamon bark is delicately scraped away by generational artisans, after which the fine inner bark is peeled in paper-thin layers and joined together to form a single, solid compound quill. When processed into cinnamon sticks or finely milled into ground cinnamon, it stands far apart from standard commercial alternatives.
             </p>
             <p>
-              This tedious manual processing method preserves the delicate essential oils within the bark matrix, yielding a sophisticated sensory profile defined by subtle sweetness, warm woody undercurrents, and distinct citrus top notes. Because it contains trace amounts of coumarin (less than 0.005%), our cinnamon represents the safest, most refined choice for international food manufacturing, specialized medical nutraceuticals, and upscale culinary retail networks across Europe and North America.
+              This tedious manual processing method preserves the delicate essential oil within the bark matrix, yielding a sophisticated sensory profile defined by subtle sweetness, warm woody undercurrents, and distinct citrus top notes. Because it contains trace amounts of coumarin (less than 0.005%), our cinnamon represents the safest, most refined choice for international food manufacturing, specialized medical nutraceuticals, and upscale culinary retail networks across Europe and North America.
+
+Every step of our supply chain from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting is strictly regulated. This ensures that our premium grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
             </p>
             <p className="cin-highlight-para">
-              Every step of our supply chain from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting is strictly regulated. This ensures that our premium grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
+             When exploring the broader market, consumers often encounter various types of cinnamon, leading to the frequent comparison of cinnamon and cassia. While Cassia dominates commercial supermarket shelves due to its low production cost, it differs drastically from the sri lankan harvest. Analyzing the differences between cinnamon and cassia cinnamon reveals why purists and health-conscious buyers always lean toward authentic southern Sri Lankan yields.
+
+Furthermore, culinary traditions often utilize these spices across diverse baked goods, where the choice between true Ceylon and harsh Cassia impacts both flavor profiles and potential side effects related to heavy, long-term coumarin consumption.
+            </p>
+            <p>
+              Beyond its rich culinary heritage, scientific research spanning over 50 years has increasingly focused on the health benefits of ceylon cinnamon. Incorporating this spice into your daily routine offers remarkable potential health benefits, particularly for individuals managing metabolic health.
+
+Clinical studies consistently highlight how active compounds in authentic Ceylon can positively influence blood sugar levels, making it a favored dietary supplement for those managing type 2 diabetes. Additionally, regular consumption has been shown to support healthy blood pressure, helping maintain cardiovascular wellness without the adverse risks associated with high-coumarin alternatives.
             </p>
           </div>
           

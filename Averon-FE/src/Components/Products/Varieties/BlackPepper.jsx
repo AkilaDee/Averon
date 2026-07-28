@@ -52,13 +52,20 @@ const BlackPepper = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="pep-large-description">
             <p>
-              Sri Lankan Black Pepper (<strong>Piper nigrum</strong>) is globally renowned for possessing significantly higher piperine concentrations compared to alternative origins. Our berries are harvested at peak maturity from fertile mid-country plantations where rainfall patterns and rich soil profiles naturally maximize chemical density. The harvested green berries undergo a controlled blanching and sun-drying process, activating uniform enzymatic browning that gives the peppercorns their deep black, deeply wrinkled outer pericarp.
+              Sri Lankan Black Pepper (<strong>Piper nigrum</strong>) is globally renowned for possessing significantly higher piperine concentrations compared to alternative origins. Sourced directly from our trusted agricultural networks across sri lanka, our berries are harvested at peak maturity from fertile mid-country plantations where unique tropical rainfall patterns and rich soil profiles naturally maximize chemical density.
+              The cultivation of true ceylon black pepper requires immense generational expertise and an uncompromising commitment to traditional agricultural standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the crop lifecycle with meticulous care.
+
+The harvested green berries undergo a carefully controlled blanching and sun-drying process, activating uniform enzymatic browning that gives the peppercorns their deep black, deeply wrinkled outer pericarp. Every batch captures the true essence of a premier ceylon spice, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              The definitive competitive edge of our pepper lies in its superior bulk density, consistently measuring between 500 and 550+ grams per liter (GL). This indicates highly developed, solid kernels with virtually zero hollow "light berries" or pinheads. This structural superiority delivers a biting, intensely pungent flavor profile accompanied by a bold, aromatic volatile oil kick that holds up beautifully under commercial processing conditions.
+              The definitive competitive edge of our pepper lies in its superior bulk density, consistently measuring between 500 and 550+ grams per liter (GL). This high metric indicates dense, fully developed, solid kernels with virtually zero hollow light berries or unwanted pinheads.
+
+This structural superiority delivers a biting, intensely pungent flavor profile accompanied by a bold, aromatic essential oil kick. Because of this rich natural concentration, our peppercorns hold up beautifully under harsh commercial processing conditions without losing their distinctive aroma or heat.
             </p>
             <p className="pep-highlight-para">
-              For industrial spice extractors, meat packers, and high-end blending houses, this high-piperine yield translates directly into superior process efficiency and lower raw material requirements during oleoresin extraction. Our advanced physical cleaning, metal detection, and moisture monitoring protocols ensure a remarkably clean, premium product suitable for direct-to-grinder applications.
+              For industrial spice extractors, commercial meat packers, and high-end blending houses, this high-piperine yield translates directly into superior process efficiency. It requires lower raw material weights during oleoresin extraction and mass production, saving both time and money for large-scale operations.
+
+Our advanced physical cleaning, rigorous metal detection, and strict moisture monitoring protocols ensure a remarkably clean, premium product that is fully ready for direct-to-grinder applications in international food manufacturing facilities.
             </p>
           </div>
           
