@@ -47,6 +47,15 @@
     letter-spacing: -0.5px;
 }
 
+.serif-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #1E293B; 
+    font-weight: 450;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.5px;
+}
+
 .elegant-intro-subtitle {
     font-size: 15.5px;
     color: #5c645e;
