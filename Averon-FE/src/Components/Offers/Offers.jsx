@@ -41,11 +41,11 @@ const Offers = () => {
           <span className="tag-text-main">OUR DIVISIONS</span>
           <span className="line-arm"></span>
         </div>
-        <h2 className="serif-main-title">Premium Pure Ceylon Spices: Direct-from-Estate Excellence</h2>
+        <h2 className="serif-main-title">Premium Pure Ceylon Spices</h2>
         <p className="elegant-intro-subtitle">
           From our historic Sri Lankan estates directly to your business. Premium, single-origin spices backed by generations of expertise in cultivation, harvesting, and manufacturing.
         </p>
-
+        <h2 className="serif-main-title">Direct from Estate Excellence</h2>
         {/* Extended Heritage & Industrial Narrative */}
         <div className="heritage-extended-narrative" style={{ marginTop: '2.5rem', textAlign: 'left' }}>
           <h3 className="serif-card-title" style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'inherit' }}>Our Heritage of Cultivation and Manufacturing Mastery</h3>
