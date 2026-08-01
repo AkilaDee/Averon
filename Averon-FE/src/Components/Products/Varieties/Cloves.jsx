@@ -23,8 +23,8 @@ const Cloves = () => {
   ];
 
   const items = [
-    { name: "Hand-Picked Premium Cloves", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: cloves },
-    { name: "Premium Cloves Ground", desc: "100% Pure, finely milled cloves with maximum aromatic oil retention.", img: cloves_ground }
+    { name: "Hand-Picked Cloves", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: cloves },
+    { name: "Cloves Ground", desc: "100% Pure, finely milled cloves with maximum aromatic oil retention.", img: cloves_ground }
   ];
 
   return (
@@ -51,7 +51,7 @@ const Cloves = () => {
 
 The cultivation of authentic cloves requires meticulous generational expertise and an uncompromising commitment to traditional harvesting standards. Unlike mass-produced alternatives that sacrifice quality for speed, our farming partners manage every stage of the cloves crop lifecycle with absolute precision.
 
-Our premium ceylon cloves are harvested during the optimal dry winter windows from ancient spice gardens. The unopened flower buds are hand-picked when they transition from green to a vibrant pinkish-red, capturing them at the exact physiological moment when their eugenol content peaks. The buds are then carefully hand-separated from their clusters and shade-dried on clean platforms until they turn a deep, rich dark brown with lighter crown tips. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
+Our ceylon cloves are harvested during the optimal dry winter windows from ancient spice gardens. The unopened flower buds are hand-picked when they transition from green to a vibrant pinkish-red, capturing them at the exact physiological moment when their eugenol content peaks. The buds are then carefully hand-separated from their clusters and shade-dried on clean platforms until they turn a deep, rich dark brown with lighter crown tips. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
               Sri Lankan cloves are globally distinct due to their massive volatile oil yield, routinely testing between 16% and 20% v/w. This high concentration of eugenol essential oils gives them an exceptionally strong, warm, and highly pungent flavor profile, while also providing powerful natural antimicrobial and antioxidant benefits.

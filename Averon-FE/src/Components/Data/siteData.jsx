@@ -83,7 +83,7 @@ export const SITE_INDEX = [
     title: "Sourcing Regions",
     url: "/sourcing-regions",
     type: "Page Content",
-    text: "An analysis of Sri Lanka's premium micro-climates. Discover our ethical sourcing networks across the Southern coastal silica belts and Central Highlands, partnering with over 7,000 vetted regional smallholders."
+    text: "An analysis of Sri Lanka's micro-climates. Discover our ethical sourcing networks across the Southern coastal silica belts and Central Highlands, partnering with over 7,000 vetted regional smallholders."
   },
   {
     title: "Certifications & Quality",
