@@ -1,4 +1,8 @@
-# Force HTTPS and www for all traffic
-http://averonsupplies.co.uk/*   https://www.averonsupplies.co.uk/:splat   301!
-https://averonsupplies.co.uk/*  https://www.averonsupplies.co.uk/:splat   301!
-http://www.averonsupplies.co.uk/* https://www.averonsupplies.co.uk/:splat 301!
+# Redirect HTTP non-www to HTTPS www
+http://averonsupplies.co.uk/*    https://www.averonsupplies.co.uk/:splat   301
+
+# Redirect HTTPS non-www to HTTPS www
+https://averonsupplies.co.uk/*   https://www.averonsupplies.co.uk/:splat   301
+
+# Redirect HTTP www to HTTPS www
+http://www.averonsupplies.co.uk/*  https://www.averonsupplies.co.uk/:splat   301
