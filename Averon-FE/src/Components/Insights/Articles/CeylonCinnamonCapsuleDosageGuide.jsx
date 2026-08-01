@@ -149,7 +149,6 @@ const CeylonCinnamonCapsuleDosageGuide = () => {
             <li>Always consult a healthcare provider</li>
           </ul>
           <p className="article-photo-credit">
-            Photo by Anthony Ievlev (<a href="https://unsplash.com/@onmywayhome" target="_blank" rel="noopener noreferrer">Unsplash</a>)
           </p>
           <p>
             Remember, while cinnamon capsules can complement your health routine, they are not a substitute for medical treatment. Using them as an addition to a well-rounded lifestyle ensures you harness all the benefits safely.
@@ -195,7 +194,6 @@ const CeylonCinnamonCapsuleDosageGuide = () => {
             <li>Choose capsules from reputable brands</li>
           </ul>
           <p className="article-photo-credit">
-            Photo by Russell Miranda (<a href="https://unsplash.com/@midnightink" target="_blank" rel="noopener noreferrer">Unsplash</a>)
           </p>
           <p>
             Proper usage of Ceylon cinnamon capsules ensures you gain health benefits while minimizing potential risks. Prioritize safety to enjoy the most from this natural supplement.

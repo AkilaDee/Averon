@@ -174,7 +174,6 @@ const OrganicCeylonCinnamonBenefits = () => {
             Beyond traditional dishes, the spice can feature in creative culinary experiments. Try adding it to granola or energy bars for a nutritional boost. Its versatility in the kitchen seems truly limitless.
           </p>
           <p className="article-photo-credit">
-            Photo by Sidath Vimukthi (<a href="https://unsplash.com/@sidathkc" target="_blank" rel="noopener noreferrer">Unsplash</a>)
           </p>
           <p>
             Overall, organic Ceylon cinnamon is a valuable ingredient. Its ability to enhance flavors while offering health benefits makes it indispensable. Whether in baked delights or hearty meals, this spice enriches any culinary experience.
@@ -222,7 +221,6 @@ const OrganicCeylonCinnamonBenefits = () => {
             Whether served hot or cold, Ceylon cinnamon tea can fit any season. Add a slice of lemon or a dollop of honey for extra flavor. Each cup offers a moment of tranquility and a boost in health benefits.
           </p>
           <p className="article-photo-credit">
-            Photo by Anna Teodoro (<a href="https://unsplash.com/@annateodoro" target="_blank" rel="noopener noreferrer">Unsplash</a>)
           </p>
           <p>
             Enjoying this tea regularly can become a comforting ritual. It's not only about the flavor, but also about embracing a healthier lifestyle.
@@ -249,7 +247,6 @@ const OrganicCeylonCinnamonBenefits = () => {
             Stored correctly, Ceylon cinnamon can last for up to two years. This longevity makes it a valuable addition to your spice rack.
           </p>
           <p className="article-photo-credit">
-            Photo by Diana Polekhina (<a href="https://unsplash.com/@diana_pole" target="_blank" rel="noopener noreferrer">Unsplash</a>)
           </p>
 
           <h2>Frequently Asked Questions About Organic Ceylon Cinnamon</h2>
