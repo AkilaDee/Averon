@@ -188,17 +188,17 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink to="/insights/ceylon-cinnamon-dosage-guide" onClick={closeMobileMenu}>
-                    Ceylon Cinnamon Dosage
+                    Cinnamon Dosage
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/insights/ceylon-cinnamon-capsules" onClick={closeMobileMenu}>
-                    Ceylon Cinnamon Capsules
+                    Cinnamon Capsules
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/insights/ceylon-cinnamon-benefits" onClick={closeMobileMenu}>
-                    Ceylon Cinnamon Benefits
+                    Cinnamon Benefits
                   </NavLink>
                 </li>
                 <li>
