@@ -75,7 +75,7 @@ const WhatIsAlbaGrade = () => {
                 <tr>
                   <td><strong>Alba</strong></td>
                   <td>≤ 6mm</td>
-                  <td>Premium culinary, gifting, high-end retail</td>
+                  <td>Culinary, gifting, high-end retail</td>
                 </tr>
                 <tr>
                   <td>C5 Extra Special</td>
@@ -105,7 +105,7 @@ const WhatIsAlbaGrade = () => {
             The grade designation is not arbitrary, it directly reflects the maturity of the bark,
             the skill of the peeler, and the consistency of the rolling process. Alba quills require
             significantly more labour to produce per kilogram than C4, which is part of why they
-            command a meaningful price premium.
+            command a meaningful price.
           </p>
 
           <h2>Why Does Diameter Matter?</h2>

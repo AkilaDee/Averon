@@ -36,12 +36,12 @@ const CinnamonDetail = () => {
 
   const applications = [
     { area: "Gourmet Bakery & Confectionery", text: "High-end European pastry manufacturing demanding sweet, delicate profiles without bitterness." },
-    { area: "Premium Spirit Distillation", text: "Used as a botanical bedrock for artisanal gins, spiced rums, and seasonal liqueurs." },
+    { area: "Spirit Distillation", text: "Used as a botanical bedrock for artisanal gins, spiced rums, and seasonal liqueurs." },
     { area: "Wellness & Nutraceuticals", text: "Fine ground options for supplements targeting blood sugar regulation due to safe coumarin profiles." }
   ];
 
   const items = [
-   { name: "Cinnamon Sticks - Alba Grade", desc: "The highest premium quality grade. Thin, smooth, and highly prized quills (≤ 6 mm diameter).", img: product1 },
+   { name: "Cinnamon Sticks - Alba Grade", desc: "The highest quality grade. Thin, smooth, and highly prized quills (≤ 6 mm diameter).", img: product1 },
    { name: "Cinnamon Sticks - C5 Extra Special Grade", desc: "Excellent premium grade with slender, neatly rolled quills (≤ 8 mm diameter).", img: product2 },
    { name: "Cinnamon Sticks - C5 Special Grade", desc: "A top-tier traditional grade displaying great color, tight rolling, and sweet flavor profile (≤ 10 mm diameter).", img: product2 },
    { name: "Cinnamon Sticks - C5 Grade", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: product3 },
@@ -79,7 +79,7 @@ The outer cinnamon bark is delicately scraped away by generational artisans, aft
             <p>
               This tedious manual processing method preserves the delicate essential oil within the bark matrix, yielding a sophisticated sensory profile defined by subtle sweetness, warm woody undercurrents, and distinct citrus top notes. Because it contains trace amounts of coumarin (less than 0.005%), our cinnamon represents the safest, most refined choice for international food manufacturing, specialized medical nutraceuticals, and upscale culinary retail networks across Europe and North America.
 
-Every step of our supply chain from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting is strictly regulated. This ensures that our premium grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
+Every step of our supply chain from hand-rolling and uniform sun-drying to calibrated grading and mechanical cutting is strictly regulated. This ensures that our higher grades, from ultra-slender Alba to robust H1 sticks, arrive at destination ports completely free of mold, moisture damage, or extraneous organic materials, fully matching rigid EU customs requirements.
             </p>
             <p className="cin-highlight-para">
              When exploring the broader market, consumers often encounter various types of cinnamon, leading to the frequent comparison of cinnamon and cassia. While Cassia dominates commercial supermarket shelves due to its low production cost, it differs drastically from the sri lankan harvest. Analyzing the differences between cinnamon and cassia cinnamon reveals why purists and health-conscious buyers always lean toward authentic southern Sri Lankan yields.

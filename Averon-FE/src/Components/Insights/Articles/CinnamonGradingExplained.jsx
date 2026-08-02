@@ -137,7 +137,7 @@ const CinnamonGradingExplained = () => {
   and high-volume food service supply chains where the raw material is fully processed
   before reaching the consumer. H1 provides genuine Ceylon origin at an accessible
   price point for operations requiring large volumes of authentic Cinnamomum verum
-  without the cost premium of finer presentation grades.
+  without the higher cost of finer presentation grades.
 </p>
 
 <h3>H2 ≤ 30mm</h3>
@@ -168,13 +168,13 @@ const CinnamonGradingExplained = () => {
                 <tr>
                   <td><strong>Alba</strong></td>
                   <td>≤ 6mm</td>
-                  <td>Premium retail, gifting, fine culinary</td>
+                  <td>Retail, gifting, fine culinary</td>
                   <td>Highest</td>
                 </tr>
                 <tr>
                   <td>C5 Extra Special</td>
                   <td>≤ 8mm</td>
-                  <td>Specialty food manufacturing, premium retail</td>
+                  <td>Specialty food manufacturing, retail</td>
                   <td>High</td>
                 </tr>
                 <tr>

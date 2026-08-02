@@ -24,7 +24,7 @@ const About = () => {
             <h2>THE  AVERON JOURNEY</h2>
             <p>Averon Supplies Ltd operates as a strategic bridge between the specialized spice gardens of Sri Lanka and the exacting requirements of the British food industry. 
               As a dedicated importer and primary wholesaler, the company is defined by a commitment to providing trade and wholesale customers with authentic Ceylon spices without compromise. 
-              This heritage provides a distinct market advantage through an exclusive focus on premium-grade products recognized globally for their superior aroma, complex flavor profiles, 
+              This heritage provides a distinct market advantage through an exclusive focus on authentic products recognized globally for their superior aroma, complex flavor profiles, 
               and inherent health properties. By managing a lean and transparent supply chain, Averon ensures that every consignment of cinnamon, cardamom, 
               and black pepper reaches its destination with the same freshness it possessed at the point of harvest. 
 
