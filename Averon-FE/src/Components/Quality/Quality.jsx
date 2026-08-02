@@ -23,7 +23,7 @@ const Quality = () => {
       <div className="quality-split-row">
         <div className="quality-text-block">
           <p className="highlight-lead-text">
-            <strong>Do you have any questions for our category experts regarding a certain product? Talk to the team today on <span className="text-link">info@averonsupplies.co.uk</span> or +44 7344469729.</strong>
+            <strong>Do you have any questions for our category experts regarding a certain product? Talk to the team today on <span className="text-link">info@averonsupplies.co.uk</span> or +44(0)7344469729.</strong>
           </p>
           
           <p>

@@ -59,7 +59,7 @@ const Contact = () => {
           
           <ul className="contact-details-list">
             <li><img src={mail_icon} alt="" /> <span>info@averonsupplies.co.uk</span></li>
-            <li><img src={phone_icon} alt="" /> <span>+44 7344469729</span></li>
+            <li><img src={phone_icon} alt="" /> <span>+44(0)7344469729</span></li>
             <li><img src={location_icon} alt="" /> <span>42 Porthcawe Road, London, SE26 5TA</span></li>
           </ul>
         </div>
