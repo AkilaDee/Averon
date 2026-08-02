@@ -34,7 +34,7 @@ const Navbar = () => {
             </a>
             
             <a href="tel:+447344469729" className="contact-icon-link">
-              <FiPhone className="contact-inline-icon" /> +44 (0) 7344469729
+              <FiPhone className="contact-inline-icon" /> +44(0)7344469729
             </a>
           </div>
 
