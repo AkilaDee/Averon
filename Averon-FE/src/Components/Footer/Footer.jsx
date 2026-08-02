@@ -20,9 +20,7 @@ const Footer = () => {
               width="234"
               height="80" />
             <p className="footer-bio-text">
-              Direct importer of authentic Ceylon Cinnamon and Sri Lankan spices. 
-              We cultivate, harvest, and process on our own estates to ensure absolute traceability
-               and uncompromised grade accuracy for UK wholesale markets.
+              <p>Direct importer of authentic Ceylon Cinnamon and Sri Lankan spices. We cultivate, harvest, and process on our own estates to ensure absolute traceability and uncompromised grade accuracy for wholesale markets, meeting stringent commercial standards aligned with the <a href="https://www.food.gov.uk" target="_blank" rel="noopener">Food Standards Agency</a> guidelines.</p>
             </p>
             <p className="footer-bio-text">
               Driven by collaboration, we support food manufacturers, distributors, 
