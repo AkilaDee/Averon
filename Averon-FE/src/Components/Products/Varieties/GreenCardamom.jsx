@@ -17,7 +17,7 @@ const GreenCardamom = () => {
   ];
 
   const applications = [
-    { area: "Premium Beverage Infusions", text: "Essential for traditional chai blends, specialty coffees, and botanical craft brewing." },
+    { area: "Beverage Infusions", text: "Essential for traditional chai blends, specialty coffees, and botanical craft brewing." },
     { area: "Nordic & Middle Eastern Cuisine", text: "Whole pods optimized for long shelf-life distributions in fine catering and retail packing." },
     { area: "Perfumery & Aromatherapy", text: "Raw material source for high-grade essential oil steam distillers." }
   ];
@@ -33,7 +33,7 @@ const GreenCardamom = () => {
         <title>Wholesale Green Cardamom Bulk Supply | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of premium green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
+          content="Direct estate-to-business wholesale supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom" hreflang="en-GB"/>
       </Helmet>
@@ -56,12 +56,12 @@ The green cardamom pods are individually hand-picked at precise maturity thresho
             <p>
               Following harvest, the green cardamom pods are immediately transferred to drying process. This rapid, non-chemical drying process locks in the vibrant, deep green chlorophyll pigmentation while permanently sealing the pod structure against moisture ingress. We strictly avoid the use of artificial colorants, bleaching agents, or chemical preservatives, offering an entirely natural product that complies cleanly with international green-label regulations.
 
-Our jumbo green cardamom and cardamom pods are meticulously sorted to isolate only plump, uniform pods measuring 7mm to 8mm and above, ensuring an uncompromised aesthetic presentation for premium retail packs. This structural superiority delivers an intensely cooling, sweet-spicy, and highly floral cardamom aroma profile accompanied by a bold, pungent punch. Because of this rich natural concentration and robust volatile oil content, our pods hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
+Our jumbo green cardamom and cardamom pods are meticulously sorted to isolate only plump, uniform pods measuring 7mm to 8mm and above, ensuring an uncompromised aesthetic presentation for retail packs. This structural superiority delivers an intensely cooling, sweet-spicy, and highly floral cardamom aroma profile accompanied by a bold, pungent punch. Because of this rich natural concentration and robust volatile oil content, our pods hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="card-highlight-para">
-              For fine Scandinavian baking networks, artisan pastry chefs, and gourmet beverage infusers seeking the finest green cardamom, this superior concentration of natural cineole and limonene translates into an unmatched flavor release. Whether this premium green cardamom is crushed into traditional spiced breads, infused into rich artisanal coffees, or utilized by global aromatherapy extraction labs to capture exotic fragrance notes, our green cardamom delivers a potent, multi-layered sensory experience.
+              For fine Scandinavian baking networks, artisan pastry chefs, and gourmet beverage infusers seeking the finest green cardamom, this superior concentration of natural cineole and limonene translates into an unmatched flavor release. Whether this green cardamom is crushed into traditional spiced breads, infused into rich artisanal coffees, or utilized by global aromatherapy extraction labs to capture exotic fragrance notes, our green cardamom delivers a potent, multi-layered sensory experience.
 
-Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, premium green cardamom spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
+Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, green cardamom spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           
@@ -81,7 +81,7 @@ Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably
 
         {/* HERO IMAGE CONTAINER */}
         <div className="card-hero-image-wrapper">
-          <img src={cardamom} alt="Premium Green Cardamom Pods" className="card-main-hero-img" />
+          <img src={cardamom} alt="Green Cardamom Pods" className="card-main-hero-img" />
         </div>
       </div>
 

@@ -72,7 +72,7 @@ const CinnamonDetail = () => {
           {/* COMPREHENSIVE INDUSTRIAL EXPORT DESCRIPTION */}
           <div className="cin-large-description">
             <p>
-              Our premium Ceylon Cinnamon (<strong>Cinnamomum zeylanicum</strong>) is cultivated and harvested exclusively within the dedicated agricultural zones of sri lanka and southern regions, a geographic area uniquely optimized for the production of authentic Ceylon Cinnamon. Derived from the majestic Cinnamomum verum tree often referred to as the cinnamon tree. This spice is universally known as true cinnamon. Unlike common Cassia bark (Indonesian and Chinese varieties) which is thick, rugged, and high in toxic coumarin levels, genuine Ceylon Cinnamon is celebrated for its highly complex, multi-layered quill structure.
+              Our Ceylon Cinnamon (<strong>Cinnamomum zeylanicum</strong>) is cultivated and harvested exclusively within the dedicated agricultural zones of sri lanka and southern regions, a geographic area uniquely optimized for the production of authentic Ceylon Cinnamon. Derived from the majestic Cinnamomum verum tree often referred to as the cinnamon tree. This spice is universally known as true cinnamon. Unlike common Cassia bark (Indonesian and Chinese varieties) which is thick, rugged, and high in toxic coumarin levels, genuine Ceylon Cinnamon is celebrated for its highly complex, multi-layered quill structure.
 
 The outer cinnamon bark is delicately scraped away by generational artisans, after which the fine inner bark is peeled in paper-thin layers and joined together to form a single, solid compound quill. When processed into cinnamon sticks or finely milled into ground cinnamon, it stands far apart from standard commercial alternatives.
             </p>
@@ -109,7 +109,7 @@ Clinical studies consistently highlight how active compounds in authentic Ceylon
 
         {/* HERO IMAGE CONTAINER */}
         <div className="cin-hero-image-wrapper">
-          <img src={cinnamon} alt="Premium Ceylon Cinnamon Processing" className="cin-main-hero-img" />
+          <img src={cinnamon} alt="Ceylon Cinnamon Processing" className="cin-main-hero-img" />
         </div>
       </div>
 

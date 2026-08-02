@@ -9,7 +9,7 @@ import cloves_ground from '../../../assets/cloves ground.webp';
 
 const Cloves = () => {
   const specs = [
-    { label: "Available Grades", value: "Hand-Picked Premium Whole Cloves, Premium Ground" },
+    { label: "Available Grades", value: "Hand-Picked Whole Cloves, Ground" },
     { label: "Headless Units", value: "< 1.0% max" },
     { label: "Moisture Content", value: "10% max" },
     { label: "Eugenol Oil Content", value: "16% - 20% v/w (Industry-leading potency)" },
@@ -33,7 +33,7 @@ const Cloves = () => {
         <title>Wholesale Cloves Bulk Supply | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of premium Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
+          content="Direct estate-to-business wholesale supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves" hreflang="en-GB"/>
       </Helmet>
@@ -59,9 +59,9 @@ Our ceylon cloves are harvested during the optimal dry winter windows from ancie
 Our hand-picking standards enforce a near-zero threshold for headless cloves, woody stems, or moisture-depleted "mother cloves." This structural superiority delivers an intensely warm, sweet, and highly aromatic cloves aroma profile accompanied by a bold, numbing punch. Because of this rich natural concentration and robust volatile oil content, our whole cloves hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="clv-highlight-para">
-              For sophisticated industrial curing, custom spice brines, pharmaceutical oral-care formulations, and high-yield oil distillation houses seeking the finest cloves, this superior concentration of natural eugenol translates into an unmatched chemical and flavor release. Whether these premium whole cloves are infused into rich artisanal broths, distilled for pharmaceutical applications, or utilized by global manufacturing facilities to extract high-potency extracts, our cloves deliver a potent, multi-layered sensory experience.
+              For sophisticated industrial curing, custom spice brines, pharmaceutical oral-care formulations, and high-yield oil distillation houses seeking the finest cloves, this superior concentration of natural eugenol translates into an unmatched chemical and flavor release. Whether these whole cloves are infused into rich artisanal broths, distilled for pharmaceutical applications, or utilized by global manufacturing facilities to extract high-potency extracts, our cloves deliver a potent, multi-layered sensory experience.
 
-Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, premium cloves spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
+Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably clean, cloves spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           
@@ -81,7 +81,7 @@ Our rigorous sizing protocols and strict moisture monitoring ensure a remarkably
 
         {/* HERO IMAGE CONTAINER */}
         <div className="clv-hero-image-wrapper">
-          <img src={cloves} alt="Premium Whole Cloves" className="clv-main-hero-img" />
+          <img src={cloves} alt="Whole Cloves" className="clv-main-hero-img" />
         </div>
       </div>
 

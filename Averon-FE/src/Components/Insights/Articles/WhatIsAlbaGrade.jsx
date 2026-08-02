@@ -141,7 +141,7 @@ const WhatIsAlbaGrade = () => {
           <h2>Is Alba Right for Your Application?</h2>
           <p>
             Alba is the appropriate grade when the cinnamon itself is visible to the end consumer 
-            in premium retail packaging, in gifting products, in high-end culinary applications
+            in retail packaging, in gifting products, in high-end culinary applications
             where presentation matters alongside flavour. For extraction, grinding into powder, or
             high-volume manufacturing where the quill form is not the end product, C5 or C4
             provides equivalent aromatic quality at a lower cost per kilogram.

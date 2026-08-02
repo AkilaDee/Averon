@@ -43,7 +43,7 @@ const Offers = () => {
         </div>
         <h2 className="serif-main-title">Premium Pure Ceylon Spices</h2>
         <p className="elegant-intro-subtitle">
-          From our historic Sri Lankan estates directly to your business. Premium, single-origin spices backed by generations of expertise in cultivation, harvesting, and manufacturing.
+          From our historic Sri Lankan estates directly to your business. Single-origin spices backed by generations of expertise in cultivation, harvesting, and manufacturing.
         </p>
         <h3 className="serif-title">Direct from Estate Excellence</h3>
         {/* Extended Heritage & Industrial Narrative */}
@@ -53,7 +53,7 @@ const Offers = () => {
             From our historic Sri Lankan estates directly to your enterprise, we deliver an elite portfolio of single-origin Ceylon spices backed by generations of uncompromised expertise in tropical agriculture, meticulous harvesting, and advanced manufacturing. Rooted in the island's fertile microclimates, high-altitude hill countries, and nutrient-dense soils, our agricultural operations bridge the gap between traditional generational farming and rigorous modern processing standards.
           </p>
           <p className="card-description-text" style={{ marginBottom: '2rem', lineHeight: '1.7' }}>
-            Every botanical in our catalog ranging from high-piperine Ceylon Black Pepper and premium Green Cardamom to eugenol-rich Ceylon Cloves, aromatic Nutmeg, and hand-pollinated Vanilla is cultivated with absolute precision. We reject mass-market shortcuts, ensuring that every batch preserves its peak chemical density, volatile oil integrity, and natural aromatic profile without artificial additives, chemical enhancements, or blending compromises.
+            Every botanical in our catalog ranging from high-piperine Ceylon Black Pepper and Green Cardamom to eugenol-rich Ceylon Cloves, aromatic Nutmeg, and hand-pollinated Vanilla is cultivated with absolute precision. We reject mass-market shortcuts, ensuring that every batch preserves its peak chemical density, volatile oil integrity, and natural aromatic profile without artificial additives, chemical enhancements, or blending compromises.
           </p>
 
           <h3 className="serif-card-title" style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'inherit' }}>Industrial Reliability and Global Supply Chain Integrity</h3>
@@ -234,7 +234,7 @@ const Offers = () => {
               <h4 className="pillar-title">Supply Chain</h4>
             </div>
             <div className="pillar-content-bottom">
-              <p className="pillar-desc">Smallholder farmers across Sri Lanka growing certified premium spice varieties.</p>
+              <p className="pillar-desc">Smallholder farmers across Sri Lanka growing certified spice varieties.</p>
                <Link to="/supply-chain" className="pillar-action-arrow" aria-label="Learn more about Supply chain">
                 Learn More →
               </Link>
@@ -270,7 +270,7 @@ const Offers = () => {
               <h4 className="pillar-title">Processing</h4>
             </div>
             <div className="pillar-content-bottom">
-              <p className="pillar-desc">Processing facilities ensuring total batch control and premium quality passports.</p>
+              <p className="pillar-desc">Processing facilities ensuring total batch control and quality passports.</p>
               <Link to="/processing" className="pillar-action-arrow" aria-label="Learn more about Processing">
                 Learn More →
               </Link>

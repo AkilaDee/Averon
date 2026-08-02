@@ -114,7 +114,7 @@ const SupplyChain = () => {
             <span className="panel-kicker-tag">COMPLIANCE & ETHICS</span>
             <h3 className="serif-panel-title">Enterprise Risk Mitigation</h3>
             <p className="panel-narrative-para">
-              Industrial spice procurement demands more than just premium quality; it requires corporate vulnerability shielding. Averon Supplies enforces strict auditing standards across every single handling node.
+              Industrial spice procurement demands more than just quality; it requires corporate vulnerability shielding. Averon Supplies enforces strict auditing standards across every single handling node.
             </p>
 
             <div className="compliance-checklist">

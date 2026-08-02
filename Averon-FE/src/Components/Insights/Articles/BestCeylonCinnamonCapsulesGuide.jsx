@@ -156,7 +156,7 @@ const BestCeylonCinnamonCapsulesGuide = () => {
           <div className="article-cta-box">
             <h3>Ready to Experience Pure Wellness?</h3>
             <p>
-              Explore our premium range of pure, laboratory-tested Ceylon cinnamon supplements sourced directly from Sri Lanka.
+              Explore our range of pure, laboratory-tested Ceylon cinnamon supplements sourced directly from Sri Lanka.
             </p>
             <Link to="/products/ceylon-cinnamon" className="article-cta-btn">Shop Ceylon Cinnamon Capsules</Link>
           </div>

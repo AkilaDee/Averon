@@ -146,7 +146,7 @@ const WhatIsCoumarin = () => {
           <p>
             If you are sourcing cinnamon for a product that will be consumed regularly, or by
             health-conscious consumers who may already be managing their coumarin intake from
-            other sources, Ceylon cinnamon is not merely the premium choice. It is the
+            other sources, Ceylon cinnamon is not merely the obvious choice. It is the
             defensible choice from a food safety and compliance standpoint.
           </p>
           <p>

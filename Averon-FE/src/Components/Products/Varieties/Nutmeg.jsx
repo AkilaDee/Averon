@@ -18,7 +18,7 @@ const Nutmeg = () => {
   const applications = [
     { area: "Industrial Meat Packing", text: "Robust volatile oils retain flavor profile consistency under industrial processing pressure." },
     { area: "Commercial Bakery Mixes", text: "Provides deep, warming aromatic notes across large-scale commercial recipe volumes." },
-    { area: "Premium Fragrance Blending", text: "High chemical oil yield renders it optimal for clean steam extraction inside cosmetic labs." }
+    { area: "Fragrance Blending", text: "High chemical oil yield renders it optimal for clean steam extraction inside cosmetic labs." }
   ];
 
   const items = [
@@ -31,7 +31,7 @@ const Nutmeg = () => {
         <title>Wholesale Nutmeg Bulk Supply | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of premium Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers." 
+          content="Direct estate-to-business wholesale supply of Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg" hreflang="en-GB"/>
       </Helmet>
@@ -57,9 +57,9 @@ Our tree-ripened nutmeg fruits are harvested immediately upon splitting open to 
 Our strict hand-sorting and structural grading standards enforce a near-zero threshold for broken kernels or under-matured nutmeg. Because of this rich natural concentration and robust volatile oil content, our whole nutmeg kernels hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="nut-highlight-para">
-              For industrial meat packing, commercial baking mixes, and premium cosmetic fragrance blending seeking the finest nutmeg, this superior concentration of natural essential oils translates into an unmatched flavor and aromatic release. Whether these premium whole nutmeg kernels are freshly grated into gourmet culinary dishes, distilled for high-end perfumery, or utilized by global manufacturing facilities to create specialty extracts, our nutmeg delivers a potent, multi-layered sensory experience.
+              For industrial meat packing, commercial baking mixes, and cosmetic fragrance blending seeking the finest nutmeg, this superior concentration of natural essential oils translates into an unmatched flavor and aromatic release. Whether these whole nutmeg kernels are freshly grated into gourmet culinary dishes, distilled for high-end perfumery, or utilized by global manufacturing facilities to create specialty extracts, our nutmeg delivers a potent, multi-layered sensory experience.
 
-Our strict compliance with advanced aflatoxin testing, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean, premium nutmeg spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
+Our strict compliance with advanced aflatoxin testing, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean nutmeg spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           
@@ -79,7 +79,7 @@ Our strict compliance with advanced aflatoxin testing, rigorous sizing protocols
 
         {/* HERO IMAGE CONTAINER */}
         <div className="nut-hero-image-wrapper">
-          <img src={nutmeg} alt="Premium Whole Nutmeg Kernels" className="nut-main-hero-img" />
+          <img src={nutmeg} alt="Whole Nutmeg Kernels" className="nut-main-hero-img" />
         </div>
       </div>
 

@@ -58,7 +58,7 @@ const productDetails = {
   'green-cardamom': {
     slug: 'green-cardamom',
     title: "Our Green Cardamom Range",
-    description: "Prized green cardamom pods and premium ground variants packed with natural essential oils.",
+    description: "Prized green cardamom pods and ground variants packed with natural essential oils.",
     image: cardamom,
     summary: "Ceylon Green Cardamom is prized for its cooling, floral aroma and high cineole content, offering a sweet yet complex flavour profile.",
     items: [
@@ -121,7 +121,7 @@ const Products = () => {
             <title>Wholesale Ceylon Spices Range | Direct Estate Supply | Averon Supplies</title>
             <meta 
               name="description" 
-              content="wholesale supply of single-origin, premium grade Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
+              content="wholesale supply of single-origin Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
             />
             <link 
               rel="canonical" 

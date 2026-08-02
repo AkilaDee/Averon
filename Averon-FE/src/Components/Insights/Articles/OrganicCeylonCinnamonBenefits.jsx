@@ -281,7 +281,7 @@ const OrganicCeylonCinnamonBenefits = () => {
           <div className="article-cta-box">
             <h3>Ready to Experience Organic Ceylon Cinnamon?</h3>
             <p>
-              Discover our premium, sustainably sourced organic Ceylon cinnamon products straight from Sri Lanka.
+              Discover our sustainably sourced organic Ceylon cinnamon products straight from Sri Lanka.
             </p>
             <Link to="/products/ceylon-cinnamon" className="article-cta-btn">Shop Organic Ceylon Cinnamon</Link>
           </div>

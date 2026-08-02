@@ -23,7 +23,7 @@ const ResourceHub = () => {
           <div className="resource-meta">GRADING & SPECS</div>
           <h3 className="resource-card-title">Ceylon Cinnamon Grades & Standard Specifications</h3>
           <p className="resource-card-excerpt">
-            Explore our wholesale grading system. We supply true cinnamon in premium formats ranging from ultra-thin, delicate Alba quills to dense quillings and ground powders tailored for food manufacturing.
+            Explore our wholesale grading system. We supply true cinnamon in various formats ranging from ultra-thin, delicate Alba quills to dense quillings and ground powders tailored for food manufacturing.
           </p>
           <div className="resource-link-group">
             <Link to="/products/ceylon-cinnamon" className="resource-internal-link">
@@ -51,7 +51,7 @@ const ResourceHub = () => {
           <div className="resource-meta">B2B CONTRACTS</div>
           <h3 className="resource-card-title">Commercial Sampling & Volume Quotations</h3>
           <p className="resource-card-excerpt">
-            We supply food manufacturers, premium packagers, and tea blenders across the UK. Request custom batch samples accompanied by full laboratory Certificate of Analysis (CoA) reports.
+            We supply food manufacturers, packagers, and tea blenders across the UK. Request custom batch samples accompanied by full laboratory Certificate of Analysis (CoA) reports.
           </p>
           <div className="resource-link-group">
             <Link to="/contact-us" className="resource-internal-link highlight-btn">

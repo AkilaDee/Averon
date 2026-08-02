@@ -67,18 +67,18 @@ const CinnamonGradingExplained = () => {
             fragrant with a complex, sweet aromatic profile.
           </p>
           <p>
-            Alba is appropriate for premium retail packaging (where the quill is visible and
+            Alba is appropriate for retail packaging (where the quill is visible and
             its appearance matters), high-end culinary applications, gifting products, and
             any context where the cinnamon is presented to the end consumer in quill form.
             Due to the skill and labour involved in producing quills at this diameter, Alba
-            commands a significant price premium over lower grades.
+            commands a significant price over lower grades.
           </p>
 
           <h3>C5 Extra Special ≤ 8mm</h3>
           <p>
             C5 Extra Special represents the upper tier of the C5 classification, with quills
             between 6mm and 8mm in diameter. It retains much of the aromatic fineness of Alba
-            at a lower price point, and is well suited to premium food manufacturing, specialty
+            at a lower price point, and is well suited to food manufacturing, specialty
             retail, and applications where quality is paramount but the absolute finest grade
             is not required.
           </p>

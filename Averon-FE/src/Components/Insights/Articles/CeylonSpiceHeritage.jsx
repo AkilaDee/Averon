@@ -41,7 +41,7 @@ const CeylonSpiceHeritage = () => {
             The moment you step into a traditional Sri Lankan kitchen, you are enveloped in an intoxicating symphony of aromas. The sudden crackle of mustard seeds hitting hot coconut oil, the earthy warmth of roasting cumin, and the floral sweetness of cardamom all blend to create a sensory experience unlike any other. For centuries, this tear-drop island in the Indian Ocean has been a global epicentre for culinary magic, primarily driven by the unparalleled quality of single-origin Lankan spices.
           </p>
           <p>
-            Whether you are looking to boost your immune system, reduce bodily inflammation, or perfect an authentic curry, your kitchen cupboards hold the key. Far more than just culinary afterthoughts, the right herbs and any premium ceylon spice can transform a bland, uninspiring dish into a medicinal masterpiece.
+            Whether you are looking to boost your immune system, reduce bodily inflammation, or perfect an authentic curry, your kitchen cupboards hold the key. Far more than just culinary afterthoughts, the right herbs and any ceylon spice can transform a bland, uninspiring dish into a medicinal masterpiece.
           </p>
 
           <h2>The Heritage of the Spice Island</h2>

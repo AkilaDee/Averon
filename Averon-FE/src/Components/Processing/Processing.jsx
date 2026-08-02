@@ -79,7 +79,7 @@ const Processing = () => {
             </div>
             <div className="pipeline-image-side">
               <div className="pipeline-img-frame">
-                <img src={grading} alt="Manual spice sorting and premium batch grading process" className="pipeline-embedded-img" loading="lazy" />
+                <img src={grading} alt="Manual spice sorting and batch grading process" className="pipeline-embedded-img" loading="lazy" />
               </div>
             </div>
           </div>

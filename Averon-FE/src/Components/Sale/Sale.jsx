@@ -99,7 +99,7 @@ export default function Sale() {
             unitType: item.unit_type || 'kg', // Dynamic units ('kg', 'pcs', etc.)
             priceTiers: item.price_tiers || [], // Array of bulk thresholds
             image: assignedImage || FALLBACK_IMAGE,
-            description: item.specification ? `Specification: ${item.specification}` : 'Premium supply batch.',
+            description: item.specification ? `Specification: ${item.specification}` : 'Supply batch.',
             onSale: item.in_shop 
           };
         });
@@ -191,7 +191,7 @@ export default function Sale() {
   return (
     <div className="sale-page-wrapper">
       <h1 className="sale-title">Sale</h1>
-      <p className="sale-subtitle">Premium direct-import spice stocks processed into custom trade units.</p>
+      <p className="sale-subtitle">Direct-import spice stocks processed into custom trade units.</p>
 
       {/* Categories Filter Bar */}
       <div className="filter-row">

@@ -16,9 +16,9 @@ const Vanilla = () => {
   ];
 
   const applications = [
-    { area: "Artisanal Dairy & Ice Cream", text: "Direct-seed scraped beans for visible premium clustering and authentic aroma release." },
+    { area: "Artisanal Dairy & Ice Cream", text: "Direct-seed scraped beans for visible clustering and authentic aroma release." },
     { area: "High-End Fine Pastry Production", text: "Designed for slow-steeping extractions in cream, custards, and delicate syrups." },
-    { area: "Premium Extracts & Pastes", text: "Yields rich, non-acidic bases for professional-grade baking extracts." }
+    { area: "Extracts & Pastes", text: "Yields rich, non-acidic bases for professional-grade baking extracts." }
   ];
 
   const items = [
@@ -31,7 +31,7 @@ const Vanilla = () => {
         <title>Wholesale Vanilla Pods Bulk Supply | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of premium Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
+          content="Direct estate-to-business wholesale supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla" hreflang="en-GB"/>
       </Helmet>
@@ -52,14 +52,14 @@ The cultivation of authentic Vanilla planifolia requires meticulous generational
 Each orchid flower is meticulously hand-pollinated within a single morning window. The resulting vanilla beans are left to mature on the vine for up to nine months to maximize their base vanillin precursors, before undergoing a traditional Bourbon curing process spanning several months. Every single batch captures the true, unadulterated essence of a premier ceylon spice and authentic tropical harvesting, elevating it far above standard commercial grades found in mass-market retail channels.
             </p>
             <p>
-              This extensive curing process involves alternating daily cycles of sun-sweating and slow indoor shade-drying, allowing the natural vanillin to crystallize smoothly within the vanilla pod wall. The resulting premium vanilla beans are highly flexible, oily, and plump, possessing a rich moisture content of 30% to 35% and a deep, dark brown lustrous skin that yields an incredibly smooth, cream-like vanilla aroma profile accompanied by a bold, aromatic punch.
+              This extensive curing process involves alternating daily cycles of sun-sweating and slow indoor shade-drying, allowing the natural vanillin to crystallize smoothly within the vanilla pod wall. The resulting vanilla beans are highly flexible, oily, and plump, possessing a rich moisture content of 30% to 35% and a deep, dark brown lustrous skin that yields an incredibly smooth, cream-like vanilla aroma profile accompanied by a bold, aromatic punch.
 
 Our strict hand-sorting and structural grading standards enforce a near-zero threshold for split, dry, or under-cured vanilla pods. Because of this rich natural concentration and robust volatile oil content, our whole vanilla beans hold up beautifully under commercial processing and storage conditions without losing their distinctive fragrance or complex structural integrity.
             </p>
             <p className="van-highlight-para">
-              Free from any chemical accelerants or artificial plumping agents, our vanilla beans are specifically optimized for fine dining pastry production, premium dairy infusions, and natural extract formulations where a deep, rich vanilla profile with high seed density is required. Whether these premium whole vanilla pods are scraped for artisanal ice creams, infused into gourmet confectionery, or utilized by global manufacturing facilities to create specialty extracts, our vanilla delivers a potent, multi-layered sensory experience.
+              Free from any chemical accelerants or artificial plumping agents, our vanilla beans are specifically optimized for fine dining pastry production, dairy infusions, and natural extract formulations where a deep, rich vanilla profile with high seed density is required. Whether these whole vanilla pods are scraped for artisanal ice creams, infused into gourmet confectionery, or utilized by global manufacturing facilities to create specialty extracts, our vanilla delivers a potent, multi-layered sensory experience.
 
-Our strict compliance with advanced quality assurance, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean, premium vanilla spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
+Our strict compliance with advanced quality assurance, rigorous sizing protocols, and strict moisture monitoring ensure a remarkably clean vanilla spice that is fully ready for high-end retail packaging and demanding industrial manufacturing across Europe, North America, and beyond.
             </p>
           </div>
           
@@ -79,7 +79,7 @@ Our strict compliance with advanced quality assurance, rigorous sizing protocols
 
         {/* HERO IMAGE CONTAINER */}
         <div className="van-hero-image-wrapper">
-          <img src={vanilla} alt="Premium Gourmet Vanilla Pods" className="van-main-hero-img" />
+          <img src={vanilla} alt="Gourmet Vanilla Pods" className="van-main-hero-img" />
         </div>
       </div>
 

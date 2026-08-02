@@ -37,7 +37,7 @@ const BlackPepper = () => {
         <title>Wholesale Black Pepper Bulk Supply | Averon Supplies</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of single-origin, premium grade Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
+          content="Direct estate-to-business wholesale supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper" hreflang="en-GB" />
       </Helmet>
@@ -65,7 +65,7 @@ This structural superiority delivers a biting, intensely pungent flavor profile 
             <p className="pep-highlight-para">
               For industrial spice extractors, commercial meat packers, and high-end blending houses, this high-piperine yield translates directly into superior process efficiency. It requires lower raw material weights during oleoresin extraction and mass production, saving both time and money for large-scale operations.
 
-Our advanced physical cleaning, rigorous metal detection, and strict moisture monitoring protocols ensure a remarkably clean, premium product that is fully ready for direct-to-grinder applications in international food manufacturing facilities.
+Our advanced physical cleaning, rigorous metal detection, and strict moisture monitoring protocols ensure a remarkably clean product that is fully ready for direct-to-grinder applications in international food manufacturing facilities.
             </p>
           </div>
           
@@ -85,7 +85,7 @@ Our advanced physical cleaning, rigorous metal detection, and strict moisture mo
 
         {/* HERO IMAGE CONTAINER */}
         <div className="pep-hero-image-wrapper">
-          <img src={pepper_500} alt="Premium Black Pepper Processing" className="pep-main-hero-img" />
+          <img src={pepper_500} alt="Black Pepper Processing" className="pep-main-hero-img" />
         </div>
       </div>
 
