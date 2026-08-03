@@ -95,7 +95,7 @@ export const routes = [
   // ─── Products ────────────────────────────────────────────────────────────
   {
     path: '/products',
-    title: "{activeCategory.title} | Averon Supplies",
+    title: "Wholesale Sri Lankan Spices | Bulk Supplier | Averon Supplies Ltd",
     description:
       "wholesale supply of single-origin Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla.",
     h1: 'Wholesale Sri Lankan Spice Range',
@@ -240,7 +240,7 @@ export const routes = [
   // ─── Insights / Blog ─────────────────────────────────────────────────────
   {
     path: '/insights',
-    title: "{activeArticle.title} | Averon Supplies Insights",
+    title: "Ceylon Cinnamon Insights & Guides | Averon Supplies Ltd",
     description:
       "Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka.",
     h1: 'Insights: Ceylon Cinnamon & Spice Sourcing',
@@ -254,7 +254,7 @@ export const routes = [
     path: '/insights/ceylon-spice-heritage',
     type: 'article',
     datePublished: '2026-07-24',
-    title: "The Master Guide to Authentic Ceylon Spice | Averon Supplies",
+    title: "The Master Guide to Authentic Ceylon Spice | Averon Supplies Ltd",
     description:
       "Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves.",
     h1: 'The Heritage of Ceylon Spices',
@@ -268,7 +268,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-benefits',
     type: 'article',
     datePublished: '2026-07-29',
-    title: "Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies",
+    title: "Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies Ltd",
     description:
       "Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how 'true cinnamon' enhances wellness and cuisine.",
     h1: 'Health Benefits of Ceylon Cinnamon',
@@ -317,7 +317,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-dosage-guide',
     type: 'article',
     datePublished: '2026-07-27',
-    title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies",
+    title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies Ltd",
     description:
       "Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.",
     h1: 'Ceylon Cinnamon Capsule Dosage Guide',
@@ -338,7 +338,7 @@ export const routes = [
     path: '/insights/alba-grade-cinnamon',
     type: 'article',
     datePublished: '2026-07-26',
-    title: "What is Alba Grade Cinnamon? | Averon Supplies",
+    title: "What is Alba Grade Cinnamon? | Averon Supplies Ltd",
     description:
       "Alba is the finest grade of Ceylon cinnamon with a diameter of 6mm or less. Learn what the grade means, the strict diameter standard, and why it commands a premium.",
     h1: 'Alba Grade Cinnamon Explained',
@@ -373,7 +373,7 @@ export const routes = [
     path: '/insights/coumarin-in-cinnamon',
     type: 'article',
     datePublished: '2026-07-24',
-    title: "What is Coumarin and Why Does It Matter? | Averon Supplies",
+    title: "What is Coumarin and Why Does It Matter? | Averon Supplies Ltd",
     description:
       "Coumarin is a naturally occurring compound in cinnamon. Cassia contains up to 12,000mg/kg while Ceylon contains almost none. Learn what this means for food safety.",
     h1: 'Coumarin in Cinnamon: Levels & Limits',
@@ -388,7 +388,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-testing',
     type: 'article',
     datePublished: '2026-07-20',
-    title: "Lead and Pesticide Testing in Cinnamon | Averon Supplies",
+    title: "Lead and Pesticide Testing in Cinnamon | Averon Supplies Ltd",
     description:
       "Independent testing has found elevated lead and pesticide residues in commercially available cinnamon. Learn what a COA should cover and what to ask your supplier.",
     h1: 'Lead & Pesticide Testing in Ceylon Cinnamon',
@@ -402,7 +402,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-grading',
     type: 'article',
     datePublished: '2026-07-20',
-    title: "Ceylon Cinnamon Grading: Alba to C4 | Averon Supplies",
+    title: "Ceylon Cinnamon Grading: Alba to C4 | Averon Supplies Ltd",
     description:
       "Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application.",
     h1: 'The Ceylon Cinnamon Grading System',
@@ -432,7 +432,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-usage',
     type: 'article',
     datePublished: '2026-07-14',
-    title: "How to Use Ceylon Cinnamon | Averon Supplies",
+    title: "How to Use Ceylon Cinnamon | Averon Supplies Ltd",
     description:
       "Discover the many benefits of cinnamon, from blood sugar balance to skincare. Learn what is good for cinnamon and how to incorporate it safely into your routine.",
     h1: 'How to Use Ceylon Cinnamon',
@@ -446,7 +446,7 @@ export const routes = [
   // ─── Informational ───────────────────────────────────────────────────────
   {
     path: '/quality',
-    title: "Quality Assurance & Food Safety | Averon Supplies",
+    title: "Quality Assurance & Food Safety | Averon Supplies Ltd",
     description:
       "Our rigorous spice quality control protocols ensure food-grade compliance. Access Certificates of Analysis (CoA), laboratory testing, and microbial purity data.",
     h1: 'Quality Control & Assurance',
@@ -458,7 +458,7 @@ export const routes = [
   },
   {
     path: '/supply-chain',
-    title: "Ethical Spice Supply Chain & Sourcing | Averon Supplies",
+    title: "Ethical Spice Supply Chain & Sourcing | Averon Supplies Ltd",
     description:
       "Explore Averon Supplies Ltd's vertically integrated supply chain. From estates in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement.",
     h1: 'Supply Chain & Traceability',
@@ -470,7 +470,7 @@ export const routes = [
   },
   {
     path: '/sourcing-regions',
-    title: "Sri Lankan Spice Sourcing Regions | Averon Supplies",
+    title: "Sri Lankan Spice Sourcing Regions | Averon Supplies Ltd",
     description:
       "Explore Averon Supplies Ltd's single-origin Sri Lankan sourcing networks. Learn how maritime lowlands, sub-mountainous ridges, and wet zones create volatile oil profiles.",
     h1: 'Our Sri Lankan Sourcing Regions',
@@ -482,7 +482,7 @@ export const routes = [
   },
   {
     path: '/processing',
-    title: "Spice Processing & Milling Standards | Averon Supplies",
+    title: "Spice Processing & Milling Standards | Averon Supplies Ltd",
     description:
       "Discover Averon Supplies Ltd's industrial processing architecture. From strict optical sorting and controlled dehydration to vacuum triple-shield packaging under critical control metrics.",
     h1: 'Processing & Handling',
@@ -494,14 +494,14 @@ export const routes = [
   },
   {
     path: '/certifications',
-    title: "Spice Import Compliance & HACCP | Averon Supplies",
+    title: "Spice Import Compliance & HACCP | Averon Supplies Ltd",
     description:
       "Review Averon Supplies Ltd's statutory compliance metrics. Verified UK Food Business Operator (FBO), strict FSA guidelines, fully-documented HACCP systems, and 100% batch traceability.",
     h1: 'Certifications & Compliance',
     breadcrumb: 'Certifications',
     intro: [
-      'We hold and maintain the documentation UK and EU buyers need for wholesale spice import, covering food safety management, organic chain of custody where applicable, and consignment-level analysis.',
-      'Certificates and specification sheets are available on request for any product line before you order.',
+      'Averon Supplies Ltd is a registered UK Food Business Operator with a documented HACCP system covering our import and distribution operations, working to Food Standards Agency requirements.',
+      'Every consignment ships with batch-level documentation and full traceability to the estate and processing lot it came from. Certificates and specification sheets are available on request for any product line.',
     ],
   },
   {
@@ -545,7 +545,7 @@ export const routes = [
     path: '/terms-of-business',
     title: "Terms & Conditions of Sale | Averon Supplies",
     description:
-      "Review the official B2B Terms and Conditions of Sale for Averon Supplies Ltd. Comprehensive guidelines covering price fluctuations, bulk tolerances, retention of title, and international jurisdiction.",
+      "Review the official B2B Terms and Conditions of Sale for Averon Supplies. Comprehensive guidelines covering price fluctuations, bulk tolerances, retention of title, and international jurisdiction.",
     h1: 'Terms of Business',
     breadcrumb: 'Terms of Business',
     intro: [
