@@ -73,7 +73,7 @@ export const routes = [
     path: '/',
     title: 'Ceylon Cinnamon & Spice Wholesale | Averon Supplies',
     description:
-      'UK wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced direct from our own estates. Bulk supply, samples and specs available.',
+      'Wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced directly from our own estates. Bulk supply, samples and specs available.',
     h1: 'Ceylon Cinnamon & Sri Lankan Spices Wholesale',
     intro: [
       'Averon Supplies Ltd is a specialist importer and wholesale distributor of authentic, single-origin Ceylon cinnamon and high-quality Sri Lankan spices. Sourced from our own estate gardens, our products deliver unmatched purity, rich essential oils, and absolute traceability from source to your delivery destination.',
