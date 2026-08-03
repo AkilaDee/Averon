@@ -253,6 +253,7 @@ export const routes = [
   {
     path: '/insights/ceylon-spice-heritage',
     type: 'article',
+    datePublished: '2026-07-24',
     title: "The Master Guide to Authentic Ceylon Spice | Averon Supplies",
     description:
       "Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves.",
@@ -266,6 +267,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-benefits',
     type: 'article',
+    datePublished: '2026-07-29',
     title: "Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies",
     description:
       "Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how 'true cinnamon' enhances wellness and cuisine.",
@@ -286,6 +288,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-capsules',
     type: 'article',
+    datePublished: '2026-07-26',
     title: "Best Ceylon Cinnamon Capsules: A Buyer's Guide | Averon",
     description:
       "Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.",
@@ -299,6 +302,7 @@ export const routes = [
   {
     path: '/insights/organic-ceylon-cinnamon',
     type: 'article',
+    datePublished: '2026-07-28',
     title: "Organic Ceylon Cinnamon: Benefits & Uses | Averon",
     description:
       "Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.",
@@ -312,6 +316,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-dosage-guide',
     type: 'article',
+    datePublished: '2026-07-27',
     title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies",
     description:
       "Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.",
@@ -332,6 +337,7 @@ export const routes = [
   {
     path: '/insights/alba-grade-cinnamon',
     type: 'article',
+    datePublished: '2026-07-26',
     title: "What is Alba Grade Cinnamon? | Averon Supplies",
     description:
       "Alba is the finest grade of Ceylon cinnamon with a diameter of 6mm or less. Learn what the grade means, the strict diameter standard, and why it commands a premium.",
@@ -345,6 +351,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-vs-cassia',
     type: 'article',
+    datePublished: '2026-07-25',
     title: "Ceylon Cinnamon vs Cassia: Key Differences | Averon",
     description:
       "Discover the differences in ceylon cinnamon vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type.",
@@ -365,6 +372,7 @@ export const routes = [
   {
     path: '/insights/coumarin-in-cinnamon',
     type: 'article',
+    datePublished: '2026-07-24',
     title: "What is Coumarin and Why Does It Matter? | Averon Supplies",
     description:
       "Coumarin is a naturally occurring compound in cinnamon. Cassia contains up to 12,000mg/kg while Ceylon contains almost none. Learn what this means for food safety.",
@@ -379,6 +387,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-testing',
     type: 'article',
+    datePublished: '2026-07-20',
     title: "Lead and Pesticide Testing in Cinnamon | Averon Supplies",
     description:
       "Independent testing has found elevated lead and pesticide residues in commercially available cinnamon. Learn what a COA should cover and what to ask your supplier.",
@@ -392,6 +401,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-grading',
     type: 'article',
+    datePublished: '2026-07-20',
     title: "Ceylon Cinnamon Grading: Alba to C4 | Averon Supplies",
     description:
       "Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application.",
@@ -406,6 +416,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-origin',
     type: 'article',
+    datePublished: '2026-07-18',
     title: "Why Ceylon Cinnamon Only Grows in Sri Lanka | Averon",
     description:
       "Discover the true cinnamon origin. True cinnamon (Cinnamomum verum) is native to Sri Lanka. Learn the history and climate that make it impossible to replicate.",
@@ -420,6 +431,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-usage',
     type: 'article',
+    datePublished: '2026-07-14',
     title: "How to Use Ceylon Cinnamon | Averon Supplies",
     description:
       "Discover the many benefits of cinnamon, from blood sugar balance to skincare. Learn what is good for cinnamon and how to incorporate it safely into your routine.",

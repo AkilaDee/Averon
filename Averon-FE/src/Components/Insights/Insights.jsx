@@ -9,7 +9,6 @@ import imgCoumarin from '../../assets/coumarin.webp';
 import imgTesting from '../../assets/lab-test.webp';
 import imgGrading from '../../assets/grades.webp';
 import imgOrigin from '../../assets/estate.webp';
-import imgSuperfood from '../../assets/superfood.webp';
 import imgOrganicBenefits from '../../assets/organic-benefits.webp';
 import imgUnlockBenefits from '../../assets/cinnamon ground.webp';
 import imgCapsuleDosage from '../../assets/dosage.webp'; 
@@ -49,14 +48,6 @@ const articles = [
     category: 'Health & Wellness',
     readTime: '7 min read',
     image: imgUnlockBenefits,
-  },
-  {
-    slug: 'ceylon-cinnamon-superfood',
-    title: 'Ceylon Cinnamon Sticks: The Ultimate Superfood Guide',
-    description: 'Discover the health benefits of Ceylon cinnamon sticks, the "true cinnamon," renowned for its rich history and ability to manage blood sugar and inflammation. Choose organic Ceylon for maximum wellness.',
-    category: 'Health & Wellness',
-    readTime: '7 min read',
-    image: imgSuperfood,
   },
   {
     slug: 'organic-ceylon-cinnamon',

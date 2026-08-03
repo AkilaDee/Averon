@@ -104,7 +104,8 @@ function buildHead(route, image) {
     `<meta property="og:image:alt" content="${esc(route.h1)}" />`,
   ];
 
-  if (route.type === 'article') {
+  // Only emit article dates once they're real — see seo.schema.js.
+  if (route.type === 'article' && route.datePublished !== PLACEHOLDER_DATE) {
     lines.push(
       `<meta property="article:published_time" content="${route.datePublished}" />`,
       `<meta property="article:modified_time" content="${route.dateModified}" />`

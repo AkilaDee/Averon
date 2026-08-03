@@ -189,8 +189,8 @@ const TrueCinnamonVsCassia = () => {
         <div className="article-related">
           <h3 className="article-related-title">Related Insights</h3>
           <div className="article-related-links">
-            <Link to="/insights/ceylon-cinnamon-superfood-guide" className="article-related-link">
-              Ceylon Cinnamon Sticks: The Ultimate Superfood Guide →
+            <Link to="/insights/ceylon-cinnamon-benefits" className="article-related-link">
+              Ceylon Cinnamon Sticks: The Ultimate Benefits Guide →
             </Link>
             <Link to="/insights/cinnamon-grading" className="article-related-link">
               Ceylon Cinnamon Grading Explained - From Alba to C4 →

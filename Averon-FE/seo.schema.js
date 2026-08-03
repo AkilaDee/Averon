@@ -7,7 +7,7 @@
  * SEO problem, so keep this the only place schema is defined.
  */
 
-import { SITE, routes, absoluteUrl } from './seo.config.js';
+import { SITE, routes, absoluteUrl, PLACEHOLDER_DATE } from './seo.config.js';
 
 /** Breadcrumb trail derived from the URL path. */
 export function trail(route) {
@@ -105,8 +105,15 @@ export function articleSchema(route, image) {
     headline: route.title.split('|')[0].trim(),
     description: route.description,
     image: [`${SITE.url}${image}`],
-    datePublished: route.datePublished,
-    dateModified: route.dateModified,
+    // A wrong date is worse than no date: Google reads datePublished and will
+    // happily show 1970 in results. Until a real date is set in seo.config.js,
+    // omit the field entirely rather than assert something false.
+    ...(route.datePublished && route.datePublished !== PLACEHOLDER_DATE
+      ? { datePublished: route.datePublished }
+      : {}),
+    ...(route.dateModified && route.dateModified !== PLACEHOLDER_DATE
+      ? { dateModified: route.dateModified }
+      : {}),
     author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/` },
     publisher: { '@id': `${SITE.url}/#organization` },
     mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(route.path) },
