@@ -3,7 +3,7 @@
   publish = "dist"
 
 # Fallback for React Router (Single Page App)
-# No `force` — Netlify serves real files first, which is what lets the
+# No `force`  Netlify serves real files first, which is what lets the
 # prerendered per-route HTML in dist/ be found before this rule applies.
 [[redirects]]
   from = "/*"

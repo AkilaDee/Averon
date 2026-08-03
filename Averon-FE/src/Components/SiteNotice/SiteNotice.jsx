@@ -17,13 +17,13 @@ import './SiteNotice.css';
  * Rejecting leaves the denied default in place.
  *
  * WHY DEFAULT-DENIED MATTERS
- * UK PECR requires consent BEFORE non-essential cookies are set — not opt-out.
+ * UK PECR requires consent BEFORE non-essential cookies are set  not opt-out.
  * A banner that lets analytics run while it waits for a click is the single
  * most common compliance failure, and it's visible from outside the site.
  *
  * NOT COVERED HERE (deliberately)
- * The cart's localStorage key (averon_cart) is strictly necessary — a shop
- * can't function without remembering the basket — so it's exempt from consent
+ * The cart's localStorage key (averon_cart) is strictly necessary  a shop
+ * can't function without remembering the basket  so it's exempt from consent
  * and keeps working whichever button the visitor presses.
  */
 
@@ -47,7 +47,7 @@ export function reopenNotice() {
   try {
     localStorage.removeItem(STORAGE_KEY);
   } catch {
-    /* storage unavailable — banner will simply show again next visit */
+    /* storage unavailable  banner will simply show again next visit */
   }
   window.dispatchEvent(new Event('averon:reopen-notice'));
 }
@@ -89,7 +89,7 @@ const SiteNotice = () => {
         })
       );
     } catch {
-      /* storage blocked — honour the choice for this session only */
+      /* storage blocked  honour the choice for this session only */
     }
     applyConsent(granted);
     setVisible(false);

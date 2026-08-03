@@ -1,5 +1,5 @@
 /**
- * seo.schema.js — shared structured-data builders.
+ * seo.schema.js  shared structured-data builders.
  *
  * Imported by BOTH scripts/prerender.mjs (build) and src/components/Seo.jsx
  * (runtime), so the JSON-LD a crawler sees in the static HTML is identical to
@@ -52,7 +52,7 @@ export function localBusiness() {
     logo: `${SITE.url}${SITE.logo}`,
     description:
       'Specialist importer and wholesale distributor of Ceylon cinnamon and Sri Lankan spices sourced directly from our own estates in Sri Lanka.',
-    telephone: SITE.telephone, // E.164 — audit issue #15
+    telephone: SITE.telephone, // E.164  audit issue #15
     email: SITE.email,
     address: { '@type': 'PostalAddress', ...SITE.address },
     geo: { '@type': 'GeoCoordinates', ...SITE.geo },
@@ -94,7 +94,7 @@ export function productSchema(route, image) {
     url: absoluteUrl(route.path),
     // NOTE: add an `offers` block with real price/currency/availability to be
     // eligible for product rich results. Omitted here because wholesale pricing
-    // isn't published — don't fake it, Google penalises mismatched offer data.
+    // isn't published  don't fake it, Google penalises mismatched offer data.
   };
 }
 

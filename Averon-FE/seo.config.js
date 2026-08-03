@@ -1,5 +1,5 @@
 /**
- * seo.config.js — SINGLE SOURCE OF TRUTH for all per-page SEO metadata.
+ * seo.config.js, SINGLE SOURCE OF TRUTH for all per-page SEO metadata.
  *
  * Consumed by BOTH:
  *   - scripts/prerender.mjs  (build time -> writes unique HTML shell per route)
@@ -26,8 +26,8 @@ export const SITE = {
   lang: 'en-GB',
   logo: '/averonlogo.png',
   defaultOgImage: '/og/averon-default.jpg',
-  twitterHandle: '', // e.g. '@averonsupplies' — leave '' if you have no X account
-  telephone: '+447344469729', // E.164 — fixes audit issue #15
+  twitterHandle: '', // e.g. '@averonsupplies' leave '' if you have no X account
+  telephone: '+447344469729', // E.164  fixes audit issue #15
   email: 'info@averonsupplies.co.uk',
   address: {
     streetAddress: '42 Porthcawe Road',
@@ -309,7 +309,7 @@ export const routes = [
     h1: 'The Benefits of Organic Ceylon Cinnamon',
     breadcrumb: 'Organic Ceylon Cinnamon',
     intro: [
-      'Organic certification for cinnamon covers cultivation and handling practice, chain of custody and processing facility controls — but it is not a proxy for grade, purity or coumarin content.',
+      'Organic certification for cinnamon covers cultivation and handling practice, chain of custody and processing facility controls, but it is not a proxy for grade, purity or coumarin content.',
       'This article explains which standards apply to UK and EU importers, what documentation should accompany a certified consignment, and how to verify a claim rather than accept it.',
     ],
   },
@@ -324,7 +324,7 @@ export const routes = [
     breadcrumb: 'Dosage Guide',
     intro: [
       'Safe daily quantities of cinnamon are governed largely by coumarin intake, and the tolerable daily intake established by EFSA is the reference point most formulators work from.',
-      'Because Ceylon cinnamon contains only trace coumarin, the practical ceiling on daily consumption is far higher than for Cassia — this guide shows the arithmetic behind that difference.',
+      'Because Ceylon cinnamon contains only trace coumarin, the practical ceiling on daily consumption is far higher than for Cassia. This guide shows the arithmetic behind that difference.',
     ],
     sections: [
       {
@@ -537,7 +537,7 @@ export const routes = [
     breadcrumb: 'Shop',
     intro: [
       'Our online shop offers the same estate-sourced Ceylon cinnamon we supply to trade customers, in quantities suited to individual buyers and small businesses.',
-      'Every order comes from the same graded, tested batches as our wholesale consignments — there is no separate retail-grade material.',
+      'Every order comes from the same graded, tested batches as our wholesale consignments. There is no separate retail-grade material.',
     ],
     priority: '0.9',
   },

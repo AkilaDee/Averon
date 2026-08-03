@@ -46,7 +46,7 @@ const jsonLd = (obj) =>
  * react-helmet-async tags every element it manages with data-rh="true", and on
  * mount it removes head elements carrying that marker before inserting its own.
  * Without the marker, Helmet treats our prerendered tags as foreign and simply
- * adds duplicates alongside them — two <title>s, two canonicals, doubled JSON-LD.
+ * adds duplicates alongside them  two <title>s, two canonicals, doubled JSON-LD.
  *
  * Stamping the marker here makes Helmet adopt and replace these tags cleanly.
  */
@@ -104,7 +104,7 @@ function buildHead(route, image) {
     `<meta property="og:image:alt" content="${esc(route.h1)}" />`,
   ];
 
-  // Only emit article dates once they're real — see seo.schema.js.
+  // Only emit article dates once they're real  see seo.schema.js.
   if (route.type === 'article' && route.datePublished !== PLACEHOLDER_DATE) {
     lines.push(
       `<meta property="article:published_time" content="${route.datePublished}" />`,
@@ -201,7 +201,7 @@ ${sibs
 // ── sitemap + robots ───────────────────────────────────────────────────────
 
 function buildSitemap() {
-  // One consistent URL format — no trailing slash except the homepage (audit
+  // One consistent URL format  no trailing slash except the homepage (audit
   // issue #9). No <changefreq>, which Google ignores (audit issue #13).
   // Real per-page <lastmod> instead of one shared date (audit issue #12).
   const urls = routes

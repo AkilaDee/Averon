@@ -4,23 +4,23 @@
  * Keeps <head> correct during client-side navigation.
  *
  * The prerendered HTML from scripts/prerender.mjs is what crawlers read on a
- * cold request — that's the part that fixes the audit. This handles the other
+ * cold request  that's the part that fixes the audit. This handles the other
  * half: when a user clicks from /products to /products/cloves, React Router
  * swaps the view without a page load, so the <title>, canonical and OG tags
  * would otherwise still describe the previous page.
  *
  * Uses react-helmet-async, which you already have via <HelmetProvider> in
- * main.jsx. Do NOT manipulate document.head directly alongside Helmet —
+ * main.jsx. Do NOT manipulate document.head directly alongside Helmet 
  * Helmet reconciles the tags it owns on every render and will fight you.
  *
- * USAGE — mount ONCE, inside <BrowserRouter>, outside <Routes>:
+ * USAGE  mount ONCE, inside <BrowserRouter>, outside <Routes>:
  *
  *   <BrowserRouter>
  *     <ScrollHandler />
  *     <Seo />
  *     ...
  *
- * PRECEDENCE: Helmet resolves conflicts by mount depth — the deepest/latest
+ * PRECEDENCE: Helmet resolves conflicts by mount depth  the deepest/latest
  * <Helmet> wins. Because <Seo /> sits high in the tree, any page component
  * that renders its own <Helmet> will override these values for the tags it
  * declares, while still inheriting everything it doesn't. See the note at the
@@ -119,14 +119,14 @@ export default function Seo() {
  * If article or product components already set their own <title> and
  * description, you have a choice:
  *
- *   (a) Leave them. They'll override this component per page, which works —
+ *   (a) Leave them. They'll override this component per page, which works 
  *       but you now have metadata in two places, and seo.config.js stops being
  *       the source of truth for those pages. The prerendered HTML is built
  *       from seo.config.js, so any divergence means crawlers and users see
  *       different titles for the same URL.
  *
  *   (b) Strip <Helmet> out of those components and let seo.config.js drive
- *       everything. Recommended — one file to maintain, and what a crawler
+ *       everything. Recommended  one file to maintain, and what a crawler
  *       reads is guaranteed to match what a browser renders.
  *
  * Option (b) is why the config file exists. Worth the ten minutes.
