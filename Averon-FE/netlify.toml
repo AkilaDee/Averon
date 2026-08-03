@@ -2,14 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
-# Force permanent 301 redirect removing trailing slashes
-[[redirects]]
-  from = "/*/"
-  to = "/:splat"
-  status = 301
-  force = true
-
 # Fallback for React Router (Single Page App)
+# No `force` — Netlify serves real files first, which is what lets the
+# prerendered per-route HTML in dist/ be found before this rule applies.
 [[redirects]]
   from = "/*"
   to = "/index.html"
