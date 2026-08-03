@@ -20,7 +20,7 @@ const Footer = () => {
               width="234"
               height="80" />
             <p className="footer-bio-text">
-              <p>Direct importer of authentic Ceylon Cinnamon and Sri Lankan spices. We cultivate, harvest, and process on our own estates to ensure absolute traceability and uncompromised grade accuracy for wholesale markets, meeting stringent commercial standards aligned with the <a href="https://www.food.gov.uk" target="_blank" rel="noopener">Food Standards Agency</a> guidelines.</p>
+              Direct importer of authentic Ceylon Cinnamon and Sri Lankan spices. We cultivate, harvest, and process on our own estates to ensure absolute traceability and uncompromised grade accuracy for wholesale markets, meeting stringent commercial standards aligned with the <a href="https://www.food.gov.uk" target="_blank" rel="noopener noreferrer">Food Standards Agency</a> guidelines.
             </p>
             <p className="footer-bio-text">
               Driven by collaboration, we support food manufacturers, distributors, 
@@ -65,8 +65,8 @@ const Footer = () => {
 
             <div className="contact-item">
               <FiPhone className="contact-icon" />
-              <a href="tel:+44(0)7344469729" className="contact-link" aria-label="Call Us">
-                +44(0)7344469729
+              <a href="tel:+447344469729" className="contact-link" aria-label="Call Us">
+                +44 (0) 7344 469729
               </a>
             </div>
 
@@ -88,8 +88,10 @@ const Footer = () => {
           </div>
 
           {/* COLUMN 4: Certifications & Subscription */}
-          <div className="footer-col certs-col">
-          </div>
+          {/* COLUMN 4: reserved for certification badges.
+              Kept deliberately so the 4-column grid doesn't reflow when the
+              logos arrive. Drop the <img> elements straight in here. */}
+          <div className="footer-col certs-col" aria-hidden="true"></div>
 
         </div>
       </div>
@@ -100,6 +102,9 @@ const Footer = () => {
           <p className="copyright-text">
             © 2026 - Averon Supplies. All Rights Reserved.
           </p>
+          <Link to="/privacy-policy" className="terms-link">
+            Privacy Policy
+          </Link>
           <Link to="/terms-of-business" className="terms-link">
             Terms of Business
           </Link>
