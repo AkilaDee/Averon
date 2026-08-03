@@ -6,7 +6,7 @@ import { CartProvider } from './Components/Sale/CartContext';
 // Normal imports (used on homepage - load immediately)
 import Navbar from './Components/Navbar/Navbar';
 import Seo from './Components/Seo/Seo';
-import CookieConsent from './Components/CookieConsent/CookieConsent';
+import SiteNotice from './Components/SiteNotice/SiteNotice';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
 import ResourceHub from './Components/ResourceHub/ResourceHub';
@@ -325,7 +325,7 @@ const App = () => {
 
           </Routes>
         </Suspense>
-        <CookieConsent />
+        <SiteNotice />
       </BrowserRouter>
     </CartProvider>
   );

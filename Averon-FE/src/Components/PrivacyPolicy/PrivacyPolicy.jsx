@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { reopenCookieBanner } from '../CookieConsent/CookieConsent';
+import { reopenNotice } from '../SiteNotice/SiteNotice';
 
 /**
  * PRIVACY POLICY — SCAFFOLD, NOT FINISHED COPY.
@@ -103,7 +103,7 @@ const PrivacyPolicy = () => {
         You can change your mind at any time.{' '}
         <button
           type="button"
-          onClick={reopenCookieBanner}
+          onClick={reopenNotice}
           style={{
             background: 'none',
             border: 'none',

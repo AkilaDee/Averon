@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './CookieConsent.css';
+import './SiteNotice.css';
 
 /**
- * Cookie consent banner using Google Consent Mode v2.
+ * Privacy preferences banner using Google Consent Mode v2.
+ *
+ * NAMING: this file is deliberately NOT called CookieConsent. Ad-blocker filter
+ * lists (EasyList and friends) match "cookieconsent" in both request URLs and
+ * CSS class selectors, which blocks the module outright in dev and can hide the
+ * rendered banner in production. Keep the neutral naming.
  *
  * HOW IT WORKS
  * index.html sets analytics_storage to "denied" BEFORE gtag runs, so Google
@@ -22,7 +27,7 @@ import './CookieConsent.css';
  * and keeps working whichever button the visitor presses.
  */
 
-const STORAGE_KEY = 'averon_cookie_consent';
+const STORAGE_KEY = 'averon_prefs';
 const POLICY_VERSION = 1; // bump this to re-prompt everyone after a policy change
 
 export function getStoredConsent() {
@@ -38,13 +43,13 @@ export function getStoredConsent() {
 }
 
 /** Call from a footer link so visitors can change their mind later. */
-export function reopenCookieBanner() {
+export function reopenNotice() {
   try {
     localStorage.removeItem(STORAGE_KEY);
   } catch {
     /* storage unavailable — banner will simply show again next visit */
   }
-  window.dispatchEvent(new Event('averon:reopen-consent'));
+  window.dispatchEvent(new Event('averon:reopen-notice'));
 }
 
 function applyConsent(granted) {
@@ -57,7 +62,7 @@ function applyConsent(granted) {
   });
 }
 
-const CookieConsent = () => {
+const SiteNotice = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -69,8 +74,8 @@ const CookieConsent = () => {
     }
 
     const reopen = () => setVisible(true);
-    window.addEventListener('averon:reopen-consent', reopen);
-    return () => window.removeEventListener('averon:reopen-consent', reopen);
+    window.addEventListener('averon:reopen-notice', reopen);
+    return () => window.removeEventListener('averon:reopen-notice', reopen);
   }, []);
 
   const decide = (granted) => {
@@ -94,36 +99,36 @@ const CookieConsent = () => {
 
   return (
     <div
-      className="cookie-consent-bar"
+      className="site-notice-bar"
       role="dialog"
       aria-live="polite"
-      aria-label="Cookie consent"
+      aria-label="Privacy preferences"
     >
-      <div className="cookie-consent-inner">
-        <div className="cookie-consent-text">
-          <p className="cookie-consent-title">Cookies on this site</p>
-          <p className="cookie-consent-body">
+      <div className="site-notice-inner">
+        <div className="site-notice-text">
+          <p className="site-notice-title">Cookies on this site</p>
+          <p className="site-notice-body">
             We use essential cookies to make the site work. We&rsquo;d also like to
             set optional analytics cookies (Google Analytics) to understand how
             the site is used, which records an approximate location based on your
             IP address. We only set these if you accept. See our{' '}
-            <Link to="/privacy-policy" className="cookie-consent-link">
+            <Link to="/privacy-policy" className="site-notice-link">
               privacy policy
             </Link>
             .
           </p>
         </div>
-        <div className="cookie-consent-actions">
+        <div className="site-notice-actions">
           <button
             type="button"
-            className="cookie-btn cookie-btn-reject"
+            className="notice-btn notice-btn-reject"
             onClick={() => decide(false)}
           >
             Reject optional
           </button>
           <button
             type="button"
-            className="cookie-btn cookie-btn-accept"
+            className="notice-btn notice-btn-accept"
             onClick={() => decide(true)}
           >
             Accept all
@@ -134,4 +139,4 @@ const CookieConsent = () => {
   );
 };
 
-export default CookieConsent;
+export default SiteNotice;
