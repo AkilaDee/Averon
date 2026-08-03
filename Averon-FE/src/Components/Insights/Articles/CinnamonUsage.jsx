@@ -9,7 +9,7 @@ const CinnamonUsage = () => {
       <Helmet>
         <title>Cinnamon Benefits: What is Good for Cinnamon? | Averon Supplies</title>
         <meta name="description" content="Discover the many benefits of cinnamon, from blood sugar balance to skincare. Learn what is good for cinnamon and how to incorporate it safely into your routine." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/cinnamon-benefits" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-usage" />
       </Helmet>
 
       <div className="article-hero">

@@ -39,7 +39,7 @@ const BlackPepper = () => {
           name="description" 
           content="Direct estate-to-business wholesale supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper" hreflang="en-GB" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper"/>
       </Helmet>
       
 

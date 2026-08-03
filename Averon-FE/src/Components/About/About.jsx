@@ -12,7 +12,7 @@ const About = () => {
           name="description" 
           content="Discover the story behind Averon Supplies. We bridge the gap between single-origin spice estates and global food manufacturing with transparency and integrity." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/about" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/about-us" />
       </Helmet>
     <div className='about'>
         <div className='about-left'>

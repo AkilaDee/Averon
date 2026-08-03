@@ -33,7 +33,7 @@ const Vanilla = () => {
           name="description" 
           content="Direct estate-to-business wholesale supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla" hreflang="en-GB"/>
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla"/>
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}

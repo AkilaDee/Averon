@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
-
+ 
+# Audit issue #11 suggested blocking /assets/ to save crawl budget.
+# Deliberately left commented out: blocking the JS/CSS bundles stops Googlebot
+# rendering a React SPA correctly, which costs far more than the crawl budget
+# it saves. Uncomment only if you are certain.
+# Disallow: /assets/
+ 
 Sitemap: https://www.averonsupplies.co.uk/sitemap.xml
+ 

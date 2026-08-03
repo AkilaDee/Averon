@@ -150,7 +150,6 @@ const Insights = () => {
             <link 
               rel="canonical" 
               href={`https://www.averonsupplies.co.uk/insights/${activeArticle.slug}`} 
-              hreflang="en-GB"
             />
           </>
         ) : (

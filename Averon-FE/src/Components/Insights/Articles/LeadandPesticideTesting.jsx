@@ -9,7 +9,7 @@ const LeadandPesticideTesting = () => {
       <Helmet>
         <title>Lead and Pesticide Testing in Cinnamon | Averon Supplies</title>
         <meta name="description" content="Independent testing has found elevated lead and pesticide residues in commercially available cinnamon. Learn what a COA should cover and what to ask your supplier." />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/cinnamon-testing" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-testing" />
       </Helmet>
 
       <div className="article-hero">

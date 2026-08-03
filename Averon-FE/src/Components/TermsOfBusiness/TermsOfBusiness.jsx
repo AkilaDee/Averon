@@ -14,7 +14,7 @@ const TermsOfBusiness = () => {
           content="Review the official B2B Terms and Conditions of Sale for Averon Supplies Ltd. Comprehensive guidelines covering price fluctuations, bulk tolerances, retention of title, and international jurisdiction." 
         />
         <meta name="robots" content="index, nofollow" />
-        <link rel="canonical" href="https://averonsupplies.co.uk/terms-of-business" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/terms-of-business" />
       </Helmet>
 
       {/* SECTION 1: HEADER BANNER */}

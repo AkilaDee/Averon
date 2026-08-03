@@ -5,6 +5,7 @@ import { CartProvider } from './Components/Sale/CartContext';
 
 // Normal imports (used on homepage - load immediately)
 import Navbar from './Components/Navbar/Navbar';
+import Seo from './Components/Seo/Seo';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
 import ResourceHub from './Components/ResourceHub/ResourceHub';
@@ -74,6 +75,7 @@ const App = () => {
     <CartProvider>
       <BrowserRouter>
         <ScrollHandler />
+        <Seo />
         <Navbar />
         <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
           <Routes>
@@ -296,6 +298,18 @@ const App = () => {
             <Route path="/terms-of-business" element={
               <>
                 <main><TermsOfBusiness /></main>
+                <Footer />
+              </>
+            } />
+
+            {/* Catch-all. Must stay last. Without it an unknown URL renders an
+                empty page with a 200 status, which Google treats as a soft 404.
+                <Seo /> sets noindex on unmatched paths automatically. */}
+            <Route path="*" element={
+              <>
+                <main>
+                  <Title subTitle='404' title='Page Not Found'/>
+                </main>
                 <Footer />
               </>
             } />

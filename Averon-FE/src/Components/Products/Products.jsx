@@ -126,7 +126,6 @@ const Products = () => {
             <link 
               rel="canonical" 
               href="https://www.averonsupplies.co.uk/products" 
-              hreflang="en-GB"
             />
           </>
         )}

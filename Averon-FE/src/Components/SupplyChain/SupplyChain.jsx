@@ -21,7 +21,7 @@ const SupplyChain = () => {
           content="Explore Averon Supplies Ltd's vertically integrated supply chain. From estates in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement." 
         />
         <meta name="keywords" content="ethical spice sourcing, sustainable spice supply chain, wholesale cinnamon logistics, direct farm spice procurement, single-origin traceability, fair trade spice supplier UK" />
-        <link rel="canonical" href="https://averonsupplies.co.uk/supply-chain" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/supply-chain" />
         
         {/* Fix Render-Blocking CSS by Preloading It */}
         <link rel="preload" href="/assets/index-13N7qzJ_.css" as="style" />
@@ -29,7 +29,7 @@ const SupplyChain = () => {
         {/* OpenGraph Metadata for Professional Sharing */}
         <meta property="og:title" content="Directly Integrated B2B Spice Supply Chain | Averon Supplies Ltd" />
         <meta property="og:description" content="Eliminating broker middle-layers to provide fixed price matrixes, lot-level batch tracking, and rigorous chemical barrier testing directly from origin." />
-        <meta property="og:url" content="https://averonsupplies.co.uk/supply-chain" />
+        <meta property="og:url" content="https://www.averonsupplies.co.uk/supply-chain" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={supply_hero} />
 

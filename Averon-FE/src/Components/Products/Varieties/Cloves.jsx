@@ -35,7 +35,7 @@ const Cloves = () => {
           name="description" 
           content="Direct estate-to-business wholesale supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
         />
-        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves" hreflang="en-GB"/>
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves"/>
       </Helmet>
 
       {/* HERO SECTION CONTAINER */}

@@ -24,12 +24,12 @@ const SourcingRegions = () => {
           content="Explore Averon Supplies Ltd's single-origin Sri Lankan sourcing networks. Learn how maritime lowlands, sub-mountainous ridges, and wet zones create volatile oil profiles." 
         />
         <meta name="keywords" content="Ceylon cinnamon origin, Sri Lanka spice regions, volcanic soil spices, maritime lowlands cinnamon, high-piperine black pepper sourcing, single-origin spice microclimates" />
-        <link rel="canonical" href="https://averonsupplies.co.uk/sourcing-regions" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/sourcing-regions" />
         
         {/* OpenGraph Metadata for Professional Sharing */}
         <meta property="og:title" content="Geographic Traceability & Spice Micro-Climates | Averon Supplies Ltd" />
         <meta property="og:description" content="Controlling crop structural profiles from the soil up. Discover how our geographic monsoon-balancing network yields flat B2B quality metrics year-round." />
-        <meta property="og:url" content="https://averonsupplies.co.uk/sourcing-regions" />
+        <meta property="og:url" content="https://www.averonsupplies.co.uk/sourcing-regions" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={regions_hero_bg} />
 

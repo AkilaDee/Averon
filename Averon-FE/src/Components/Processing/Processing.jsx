@@ -22,7 +22,7 @@ const Processing = () => {
           content="Discover Averon Supplies Ltd's industrial processing architecture. From strict optical sorting and controlled dehydration to vacuum triple-shield packaging under critical control metrics." 
         />
         <meta name="keywords" content="industrial spice processing, cinnamon milling, spice dehydration, optical sorting spices, triple shield packaging, bulk spice quality control, moisture target spices" />
-        <link rel="canonical" href="https://averonsupplies.co.uk/processing" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/processing" />
         
         {/* OpenGraph Metadata for Professional Sharing */}
         <meta property="og:title" content="Industrial Spice Processing Integrity & Milling | Averon Supplies Ltd" />

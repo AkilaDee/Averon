@@ -45,7 +45,6 @@ const Contact = () => {
         <link 
           rel="canonical" 
           href="https://www.averonsupplies.co.uk/contact-us" 
-          hreflang="en-GB" 
         />
       </Helmet>
 

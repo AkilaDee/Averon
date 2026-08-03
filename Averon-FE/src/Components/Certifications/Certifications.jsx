@@ -19,7 +19,7 @@ const Certifications = () => {
           content="Review Averon Supplies Ltd's statutory compliance metrics. Verified UK Food Business Operator (FBO), strict FSA guidelines, fully-documented HACCP systems, and 100% batch traceability." 
         />
         <meta name="keywords" content="FBO registered, UK Food Standards Agency compliance, HACCP spice supplier, spice traceability audit, wholesale spice certification UK, non-irradiated cinnamon technical sheet" />
-        <link rel="canonical" href="https://averonsupplies.co.uk/certifications" />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/certifications" />
         
         {/* OpenGraph Metadata for Professional Sharing (LinkedIn/B2B Networks) */}
         <meta property="og:title" content="Regulatory Compliance & Technical Spice Standards | Averon Supplies Ltd" />
