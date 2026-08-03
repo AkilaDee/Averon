@@ -42,6 +42,22 @@ const esc = (s = '') =>
 const jsonLd = (obj) =>
   `<script type="application/ld+json">${JSON.stringify(obj).replace(/</g, '\\u003c')}</script>`;
 
+/**
+ * react-helmet-async tags every element it manages with data-rh="true", and on
+ * mount it removes head elements carrying that marker before inserting its own.
+ * Without the marker, Helmet treats our prerendered tags as foreign and simply
+ * adds duplicates alongside them — two <title>s, two canonicals, doubled JSON-LD.
+ *
+ * Stamping the marker here makes Helmet adopt and replace these tags cleanly.
+ */
+const HELMET_ATTR = 'data-rh="true"';
+const markForHelmet = (line) =>
+  line
+    .replace(/^<title>/, `<title ${HELMET_ATTR}>`)
+    .replace(/^<meta /, `<meta ${HELMET_ATTR} `)
+    .replace(/^<link /, `<link ${HELMET_ATTR} `)
+    .replace(/^<script type="application\/ld\+json">/, `<script ${HELMET_ATTR} type="application/ld+json">`);
+
 const exists = (p) => access(p).then(() => true, () => false);
 
 /** Sibling links, so every fallback shell has genuinely different internal links. */
@@ -116,7 +132,7 @@ function buildHead(route, image) {
     ...buildSchemas(route, image).map(jsonLd)
   );
 
-  return lines.map((l) => (l ? `    ${l}` : '')).join('\n');
+  return lines.map((l) => (l ? `    ${markForHelmet(l)}` : '')).join('\n');
 }
 
 // ── body construction ──────────────────────────────────────────────────────

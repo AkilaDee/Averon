@@ -3,7 +3,6 @@ import './Hero.css';
 import vid1 from '../../assets/Vid.mp4'; 
 import vid2 from '../../assets/Vid2.mp4'; 
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const Hero = () => {
   const videoRef1 = useRef(null);

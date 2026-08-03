@@ -71,7 +71,7 @@ export const routes = [
   // ─── Homepage ────────────────────────────────────────────────────────────
   {
     path: '/',
-    title: 'Ceylon Cinnamon & Sri Lankan Spice Wholesale | Averon Supplies',
+    title: 'Ceylon Cinnamon & Spice Wholesale | Averon Supplies',
     description:
       'UK wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced direct from our own estates. Bulk supply, samples and specs available.',
     h1: 'Ceylon Cinnamon & Sri Lankan Spices Wholesale',
@@ -286,7 +286,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-capsules',
     type: 'article',
-    title: "Best Ceylon Cinnamon Capsules: Safe & Effective Supplement | Averon Supplies",
+    title: "Best Ceylon Cinnamon Capsules: A Buyer's Guide | Averon",
     description:
       "Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.",
     h1: 'Ceylon Cinnamon Capsules: What to Look For',
@@ -299,7 +299,7 @@ export const routes = [
   {
     path: '/insights/organic-ceylon-cinnamon',
     type: 'article',
-    title: "Organic Ceylon Cinnamon: Health Benefits & Uses | Averon Supplies",
+    title: "Organic Ceylon Cinnamon: Benefits & Uses | Averon",
     description:
       "Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.",
     h1: 'The Benefits of Organic Ceylon Cinnamon',
@@ -312,7 +312,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-dosage-guide',
     type: 'article',
-    title: "Ceylon Cinnamon Capsule Dosage Guide: Safe and Effective | Averon Supplies",
+    title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies",
     description:
       "Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.",
     h1: 'Ceylon Cinnamon Capsule Dosage Guide',
@@ -345,7 +345,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-vs-cassia',
     type: 'article',
-    title: "Ceylon Cinnamon vs Cassia: True Cinnamon vs. Cassia Comparison",
+    title: "Ceylon Cinnamon vs Cassia: Key Differences | Averon",
     description:
       "Discover the differences in ceylon cinnamon vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type.",
     h1: 'Ceylon Cinnamon vs Cassia: Key Differences',
@@ -392,7 +392,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-grading',
     type: 'article',
-    title: "Ceylon Cinnamon Grading Explained - From Alba to C4 | Averon Supplies",
+    title: "Ceylon Cinnamon Grading: Alba to C4 | Averon Supplies",
     description:
       "Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application.",
     h1: 'The Ceylon Cinnamon Grading System',
@@ -406,7 +406,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-origin',
     type: 'article',
-    title: "The True Cinnamon Origin: Why Ceylon Cinnamon Comes Only From Sri Lanka | Averon Supplies",
+    title: "Why Ceylon Cinnamon Only Grows in Sri Lanka | Averon",
     description:
       "Discover the true cinnamon origin. True cinnamon (Cinnamomum verum) is native to Sri Lanka. Learn the history and climate that make it impossible to replicate.",
     h1: 'The Origin of Ceylon Cinnamon',
@@ -420,7 +420,7 @@ export const routes = [
   {
     path: '/insights/ceylon-cinnamon-usage',
     type: 'article',
-    title: "Cinnamon Benefits: What is Good for Cinnamon? | Averon Supplies",
+    title: "How to Use Ceylon Cinnamon | Averon Supplies",
     description:
       "Discover the many benefits of cinnamon, from blood sugar balance to skincare. Learn what is good for cinnamon and how to incorporate it safely into your routine.",
     h1: 'How to Use Ceylon Cinnamon',
@@ -434,7 +434,7 @@ export const routes = [
   // ─── Informational ───────────────────────────────────────────────────────
   {
     path: '/quality',
-    title: "Spice Quality Assurance & Food Safety Compliance | Averon Supplies",
+    title: "Quality Assurance & Food Safety | Averon Supplies",
     description:
       "Our rigorous spice quality control protocols ensure food-grade compliance. Access Certificates of Analysis (CoA), laboratory testing, and microbial purity data.",
     h1: 'Quality Control & Assurance',
@@ -458,7 +458,7 @@ export const routes = [
   },
   {
     path: '/sourcing-regions',
-    title: "Sri Lankan Spice Sourcing Regions & Terroir | Averon Supplies",
+    title: "Sri Lankan Spice Sourcing Regions | Averon Supplies",
     description:
       "Explore Averon Supplies Ltd's single-origin Sri Lankan sourcing networks. Learn how maritime lowlands, sub-mountainous ridges, and wet zones create volatile oil profiles.",
     h1: 'Our Sri Lankan Sourcing Regions',
@@ -470,7 +470,7 @@ export const routes = [
   },
   {
     path: '/processing',
-    title: "Industrial Spice Processing & Milling Standards | Averon Supplies",
+    title: "Spice Processing & Milling Standards | Averon Supplies",
     description:
       "Discover Averon Supplies Ltd's industrial processing architecture. From strict optical sorting and controlled dehydration to vacuum triple-shield packaging under critical control metrics.",
     h1: 'Processing & Handling',
@@ -482,7 +482,7 @@ export const routes = [
   },
   {
     path: '/certifications',
-    title: "Spice Import Compliance & HACCP Certifications | Averon Supplies",
+    title: "Spice Import Compliance & HACCP | Averon Supplies",
     description:
       "Review Averon Supplies Ltd's statutory compliance metrics. Verified UK Food Business Operator (FBO), strict FSA guidelines, fully-documented HACCP systems, and 100% batch traceability.",
     h1: 'Certifications & Compliance',
