@@ -554,6 +554,19 @@ export const routes = [
     breadcrumb: 'Search',
     intro: ['Search our product range and insight articles.'],
   },
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy | Averon Supplies',
+    description:
+      'How Averon Supplies Ltd collects, uses and protects personal data, which cookies we set, and how to exercise your rights under UK GDPR.',
+    h1: 'Privacy Policy',
+    breadcrumb: 'Privacy Policy',
+    intro: [
+      'This policy explains what personal data Averon Supplies Ltd collects through this website, why we collect it, who we share it with, and the rights you have over it.',
+      'It also lists the cookies we set and explains how to change your cookie choice at any time.',
+    ],
+    priority: '0.3',
+  },
 ];
 
 // Apply the placeholder date to every article that hasn't had one set manually.

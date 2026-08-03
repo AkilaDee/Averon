@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--
+      ======================================================================
       Do NOT add title, description, canonical, Open Graph or JSON-LD tags
-      to this file. They are injected per route by scripts/prerender.mjs,
-      reading from seo.config.js. Hardcoding them here is what made every
-      page serve identical metadata.
+      to this file any more. They are injected per route by
+      scripts/prerender.mjs, reading from seo.config.js.
+
+      Hardcoding them here is what made all 22 pages identical in the audit.
+      ======================================================================
     -->
     <!--SEO_HEAD-->
 
@@ -19,9 +22,23 @@
 
     <link rel="preconnect" href="https://www.google-analytics.com" />
 
+    <!-- Google tag (gtag.js) - deferred 3 seconds after page load -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+
+      /* Google Consent Mode v2. These defaults MUST run before gtag('config'),
+         otherwise Analytics sets cookies before the visitor has chosen — which
+         is the thing UK PECR prohibits. CookieConsent.jsx flips analytics_storage
+         to 'granted' only if the visitor accepts. */
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+
       gtag('js', new Date());
       gtag('config', 'G-SYJ53TGMBP');
 
@@ -36,6 +53,12 @@
     </script>
   </head>
   <body>
+    <!--
+      SEO fallback container. The prerender step replaces the marker below with
+      content unique to each route, so a crawler that never executes JavaScript
+      still gets a real H1, real body copy and real internal links for THIS page.
+      React hydrates over the top of it once the bundle loads.
+    -->
     <div id="root"><!--SEO_BODY--></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

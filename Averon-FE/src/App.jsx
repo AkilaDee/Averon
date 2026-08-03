@@ -6,6 +6,7 @@ import { CartProvider } from './Components/Sale/CartContext';
 // Normal imports (used on homepage - load immediately)
 import Navbar from './Components/Navbar/Navbar';
 import Seo from './Components/Seo/Seo';
+import CookieConsent from './Components/CookieConsent/CookieConsent';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
 import ResourceHub from './Components/ResourceHub/ResourceHub';
@@ -29,6 +30,7 @@ const SourcingRegions = lazy(() => import('./Components/SourcingRegions/Sourcing
 const Processing = lazy(() => import('./Components/Processing/Processing'));
 const Certifications = lazy(() => import('./Components/Certifications/Certifications'));
 const TermsOfBusiness = lazy(() => import('./Components/TermsOfBusiness/TermsOfBusiness'));
+const PrivacyPolicy = lazy(() => import('./Components/PrivacyPolicy/PrivacyPolicy'));
 const Sale = lazy(() => import('./Components/Sale/Sale'));
 const Insights = lazy(() => import('./Components/Insights/Insights'));
 const CeylonCinnamonCapsuleDosageGuide = lazy(() => import('./Components/Insights/Articles/CeylonCinnamonCapsuleDosageGuide'));
@@ -295,6 +297,13 @@ const App = () => {
               </>
             } />
 
+            <Route path="/privacy-policy" element={
+              <>
+                <main><PrivacyPolicy /></main>
+                <Footer />
+              </>
+            } />
+
             <Route path="/terms-of-business" element={
               <>
                 <main><TermsOfBusiness /></main>
@@ -316,6 +325,7 @@ const App = () => {
 
           </Routes>
         </Suspense>
+        <CookieConsent />
       </BrowserRouter>
     </CartProvider>
   );

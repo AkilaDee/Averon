@@ -1,0 +1,120 @@
+/* Cookie consent banner.
+   Neutral styling so it sits quietly under your existing design — adjust the
+   two colour values below to match your brand palette. */
+
+.cookie-consent-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #1c1a17;
+  color: #f2efe9;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 20px 24px;
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.18);
+}
+
+.cookie-consent-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.cookie-consent-text {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.cookie-consent-title {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cookie-consent-body {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #d6d1c7;
+}
+
+.cookie-consent-link {
+  color: #f2efe9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-consent-link:hover {
+  color: #fff;
+}
+
+.cookie-consent-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Both buttons carry equal visual weight. Making "reject" harder to find than
+   "accept" is a dark pattern and regulators treat it as invalid consent. */
+.cookie-btn-reject {
+  background: transparent;
+  color: #f2efe9;
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.cookie-btn-reject:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.cookie-btn-accept {
+  background: #c8a24a;
+  color: #1c1a17;
+}
+
+.cookie-btn-accept:hover {
+  background: #d8b45c;
+}
+
+.cookie-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+  .cookie-consent-bar {
+    padding: 18px 18px 22px;
+  }
+
+  .cookie-consent-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .cookie-consent-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cookie-btn {
+    width: 100%;
+    padding: 13px 22px;
+  }
+}
