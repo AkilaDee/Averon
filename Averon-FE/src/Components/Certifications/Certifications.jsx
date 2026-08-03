@@ -113,7 +113,7 @@ const Certifications = () => {
             <div className="contact-reassurance-box">
               <p className="box-title">Direct Procurement Channel</p>
               <a href="mailto:info@averonsupplies.co.uk" className="box-email">info@averonsupplies.co.uk</a>
-              <p className="box-phone">+44(0)7344469729</p>
+              <p className="box-phone">+447344469729</p>
               <Link to="/contact-us" className="gold-action-btn">INQUIRE FOR TECHNICAL SHEETS</Link>
             </div>
           </div>

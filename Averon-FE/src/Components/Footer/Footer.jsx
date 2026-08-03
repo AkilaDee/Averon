@@ -66,7 +66,7 @@ const Footer = () => {
             <div className="contact-item">
               <FiPhone className="contact-icon" />
               <a href="tel:+447344469729" className="contact-link" aria-label="Call Us">
-                +44 (0) 7344 469729
+                +447344469729
               </a>
             </div>
 

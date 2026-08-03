@@ -21,7 +21,7 @@ export const SITE_INDEX = [
     title: "Contact & Procurement Enquiries",
     url: "/contact-us",
     type: "Page Content",
-    text: "Enquire today for volume availability, pricing matrices, technical data support, email info@averonsupplies.co.uk or call +44(0)7344469729."
+    text: "Enquire today for volume availability, pricing matrices, technical data support, email info@averonsupplies.co.uk or call +447344469729."
   },
   
   // INDIVIDUAL PRODUCT INDEX ENTRIES

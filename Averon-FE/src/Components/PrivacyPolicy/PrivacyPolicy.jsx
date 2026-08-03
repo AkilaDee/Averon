@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
       <p>
         Averon Supplies Ltd, 42 Porthcawe Road, London SE26 5TA, United Kingdom,
         is the data controller for personal data collected through this website.
-        You can contact us at info@averonsupplies.co.uk or +44 7344 469729.
+        You can contact us at info@averonsupplies.co.uk or +447344469729.
       </p>
       <p>[CONFIRM — company registration number, and ICO registration number if you are registered.]</p>
 

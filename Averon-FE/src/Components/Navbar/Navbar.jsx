@@ -33,8 +33,8 @@ const Navbar = () => {
               <FiMail className="contact-inline-icon" /> info@averonsupplies.co.uk
             </a>
             
-            <a href="tel:+44(0)7344469729" className="contact-icon-link">
-              <FiPhone className="contact-inline-icon" /> +44(0)7344469729
+            <a href="tel:+447344469729" className="contact-icon-link">
+              <FiPhone className="contact-inline-icon" /> +447344469729
             </a>
           </div>
 
