@@ -394,6 +394,7 @@
 
   .nav-dropdown-menu--two-col li {
     border-left: none !important;
+  }
 }
 @media (max-width: 560px) {
   /* 1. Stack the logo and search bar vertically, then center them */
