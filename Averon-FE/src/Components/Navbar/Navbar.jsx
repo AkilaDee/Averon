@@ -222,12 +222,12 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/cinnamon-testing" onClick={closeMobileMenu}>
+                  <NavLink to="/insights/ceylon-cinnamon-testing" onClick={closeMobileMenu}>
                     Cinnamon Testing
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/insights/cinnamon-grading" onClick={closeMobileMenu}>
+                  <NavLink to="/insights/ceylon-cinnamon-grading" onClick={closeMobileMenu}>
                     Cinnamon Grading
                   </NavLink>
                 </li>
