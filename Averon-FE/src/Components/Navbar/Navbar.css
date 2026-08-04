@@ -302,6 +302,24 @@
   z-index: 999;
 }
 
+/* Insights menu: 12 items as 6 rows x 2 columns */
+.nav-dropdown-menu--two-col {
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(210px, 1fr);
+  min-width: 440px;
+  padding: 10px 0;
+}
+
+/* Divider between the columns */
+.nav-dropdown-menu--two-col li:nth-child(7) {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+.nav-dropdown-menu--two-col li:nth-child(n + 7) {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* Dropdown individual column link rows */
 .nav-dropdown-menu li {
   width: 100%;
@@ -362,6 +380,20 @@
     padding: 8px 0;
     font-size: 15px;
   }
+
+  .nav-dropdown-menu--two-col {
+    display: none;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    min-width: 0;
+  }
+
+  .main-nav-links.open-mobile .nav-dropdown-menu--two-col {
+    display: block;
+  }
+
+  .nav-dropdown-menu--two-col li {
+    border-left: none !important;
 }
 @media (max-width: 560px) {
   /* 1. Stack the logo and search bar vertically, then center them */

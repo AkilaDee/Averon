@@ -175,7 +175,7 @@ const Navbar = () => {
               </NavLink>
               
               {/* Dropdown Menu Overlay */}
-              <ul className="nav-dropdown-menu">
+              <ul className="nav-dropdown-menu nav-dropdown-menu--two-col">
                 <li>
                   <NavLink to="/insights/alba-grade-cinnamon" onClick={closeMobileMenu}>
                     Alba Grade Cinnamon
