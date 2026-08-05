@@ -5,7 +5,7 @@ import { CartProvider } from './Components/Sale/CartContext';
 
 // Normal imports (used on homepage - load immediately)
 import Navbar from './Components/Navbar/Navbar';
-import Seo from './Components/Seo/Seo';
+// import Seo from './Components/Seo/Seo';
 import SiteNotice from './Components/SiteNotice/SiteNotice';
 import Hero from './Components/Hero/Hero';
 import Offers from './Components/Offers/Offers';
@@ -77,7 +77,7 @@ const App = () => {
     <CartProvider>
       <BrowserRouter>
         <ScrollHandler />
-        <Seo />
+        {/* <Seo /> */}
         <Navbar />
         <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
           <Routes>

@@ -3,6 +3,7 @@ import './Hero.css';
 import vid1 from '../../assets/Vid.mp4'; 
 import vid2 from '../../assets/Vid2.mp4'; 
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const Hero = () => {
   const videoRef1 = useRef(null);
@@ -39,7 +40,14 @@ const Hero = () => {
 
   return (
     <div className="hero-master-container">
-
+      <Helmet>
+        <title>Ceylon Cinnamon & Spice Wholesale | Averon Supplies</title>
+        <meta
+          name="description"
+          content="Wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced directly from our own estates. Bulk supply, samples and specs available."
+        />
+        <link rel="canonical" href="https://www.averonsupplies.co.uk/" />
+      </Helmet>
       <section className="hero-section">
         <div className="video-wrapper">
           <video
