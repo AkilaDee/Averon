@@ -117,7 +117,7 @@ export const routes = [
     title: "Ceylon Cinnamon Wholesale | Averon Supplies Ltd",
     description:
       "Ceylon Cinnamon, sourced from our own estates in Sri Lanka, capturing the rich aroma, delicate flavor, and absolute purity of true cinnamon.",
-    h1: 'Wholesale Ceylon Cinnamon (True Cinnamon)',
+    h1: 'Wholesale Ceylon Cinnamon (Cinnamomum verum)',
     breadcrumb: 'Ceylon Cinnamon',
     category: 'Spices > Cinnamon',
     intro: [
@@ -274,7 +274,7 @@ export const routes = [
     h1: 'Health Benefits of Ceylon Cinnamon',
     breadcrumb: 'Health Benefits',
     intro: [
-      'Ceylon cinnamon is studied most often for its effects on blood glucose regulation, antioxidant activity and inflammatory markers. The evidence base is promising in places and thin in others.',
+      'Ceylon cinnamon (Cinnamomum verum) is studied most often for its effects on blood glucose regulation, antioxidant activity and inflammatory markers. The evidence base is promising in places and thin in others.',
       'This guide separates what has reasonable support from what is frequently overstated, and explains why the coumarin distinction between Ceylon and Cassia matters most for anyone consuming cinnamon daily.',
     ],
     sections: [
@@ -289,7 +289,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-capsules',
     type: 'article',
     datePublished: '2026-07-26',
-    title: "Best Ceylon Cinnamon Capsules: A Buyer's Guide | Averon",
+    title: "Best Ceylon Cinnamon Capsules | Averon Supplies",
     description:
       "Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.",
     h1: 'Ceylon Cinnamon Capsules: What to Look For',
@@ -303,9 +303,9 @@ export const routes = [
     path: '/insights/organic-ceylon-cinnamon',
     type: 'article',
     datePublished: '2026-07-28',
-    title: "Organic Ceylon Cinnamon: Benefits & Uses | Averon",
+    title: "Organic Ceylon Cinnamon | Averon Supplies",
     description:
-      "Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.",
+      "Discover the incredible health benefits of organic Ceylon cinnamon (Cinnamomum verum), known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.",
     h1: 'The Benefits of Organic Ceylon Cinnamon',
     breadcrumb: 'Organic Ceylon Cinnamon',
     intro: [
@@ -352,9 +352,9 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-vs-cassia',
     type: 'article',
     datePublished: '2026-07-25',
-    title: "Ceylon Cinnamon vs Cassia: Key Differences | Averon",
+    title: "Ceylon Cinnamon (Cinnamomum verum) vs Cassia",
     description:
-      "Discover the differences in ceylon cinnamon vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type.",
+      "Discover the differences in ceylon cinnamon (True cinnamon) vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type.",
     h1: 'Ceylon Cinnamon vs Cassia: Key Differences',
     breadcrumb: 'Ceylon vs Cassia',
     intro: [
@@ -417,7 +417,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-origin',
     type: 'article',
     datePublished: '2026-07-18',
-    title: "Why Ceylon Cinnamon Only Grows in Sri Lanka | Averon",
+    title: "Why Ceylon Cinnamon (Cinnamomum verum) Only Grows in Sri Lanka",
     description:
       "Discover the true cinnamon origin. True cinnamon (Cinnamomum verum) is native to Sri Lanka. Learn the history and climate that make it impossible to replicate.",
     h1: 'The Origin of Ceylon Cinnamon',
