@@ -34,10 +34,10 @@ const BlackPepper = () => {
   return (
     <div className="pepper-detail-page">
       <Helmet>
-        <title>Wholesale Black Pepper Bulk Supply | Averon Supplies</title>
+        <title>Ceylon Black Pepper | Averon Supplies Ltd</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
+          content="Direct estate-to-business wholesale and retail supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/black-pepper"/>
       </Helmet>

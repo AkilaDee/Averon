@@ -7,7 +7,7 @@ const OrganicCeylonCinnamonBenefits = () => {
   return (
     <div className="article-page">
       <Helmet>
-        <title>Organic Ceylon Cinnamon: Health Benefits & Uses | Averon Supplies</title>
+        <title>Organic Ceylon Cinnamon: Health Benefits & Uses</title>
         <meta name="description" content="Discover the incredible health benefits of organic Ceylon cinnamon, known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/organic-ceylon-cinnamon" />
       </Helmet>

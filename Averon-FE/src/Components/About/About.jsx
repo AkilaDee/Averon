@@ -7,10 +7,10 @@ const About = () => {
   return (
     <div className='about-wrapper'>
       <Helmet>
-        <title>About Us | Family-Run Ceylon Cinnamon Growers | Averon</title>
+        <title>About Us | Averon Supplies Ltd</title>
         <meta
           name="description"
-          content="Averon Supplies is the UK arm of a family cinnamon business in southern Sri Lanka, supplying single-origin Ceylon cinnamon and spices to trade buyers."
+          content="Discover the story behind Averon Supplies. We bridge the gap between single-origin spice estates and global food manufacturing with transparency and integrity."
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/about-us" />
       </Helmet>

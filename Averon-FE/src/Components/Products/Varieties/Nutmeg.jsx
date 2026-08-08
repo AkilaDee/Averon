@@ -28,10 +28,10 @@ const Nutmeg = () => {
   return (
     <div className="nutmeg-detail-page">
       <Helmet>
-        <title>Wholesale Nutmeg Bulk Supply | Averon Supplies</title>
+        <title>Ceylon Nutmeg | Averon Supplies Ltd</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers." 
+          content="Direct estate-to-business wholesale and retail supply of Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/nutmeg"/>
       </Helmet>

@@ -30,10 +30,10 @@ const Cloves = () => {
   return (
     <div className="cloves-detail-page">
       <Helmet>
-        <title>Wholesale Cloves Bulk Supply | Averon Supplies</title>
+        <title>Ceylon Cloves | Averon Supplies Ltd</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
+          content="Direct estate-to-business wholesale and retail supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/cloves"/>
       </Helmet>

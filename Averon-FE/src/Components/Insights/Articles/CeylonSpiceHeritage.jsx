@@ -7,8 +7,8 @@ const CeylonSpiceHeritage = () => {
   return (
     <div className="article-page">
       <Helmet>
-        <title>The Master Guide to Authentic Ceylon Spice | Averon Supplies</title>
-        <meta name="description" content="Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves." />
+        <title>The Master Guide to Authentic Ceylon Spices | Averon Supplies</title>
+        <meta name="description" content="Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spices, from true cinnamon to hand-harvested cardamoms and cloves." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-spice-heritage" />
       </Helmet>
 

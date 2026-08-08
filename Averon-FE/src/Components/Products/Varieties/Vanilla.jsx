@@ -28,10 +28,10 @@ const Vanilla = () => {
   return (
     <div className="vanilla-detail-page">
       <Helmet>
-        <title>Wholesale Vanilla Pods Bulk Supply | Averon Supplies</title>
+        <title>Ceylon Vanilla | Averon Supplies Ltd</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
+          content="Direct estate-to-business wholesale and Retail supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/vanilla"/>
       </Helmet>

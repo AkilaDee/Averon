@@ -18,7 +18,7 @@ const SourcingRegions = () => {
       
       {/* SECTION 0: SEO & HEAD METADATA */}
       <Helmet>
-        <title>Sri Lankan Spice Sourcing Regions & Terroir | Averon Supplies</title>
+        <title>Sri Lankan Spice Sourcing Regions | Averon Supplies</title>
         <meta 
           name="description" 
           content="Explore Averon Supplies Ltd's single-origin Sri Lankan sourcing networks. Learn how maritime lowlands, sub-mountainous ridges, and wet zones create volatile oil profiles." 

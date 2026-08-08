@@ -13,7 +13,7 @@ const Certifications = () => {
       
       {/* SECTION 0: SEO & HEAD METADATA */}
       <Helmet>
-        <title>Spice Import Compliance & HACCP Certifications | Averon Supplies</title>
+        <title>Spice Import Compliance & HACCP | Averon Supplies Ltd</title>
         <meta 
           name="description" 
           content="Review Averon Supplies Ltd's statutory compliance metrics. Verified UK Food Business Operator (FBO), strict FSA guidelines, fully-documented HACCP systems, and 100% batch traceability." 

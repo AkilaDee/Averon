@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <div className="hero-master-container">
       {/* <Helmet>
-        <title>Ceylon Cinnamon & Spice Wholesale | Averon Supplies</title>
+        <title>Ceylon Cinnamon & Spices Wholesale | Averon Supplies</title>
         <meta
           name="description"
           content="Wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced directly from our own estates. Bulk supply, samples and specs available."

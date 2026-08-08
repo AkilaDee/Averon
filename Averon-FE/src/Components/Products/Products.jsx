@@ -118,10 +118,10 @@ const Products = () => {
           </>
         ) : (
           <>
-            <title>Wholesale Ceylon Spices Range | Direct Estate Supply | Averon Supplies</title>
+            <title>Wholesale Ceylon Cinnamon & Sri Lankan Spices | Averon Supplies Ltd</title>
             <meta 
               name="description" 
-              content="wholesale supply of single-origin Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla." 
+              content="wholesale supply of Ceylon Cinnamon & spices. Bulk supply of Cinnamon, Black Pepper, Cardamom, Cloves, Nutmeg, Vanilla & Sri Lankan spices." 
             />
             <link 
               rel="canonical" 

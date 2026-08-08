@@ -15,7 +15,7 @@ const SupplyChain = () => {
       
       {/* SECTION 0: SEO & HEAD METADATA */}
       <Helmet>
-        <title>Ethical Spice Supply Chain & Sourcing | Averon Supplies</title>
+        <title>Ethical Spice Supply Chain & Sourcing | Averon Supplies Ltd</title>
         <meta 
           name="description" 
           content="Explore Averon Supplies Ltd's vertically integrated supply chain. From estates in Sri Lanka to international freight, we provide transparent, ethical B2B spice procurement." 

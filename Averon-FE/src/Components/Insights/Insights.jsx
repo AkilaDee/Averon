@@ -145,7 +145,7 @@ const Insights = () => {
           </>
         ) : (
           <>
-            <title>Ceylon Cinnamon & Spice Insights & Knowledge Centre | Averon Supplies</title>
+            <title>Ceylon Cinnamon & Spices Insights | Averon Supplies Ltd</title>
             <meta 
               name="description" 
               content="Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka." 

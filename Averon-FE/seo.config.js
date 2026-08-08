@@ -71,7 +71,7 @@ export const routes = [
   // ─── Homepage ────────────────────────────────────────────────────────────
   {
     path: '/',
-    title: 'Ceylon Cinnamon & Spice Wholesale | Averon Supplies',
+    title: 'Ceylon Cinnamon & Spices Wholesale | Averon Supplies Ltd',
     description:
       'Wholesale importer of single-origin Ceylon cinnamon and Sri Lankan spices, sourced directly from our own estates. Bulk supply, samples and specs available.',
     h1: 'Ceylon Cinnamon & Sri Lankan Spices Wholesale',
@@ -95,9 +95,9 @@ export const routes = [
   // ─── Products ────────────────────────────────────────────────────────────
   {
     path: '/products',
-    title: "Wholesale Sri Lankan Spices | Bulk Supplier | Averon Supplies Ltd",
+    title: "Wholesale Ceylon Cinnamon & Sri Lankan Spices | Averon Supplies Ltd",
     description:
-      "wholesale supply of single-origin Ceylon spices. Bulk container pricing on Cinnamon, Black Pepper, Cardamom, and Vanilla.",
+      "wholesale supply of Ceylon Cinnamon & spices. Bulk supply of Cinnamon, Black Pepper, Cardamom, Cloves, Nutmeg, Vanilla & Sri Lankan spices.",
     h1: 'Wholesale Sri Lankan Spice Range',
     breadcrumb: 'Products',
     intro: [
@@ -114,7 +114,7 @@ export const routes = [
   {
     path: '/products/ceylon-cinnamon',
     type: 'product',
-    title: "Ceylon Cinnamon Wholesale | Averon Supplies Ltd",
+    title: "Ceylon Cinnamon | Averon Supplies Ltd",
     description:
       "Ceylon Cinnamon, sourced from our own estates in Sri Lanka, capturing the rich aroma, delicate flavor, and absolute purity of true cinnamon.",
     h1: 'Wholesale Ceylon Cinnamon (Cinnamomum verum)',
@@ -139,9 +139,9 @@ export const routes = [
   {
     path: '/products/black-pepper',
     type: 'product',
-    title: "Wholesale Black Pepper Bulk Supply | Averon Supplies",
+    title: "Ceylon Black Pepper | Averon Supplies Ltd",
     description:
-      "Direct estate-to-business wholesale supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers.",
+      "Direct estate-to-business wholesale and retail supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers.",
     h1: 'Wholesale Black Pepper (Whole Peppercorns)',
     breadcrumb: 'Black Pepper',
     category: 'Spices > Pepper',
@@ -159,9 +159,9 @@ export const routes = [
   {
     path: '/products/green-cardamom',
     type: 'product',
-    title: "Wholesale Green Cardamom Bulk Supply | Averon Supplies",
+    title: "Ceylon Green Cardamom | Averon Supplies Ltd",
     description:
-      "Direct estate-to-business wholesale supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers.",
+      "Direct estate-to-business wholesale and retail supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers.",
     h1: 'Wholesale Green Cardamom Pods',
     breadcrumb: 'Green Cardamom',
     category: 'Spices > Cardamom',
@@ -179,9 +179,9 @@ export const routes = [
   {
     path: '/products/cloves',
     type: 'product',
-    title: "Wholesale Cloves Bulk Supply | Averon Supplies",
+    title: "Ceylon Cloves | Averon Supplies Ltd",
     description:
-      "Direct estate-to-business wholesale supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers.",
+      "Direct estate-to-business wholesale and retail supply of Ceylon Cloves. High eugenol whole hand-picked (HPS) and commercial grades for industrial food manufacturers.",
     h1: 'Wholesale Whole Cloves',
     breadcrumb: 'Whole Cloves',
     category: 'Spices > Cloves',
@@ -199,9 +199,9 @@ export const routes = [
   {
     path: '/products/nutmeg',
     type: 'product',
-    title: "Wholesale Nutmeg Bulk Supply | Averon Supplies",
+    title: "Ceylon Nutmeg | Averon Supplies Ltd",
     description:
-      "Direct estate-to-business wholesale supply of Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers.",
+      "Direct estate-to-business wholesale and retail supply of Ceylon Nutmeg. High volatile oil whole nutmeg, sound unwrinkled, and ground grades for food manufacturers.",
     h1: 'Wholesale Nutmeg & Mace',
     breadcrumb: 'Nutmeg & Mace',
     category: 'Spices > Nutmeg',
@@ -219,9 +219,9 @@ export const routes = [
   {
     path: '/products/vanilla',
     type: 'product',
-    title: "Wholesale Vanilla Pods Bulk Supply | Averon Supplies",
+    title: "Ceylon Vanilla | Averon Supplies Ltd",
     description:
-      "Direct estate-to-business wholesale supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers.",
+      "Direct estate-to-business wholesale and Retail supply of Vanilla pods. High vanillin content Gourmet Grade A and Extract Grade B for commercial food manufacturers.",
     h1: 'Wholesale Ceylon Vanilla Pods',
     breadcrumb: 'Vanilla Pods',
     category: 'Spices > Vanilla',
@@ -240,7 +240,7 @@ export const routes = [
   // ─── Insights / Blog ─────────────────────────────────────────────────────
   {
     path: '/insights',
-    title: "Ceylon Cinnamon Insights & Guides | Averon Supplies Ltd",
+    title: "Ceylon Cinnamon & Spices Insights | Averon Supplies Ltd",
     description:
       "Explore expert guides, grading standards, health benefits, and sourcing insights for authentic single-origin Ceylon spices directly from Sri Lanka.",
     h1: 'Insights: Ceylon Cinnamon & Spice Sourcing',
@@ -254,9 +254,9 @@ export const routes = [
     path: '/insights/ceylon-spice-heritage',
     type: 'article',
     datePublished: '2026-07-24',
-    title: "The Master Guide to Authentic Ceylon Spice | Averon Supplies Ltd",
+    title: "The Master Guide to Authentic Ceylon Spices | Averon Supplies",
     description:
-      "Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spice, from true cinnamon to hand-harvested cardamoms and cloves.",
+      "Explore the rich history, exceptional terroir, and profound health benefits of single-origin Sri Lankan ceylon spices, from true cinnamon to hand-harvested cardamoms and cloves.",
     h1: 'The Heritage of Ceylon Spices',
     breadcrumb: 'Ceylon Spice Heritage',
     intro: [
@@ -268,7 +268,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-benefits',
     type: 'article',
     datePublished: '2026-07-29',
-    title: "Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies Ltd",
+    title: "Unlock Ceylon Cinnamon Benefits for Health | Averon Supplies",
     description:
       "Discover the myriad ceylon cinnamon benefits, from supporting heart health to boosting immunity. Learn how 'true cinnamon' enhances wellness and cuisine.",
     h1: 'Health Benefits of Ceylon Cinnamon',
@@ -289,7 +289,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-capsules',
     type: 'article',
     datePublished: '2026-07-26',
-    title: "Best Ceylon Cinnamon Capsules | Averon Supplies",
+    title: "Ceylon Cinnamon Capsules: Safe & Effective Supplement",
     description:
       "Discover the benefits of Ceylon cinnamon capsules for enhancing metabolic health and reducing inflammation. Choose the best organic supplements for safe, effective wellness support.",
     h1: 'Ceylon Cinnamon Capsules: What to Look For',
@@ -303,7 +303,7 @@ export const routes = [
     path: '/insights/organic-ceylon-cinnamon',
     type: 'article',
     datePublished: '2026-07-28',
-    title: "Organic Ceylon Cinnamon | Averon Supplies",
+    title: "Organic Ceylon Cinnamon: Health Benefits & Uses",
     description:
       "Discover the incredible health benefits of organic Ceylon cinnamon (Cinnamomum verum), known for its sweet flavor and low coumarin levels. Enhance your recipes and well-being with this versatile spice.",
     h1: 'The Benefits of Organic Ceylon Cinnamon',
@@ -317,7 +317,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-dosage-guide',
     type: 'article',
     datePublished: '2026-07-27',
-    title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies Ltd",
+    title: "Ceylon Cinnamon Capsule Dosage Guide | Averon Supplies",
     description:
       "Discover the recommended dosage of Ceylon cinnamon capsules to maximize health benefits safely. Learn about its benefits, dosage guidelines, and potential side effects.",
     h1: 'Ceylon Cinnamon Capsule Dosage Guide',
@@ -338,9 +338,9 @@ export const routes = [
     path: '/insights/alba-grade-cinnamon',
     type: 'article',
     datePublished: '2026-07-26',
-    title: "What is Alba Grade Cinnamon? | Averon Supplies Ltd",
+    title: "What is Alba Grade Cinnamon Sticks? | Averon Supplies",
     description:
-      "Alba is the finest grade of Ceylon cinnamon with a diameter of 6mm or less. Learn what the grade means, the strict diameter standard, and why it commands a premium.",
+      "Alba is the finest grade of Ceylon cinnamon quills with a diameter of 6mm or less. Learn what the grade means, the strict diameter standard, and why it commands a premium.",
     h1: 'Alba Grade Cinnamon Explained',
     breadcrumb: 'Alba Grade',
     intro: [
@@ -352,7 +352,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-vs-cassia',
     type: 'article',
     datePublished: '2026-07-25',
-    title: "Ceylon Cinnamon (Cinnamomum verum) vs Cassia",
+    title: "Ceylon Cinnamon vs Cassia: True Cinnamon vs. Cassia Comparison",
     description:
       "Discover the differences in ceylon cinnamon (True cinnamon) vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type.",
     h1: 'Ceylon Cinnamon vs Cassia: Key Differences',
@@ -373,7 +373,7 @@ export const routes = [
     path: '/insights/coumarin-in-cinnamon',
     type: 'article',
     datePublished: '2026-07-24',
-    title: "What is Coumarin and Why Does It Matter? | Averon Supplies Ltd",
+    title: "What is Coumarin and Why Does It Matter? | Averon Supplies",
     description:
       "Coumarin is a naturally occurring compound in cinnamon. Cassia contains up to 12,000mg/kg while Ceylon contains almost none. Learn what this means for food safety.",
     h1: 'Coumarin in Cinnamon: Levels & Limits',
@@ -402,9 +402,9 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-grading',
     type: 'article',
     datePublished: '2026-07-20',
-    title: "Ceylon Cinnamon Grading: Alba to C4 | Averon Supplies Ltd",
+    title: "Ceylon Cinnamon Grading Explained | Averon Supplies",
     description:
-      "Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application.",
+      "Complete guide to Ceylon cinnamon grading. Covers all grades of cinnamon quills, diameter standards, and which grade suits your application.",
     h1: 'The Ceylon Cinnamon Grading System',
     breadcrumb: 'Grading System',
     intro: [
@@ -417,7 +417,7 @@ export const routes = [
     path: '/insights/ceylon-cinnamon-origin',
     type: 'article',
     datePublished: '2026-07-18',
-    title: "Why Ceylon Cinnamon (Cinnamomum verum) Only Grows in Sri Lanka",
+    title: "Why Ceylon Cinnamon (Cinnamomum verum) comes only from Sri Lanka",
     description:
       "Discover the true cinnamon origin. True cinnamon (Cinnamomum verum) is native to Sri Lanka. Learn the history and climate that make it impossible to replicate.",
     h1: 'The Origin of Ceylon Cinnamon',
@@ -470,7 +470,7 @@ export const routes = [
   },
   {
     path: '/sourcing-regions',
-    title: "Sri Lankan Spice Sourcing Regions | Averon Supplies Ltd",
+    title: "Sri Lankan Spice Sourcing Regions | Averon Supplies",
     description:
       "Explore Averon Supplies Ltd's single-origin Sri Lankan sourcing networks. Learn how maritime lowlands, sub-mountainous ridges, and wet zones create volatile oil profiles.",
     h1: 'Our Sri Lankan Sourcing Regions',
@@ -506,7 +506,7 @@ export const routes = [
   },
   {
     path: '/about-us',
-    title: "About Averon Supplies | Direct Wholesale Spice Importers",
+    title: "About Us | Averon Supplies Ltd",
     description:
       "Discover the story behind Averon Supplies. We bridge the gap between single-origin spice estates and global food manufacturing with transparency and integrity.",
     h1: 'About Averon Supplies Ltd',

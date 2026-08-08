@@ -9,7 +9,7 @@ const Quality = () => {
   return (
     <div className='quality-page-container'>
       <Helmet>
-        <title>Spice Quality Assurance & Food Safety Compliance | Averon Supplies</title>
+        <title>Quality Assurance & Food Safety | Averon Supplies Ltd</title>
         <meta 
           name="description" 
           content="Our rigorous spice quality control protocols ensure food-grade compliance. Access Certificates of Analysis (CoA), laboratory testing, and microbial purity data." 

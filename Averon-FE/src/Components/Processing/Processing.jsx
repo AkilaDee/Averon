@@ -16,7 +16,7 @@ const Processing = () => {
       
       {/* SECTION 0: SEO & HEAD METADATA */}
       <Helmet>
-        <title>Industrial Spice Processing & Milling Standards | Averon Supplies</title>
+        <title>Spice Processing & Milling Standards | Averon Supplies Ltd</title>
         <meta 
           name="description" 
           content="Discover Averon Supplies Ltd's industrial processing architecture. From strict optical sorting and controlled dehydration to vacuum triple-shield packaging under critical control metrics." 

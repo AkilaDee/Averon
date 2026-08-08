@@ -7,8 +7,8 @@ const CinnamonGradingExplained = () => {
   return (
     <div className="article-page">
       <Helmet>
-        <title>Ceylon Cinnamon Grading Explained - From Alba to C4 | Averon Supplies</title>
-        <meta name="description" content="Complete guide to Ceylon cinnamon grading. Covers all grades from Alba to C4, diameter standards, and which grade suits your application." />
+        <title>Ceylon Cinnamon Grading Explained | Averon Supplies</title>
+        <meta name="description" content="Complete guide to Ceylon cinnamon grading. Covers all grades of cinnamon quills, diameter standards, and which grade suits your application." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-grading" />
       </Helmet>
 

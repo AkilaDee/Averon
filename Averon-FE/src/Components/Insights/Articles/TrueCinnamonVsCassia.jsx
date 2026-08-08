@@ -8,7 +8,7 @@ const TrueCinnamonVsCassia = () => {
     <div className="article-page">
       <Helmet>
         <title>Ceylon Cinnamon vs Cassia: True Cinnamon vs. Cassia Comparison</title>
-        <meta name="description" content="Discover the differences in ceylon cinnamon vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type." />
+        <meta name="description" content="Discover the differences in ceylon cinnamon (True cinnamon) vs cassia for flavor and health. Compare true cinnamon vs cassia, learn about cinnamomum verum, and choose the best type." />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/insights/ceylon-cinnamon-vs-cassia" />
         <script type="application/ld+json">
           {JSON.stringify({

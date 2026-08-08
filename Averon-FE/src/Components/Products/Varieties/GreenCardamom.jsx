@@ -30,10 +30,10 @@ const GreenCardamom = () => {
   return (
     <div className="cardamom-detail-page">
       <Helmet>
-        <title>Wholesale Green Cardamom Bulk Supply | Averon Supplies</title>
+        <title>Ceylon Green Cardamom | Averon Supplies Ltd</title>
         <meta 
           name="description" 
-          content="Direct estate-to-business wholesale supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
+          content="Direct estate-to-business wholesale and retail supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers." 
         />
         <link rel="canonical" href="https://www.averonsupplies.co.uk/products/green-cardamom"/>
       </Helmet>
