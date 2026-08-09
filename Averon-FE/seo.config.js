@@ -27,7 +27,7 @@ export const SITE = {
   logo: '/averonlogo.png',
   defaultOgImage: '/og/averon-default.jpg',
   twitterHandle: '', // e.g. '@averonsupplies' leave '' if you have no X account
-  telephone: '+447344469729', // E.164  fixes audit issue #15
+  telephone: '+447344469729',
   email: 'info@averonsupplies.co.uk',
   address: {
     streetAddress: '42 Porthcawe Road',
@@ -48,7 +48,7 @@ export const SITE = {
   ],
 };
 
-export const PLACEHOLDER_DATE = '1970-01-01';
+export const PLACEHOLDER_DATE = '2026-08-01';
 
 /**
  * Route schema:

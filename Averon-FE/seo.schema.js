@@ -1,5 +1,5 @@
 /**
- * seo.schema.js  shared structured-data builders.
+ * seo.schema.js — shared structured-data builders.
  *
  * Imported by BOTH scripts/prerender.mjs (build) and src/components/Seo.jsx
  * (runtime), so the JSON-LD a crawler sees in the static HTML is identical to
@@ -7,7 +7,7 @@
  * SEO problem, so keep this the only place schema is defined.
  */
 
-import { SITE, routes, absoluteUrl, PLACEHOLDER_DATE } from './seo.config.js';
+import { SITE, routes, absoluteUrl } from './seo.config.js';
 
 /** Breadcrumb trail derived from the URL path. */
 export function trail(route) {
@@ -52,7 +52,7 @@ export function localBusiness() {
     logo: `${SITE.url}${SITE.logo}`,
     description:
       'Specialist importer and wholesale distributor of Ceylon cinnamon and Sri Lankan spices sourced directly from our own estates in Sri Lanka.',
-    telephone: SITE.telephone, // E.164  audit issue #15
+    telephone: SITE.telephone, // E.164 — audit issue #15
     email: SITE.email,
     address: { '@type': 'PostalAddress', ...SITE.address },
     geo: { '@type': 'GeoCoordinates', ...SITE.geo },
@@ -92,9 +92,13 @@ export function productSchema(route, image) {
     ...(route.sku ? { sku: route.sku } : {}),
     brand: { '@type': 'Brand', name: SITE.name },
     url: absoluteUrl(route.path),
-    // NOTE: add an `offers` block with real price/currency/availability to be
-    // eligible for product rich results. Omitted here because wholesale pricing
-    // isn't published  don't fake it, Google penalises mismatched offer data.
+    offers: {
+      '@type': 'Offer',
+      url: absoluteUrl(route.path),
+      price: route.price,
+      priceCurrency: route.priceCurrency || 'GBP',
+      availability: route.availability || 'https://schema.org/InStock',
+    },
   };
 }
 
@@ -105,15 +109,8 @@ export function articleSchema(route, image) {
     headline: route.title.split('|')[0].trim(),
     description: route.description,
     image: [`${SITE.url}${image}`],
-    // A wrong date is worse than no date: Google reads datePublished and will
-    // happily show 1970 in results. Until a real date is set in seo.config.js,
-    // omit the field entirely rather than assert something false.
-    ...(route.datePublished && route.datePublished !== PLACEHOLDER_DATE
-      ? { datePublished: route.datePublished }
-      : {}),
-    ...(route.dateModified && route.dateModified !== PLACEHOLDER_DATE
-      ? { dateModified: route.dateModified }
-      : {}),
+    datePublished: route.datePublished,
+    dateModified: route.dateModified,
     author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/` },
     publisher: { '@id': `${SITE.url}/#organization` },
     mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(route.path) },
@@ -126,7 +123,20 @@ export function buildSchemas(route, image = SITE.defaultOgImage) {
   const out = [website(), localBusiness()];
   const bc = breadcrumbList(route);
   if (bc) out.push(bc);
-  if (route.type === 'product') out.push(productSchema(route, image));
+  // Product schema is only emitted when the route carries a real `price`.
+  //
+  // Google requires 'offers', 'review' or 'aggregateRating' for a Product to be
+  // eligible for rich results. Wholesale pages quote on enquiry, so there is no
+  // public price to state — and a Product block without offers just produces a
+  // Search Console warning while earning nothing.
+  //
+  // TO ENABLE FOR THE SHOP: add `price: '12.50'` (and optionally priceCurrency
+  // and availability) to that route in seo.config.js. Schema appears automatically.
+  // The price MUST match what is displayed on the page — Google cross-checks,
+  // and a mismatch is treated as more serious than a missing field.
+  if (route.type === 'product' && route.price) {
+    out.push(productSchema(route, image));
+  }
   if (route.type === 'article') out.push(articleSchema(route, image));
   return out;
 }
