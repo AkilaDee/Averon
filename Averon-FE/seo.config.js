@@ -95,7 +95,7 @@ export const routes = [
   // ─── Products ────────────────────────────────────────────────────────────
   {
     path: '/products',
-    title: "Wholesale Ceylon Cinnamon & Sri Lankan Spices | Averon Supplies Ltd",
+    title: "Wholesale Ceylon Cinnamon & Sri Lankan Spices | Averon Supplies",
     description:
       "wholesale supply of Ceylon Cinnamon & spices. Bulk supply of Cinnamon, Black Pepper, Cardamom, Cloves, Nutmeg, Vanilla & Sri Lankan spices.",
     h1: 'Wholesale Sri Lankan Spice Range',
@@ -114,7 +114,7 @@ export const routes = [
   {
     path: '/products/ceylon-cinnamon',
     type: 'product',
-    title: "Ceylon Cinnamon | Averon Supplies Ltd",
+    title: "Ceylon Cinnamon Wholesale | Averon Supplies",
     description:
       "Ceylon Cinnamon, sourced from our own estates in Sri Lanka, capturing the rich aroma, delicate flavor, and absolute purity of true cinnamon.",
     h1: 'Wholesale Ceylon Cinnamon (Cinnamomum verum)',
@@ -139,7 +139,7 @@ export const routes = [
   {
     path: '/products/black-pepper',
     type: 'product',
-    title: "Ceylon Black Pepper | Averon Supplies Ltd",
+    title: "Ceylon Black Pepper Wholesale | Averon Supplies",
     description:
       "Direct estate-to-business wholesale and retail supply of single-origin Black Pepper. High-piperine whole peppercorns and variable mesh grinds for food manufacturers.",
     h1: 'Wholesale Black Pepper (Whole Peppercorns)',
@@ -159,7 +159,7 @@ export const routes = [
   {
     path: '/products/green-cardamom',
     type: 'product',
-    title: "Ceylon Green Cardamom | Averon Supplies Ltd",
+    title: "Ceylon Green Cardamom Wholesale| Averon Supplies",
     description:
       "Direct estate-to-business wholesale and retail supply of green cardamom pods. Bulk container-load sourcing for industrial food processors, spice millers, and packers.",
     h1: 'Wholesale Green Cardamom Pods',
