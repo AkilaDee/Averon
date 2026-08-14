@@ -39,7 +39,7 @@ const productDetails = {
       { name: "Cinnamon Sticks - H1 Grade", desc: "Standard H1 commercial quills featuring classic aroma and rich golden appearance.", img: H1 },
       { name: "Cinnamon Sticks - H2 Grade", desc: "Standard H2 commercial quills featuring classic aroma and rich golden appearance.", img: H2 },
       { name: "Cinnamon Quillings", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: quillings },
-      { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh (20-100).", img: cinnamon_ground }
+      { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh.", img: cinnamon_ground }
     ]
   },
   'black-pepper': {

@@ -27,7 +27,7 @@ import quillings from '../../../assets/quillings.webp'
 
 const CinnamonDetail = () => {
   const specs = [
-    { label: "Available Grades", value: "Alba, C5 Extra Special, C5 Special, C5 Sticks, C4 Sticks, H1, H2, Quillings, Ground (60-80 Mesh)" },
+    { label: "Available Grades", value: "Alba, C5 Extra Special, C5 Special, C5 Sticks, C4 Sticks, H1, H2, Quillings, Ground" },
     { label: "Moisture Content", value: "14% max" },
     { label: "Volatile Oil Content", value: "1.5% - 2.5% v/w" },
     { label: "Coumarin Content", value: "Ultra-low (Trace amounts, < 0.005%)" },
@@ -49,7 +49,7 @@ const CinnamonDetail = () => {
    { name: "Cinnamon Sticks - H1 Grade", desc: "Standard H1 commercial quills featuring classic aroma and rich golden appearance.", img: H1 },
    { name: "Cinnamon Sticks - H2 Grade", desc: "Standard H2 commercial quills featuring classic aroma and rich golden appearance.", img: H2 },
    { name: "Cinnamon Quillings", desc: "Standard high-quality commercial quills featuring classic aroma and rich golden appearance.", img: quillings },
-   { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh (60-80).", img: cinnamon_ground }
+   { name: "Cinnamon Ground", desc: "100% Pure, ultra-fine mesh.", img: cinnamon_ground }
   ];
 
   return (
