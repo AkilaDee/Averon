@@ -10,7 +10,7 @@ import cardamom_ground from '../../../assets/cardamom ground.webp';
 const GreenCardamom = () => {
   const specs = [
     { label: "Available Grades", value: "Jumbo Green Cardamom (LG), Fine Ground Powder" },
-    { label: "Pod Size Profile", value: "7mm – 8mm+ calibrated pods" },
+    { label: "Pod Size Profile", value: "7mm - 8mm+ calibrated pods" },
     { label: "Moisture Content", value: "11% max" },
     { label: "Volatile Oil Content", value: "3.5% - 5.0% v/w (Rich in cineole and limonene)" },
     { label: "Color Specification", value: "Deep, natural green (No artificial color enhancement)" }

@@ -94,7 +94,7 @@ const SourcingRegions = () => {
           <div className="terroir-card">
             <div className="terroir-img-frame">
               <div className="terroir-bg-layer" style={{ backgroundImage: `url(${southern_coast})` }}></div>
-              <span className="elevation-badge">0 – 300M ELEVATION</span>
+              <span className="elevation-badge">0 - 300M ELEVATION</span>
             </div>
             <div className="terroir-body">
               <h3 className="serif-card-title">The Southern Coastal Strip</h3>
@@ -109,7 +109,7 @@ const SourcingRegions = () => {
           <div className="terroir-card">
             <div className="terroir-img-frame">
               <div className="terroir-bg-layer" style={{ backgroundImage: `url(${central_highlands})` }}></div>
-              <span className="elevation-badge">900M – 1500M ELEVATION</span>
+              <span className="elevation-badge">900M - 1500M ELEVATION</span>
             </div>
             <div className="terroir-body">
               <h3 className="serif-card-title">The Central Highlands</h3>
@@ -124,7 +124,7 @@ const SourcingRegions = () => {
           <div className="terroir-card">
             <div className="terroir-img-frame">
               <div className="terroir-bg-layer" style={{ backgroundImage: `url(${low_country})` }}></div>
-              <span className="elevation-badge">300M – 600M ELEVATION</span>
+              <span className="elevation-badge">300M - 600M ELEVATION</span>
             </div>
             <div className="terroir-body">
               <h3 className="serif-card-title">The Mid-Country Wet Zone</h3>

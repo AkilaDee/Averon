@@ -9,7 +9,7 @@ import vanilla from '../../../assets/vanilla.webp';
 const Vanilla = () => {
   const specs = [
     { label: "Available Grades", value: "Gourmet Grade A Pods" },
-    { label: "Pod Length", value: "15cm – 18cm+ premium lengths" },
+    { label: "Pod Length", value: "15cm - 18cm+ premium lengths" },
     { label: "Moisture Content", value: "30% - 35% (Plump, flexible beans)" },
     { label: "Vanillin Content", value: "1.8% - 2.4%" },
     { label: "Appearance", value: "Oily, dark brown to black lustrous skin" }
