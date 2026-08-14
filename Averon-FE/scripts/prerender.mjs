@@ -28,8 +28,6 @@ const DIST = join(ROOT, 'dist');
 const HEAD_MARKER = '<!--SEO_HEAD-->';
 const BODY_MARKER = '<!--SEO_BODY-->';
 
-const TODAY = new Date().toISOString().slice(0, 10);
-
 // ── helpers ────────────────────────────────────────────────────────────────
 
 const esc = (s = '') =>
@@ -209,14 +207,26 @@ function buildSitemap() {
     .map((r) => {
       const depth = r.path === '/' ? 0 : r.path.split('/').filter(Boolean).length;
       const priority = r.priority || (depth === 1 ? '0.8' : '0.6');
-      const lastmod = r.lastmod || r.dateModified || TODAY;
-      return [
-        '  <url>',
-        `    <loc>${absoluteUrl(r.path)}</loc>`,
-        `    <lastmod>${lastmod}</lastmod>`,
-        `    <priority>${priority}</priority>`,
-        '  </url>',
-      ].join('\n');
+      // lastmod is only emitted when a real date exists on the route.
+      //
+      // It previously fell back to the build date, which meant every page
+      // claimed to have changed on every deploy. Google's guidance is that
+      // lastmod should reflect the last SIGNIFICANT content change — a date
+      // that bumps itself on unrelated deploys is noise, and once Google
+      // decides the signal is unreliable it discounts it for the whole
+      // sitemap, including the 12 article pages where the dates are real.
+      //
+      // An absent lastmod is valid and neutral: Google falls back to its own
+      // crawl history. TO SET ONE: add `lastmod: '2026-09-01'` to that route
+      // in seo.config.js when you actually revise the page.
+      const lastmod = r.lastmod || r.dateModified || null;
+
+      const lines = ['  <url>', `    <loc>${absoluteUrl(r.path)}</loc>`];
+      if (lastmod && lastmod !== PLACEHOLDER_DATE) {
+        lines.push(`    <lastmod>${lastmod}</lastmod>`);
+      }
+      lines.push(`    <priority>${priority}</priority>`, '  </url>');
+      return lines.join('\n');
     })
     .join('\n');
 
