@@ -5,6 +5,7 @@ import './GreenCardamom.css';
 
 // Asset Imports - Points directly to your cardamom assets
 import cardamom from '../../../assets/cardamom.webp';
+import cardamomNew from '../../../assets/cardamomNew.webp';
 import cardamom_ground from '../../../assets/cardamom ground.webp';
 
 const GreenCardamom = () => {
@@ -23,7 +24,7 @@ const GreenCardamom = () => {
   ];
 
   const items = [
-    { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamom },
+    { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamomNew },
     { name: "Green Cardamom Ground", desc: "100% Pure, finely milled green cardamom seeds with full oil retention.", img: cardamom_ground }
   ];
 

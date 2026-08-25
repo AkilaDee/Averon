@@ -5,6 +5,8 @@ import './Nutmeg.css';
 
 // Asset Imports - Points directly to your nutmeg assets
 import nutmeg from '../../../assets/nutmeg.webp';
+import nutmegNew from '../../../assets/nutmegNew.webp';
+import nutmeg_ground from '../../../assets/nutmeg ground.webp';
 
 const Nutmeg = () => {
   const specs = [
@@ -22,7 +24,8 @@ const Nutmeg = () => {
   ];
 
   const items = [
-    { name: "Whole Nutmeg", desc: "Dense, heavily marbled whole kernels completely free of external blemishes or shell debris.", img: nutmeg }
+    { name: "Whole Nutmeg", desc: "Dense, heavily marbled whole kernels completely free of external blemishes or shell debris.", img: nutmegNew },
+    { name: "Nutmeg Ground", desc: "100% Pure, finely milled nutmeg with full oil retention.", img: nutmeg_ground }
   ];
 
   return (

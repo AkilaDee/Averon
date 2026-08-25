@@ -20,7 +20,7 @@ import cinnamon from '../../../assets/cinnamon.webp'
 import C4 from '../../../assets/C4.webp'
 import H1 from '../../../assets/H1.webp'
 import H2 from '../../../assets/H2.webp'
-import cinnamon_ground from '../../../assets/cinnamon ground.webp'
+import cinnamon_ground from '../../../assets/cinnamongroundNew.webp'
 import quillings from '../../../assets/quillings.webp'
 
 

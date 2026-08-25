@@ -5,6 +5,7 @@ import './Cloves.css';
 
 // Asset Imports - Points directly to your cloves assets
 import cloves from '../../../assets/cloves.webp';
+import clovesNew from '../../../assets/clovesNew.webp';
 import cloves_ground from '../../../assets/cloves ground.webp';
 
 const Cloves = () => {
@@ -23,7 +24,7 @@ const Cloves = () => {
   ];
 
   const items = [
-    { name: "Hand-Picked Cloves", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: cloves },
+    { name: "Hand-Picked Cloves", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: clovesNew },
     { name: "Cloves Ground", desc: "100% Pure, finely milled cloves with maximum aromatic oil retention.", img: cloves_ground }
   ];
 
