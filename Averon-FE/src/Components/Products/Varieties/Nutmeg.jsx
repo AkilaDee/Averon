@@ -24,7 +24,7 @@ const Nutmeg = () => {
   ];
 
   const items = [
-    { name: "Whole Nutmeg", desc: "Dense, heavily marbled whole kernels completely free of external blemishes or shell debris.", img: nutmegNew },
+    { name: "Nutmeg Whole", desc: "Dense, heavily marbled whole kernels completely free of external blemishes or shell debris.", img: nutmegNew },
     { name: "Nutmeg Ground", desc: "100% Pure, finely milled nutmeg with full oil retention.", img: nutmeg_ground }
   ];
 

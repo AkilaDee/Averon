@@ -24,7 +24,7 @@ const GreenCardamom = () => {
   ];
 
   const items = [
-    { name: "Jumbo Green Cardamom (LG)", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamomNew },
+    { name: "Green Cardamom Whole", desc: "Large, bright green pods packed with essential oils and intense fragrance.", img: cardamomNew },
     { name: "Green Cardamom Ground", desc: "100% Pure, finely milled green cardamom seeds with full oil retention.", img: cardamom_ground }
   ];
 

@@ -25,8 +25,8 @@ const BlackPepper = () => {
   ];
 
   const items = [
-    { name: "Whole Black Pepper (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
-    { name: "Whole Black Pepper (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper_500 },
+    { name: "Black Pepper Whole (550 GL)", desc: "High piperine content, robust berries perfect for retail packing and high-volume grinding.", img: pepper },
+    { name: "Black Pepper Whole (500 GL)", desc: "Standard grade whole peppercorns suited for commercial blending.", img: pepper_500 },
     { name: "Black Pepper Cracked", desc: "Standard grade Cracked Black pepper.", img: pepper_cracked },
     { name: "Black Pepper Ground", desc: "Standard grade Black pepper powder.", img: pepper_ground }
   ];

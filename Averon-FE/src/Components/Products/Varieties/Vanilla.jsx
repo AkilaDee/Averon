@@ -22,7 +22,7 @@ const Vanilla = () => {
   ];
 
   const items = [
-    { name: "Gourmet Grade A Bourbon Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich vanilla flavour profile with high seed density.", img: vanilla }
+    { name: "Vanilla Pods", desc: "Plump, oily, moisture-rich pods boasting a deep, rich vanilla flavour profile with high seed density.", img: vanilla }
   ];
 
   return (

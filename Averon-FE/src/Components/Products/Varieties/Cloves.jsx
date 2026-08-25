@@ -24,7 +24,7 @@ const Cloves = () => {
   ];
 
   const items = [
-    { name: "Hand-Picked Cloves", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: clovesNew },
+    { name: "Cloves Whole", desc: "Whole, full-headed cloves with zero headless units, exceptionally high in eugenol oil.", img: clovesNew },
     { name: "Cloves Ground", desc: "100% Pure, finely milled cloves with maximum aromatic oil retention.", img: cloves_ground }
   ];
 
