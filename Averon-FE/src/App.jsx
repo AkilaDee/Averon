@@ -95,12 +95,12 @@ const App = () => {
               </>
             } />
 
-            <Route path="/sale" element={
+            {/* <Route path="/sale" element={
               <>
                 <main><Sale /></main>
                 <Footer />
               </>
-            } />
+            } /> */}
 
             <Route path="/search" element={
               <>

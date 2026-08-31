@@ -528,19 +528,19 @@ export const routes = [
       'Telephone +44 7344 469729 or email info@averonsupplies.co.uk. Our office hours are Monday to Friday, 09:00 to 17:00.',
     ],
   },
-  {
-    path: '/sale',
-    title: 'Buy Ceylon Cinnamon Online | Averon Supplies',
-    description:
-      'Buy authentic Ceylon cinnamon online, direct from our Sri Lankan estates. Smaller quantities for retail customers alongside our wholesale supply.',
-    h1: 'Buy Ceylon Cinnamon Online',
-    breadcrumb: 'Shop',
-    intro: [
-      'Our online shop offers the same estate-sourced Ceylon cinnamon we supply to trade customers, in quantities suited to individual buyers and small businesses.',
-      'Every order comes from the same graded, tested batches as our wholesale consignments. There is no separate retail-grade material.',
-    ],
-    priority: '0.9',
-  },
+  // {
+  //   path: '/sale',
+  //   title: 'Buy Ceylon Cinnamon Online | Averon Supplies',
+  //   description:
+  //     'Buy authentic Ceylon cinnamon online, direct from our Sri Lankan estates. Smaller quantities for retail customers alongside our wholesale supply.',
+  //   h1: 'Buy Ceylon Cinnamon Online',
+  //   breadcrumb: 'Shop',
+  //   intro: [
+  //     'Our online shop offers the same estate-sourced Ceylon cinnamon we supply to trade customers, in quantities suited to individual buyers and small businesses.',
+  //     'Every order comes from the same graded, tested batches as our wholesale consignments. There is no separate retail-grade material.',
+  //   ],
+  //   priority: '0.9',
+  // },
   {
     path: '/terms-of-business',
     title: "Terms & Conditions of Sale | Averon Supplies",
